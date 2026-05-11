@@ -1,411 +1,349 @@
 'use client';
 
-import { useState, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Terminal, Code2, Cpu } from 'lucide-react';
-import Link from 'next/link';
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import {
+  ArrowRight,
+  BarChart3,
+  CheckCircle2,
+  Code2,
+  DatabaseZap,
+  ExternalLink,
+  GitFork,
+  Layers,
+  ShieldCheck,
+  Terminal,
+  Copy,
+} from 'lucide-react';
 
-import BootSequence from '@/components/BootSequence';
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import GlitchTitle, { GlitchSubtitle } from '@/components/GlitchTitle';
-import ProjectPod from '@/components/ProjectPod';
 import ProjectModal from '@/components/ProjectModal';
-import { projects, type Project } from '@/data/projects';
+import ProjectPod from '@/components/ProjectPod';
+import { getProjects, type Project } from '@/data/projects';
+import { useLanguage } from '@/context/LanguageContext';
 
-// SSR-safe for mouse-tracking
-const TechOrbit    = dynamic(() => import('@/components/TechOrbit'),    { ssr: false });
+const TechOrbit = dynamic(() => import('@/components/TechOrbit'), { ssr: false });
 const ParallaxGrid = dynamic(() => import('@/components/ParallaxGrid'), { ssr: false });
 
-const FEATURED_IDS = ['my-bet', 'typedash', 'api-flash'];
-const ORIGIN_IDS   = ['zrankup', 'zcash', 'zdiscordcore', 'zantivpn', 'zhomegui'];
-const MIDWAY_IDS   = ['feastcore', 'advancedsql', 'feastlobby', 'feastscore', 'multiserver-api'];
-const RECENT_IDS   = ['my-bet', 'snippetvault', 'mtx-upload', 'money-manager'];
-
-const featured = FEATURED_IDS.map((id) => projects.find((p: Project) => p.id === id)!).filter(Boolean);
-const origin   = ORIGIN_IDS.map((id) => projects.find((p: Project) => p.id === id)!).filter(Boolean);
-const midway   = MIDWAY_IDS.map((id) => projects.find((p: Project) => p.id === id)!).filter(Boolean);
-const recent   = RECENT_IDS.map((id) => projects.find((p: Project) => p.id === id)!).filter(Boolean);
-
-const STATS = [
-  { icon: Terminal, label: 'Started coding', value: 'Age 11' },
-  { icon: Code2,    label: 'Repositories',   value: '30+'     },
-  { icon: Cpu,      label: 'Stack',          value: 'Full Stack' },
-];
-
 export default function HomePage() {
-  const [booted, setBooted]         = useState(false);
-  const [selectedProject, setSelected] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const { t, language } = useLanguage();
+  const contactEmail = 'contact@emanuelvini.dev';
 
-  const handleDone = useCallback(() => setBooted(true), []);
+  const projects = getProjects(language);
+  const featuredProjects = ['transactional-wallet-ledger', 'apiflash', 'snippetvault']
+    .map((id) => projects.find((project) => project.id === id))
+    .filter(Boolean) as Project[];
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(contactEmail);
+      setCopiedEmail(true);
+      window.setTimeout(() => setCopiedEmail(false), 1800);
+    } catch {
+      setCopiedEmail(false);
+    }
+  };
+
+  const services = [
+    {
+      icon: DatabaseZap,
+      title: t.services.s1Title,
+      text: t.services.s1Text,
+    },
+    {
+      icon: BarChart3,
+      title: t.services.s2Title,
+      text: t.services.s2Text,
+    },
+    {
+      icon: ShieldCheck,
+      title: t.services.s3Title,
+      text: t.services.s3Text,
+    },
+  ];
+
+  const journey = [
+    {
+      label: t.journey.step1Label,
+      title: t.journey.step1Title,
+      text: t.journey.step1Text,
+    },
+    {
+      label: t.journey.step2Label,
+      title: t.journey.step2Title,
+      text: t.journey.step2Text,
+    },
+    {
+      label: t.journey.step3Label,
+      title: t.journey.step3Title,
+      text: t.journey.step3Text,
+    },
+  ];
+
+  const stats = [
+    { label: t.hero.statsLabel1, value: '40', detail: t.hero.statsDetail1 },
+    { label: t.hero.statsLabel2, value: 'JVM', detail: t.hero.statsDetail2 },
+    { label: t.hero.statsLabel3, value: 'Full-stack', detail: t.hero.statsDetail3 },
+  ];
 
   return (
     <>
-      <BootSequence onDone={handleDone} />
       <ParallaxGrid />
 
-      <AnimatePresence>
-        {booted && (
-          <motion.div
-            key="content"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="relative z-10"
-          >
-            <Navbar />
+      <div className="relative z-10 min-h-screen">
+        <Navbar />
 
-            {/* ── HERO ─────────────────────────────────────────── */}
-            <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-16 pb-20 text-center">
-              {/* Status pill */}
-              <motion.div
-                initial={{ opacity: 0, y: -12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="flex items-center gap-2 px-3 py-1.5 rounded-full mb-10 text-xs font-bold tracking-widest uppercase"
-                style={{
-                  border: '1px solid rgba(80, 250, 123, 0.3)',
-                  background: 'rgba(80,250,123,0.06)',
-                  color: 'var(--dracula-green)',
-                }}
-              >
-                <span
-                  className="w-1.5 h-1.5 rounded-full"
-                  style={{
-                    background: 'var(--dracula-green)',
-                    boxShadow: '0 0 6px var(--dracula-green)',
-                    animation: 'pulse-glow 2s ease-in-out infinite',
-                    '--glow-color': 'var(--dracula-green)',
-                  } as React.CSSProperties}
-                />
-                Available for new projects
-              </motion.div>
+        <main>
+          <section className="mx-auto grid min-h-[92vh] max-w-6xl items-center gap-12 px-6 pb-16 pt-28 lg:grid-cols-[1.08fr_0.92fr]">
+            <motion.div
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45 }}
+            >
+              <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-dracula-green/25 bg-dracula-green/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-dracula-green">
+                <CheckCircle2 className="h-3.5 w-3.5" />
+                {t.common.available}
+              </div>
 
-              {/* Main title */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
-                className="mb-6"
-              >
-                <GlitchTitle
-                  text="EMANUEL // SYSTEM ARCHITECT"
-                  className="text-5xl md:text-7xl lg:text-8xl font-black"
-                >
-                  EMANUEL //<br />
-                  <span style={{ fontSize: '0.65em', opacity: 0.85 }}>SYSTEM ARCHITECT</span>
-                </GlitchTitle>
-              </motion.div>
+              <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-dracula-fg sm:text-5xl lg:text-6xl">
+                {t.hero.title}
+              </h1>
 
-              <GlitchSubtitle>
-                Full-stack engineer &amp; systems designer. Started at{' '}
-                <span style={{ color: 'var(--dracula-purple)' }}>age 11</span> building Minecraft
-                plugins in Java. Now ships complex engines in record time — betting platforms,
-                typing trainers, developer tools — all with obsessive attention to detail.
-              </GlitchSubtitle>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-dracula-comment sm:text-lg">
+                {t.hero.subtitle}
+              </p>
 
-              {/* CTA buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-                className="flex flex-wrap items-center justify-center gap-4 mt-10"
-              >
+              <div className="mt-9 flex flex-wrap gap-3">
                 <Link
                   href="/projects"
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold tracking-wider uppercase transition-all duration-300"
-                  style={{
-                    background: 'linear-gradient(135deg, var(--dracula-purple), var(--dracula-cyan))',
-                    color: 'var(--dracula-bg)',
-                    boxShadow: '0 0 20px rgba(189,147,249,0.4)',
-                  }}
-                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.boxShadow = '0 0 40px rgba(189,147,249,0.7)')}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(189,147,249,0.4)')}
+                  className="inline-flex items-center gap-2 rounded-xl bg-dracula-purple px-5 py-3 text-sm font-semibold text-dracula-bg shadow-lg shadow-dracula-purple/20 transition-transform hover:-translate-y-0.5"
                 >
-                  View All Projects
-                  <ArrowRight size={16} />
+                  {t.common.viewProjects}
+                  <ArrowRight className="h-4 w-4" />
                 </Link>
+                <button
+                  type="button"
+                  onClick={copyEmail}
+                  className="inline-flex items-center gap-2 rounded-xl border border-dracula-green/25 bg-dracula-green/10 px-5 py-3 text-sm font-semibold text-dracula-green transition-colors hover:border-dracula-green/60"
+                >
+                  {copiedEmail ? t.hero.emailCopied : t.hero.contactMe}
+                  <Copy className="h-4 w-4" />
+                </button>
                 <a
                   href="https://github.com/emanuelVINI01"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold tracking-wider uppercase transition-all duration-300"
-                  style={{
-                    border: '1px solid rgba(189,147,249,0.3)',
-                    color: 'var(--dracula-purple)',
-                  }}
-                  onMouseEnter={(e) => {
-                    const el = e.currentTarget as HTMLElement;
-                    el.style.background = 'rgba(189,147,249,0.08)';
-                    el.style.boxShadow   = '0 0 16px rgba(189,147,249,0.2)';
-                  }}
-                  onMouseLeave={(e) => {
-                    const el = e.currentTarget as HTMLElement;
-                    el.style.background = 'transparent';
-                    el.style.boxShadow   = 'none';
-                  }}
+                  className="inline-flex items-center gap-2 rounded-xl border border-dracula-cyan/25 bg-dracula-cyan/10 px-5 py-3 text-sm font-semibold text-dracula-cyan transition-colors hover:border-dracula-cyan/60"
                 >
-                  GitHub Profile
+                  {t.common.publicGithub}
+                  <ExternalLink className="h-4 w-4" />
                 </a>
-              </motion.div>
+              </div>
 
-              {/* Stats bar */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.7 }}
-                className="flex flex-wrap items-center justify-center gap-8 mt-16"
-              >
-                {STATS.map(({ icon: Icon, label, value }) => (
-                  <div key={label} className="flex flex-col items-center gap-1">
-                    <div className="flex items-center gap-1.5 text-xs" style={{ color: 'var(--dracula-comment)' }}>
-                      <Icon size={12} style={{ color: 'var(--dracula-purple)' }} />
-                      {label}
+              <div className="mt-4 text-sm text-dracula-comment">
+                <span className="text-dracula-fg">{t.hero.emailLabel}:</span>{' '}
+                <span className="select-all text-dracula-green">{contactEmail}</span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.45, delay: 0.1 }}
+              className="relative space-y-4"
+            >
+              <div className="absolute -inset-6 rounded-[32px] bg-dracula-surface/35 blur-2xl" />
+
+              <div className="relative flex items-center justify-between rounded-2xl border border-dracula-card/80 bg-dracula-surface/80 p-5 shadow-2xl shadow-black/25 backdrop-blur">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="https://github.com/emanuelVINI01.png"
+                    alt="emanuelVINI"
+                    width={48}
+                    height={48}
+                    unoptimized
+                    className="rounded-xl border border-dracula-purple/40"
+                  />
+                  <div>
+                    <div className="text-sm font-semibold text-dracula-fg">emanuelVINI</div>
+                    <div className="text-xs text-dracula-comment">emanuelVINI01</div>
+                  </div>
+                </div>
+                <span className="rounded-full border border-dracula-green/25 bg-dracula-green/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-dracula-green">
+                  {t.common.online}
+                </span>
+              </div>
+
+              <div className="relative grid gap-3 sm:grid-cols-3">
+                {stats.map((stat) => (
+                  <div key={stat.label} className="rounded-xl border border-dracula-card/70 bg-dracula-surface/75 p-4 shadow-lg shadow-black/15">
+                    <div className="text-[10px] font-semibold uppercase tracking-widest text-dracula-comment">
+                      {stat.label}
                     </div>
-                    <div className="text-lg font-black" style={{ color: 'var(--foreground)' }}>
-                      {value}
-                    </div>
+                    <div className="mt-2 text-xl font-semibold text-dracula-fg">{stat.value}</div>
+                    <div className="mt-1 text-xs leading-relaxed text-dracula-comment">{stat.detail}</div>
                   </div>
                 ))}
-              </motion.div>
-            </section>
-
-            {/* ── TECH ORBIT ───────────────────────────────────── */}
-            <section className="flex flex-col items-center py-20 px-6">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="text-center mb-10"
-              >
-                <div
-                  className="text-[10px] tracking-widest uppercase mb-3"
-                  style={{ color: 'var(--dracula-comment)' }}
-                >
-                  // Tech Stack
-                </div>
-                <h2 className="text-2xl font-black" style={{ color: 'var(--foreground)' }}>
-                  Orbiting Technologies
-                </h2>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
-                <TechOrbit />
-              </motion.div>
-            </section>
-
-            {/* ── FEATURED PROJECTS ────────────────────────────── */}
-            <section className="max-w-6xl mx-auto px-6 py-20">
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="mb-12 text-center"
-              >
-                <div
-                  className="text-[10px] tracking-widest uppercase mb-3"
-                  style={{ color: 'var(--dracula-comment)' }}
-                >
-                  // Featured
-                </div>
-                <h2 className="text-3xl font-black">
-                  <span style={{ color: 'var(--foreground)' }}>Flagship </span>
-                  <span
-                    style={{
-                      background: 'linear-gradient(90deg, var(--dracula-purple), var(--dracula-cyan))',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}
-                  >
-                    Projects
-                  </span>
-                </h2>
-              </motion.div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
-                {featured.map((project, i) => (
-                  <motion.div
-                    key={project.id}
-                    className="h-full"
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                  >
-                    <ProjectPod
-                      project={project}
-                      onClick={setSelected}
-                      index={i}
-                    />
-                  </motion.div>
-                ))}
               </div>
 
-              <div className="flex justify-center mt-8">
+              <div className="relative rounded-xl border border-dracula-card/70 bg-dracula-surface/75 p-5 shadow-lg shadow-black/15">
+                <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-dracula-fg">
+                  <Terminal className="h-3.5 w-3.5 text-dracula-cyan" />
+                  {t.hero.stackLabel}
+                </div>
+                <div className="grid gap-2 text-sm text-dracula-comment">
+                  <span>{t.hero.stack1}</span>
+                  <span>{t.hero.stack2}</span>
+                  <span>{t.hero.stack3}</span>
+                </div>
+              </div>
+            </motion.div>
+          </section>
+
+          <section id="servicos" className="border-y border-dracula-card/60 bg-dracula-surface/35">
+            <div className="mx-auto max-w-6xl px-6 py-20">
+              <div className="mb-10 max-w-2xl">
+                <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-cyan">
+                  {t.services.label}
+                </div>
+                <h2 className="text-3xl font-semibold tracking-tight text-dracula-fg">
+                  {t.services.title}
+                </h2>
+                <p className="mt-4 text-sm leading-7 text-dracula-comment">
+                  {t.services.subtitle}
+                </p>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-3">
+                {services.map(({ icon: Icon, title, text }) => (
+                  <div
+                    key={title}
+                    className="rounded-xl border border-dracula-card/80 bg-dracula-bg/35 p-6"
+                  >
+                    <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg border border-dracula-purple/25 bg-dracula-purple/10">
+                      <Icon className="h-5 w-5 text-dracula-purple" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-dracula-fg">{title}</h3>
+                    <p className="mt-3 text-sm leading-7 text-dracula-comment">{text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="mx-auto max-w-6xl px-6 py-24">
+            <div className="mb-10 max-w-2xl">
+              <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-orange">
+                {t.journey.label}
+              </div>
+              <h2 className="text-3xl font-semibold tracking-tight text-dracula-fg">
+                {t.journey.title}
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-dracula-comment">
+                {t.journey.subtitle}
+              </p>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-3">
+              {journey.map((item, index) => (
+                <div
+                  key={item.title}
+                  className="relative rounded-xl border border-dracula-card/80 bg-dracula-surface/60 p-6"
+                >
+                  <div className="mb-5 flex items-center justify-between gap-4">
+                    <span className="rounded-full border border-dracula-orange/25 bg-dracula-orange/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-dracula-orange">
+                      {item.label}
+                    </span>
+                    <span className="text-xs text-dracula-comment">0{index + 1}</span>
+                  </div>
+                  <h3 className="text-lg font-semibold text-dracula-fg">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-dracula-comment">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section id="stack" className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-24 lg:grid-cols-[0.95fr_1.05fr]">
+            <div>
+              <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-purple">
+                {t.stack.label}
+              </div>
+              <h2 className="text-3xl font-semibold tracking-tight text-dracula-fg">
+                {t.stack.title}
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-dracula-comment">
+                {t.stack.subtitle}
+              </p>
+              <div className="mt-6 grid gap-3 text-sm text-dracula-comment">
+                <div className="flex items-center gap-3">
+                  <Code2 className="h-4 w-4 text-dracula-cyan shrink-0" />
+                  <span>{t.stack.item1}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <DatabaseZap className="h-4 w-4 text-dracula-green shrink-0" />
+                  <span>{t.stack.item2}</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <GitFork className="h-4 w-4 text-dracula-purple shrink-0" />
+                  <span>{t.stack.item3}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex justify-center overflow-hidden py-4">
+              <div className="scale-[0.78] sm:scale-100">
+                <TechOrbit />
+              </div>
+            </div>
+          </section>
+
+          <section id="projetos" className="border-t border-dracula-card/60 bg-dracula-surface/35">
+            <div className="mx-auto max-w-6xl px-6 py-24">
+              <div className="mb-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+                <div className="max-w-2xl">
+                  <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-green">
+                    {t.projects.label}
+                  </div>
+                  <h2 className="text-3xl font-semibold tracking-tight text-dracula-fg">
+                    {t.projects.title}
+                  </h2>
+                  <p className="mt-4 text-sm leading-7 text-dracula-comment">
+                    {t.projects.subtitle}
+                  </p>
+                </div>
                 <Link
                   href="/projects"
-                  className="flex items-center gap-2 text-sm tracking-wide transition-colors"
-                  style={{ color: 'var(--dracula-comment)' }}
-                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = 'var(--dracula-purple)')}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = 'var(--dracula-comment)')}
+                  className="inline-flex w-fit items-center gap-2 rounded-xl border border-dracula-purple/25 bg-dracula-purple/10 px-4 py-2 text-sm font-semibold text-dracula-purple transition-colors hover:border-dracula-purple/60"
                 >
-                  View all {projects.length} projects <ArrowRight size={14} />
+                  {t.common.viewAll}
+                  <Layers className="h-4 w-4" />
                 </Link>
               </div>
-            </section>
 
-            {/* ── ORIGIN TIMELINE ──────────────────────────────── */}
-            <section className="max-w-6xl mx-auto px-6 pb-32">
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="mb-12"
-              >
-                <div
-                  className="text-[10px] tracking-widest uppercase mb-3"
-                  style={{ color: 'var(--dracula-comment)' }}
-                >
-                  // The Origin
-                </div>
-                <h2 className="text-3xl font-black">
-                  <span style={{ color: 'var(--foreground)' }}>Started at </span>
-                  <span style={{ color: 'var(--dracula-purple)' }}>Age 11</span>
-                </h2>
-                <p className="mt-3 text-sm max-w-md" style={{ color: 'var(--dracula-comment)' }}>
-                  Before frameworks, before TypeScript — just a kid writing Java plugins for
-                  Minecraft servers. Rough code, but real ambition. The start is always here.
-                </p>
-              </motion.div>
-
-              {/* Grid layout - 5 columns on desktop, 1 on mobile */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 justify-center">
-                {origin.map((project, i) => (
-                  <motion.div
+              <div className="grid gap-4 md:grid-cols-3">
+                {featuredProjects.map((project, index) => (
+                  <ProjectPod
                     key={project.id}
-                    className="h-full"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                  >
-                    <ProjectPod
-                      project={project}
-                      onClick={setSelected}
-                      index={i}
-                    />
-                  </motion.div>
+                    project={project}
+                    onClick={setSelectedProject}
+                    index={index}
+                  />
                 ))}
               </div>
-            </section>
+            </div>
+          </section>
+        </main>
 
-            {/* ── MIDWAY TIMELINE ──────────────────────────────── */}
-            <section className="max-w-6xl mx-auto px-6 pb-32">
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="mb-12 text-right"
-              >
-                <div
-                  className="text-[10px] tracking-widest uppercase mb-3"
-                  style={{ color: 'var(--dracula-comment)' }}
-                >
-                  // The Midway Point
-                </div>
-                <h2 className="text-3xl font-black">
-                  <span style={{ color: 'var(--foreground)' }}>Building </span>
-                  <span style={{ color: 'var(--dracula-orange)' }}>Ecosystems</span>
-                </h2>
-                <p className="mt-3 text-sm max-w-md ml-auto" style={{ color: 'var(--dracula-comment)' }}>
-                  Transitioning into complex Java architectures, generic APIs, and large-scale Minecraft network engines.
-                </p>
-              </motion.div>
+        <Footer />
+      </div>
 
-              {/* Grid layout - 5 columns on desktop, 1 on mobile */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 justify-center">
-                {midway.map((project, i) => (
-                  <motion.div
-                    key={project.id}
-                    className="h-full"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
-                  >
-                    <ProjectPod
-                      project={project}
-                      onClick={setSelected}
-                      index={i}
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </section>
-
-            {/* ── RECENT WORKS ──────────────────────────────── */}
-            <section className="max-w-6xl mx-auto px-6 pb-32">
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="mb-12 text-center"
-              >
-                <div
-                  className="text-[10px] tracking-widest uppercase mb-3"
-                  style={{ color: 'var(--dracula-comment)' }}
-                >
-                  // Recent Works
-                </div>
-                <h2 className="text-3xl font-black">
-                  <span style={{ color: 'var(--foreground)' }}>Full-Stack </span>
-                  <span style={{ color: 'var(--dracula-green)' }}>Engineering</span>
-                </h2>
-                <p className="mt-3 text-sm max-w-xl mx-auto" style={{ color: 'var(--dracula-comment)' }}>
-                  Production-ready applications built with modern tools like Next.js, Prisma, and Tailwind. Focused on UX, performance, and scalability.
-                </p>
-              </motion.div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 justify-center">
-                {recent.map((project, i) => (
-                  <motion.div
-                    key={project.id}
-                    className="h-full"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                  >
-                    <ProjectPod
-                      key={project.id}
-                      project={project}
-                      onClick={setSelected}
-                      index={i}
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </section>
-
-            {/* ── FOOTER ───────────────────────────────────────── */}
-            <footer
-              className="border-t text-center py-12 text-xs"
-              style={{ borderColor: 'rgba(255,255,255,0.06)', color: 'var(--dracula-comment)' }}
-            >
-              <span style={{ color: 'var(--dracula-purple)' }}>Emanuel Vini</span>{' '}
-              — Built with Next.js 16 · Framer Motion · Dracula Theme
-              <br />
-              <span className="opacity-40">
-                // System architect since age 11
-              </span>
-            </footer>
-          </motion.div>
-        )}
-      </AnimatePresence>
-
-      <ProjectModal project={selectedProject} onClose={() => setSelected(null)} />
+      <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
     </>
   );
 }

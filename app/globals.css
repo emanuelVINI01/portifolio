@@ -1,238 +1,156 @@
 @import "tailwindcss";
 
-/* ─── Dracula Design System ─────────────────────────────── */
 :root {
-  --dracula-bg:     #0d1117;
-  --dracula-card:   #161b22;
-  --dracula-border: #21262d;
+  --dracula-bg: #282a36;
+  --dracula-surface: #343746;
+  --dracula-card: #44475a;
+  --dracula-border: #44475a;
+  --dracula-fg: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
   --dracula-purple: #bd93f9;
-  --dracula-cyan:   #8be9fd;
-  --dracula-green:  #50fa7b;
-  --dracula-pink:   #ff79c6;
-  --dracula-red:    #ff5555;
+  --dracula-green: #50fa7b;
+  --dracula-pink: #ff79c6;
+  --dracula-red: #ff5555;
   --dracula-orange: #ffb86c;
   --dracula-yellow: #f1fa8c;
-  --dracula-comment:#6272a4;
 
   --background: var(--dracula-bg);
-  --foreground: #f8f8f2;
+  --foreground: var(--dracula-fg);
 }
 
 @theme inline {
   --color-background: var(--dracula-bg);
-  --color-foreground: var(--foreground);
+  --color-foreground: var(--dracula-fg);
+  --color-dracula-bg: var(--dracula-bg);
+  --color-dracula-surface: var(--dracula-surface);
+  --color-dracula-card: var(--dracula-card);
+  --color-dracula-border: var(--dracula-border);
+  --color-dracula-fg: var(--dracula-fg);
+  --color-dracula-comment: var(--dracula-comment);
+  --color-dracula-cyan: var(--dracula-cyan);
+  --color-dracula-purple: var(--dracula-purple);
+  --color-dracula-green: var(--dracula-green);
+  --color-dracula-pink: var(--dracula-pink);
+  --color-dracula-red: var(--dracula-red);
+  --color-dracula-orange: var(--dracula-orange);
+  --color-dracula-yellow: var(--dracula-yellow);
   --font-mono: var(--font-jetbrains), var(--font-fira), monospace;
-  --color-dracula-bg:     #0d1117;
-  --color-dracula-card:   #161b22;
-  --color-dracula-purple: #bd93f9;
-  --color-dracula-cyan:   #8be9fd;
-  --color-dracula-green:  #50fa7b;
-  --color-dracula-pink:   #ff79c6;
-  --color-dracula-red:    #ff5555;
-  --color-dracula-orange: #ffb86c;
-  --color-dracula-comment:#6272a4;
+  --font-sans: var(--font-jetbrains), var(--font-fira), monospace;
 }
 
-/* ─── Base ──────────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--dracula-bg);
-  color: var(--foreground);
-  font-family: var(--font-jetbrains), var(--font-fira), monospace;
   min-height: 100dvh;
   overflow-x: hidden;
+  background:
+    radial-gradient(circle at 16% 0%, rgba(189, 147, 249, 0.2), transparent 30rem),
+    radial-gradient(circle at 88% 10%, rgba(139, 233, 253, 0.16), transparent 28rem),
+    radial-gradient(circle at 50% 90%, rgba(80, 250, 123, 0.08), transparent 34rem),
+    linear-gradient(180deg, #282a36 0%, #21222c 100%);
+  color: var(--dracula-fg);
+  font-family: var(--font-jetbrains), var(--font-fira), monospace;
   position: relative;
 }
 
-/* ─── Noise Grain Overlay ───────────────────────────────── */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.035;
+  opacity: 0.032;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 256px 256px;
 }
 
-/* ─── Scanline Effect ───────────────────────────────────── */
-body::after {
-  content: '';
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  background: linear-gradient(transparent, rgba(189, 147, 249, 0.04) 50%, transparent);
-  animation: scanline 8s linear infinite;
-  pointer-events: none;
-  z-index: 1;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-@keyframes scanline {
-  0%   { top: -40px; }
-  100% { top: 100vh; }
+::selection {
+  background: var(--dracula-purple);
+  color: var(--dracula-bg);
 }
 
-/* ─── Border Beam Animation ─────────────────────────────── */
-@keyframes border-beam {
-  0%   { background-position: 0% 0%; }
-  100% { background-position: 300% 0%; }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-.border-beam {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-}
-.border-beam::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    transparent 30%,
-    var(--beam-color, var(--dracula-purple)) 50%,
-    transparent 70%,
-    transparent 100%
-  );
-  background-size: 300% 100%;
-  animation: border-beam 3s linear infinite;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
+::-webkit-scrollbar-track {
+  background: var(--dracula-bg);
 }
 
-/* ─── Glitch Effect ─────────────────────────────────────── */
-@keyframes glitch-1 {
-  0%, 100% { clip-path: inset(0 0 95% 0); transform: translate(-2px, 0); }
-  20%       { clip-path: inset(30% 0 50% 0); transform: translate(2px, 0); }
-  40%       { clip-path: inset(70% 0 10% 0); transform: translate(-1px, 0); }
-  60%       { clip-path: inset(10% 0 80% 0); transform: translate(1px, 0); }
-  80%       { clip-path: inset(50% 0 30% 0); transform: translate(-2px, 0); }
-}
-@keyframes glitch-2 {
-  0%, 100% { clip-path: inset(80% 0 5% 0);  transform: translate(2px, 0); }
-  20%       { clip-path: inset(20% 0 60% 0); transform: translate(-2px, 0); }
-  40%       { clip-path: inset(60% 0 20% 0); transform: translate(1px, 0); }
-  60%       { clip-path: inset(5% 0 70% 0);  transform: translate(-1px, 0); }
-  80%       { clip-path: inset(45% 0 40% 0); transform: translate(2px, 0); }
+::-webkit-scrollbar-thumb {
+  background: var(--dracula-card);
+  border-radius: 999px;
 }
 
-.glitch-title {
-  position: relative;
-}
-.glitch-title::before,
-.glitch-title::after {
-  content: attr(data-text);
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  transition: opacity 0.1s;
-}
-.glitch-title:hover::before {
-  opacity: 0.8;
-  color: var(--dracula-cyan);
-  animation: glitch-1 0.5s steps(1) infinite;
-}
-.glitch-title:hover::after {
-  opacity: 0.8;
-  color: var(--dracula-pink);
-  animation: glitch-2 0.5s steps(1) infinite;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dracula-comment);
 }
 
-/* ─── Glassmorphism ─────────────────────────────────────── */
 .glass {
-  background: rgba(22, 27, 34, 0.6);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(36, 39, 54, 0.68);
+  border: 1px solid rgba(68, 71, 90, 0.68);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
-/* ─── HUD corners ───────────────────────────────────────── */
-.hud-corner {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  border-color: var(--dracula-comment);
-  border-style: solid;
-  opacity: 0.5;
-}
-.hud-corner-tl { top:6px; left:6px; border-width:1px 0 0 1px; }
-.hud-corner-tr { top:6px; right:6px; border-width:1px 1px 0 0; }
-.hud-corner-bl { bottom:6px; left:6px; border-width:0 0 1px 1px; }
-.hud-corner-br { bottom:6px; right:6px; border-width:0 1px 1px 0; }
-
-/* ─── Scrollbar ─────────────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--dracula-bg); }
-::-webkit-scrollbar-thumb { background: var(--dracula-comment); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--dracula-purple); }
-
-/* ─── Links ─────────────────────────────────────────────── */
-a { color: inherit; text-decoration: none; }
-
-/* ─── Utility animations ─────────────────────────────────── */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 8px var(--glow-color, var(--dracula-purple)); }
-  50%       { box-shadow: 0 0 20px var(--glow-color, var(--dracula-purple)), 0 0 40px var(--glow-color, var(--dracula-purple)); }
+  0%, 100% {
+    box-shadow: 0 0 8px var(--glow-color, var(--dracula-purple));
+  }
+  50% {
+    box-shadow:
+      0 0 18px var(--glow-color, var(--dracula-purple)),
+      0 0 36px var(--glow-color, var(--dracula-purple));
+  }
 }
+
 @keyframes blink {
-  0%,100% { opacity:1; } 50% { opacity:0; }
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
-@keyframes float-up {
-  0%,100% { transform: translateY(0px); }
-  50%      { transform: translateY(-6px); }
-}
+
 @keyframes orbit {
-  from { transform: rotate(0deg) translateX(var(--orbit-r, 90px)) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(var(--orbit-r, 90px)) rotate(-360deg); }
-}
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-/* CRT / vintage effect for Origin section */
-.crt-overlay {
-  position: relative;
-  overflow: hidden;
-  filter: sepia(0.2) brightness(0.85) contrast(1.1);
-}
-.crt-overlay::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0,0,0,0.18) 2px,
-    rgba(0,0,0,0.18) 4px
-  );
-  pointer-events: none;
+  from {
+    transform: rotate(0deg) translateX(var(--orbit-r, 90px)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--orbit-r, 90px)) rotate(-360deg);
+  }
 }
 
-/* ─── Wave animation for search bar ─────────────────────── */
 @keyframes wave-ring {
-  0%   { transform: scale(1); opacity: 0.6; }
-  100% { transform: scale(2.2); opacity: 0; }
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.15);
+  }
 }
+
 .search-wave {
   position: absolute;
   inset: 0;
-  border-radius: inherit;
+  border-radius: 12px;
   border: 1px solid var(--dracula-cyan);
   animation: wave-ring 1.2s ease-out forwards;
   pointer-events: none;

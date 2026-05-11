@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const LINES = [
-  '> BIOS v2.6.1 (C) Emanuel Systems',
+  '> BIOS v2.6.1 (C) emanuelVINI systems',
   '[INITIALIZING CORE]...',
   '[LOADING MODULES].........',
   '[LOADING PROJECTS]...',
   '[AUTH] USER: EMANUEL_VINI',
-  '[STATUS] READY — ALL SYSTEMS NOMINAL',
+  '[STATUS] READY - ALL SYSTEMS NOMINAL',
 ];
 
 export default function BootSequence({ onDone }: { onDone: () => void }) {
@@ -48,7 +48,7 @@ export default function BootSequence({ onDone }: { onDone: () => void }) {
               className="text-xs mb-4 font-bold tracking-widest"
               style={{ color: 'var(--dracula-comment)' }}
             >
-              SYSTEM BOOT — MARCH 2026
+              SYSTEM BOOT - MARCH 2026
             </div>
             <div className="space-y-1">
               {visibleLines.map((line, idx) => (

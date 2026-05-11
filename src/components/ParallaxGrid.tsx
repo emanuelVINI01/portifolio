@@ -33,17 +33,18 @@ export default function ParallaxGrid() {
         style={{
           transition: 'transform 0.12s ease-out',
           backgroundImage: `
-            linear-gradient(rgba(189,147,249,0.05) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(189,147,249,0.05) 1px, transparent 1px)
+            linear-gradient(rgba(139,233,253,0.035) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(189,147,249,0.04) 1px, transparent 1px)
           `,
-          backgroundSize: '60px 60px',
+          backgroundSize: '72px 72px',
         }}
       />
       {/* Radial fade at edges */}
       <div
         className="absolute inset-0"
         style={{
-          background: 'radial-gradient(ellipse 80% 60% at 50% 50%, transparent 20%, var(--dracula-bg) 80%)',
+          background:
+            'radial-gradient(ellipse 80% 55% at 50% 40%, transparent 0%, rgba(40,42,54,0.66) 55%, var(--dracula-bg) 88%)',
         }}
       />
     </div>

@@ -1,10 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { type categories } from '@/data/projects';
 
 interface FilterSwitchProps {
-  options: typeof categories;
+  options: { key: string; label: string; color: string }[];
   value: string;
   onChange: (key: string) => void;
 }
@@ -14,8 +13,8 @@ export default function FilterSwitch({ options, value, onChange }: FilterSwitchP
     <div
       className="flex flex-wrap items-center gap-2 p-1.5 rounded-2xl"
       style={{
-        background: 'rgba(22,27,34,0.8)',
-        border: '1px solid rgba(255,255,255,0.06)',
+        background: 'rgba(36,39,54,0.82)',
+        border: '1px solid rgba(68,71,90,0.7)',
         backdropFilter: 'blur(16px)',
       }}
     >

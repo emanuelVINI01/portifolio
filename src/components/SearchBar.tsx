@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useRef, useId } from 'react';
-import { Search } from 'lucide-react';
+import { Search, X } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface SearchBarProps {
   value: string;
@@ -13,6 +14,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
   const [waves, setWaves] = useState<number[]>([]);
   const counterRef = useRef(0);
   const id = useId();
+  const { language } = useLanguage();
 
   const addWave = () => {
     const key = counterRef.current++;
@@ -37,7 +39,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
       <div
         className="relative flex items-center rounded-xl border transition-all duration-300"
         style={{
-          background: 'rgba(22,27,34,0.8)',
+          background: 'rgba(36,39,54,0.82)',
           backdropFilter: 'blur(16px)',
           borderColor: value ? 'var(--dracula-cyan)' : 'rgba(255,255,255,0.08)',
           boxShadow: value ? '0 0 20px rgba(139, 233, 253, 0.15)' : 'none',
@@ -66,13 +68,15 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
         />
         {value && (
           <button
+            type="button"
             onClick={() => onChange('')}
-            className="absolute right-4 text-xs transition-colors"
+            className="absolute right-4 rounded-md p-1 transition-colors"
             style={{ color: 'var(--dracula-comment)' }}
             onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = 'var(--dracula-red)')}
             onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = 'var(--dracula-comment)')}
+            aria-label={language === 'pt' ? 'Limpar busca' : 'Clear search'}
           >
-            ✕
+            <X size={14} />
           </button>
         )}
       </div>
