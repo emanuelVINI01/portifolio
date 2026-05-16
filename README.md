@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# emanuelVINI Portfolio
+
+Interactive portfolio for Emanuel Vini, a full-stack developer focused on web products, resilient APIs, transactional systems, automation, and polished product interfaces.
+
+The site is built as a technical evaluation surface: recruiters and engineering teams can scan the story, inspect project evidence, filter portfolio work, and open project runbooks with command-style code blocks.
+
+## Highlights
+
+- Proof-driven landing page with GitHub-backed career milestones.
+- Animated project cards, spotlight projects, filters, search, and modal details.
+- Command-terminal UI for audit-style code snippets and local runbooks.
+- Bilingual content with Portuguese and English dictionaries.
+- Motion system powered by Framer Motion and responsive Tailwind CSS layouts.
+- Next.js App Router structure with reusable components and typed project data.
+
+## Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Lucide React
+- React Icons
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Quality Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+Use `npm run lint` before committing UI changes. Use `npm run build` when changing shared components, project data, layout metadata, or language dictionaries.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```txt
+app/
+  page.tsx              Main landing page
+  projects/page.tsx     Searchable project catalog
+src/components/         UI, motion, navigation, project, and terminal components
+src/data/projects.ts    Typed project catalog in PT/EN
+src/i18n/               Dictionaries used by the language provider
+public/                 Static assets
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Content Model
 
-## Deploy on Vercel
+Portfolio projects live in `src/data/projects.ts`. Each project includes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- short and long descriptions
+- category, badges, stack, and year
+- GitHub and live URLs
+- technical highlights
+- colors used by the UI glow system
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Localized interface copy lives in `src/i18n/dictionaries.ts`. Keep the `pt` and `en` dictionaries aligned because the English dictionary is typed from the Portuguese shape.
+
+## Description
+
+This portfolio presents Emanuel Vini as a product-minded full-stack developer. It connects early Java/Kotlin and infrastructure experience with current TypeScript, Next.js, Prisma, Fastify, PostgreSQL, and AI-assisted engineering work. The interface is intentionally dark, command-oriented, and proof-focused so technical reviewers can evaluate both the projects and the thinking behind them.

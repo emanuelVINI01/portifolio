@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import { AnimatePresence, motion } from 'framer-motion';
 import { LayoutGrid, MousePointerClick, SearchX, Sparkles } from 'lucide-react';
 
+import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandTerminal';
 import Footer from '@/components/Footer';
 import FilterSwitch from '@/components/FilterSwitch';
 import Navbar from '@/components/Navbar';
@@ -58,6 +59,33 @@ export default function ProjectsPage() {
       .filter(Boolean) as Project[];
   }, [projects]);
 
+  const projectCommandLines: CommandTerminalLine[] = [
+    {
+      kind: 'command',
+      value: `portfolio projects --category ${activeCategory} --query "${query || '*'}"`,
+    },
+    {
+      kind: 'output',
+      tone: 'success',
+      value:
+        language === 'pt'
+          ? `${filtered.length} projetos prontos para auditoria tecnica`
+          : `${filtered.length} projects ready for technical review`,
+    },
+    {
+      kind: 'command',
+      value: 'portfolio spotlight --rank architecture,ux,proof',
+    },
+    {
+      kind: 'output',
+      tone: 'info',
+      value:
+        language === 'pt'
+          ? 'priorizando ledger transacional, ferramentas dev e produtos web'
+          : 'prioritizing transactional ledger, dev tools, and web products',
+    },
+  ];
+
   return (
     <>
       <ParallaxGrid />
@@ -67,22 +95,34 @@ export default function ProjectsPage() {
 
         <main className="pb-24 md:pb-0">
           <section className="mx-auto max-w-6xl px-4 pb-8 pt-20 sm:px-6 sm:pb-12 sm:pt-32">
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="max-w-3xl"
-            >
-              <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-cyan">
-                {t.nav.projects}
-              </div>
-              <h1 className="text-3xl font-semibold tracking-tight text-dracula-fg sm:text-5xl">
-                {t.projects.title}
-              </h1>
-              <p className="mt-5 text-sm leading-7 text-dracula-comment sm:text-base">
-                {t.projects.subtitle}
-              </p>
-            </motion.div>
+            <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="max-w-3xl"
+              >
+                <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-cyan">
+                  {t.nav.projects}
+                </div>
+                <h1 className="text-3xl font-semibold tracking-tight text-dracula-fg sm:text-5xl">
+                  {t.projects.title}
+                </h1>
+                <p className="mt-5 text-sm leading-7 text-dracula-comment sm:text-base">
+                  {t.projects.subtitle}
+                </p>
+              </motion.div>
+
+              <CommandTerminal
+                title={language === 'pt' ? 'portfolio://project-index' : 'portfolio://project-index'}
+                subtitle={language === 'pt' ? 'catalogo filtravel com sinais tecnicos' : 'filterable catalog with technical signals'}
+                badge={language === 'pt' ? 'projetos' : 'projects'}
+                status={language === 'pt' ? 'catalogo sincronizado' : 'catalog synced'}
+                lines={projectCommandLines}
+                accent="var(--dracula-cyan)"
+                dense
+              />
+            </div>
           </section>
 
           <section className="mx-auto max-w-6xl px-4 pb-12 sm:px-6 sm:pb-16">

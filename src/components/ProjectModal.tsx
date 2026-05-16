@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, X } from 'lucide-react';
+import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandTerminal';
 import { type Project } from '@/data/projects';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -13,6 +14,23 @@ interface ProjectModalProps {
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const { language } = useLanguage();
+  const repoName = project?.githubUrl.split('/').filter(Boolean).pop() ?? 'project';
+  const runbookLines: CommandTerminalLine[] = project
+    ? [
+        { kind: 'command', value: `git clone ${project.githubUrl}.git` },
+        { kind: 'command', value: `cd ${repoName}` },
+        { kind: 'command', value: 'npm install' },
+        { kind: 'command', value: 'npm run dev' },
+        {
+          kind: 'output',
+          tone: 'success',
+          value:
+            language === 'pt'
+              ? 'ambiente local pronto para revisar arquitetura, UX e contratos'
+              : 'local environment ready to review architecture, UX, and contracts',
+        },
+      ]
+    : [];
 
   useEffect(() => {
     const handleKey = (event: KeyboardEvent) => {
@@ -22,6 +40,17 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     document.addEventListener('keydown', handleKey);
     return () => document.removeEventListener('keydown', handleKey);
   }, [onClose]);
+
+  useEffect(() => {
+    if (!project) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [project]);
 
   return (
     <AnimatePresence>
@@ -92,6 +121,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               </div>
 
               <p className="text-sm leading-relaxed text-dracula-comment">{project.longDesc}</p>
+
+              <CommandTerminal
+                title={language === 'pt' ? 'runbook do projeto' : 'project runbook'}
+                subtitle={language === 'pt' ? 'comandos base para auditoria local' : 'base commands for local audit'}
+                badge={project.year ? String(project.year) : undefined}
+                status={language === 'pt' ? 'comandos copiaveis' : 'copy-ready commands'}
+                lines={runbookLines}
+                accent={project.color}
+                dense
+              />
 
               <div>
                 <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-fg">

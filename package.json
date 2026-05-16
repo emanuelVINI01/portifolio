@@ -1,6 +1,7 @@
 {
   "name": "portifolio",
   "version": "0.1.0",
+  "description": "Interactive full-stack portfolio for Emanuel Vini, built with Next.js, Tailwind CSS, Framer Motion, and proof-driven project storytelling.",
   "private": true,
   "scripts": {
     "dev": "next dev",

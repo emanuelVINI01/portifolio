@@ -36,6 +36,7 @@ import {
 } from 'react-icons/si';
 
 import Footer from '@/components/Footer';
+import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandTerminal';
 import Navbar from '@/components/Navbar';
 import ProjectModal from '@/components/ProjectModal';
 import ProjectPod from '@/components/ProjectPod';
@@ -96,6 +97,55 @@ export default function HomePage() {
   const commandPowerIcons = [DatabaseZap, Terminal, ShieldCheck, WalletCards];
   const timelineIcons = [Code2, GitCommitHorizontal, Server, Bot, DatabaseZap, BrainCircuit];
   const glossaryIcons = [Code2, Cpu, Server, WalletCards, Bot];
+  const heroCommandLines: CommandTerminalLine[] = [
+    {
+      kind: 'command',
+      value: 'npm run lint',
+    },
+    {
+      kind: 'output',
+      tone: 'success',
+      value:
+        language === 'pt'
+          ? 'interface validada: motion, responsivo, filtros e modal de projetos'
+          : 'interface validated: motion, responsive layout, filters, and project modal',
+    },
+    {
+      kind: 'command',
+      value: 'npm run build',
+    },
+    {
+      kind: 'output',
+      tone: 'info',
+      value:
+        language === 'pt'
+          ? 'Next.js 16 + React 19 + Tailwind CSS entregando portfolio auditável'
+          : 'Next.js 16 + React 19 + Tailwind CSS shipping an auditable portfolio',
+    },
+    {
+      kind: 'command',
+      value: 'open /projects --spotlight transactional-wallet-ledger',
+    },
+    {
+      kind: 'output',
+      tone: 'warning',
+      value:
+        language === 'pt'
+          ? 'prioridade: consistência ACID, APIs, dashboards e UX de produto'
+          : 'priority: ACID consistency, APIs, dashboards, and product UX',
+    },
+  ];
+  const opsCommandLines: CommandTerminalLine[] = t.story.commandCenter.terminal.map((line) => {
+    if (line.startsWith('$')) {
+      return { kind: 'command', value: line.replace(/^\$\s*/, '') };
+    }
+
+    return {
+      kind: 'output',
+      tone: line.includes('recovered') || line.includes('recuperado') ? 'success' : 'warning',
+      value: line,
+    };
+  });
 
   const stats = [
     { label: t.hero.statsLabel1, value: '37', detail: t.hero.statsDetail1 },
@@ -256,17 +306,15 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <div className="relative rounded-xl border border-dracula-card/70 bg-dracula-surface/75 p-4 shadow-lg shadow-black/15 sm:p-5">
-                <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-dracula-fg">
-                  <Terminal className="h-3.5 w-3.5 text-dracula-cyan" />
-                  {t.hero.stackLabel}
-                </div>
-                <div className="grid gap-2 text-sm text-dracula-comment">
-                  <span>{t.hero.stack1}</span>
-                  <span>{t.hero.stack2}</span>
-                  <span>{t.hero.stack3}</span>
-                </div>
-              </div>
+              <CommandTerminal
+                title={t.hero.commandTitle}
+                subtitle={t.hero.commandSubtitle}
+                badge={t.hero.stackLabel}
+                status={t.hero.commandStatus}
+                lines={heroCommandLines}
+                accent="var(--dracula-purple)"
+                className="relative"
+              />
             </motion.div>
           </section>
 
@@ -379,42 +427,14 @@ export default function HomePage() {
                   </div>
                 </motion.div>
 
-                <motion.div
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-80px' }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  className="relative overflow-hidden rounded-xl border border-dracula-card/80 bg-dracula-surface/85 shadow-2xl shadow-black/25"
-                >
-                  <div className="flex items-center justify-between border-b border-dracula-card/70 px-4 py-3">
-                    <div className="flex items-center gap-2">
-                      <span className="h-2.5 w-2.5 rounded-full bg-dracula-red" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-dracula-orange" />
-                      <span className="h-2.5 w-2.5 rounded-full bg-dracula-green" />
-                    </div>
-                    <div className="text-[10px] font-semibold uppercase tracking-widest text-dracula-comment">
-                      discord://infra-command-center
-                    </div>
-                  </div>
-                  <div className="space-y-3 p-5 font-mono text-xs leading-6">
-                    {t.story.commandCenter.terminal.map((line, index) => (
-                      <motion.div
-                        key={line}
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.15 + index * 0.08 }}
-                        className={line.startsWith('$') ? 'text-dracula-green' : 'text-dracula-comment'}
-                      >
-                        {line}
-                      </motion.div>
-                    ))}
-                    <div className="inline-flex items-center gap-2 text-dracula-cyan">
-                      <span>awaiting_next_event</span>
-                      <span className="h-4 w-2 animate-[blink_1s_steps(2)_infinite] bg-dracula-cyan" />
-                    </div>
-                  </div>
-                </motion.div>
+                <CommandTerminal
+                  title="discord://infra-command-center"
+                  subtitle={t.story.commandCenter.eyebrow}
+                  badge="ChatOps"
+                  status={language === 'pt' ? 'incidente estabilizado' : 'incident stabilized'}
+                  lines={opsCommandLines}
+                  accent="var(--dracula-green)"
+                />
               </div>
 
               <div className="mt-12 grid gap-4 md:grid-cols-3">

@@ -47,6 +47,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
   const [hovered, setHovered] = useState(false);
   const { t } = useLanguage();
   const isElevated = hovered || spotlight;
+  const openProject = () => onClick(project);
 
   return (
     <motion.article
@@ -56,9 +57,20 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
       exit={{ opacity: 0, y: -10, scale: 0.98 }}
       transition={{ duration: 0.34, delay: index * 0.04, ease: 'easeOut' }}
       whileHover={{ y: spotlight ? -10 : -7, scale: spotlight ? 1.015 : 1.01 }}
-      onClick={() => onClick(project)}
+      onClick={openProject}
+      onKeyDown={(event) => {
+        if (event.target !== event.currentTarget) return;
+
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openProject();
+        }
+      }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
+      role="button"
+      tabIndex={0}
+      aria-label={`${t.common.viewProject}: ${project.name}`}
       className={`group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-xl border p-4 transition-colors sm:p-5 ${
         spotlight ? 'lg:-mt-5 lg:mb-5' : ''
       }`}
@@ -169,7 +181,15 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
       </div>
 
       <div className="mt-auto flex flex-col gap-3 border-t border-dracula-card/60 pt-4 text-xs sm:flex-row sm:items-center sm:justify-between">
-        <span className="font-medium text-dracula-fg">{t.common.viewProject}</span>
+        <motion.span
+          animate={{ color: isElevated ? project.color : 'var(--dracula-fg)' }}
+          className="inline-flex items-center gap-1.5 font-medium"
+        >
+          {t.common.viewProject}
+          <motion.span animate={{ x: isElevated ? 3 : 0 }} aria-hidden="true">
+            -&gt;
+          </motion.span>
+        </motion.span>
         <div className="flex flex-wrap items-center gap-3">
           {project.liveUrl && (
             <a

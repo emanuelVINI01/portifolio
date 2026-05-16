@@ -15,17 +15,20 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://emanuelvini.dev"),
-  title: "emanuelVINI | Full-stack Developer",
+  title: {
+    default: "emanuelVINI | Full-stack Developer Portfolio",
+    template: "%s | emanuelVINI",
+  },
   description:
-    "Portfolio dark de emanuelVINI, desenvolvedor full-stack focado em produtos web, APIs e sistemas transacionais com TypeScript, Next.js, Fastify e Prisma.",
+    "Portfolio interativo de Emanuel Vini, desenvolvedor full-stack focado em produtos web, APIs resilientes, sistemas transacionais, automação e interfaces com Framer Motion.",
   icons: {
     icon: "https://github.com/emanuelVINI01.png",
     apple: "https://github.com/emanuelVINI01.png",
   },
   openGraph: {
-    title: "emanuelVINI | Full-stack Developer",
+    title: "emanuelVINI | Full-stack Developer Portfolio",
     description:
-      "Produtos web, APIs e sistemas transacionais com TypeScript, Next.js, Fastify e Prisma.",
+      "Produtos web, APIs resilientes, sistemas transacionais, automação e interfaces com Framer Motion.",
     url: "https://emanuelvini.dev",
     siteName: "emanuelVINI",
     images: ["https://github.com/emanuelVINI01.png"],

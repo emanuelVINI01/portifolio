@@ -163,3 +163,29 @@ a {
   animation: wave-ring 1.2s ease-out forwards;
   pointer-events: none;
 }
+
+.command-terminal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      color-mix(in srgb, var(--terminal-accent, var(--dracula-cyan)) 11%, transparent) 50%,
+      transparent 100%
+    );
+  opacity: 0.18;
+  transform: translateY(-100%);
+  animation: terminal-scan 5.5s ease-in-out infinite;
+}
+
+@keyframes terminal-scan {
+  0%, 22% {
+    transform: translateY(-100%);
+  }
+  58%, 100% {
+    transform: translateY(100%);
+  }
+}
