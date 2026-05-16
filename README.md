@@ -1,70 +1,29 @@
-# emanuelVINI Portfolio
+# portifolio
 
-Interactive portfolio for Emanuel Vini, a full-stack developer focused on web products, resilient APIs, transactional systems, automation, and polished product interfaces.
+Repositório preservado como parte do histórico técnico público do desenvolvedor.
 
-The site is built as a technical evaluation surface: recruiters and engineering teams can scan the story, inspect project evidence, filter portfolio work, and open project runbooks with command-style code blocks.
+## Leitura arquitetural
 
-## Highlights
+Este repositório pertence à fase moderna do portfólio: projetos com foco em produto, API, dados, automação ou infraestrutura. A leitura aqui é pragmática: entender as fronteiras do sistema, identificar dependências reais e documentar como a aplicação deve ser operada.
 
-- Proof-driven landing page with GitHub-backed career milestones.
-- Animated project cards, spotlight projects, filters, search, and modal details.
-- Command-terminal UI for audit-style code snippets and local runbooks.
-- Bilingual content with Portuguese and English dictionaries.
-- Motion system powered by Framer Motion and responsive Tailwind CSS layouts.
-- Next.js App Router structure with reusable components and typed project data.
+## Stack identificada
 
-## Stack
+Bukkit/Spigot, BungeeCord, Framer Motion, Ledger, MongoDB, Next.js, Node.js, Pterodactyl, React, Redis, SSE, Tailwind CSS, Transactions, TypeScript, Velocity
 
-- Next.js 16
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- Framer Motion
-- Lucide React
-- React Icons
+## Pontos de engenharia
 
-## Getting Started
+- Estrutura orientada a manutenção, com dependências explícitas em manifests quando presentes.
+- Separação entre código de aplicação, configuração e scripts de execução conforme a organização do repositório.
+- Atenção a consistência de dados, validação de entrada, autenticação e observabilidade quando a stack indica esses domínios.
+- Preferência por fundamentos estáveis em vez de complexidade acidental.
 
-```bash
-npm install
-npm run dev
-```
+## Evidências observadas
 
-Open `http://localhost:3000`.
+- package.json declara o pacote `portifolio`.
+- scripts disponíveis: `build`, `dev`, `lint`, `start`.
+- diretório `app/` sugere Next.js App Router ou estrutura web moderna.
+- diretório `src/` concentra a implementação principal.
 
-## Quality Commands
+## Operação
 
-```bash
-npm run lint
-npm run build
-```
-
-Use `npm run lint` before committing UI changes. Use `npm run build` when changing shared components, project data, layout metadata, or language dictionaries.
-
-## Project Structure
-
-```txt
-app/
-  page.tsx              Main landing page
-  projects/page.tsx     Searchable project catalog
-src/components/         UI, motion, navigation, project, and terminal components
-src/data/projects.ts    Typed project catalog in PT/EN
-src/i18n/               Dictionaries used by the language provider
-public/                 Static assets
-```
-
-## Content Model
-
-Portfolio projects live in `src/data/projects.ts`. Each project includes:
-
-- short and long descriptions
-- category, badges, stack, and year
-- GitHub and live URLs
-- technical highlights
-- colors used by the UI glow system
-
-Localized interface copy lives in `src/i18n/dictionaries.ts`. Keep the `pt` and `en` dictionaries aligned because the English dictionary is typed from the Portuguese shape.
-
-## Description
-
-This portfolio presents Emanuel Vini as a product-minded full-stack developer. It connects early Java/Kotlin and infrastructure experience with current TypeScript, Next.js, Prisma, Fastify, PostgreSQL, and AI-assisted engineering work. The interface is intentionally dark, command-oriented, and proof-focused so technical reviewers can evaluate both the projects and the thinking behind them.
+Revise os scripts do projeto, variáveis de ambiente e serviços externos antes de rodar em produção. Quando houver banco, filas, cache, storage ou autenticação, trate esses componentes como parte do sistema e não como dependências opcionais.
