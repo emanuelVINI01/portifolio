@@ -6,7 +6,7 @@
   --dracula-card: #44475a;
   --dracula-border: #44475a;
   --dracula-fg: #f8f8f2;
-  --dracula-comment: #6272a4;
+  --dracula-comment: #a7b0c8;
   --dracula-cyan: #8be9fd;
   --dracula-purple: #bd93f9;
   --dracula-green: #50fa7b;
@@ -50,11 +50,7 @@ html {
 body {
   min-height: 100dvh;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 16% 0%, rgba(189, 147, 249, 0.2), transparent 30rem),
-    radial-gradient(circle at 88% 10%, rgba(139, 233, 253, 0.16), transparent 28rem),
-    radial-gradient(circle at 50% 90%, rgba(80, 250, 123, 0.08), transparent 34rem),
-    linear-gradient(180deg, #282a36 0%, #21222c 100%);
+  background: var(--dracula-bg);
   color: var(--dracula-fg);
   font-family: var(--font-jetbrains), var(--font-fira), monospace;
   position: relative;
@@ -105,6 +101,18 @@ a {
   border: 1px solid rgba(68, 71, 90, 0.68);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+}
+
+.story-page-background {
+  background: var(--dracula-bg);
+}
+
+.story-section-flat {
+  background: transparent;
+}
+
+.story-section-flat-deep {
+  background: transparent;
 }
 
 @keyframes pulse-glow {

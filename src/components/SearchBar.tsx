@@ -25,7 +25,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto">
+    <div className="relative mx-auto w-full max-w-lg">
       {/* Wave rings */}
       {waves.map((k) => (
         <span
@@ -63,7 +63,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
             addWave();
           }}
           placeholder={placeholder}
-          className="w-full bg-transparent py-3 pl-11 pr-4 text-sm outline-none placeholder:opacity-40 font-mono"
+          className="w-full bg-transparent py-3 pl-11 pr-11 font-mono text-sm outline-none placeholder:opacity-40"
           style={{ color: 'var(--foreground)' }}
         />
         {value && (

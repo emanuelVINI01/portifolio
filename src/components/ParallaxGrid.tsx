@@ -24,27 +24,25 @@ export default function ParallaxGrid() {
 
   return (
     <div
-      className="fixed inset-0 overflow-hidden pointer-events-none z-0"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden bg-dracula-bg"
       style={{ transformStyle: 'preserve-3d' }}
     >
       <div
         ref={gridRef}
-        className="absolute inset-[-20%]"
+        className="absolute inset-[-20%] opacity-55"
         style={{
           transition: 'transform 0.12s ease-out',
           backgroundImage: `
-            linear-gradient(rgba(139,233,253,0.035) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(189,147,249,0.04) 1px, transparent 1px)
+            linear-gradient(rgba(139,233,253,0.028) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(139,233,253,0.028) 1px, transparent 1px)
           `,
           backgroundSize: '72px 72px',
         }}
       />
-      {/* Radial fade at edges */}
       <div
         className="absolute inset-0"
         style={{
-          background:
-            'radial-gradient(ellipse 80% 55% at 50% 40%, transparent 0%, rgba(40,42,54,0.66) 55%, var(--dracula-bg) 88%)',
+          background: 'rgba(40,42,54,0.58)',
         }}
       />
     </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import {
   BarChart3,
   CheckCircle2,
@@ -40,34 +40,68 @@ interface ProjectPodProps {
   project: Project;
   onClick: (p: Project) => void;
   index?: number;
+  spotlight?: boolean;
 }
 
-export default function ProjectPod({ project, onClick, index = 0 }: ProjectPodProps) {
+export default function ProjectPod({ project, onClick, index = 0, spotlight = false }: ProjectPodProps) {
   const [hovered, setHovered] = useState(false);
   const { t } = useLanguage();
+  const isElevated = hovered || spotlight;
 
   return (
     <motion.article
       layout
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: spotlight ? 30 : 20, scale: spotlight ? 0.98 : 1 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: -10, scale: 0.98 }}
-      transition={{ duration: 0.28, delay: index * 0.04 }}
-      whileHover={{ y: -6 }}
+      transition={{ duration: 0.34, delay: index * 0.04, ease: 'easeOut' }}
+      whileHover={{ y: spotlight ? -10 : -7, scale: spotlight ? 1.015 : 1.01 }}
       onClick={() => onClick(project)}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="relative flex h-full cursor-pointer flex-col rounded-xl border p-5 transition-colors"
+      className={`group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-xl border p-4 transition-colors sm:p-5 ${
+        spotlight ? 'lg:-mt-5 lg:mb-5' : ''
+      }`}
       style={{
-        background: hovered ? 'rgba(68,71,90,0.72)' : 'rgba(52,55,70,0.72)',
-        borderColor: hovered ? `${project.color}66` : 'rgba(68,71,90,0.72)',
-        boxShadow: hovered ? `0 18px 45px ${project.glowColor}` : '0 10px 30px rgba(0,0,0,0.18)',
+        background: isElevated ? 'rgba(62,65,82,0.86)' : 'rgba(52,55,70,0.72)',
+        borderColor: isElevated ? `${project.color}66` : 'rgba(68,71,90,0.72)',
+        boxShadow: isElevated
+          ? `0 24px 70px rgba(0,0,0,0.34), 0 0 0 1px ${project.color}24, 0 0 38px ${project.glowColor}`
+          : '0 10px 30px rgba(0,0,0,0.18)',
         backdropFilter: 'blur(16px)',
       }}
     >
-      <div className="mb-4 flex items-start justify-between gap-4">
+      <AnimatePresence>
+        {isElevated && (
+          <motion.span
+            aria-hidden="true"
+            initial={{ x: '-120%', opacity: 0 }}
+            animate={{ x: '120%', opacity: [0, 0.75, 0] }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.8, repeat: spotlight ? Infinity : 0, repeatDelay: 1.8 }}
+            className="pointer-events-none absolute left-0 top-0 h-px w-2/3"
+            style={{ background: project.color }}
+          />
+        )}
+      </AnimatePresence>
+
+      {spotlight && (
+        <motion.div
+          aria-hidden="true"
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.08 }}
+          className="pointer-events-none absolute right-4 top-4 h-14 w-14 rounded-full border"
+          style={{
+            borderColor: `${project.color}24`,
+            boxShadow: `inset 0 0 24px ${project.color}12`,
+          }}
+        />
+      )}
+
+      <div className="mb-4 flex items-start justify-between gap-3">
         <span
-          className="rounded-full border px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest"
+          className="min-w-0 truncate rounded-full border px-2.5 py-1 text-[9px] font-semibold uppercase tracking-widest sm:text-[10px]"
           style={{
             color: project.color,
             background: `${project.color}12`,
@@ -77,11 +111,18 @@ export default function ProjectPod({ project, onClick, index = 0 }: ProjectPodPr
           {project.category}
         </span>
         {project.year && (
-          <span className="text-xs font-medium text-dracula-comment">{project.year}</span>
+          <motion.span
+            animate={{
+              color: isElevated ? project.color : 'var(--dracula-comment)',
+            }}
+            className="text-xs font-medium"
+          >
+            {project.year}
+          </motion.span>
         )}
       </div>
 
-      <h3 className="mb-2 text-lg font-semibold tracking-tight text-dracula-fg">
+      <h3 className="mb-2 text-base font-semibold tracking-tight text-dracula-fg sm:text-lg">
         {project.name}
       </h3>
 
@@ -94,8 +135,13 @@ export default function ProjectPod({ project, onClick, index = 0 }: ProjectPodPr
           const color = conf?.color ?? 'var(--dracula-purple)';
 
           return (
-            <span
+            <motion.span
               key={badge}
+              initial={{ opacity: 0, y: 6 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.02 }}
+              whileHover={{ y: -2 }}
               className="inline-flex items-center gap-1 rounded-md border px-2 py-1 text-[10px] font-semibold"
               style={{
                 color,
@@ -105,25 +151,26 @@ export default function ProjectPod({ project, onClick, index = 0 }: ProjectPodPr
             >
               <Icon className="h-3 w-3" />
               {badge}
-            </span>
+            </motion.span>
           );
         })}
       </div>
 
       <div className="mb-5 flex flex-wrap gap-1.5">
         {project.tech.slice(0, 5).map((tech) => (
-          <span
+          <motion.span
             key={tech}
+            whileHover={{ y: -2, borderColor: project.color }}
             className="rounded-md border border-dracula-card/70 bg-dracula-bg/40 px-2 py-1 text-[10px] text-dracula-comment"
           >
             {tech}
-          </span>
+          </motion.span>
         ))}
       </div>
 
-      <div className="mt-auto flex items-center justify-between gap-3 border-t border-dracula-card/60 pt-4 text-xs">
+      <div className="mt-auto flex flex-col gap-3 border-t border-dracula-card/60 pt-4 text-xs sm:flex-row sm:items-center sm:justify-between">
         <span className="font-medium text-dracula-fg">{t.common.viewProject}</span>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           {project.liveUrl && (
             <a
               href={project.liveUrl}

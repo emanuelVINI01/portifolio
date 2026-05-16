@@ -11,14 +11,14 @@ export default function Footer() {
 
   const footerLinks = [
     { label: t.nav.home, href: '/' },
-    { label: t.nav.services, href: '/#servicos' },
+    { label: t.nav.services, href: '/#services' },
     { label: t.nav.projects, href: '/projects' },
     { label: t.nav.stack, href: '/#stack' },
   ];
 
   return (
-    <footer className="w-full border-t border-dracula-card/70 bg-gradient-to-b from-dracula-bg to-dracula-surface text-dracula-comment">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6 py-12">
+    <footer className="w-full border-t border-dracula-card/70 bg-dracula-bg text-dracula-comment">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 pb-32 pt-10 sm:gap-10 sm:px-6 md:py-12">
         <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr] md:items-start">
           <div className="max-w-md">
             <Link href="/" className="inline-flex items-center gap-3 text-dracula-fg">
