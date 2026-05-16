@@ -1,29 +1,55 @@
 # portifolio
 
-Repositório preservado como parte do histórico técnico público do desenvolvedor.
+Portfólio técnico interativo de Emanuel Vini, construído para apresentar trajetória, projetos e evidências de engenharia de forma auditável. Este repositório funciona como índice público da evolução técnica: da base Java/Kotlin em servidores e automação até a fase atual com produtos web, sistemas transacionais e ferramentas para desenvolvedores.
 
-## Leitura arquitetural
+## Propósito
 
-Este repositório pertence à fase moderna do portfólio: projetos com foco em produto, API, dados, automação ou infraestrutura. A leitura aqui é pragmática: entender as fronteiras do sistema, identificar dependências reais e documentar como a aplicação deve ser operada.
+O projeto não é apenas uma landing page. Ele organiza a narrativa profissional em torno de provas: repositórios, stacks, decisões de arquitetura, linha do tempo e projetos com contexto suficiente para avaliação técnica.
 
-## Stack identificada
+## Linha técnica
 
-Bukkit/Spigot, Framer Motion, Ledger, Next.js, Node.js, Pterodactyl, React, Tailwind CSS, Transactions, TypeScript
+- 2020-2021: entrada por Java, Minecraft, `.jar`, `plugin.yml`, Bukkit/Spigot e debugging direto em runtime.
+- 2022-2023: evolução para JVM, Kotlin, bots de Discord, APIs multi-servidor, SQL e automações ligadas a comunidades reais.
+- 2026: consolidação em aplicações demonstráveis com Next.js, TypeScript, Prisma, PostgreSQL, Fastify, autenticação, dashboards e sistemas transacionais.
 
-## Pontos de engenharia
+## Stack
 
-- Estrutura orientada a manutenção, com dependências explícitas em manifests quando presentes.
-- Separação entre código de aplicação, configuração e scripts de execução conforme a organização do repositório.
-- Atenção a consistência de dados, validação de entrada, autenticação e observabilidade quando a stack indica esses domínios.
-- Preferência por fundamentos estáveis em vez de complexidade acidental.
+- Next.js 16 com App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Lucide React e React Icons
 
-## Evidências observadas
+## Arquitetura do repositório
 
-- package.json declara o pacote `portifolio`.
-- scripts disponíveis: `build`, `dev`, `lint`, `start`.
-- diretório `app/` sugere Next.js App Router ou estrutura web moderna.
-- diretório `src/` concentra a implementação principal.
+- `app/`: rotas principais, landing page e catálogo de projetos.
+- `src/components/`: componentes de UI, navegação, motion, cards, modal e terminal visual.
+- `src/data/projects.ts`: catálogo tipado dos projetos em português e inglês.
+- `src/i18n/`: dicionários de conteúdo e copy bilíngue.
+- `context/contexto_github.md`: snapshot histórico usado como base de auditoria dos repositórios.
 
-## Operação
+## Decisões de design
 
-Revise os scripts do projeto, variáveis de ambiente e serviços externos antes de rodar em produção. Quando houver banco, filas, cache, storage ou autenticação, trate esses componentes como parte do sistema e não como dependências opcionais.
+- Interface dark, orientada a terminal e leitura técnica, sem depender de uma apresentação genérica de currículo.
+- Conteúdo bilíngue com `LanguageContext`, mantendo português e inglês alinhados.
+- Cards e modais tratam projetos como evidências auditáveis, não como vitrines vazias.
+- Motion é usado para guiar leitura e hierarquia visual, não para esconder falta de conteúdo.
+
+## Execução local
+
+```bash
+npm install
+npm run dev
+```
+
+Abra `http://localhost:3000`.
+
+## Qualidade
+
+```bash
+npm run lint
+npm run build
+```
+
+Use `npm run lint` antes de mudanças de UI e `npm run build` quando alterar estrutura de rotas, componentes compartilhados, dados de projetos ou dicionários.
