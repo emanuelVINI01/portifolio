@@ -8,7 +8,7 @@ Este repositório pertence à fase moderna do portfólio: projetos com foco em p
 
 ## Stack identificada
 
-Bukkit/Spigot, BungeeCord, Framer Motion, Ledger, MongoDB, Next.js, Node.js, Pterodactyl, React, Redis, SSE, Tailwind CSS, Transactions, TypeScript, Velocity
+Bukkit/Spigot, Framer Motion, Ledger, Next.js, Node.js, Pterodactyl, React, Tailwind CSS, Transactions, TypeScript
 
 ## Pontos de engenharia
 
