@@ -1,26 +1,217 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --dracula-bg: #282a36;
+  --dracula-surface: #343746;
+  --dracula-card: #44475a;
+  --dracula-border: #44475a;
+  --dracula-fg: #f8f8f2;
+  --dracula-comment: #a7b0c8;
+  --dracula-cyan: #8be9fd;
+  --dracula-purple: #bd93f9;
+  --dracula-green: #50fa7b;
+  --dracula-pink: #ff79c6;
+  --dracula-red: #ff5555;
+  --dracula-orange: #ffb86c;
+  --dracula-yellow: #f1fa8c;
+
+  --background: var(--dracula-bg);
+  --foreground: var(--dracula-fg);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--dracula-bg);
+  --color-foreground: var(--dracula-fg);
+  --color-dracula-bg: var(--dracula-bg);
+  --color-dracula-surface: var(--dracula-surface);
+  --color-dracula-card: var(--dracula-card);
+  --color-dracula-border: var(--dracula-border);
+  --color-dracula-fg: var(--dracula-fg);
+  --color-dracula-comment: var(--dracula-comment);
+  --color-dracula-cyan: var(--dracula-cyan);
+  --color-dracula-purple: var(--dracula-purple);
+  --color-dracula-green: var(--dracula-green);
+  --color-dracula-pink: var(--dracula-pink);
+  --color-dracula-red: var(--dracula-red);
+  --color-dracula-orange: var(--dracula-orange);
+  --color-dracula-yellow: var(--dracula-yellow);
+  --font-mono: var(--font-jetbrains), var(--font-fira), monospace;
+  --font-sans: var(--font-jetbrains), var(--font-fira), monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background: var(--dracula-bg);
+  color: var(--dracula-fg);
+  font-family: var(--font-jetbrains), var(--font-fira), monospace;
+  position: relative;
+}
+
+:where(main, section, article, header, footer, nav, aside, div, form, label, ul, ol, li) {
+  min-width: 0;
+}
+
+:where(h1, h2, h3, h4, p, a, span, button, code, pre) {
+  overflow-wrap: anywhere;
+}
+
+:where(img, video, canvas, svg, table) {
+  max-width: 100%;
+}
+
+:where(pre, code) {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 640px) {
+  :where(input, select, textarea) {
+    font-size: 16px;
+  }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.032;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--dracula-purple);
+  color: var(--dracula-bg);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dracula-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dracula-card);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dracula-comment);
+}
+
+.glass {
+  background: rgba(36, 39, 54, 0.68);
+  border: 1px solid rgba(68, 71, 90, 0.68);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.story-page-background {
+  background: var(--dracula-bg);
+}
+
+.story-section-flat {
+  background: transparent;
+}
+
+.story-section-flat-deep {
+  background: transparent;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px var(--glow-color, var(--dracula-purple));
+  }
+  50% {
+    box-shadow:
+      0 0 18px var(--glow-color, var(--dracula-purple)),
+      0 0 36px var(--glow-color, var(--dracula-purple));
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(var(--orbit-r, 90px)) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(var(--orbit-r, 90px)) rotate(-360deg);
+  }
+}
+
+@keyframes wave-ring {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.15);
+  }
+}
+
+.search-wave {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 1px solid var(--dracula-cyan);
+  animation: wave-ring 1.2s ease-out forwards;
+  pointer-events: none;
+}
+
+.command-terminal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      color-mix(in srgb, var(--terminal-accent, var(--dracula-cyan)) 11%, transparent) 50%,
+      transparent 100%
+    );
+  opacity: 0.18;
+  transform: translateY(-100%);
+  animation: terminal-scan 5.5s ease-in-out infinite;
+}
+
+@keyframes terminal-scan {
+  0%, 22% {
+    transform: translateY(-100%);
+  }
+  58%, 100% {
+    transform: translateY(100%);
+  }
 }
