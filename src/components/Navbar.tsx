@@ -132,7 +132,7 @@ export default function Navbar() {
                 className="h-full w-full object-cover"
               />
             </span>
-            <span className="min-w-0 text-sm font-semibold tracking-tight text-dracula-fg">
+            <span className="min-w-0 truncate text-sm font-semibold tracking-tight text-dracula-fg">
               emanuelVINI
               <span className="hidden text-dracula-comment sm:inline"> / Full-stack</span>
             </span>
@@ -187,8 +187,8 @@ export default function Navbar() {
         </div>
       </motion.nav>
 
-      <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-dracula-card/80 bg-dracula-bg/95 px-3 pb-[calc(env(safe-area-inset-bottom)+0.55rem)] pt-2 shadow-[0_-16px_34px_rgba(0,0,0,0.35)] backdrop-blur-xl md:hidden">
-        <div className="mx-auto grid h-16 max-w-md grid-cols-5 items-stretch gap-1">
+      <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-dracula-card/80 bg-dracula-bg/95 px-2 pb-[calc(env(safe-area-inset-bottom)+0.55rem)] pt-2 shadow-[0_-16px_34px_rgba(0,0,0,0.35)] backdrop-blur-xl md:hidden">
+        <div className="mx-auto grid h-16 max-w-md grid-cols-5 items-stretch gap-0.5 sm:gap-1">
           {mobileNavLinks.map(({ icon: Icon, label, href, id }) => {
             const isActive = activeSection === id;
 
@@ -197,7 +197,7 @@ export default function Navbar() {
                 key={href}
                 href={href}
                 aria-current={isActive ? 'page' : undefined}
-                className={`relative flex h-full min-w-0 flex-col items-center justify-between rounded-xl px-1 py-1.5 text-[10px] font-semibold uppercase tracking-tight transition-colors ${
+                className={`relative flex h-full min-w-0 flex-col items-center justify-between rounded-xl px-0.5 py-1.5 text-[9px] font-semibold uppercase tracking-tight transition-colors sm:px-1 sm:text-[10px] ${
                   isActive ? 'text-dracula-fg' : 'text-dracula-comment hover:text-dracula-cyan'
                 }`}
               >
@@ -209,7 +209,7 @@ export default function Navbar() {
                   />
                 )}
                 <span
-                  className={`relative z-10 flex h-7 w-7 items-center justify-center rounded-lg transition-colors ${
+                  className={`relative z-10 flex h-6 w-6 items-center justify-center rounded-lg transition-colors sm:h-7 sm:w-7 ${
                     isActive
                       ? 'bg-dracula-purple/15 text-dracula-purple'
                       : 'text-dracula-comment'

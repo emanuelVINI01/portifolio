@@ -264,7 +264,7 @@ export const pt = {
   },
   services: {
     label: 'Serviços',
-    title: 'Entrega full-stack com leitura clara para recrutadores e times técnicos.',
+    title: 'Entrega full-stack com leitura clara para times técnicos.',
     subtitle:
       'O portfólio organiza projetos reais por arquitetura, decisões de produto, stack e pontos avaliáveis: autenticação, modelagem, APIs, dashboards, validação, deploy e acabamento de interface.',
     s1Title: 'APIs e sistemas transacionais',
@@ -313,7 +313,7 @@ export const pt = {
     spotlightLabel: 'Centro de avaliação',
     spotlightTitle: 'Três projetos em palco, com o sistema mais forte no centro.',
     spotlightText:
-      'A página abre como um deck técnico: o projeto central fica mais elevado, os laterais dão contexto e a interação guia o recrutador para abrir, comparar e auditar.',
+      'A página abre como um deck técnico: o projeto central fica mais elevado, os laterais dão contexto e a interação guia a análise para abrir, comparar e auditar.',
     allProjectsLabel: 'Todos os projetos',
   },
   footer: {
@@ -587,7 +587,7 @@ export const en: Dictionary = {
   },
   services: {
     label: 'Services',
-    title: 'Full-stack delivery with clear signals for recruiters and technical teams.',
+    title: 'Full-stack delivery with clear signals for technical teams.',
     subtitle:
       'The portfolio organizes real projects by architecture, product decisions, stack, and evaluation points: authentication, data modeling, APIs, dashboards, validation, deployment, and interface polish.',
     s1Title: 'APIs and transactional systems',
@@ -636,7 +636,7 @@ export const en: Dictionary = {
     spotlightLabel: 'Evaluation center',
     spotlightTitle: 'Three projects on stage, with the strongest system elevated in the center.',
     spotlightText:
-      'The page opens like a technical deck: the center project sits higher, the side projects add context, and the motion guides recruiters to open, compare, and audit.',
+      'The page opens like a technical deck: the center project sits higher, the side projects add context, and the motion guides technical review toward opening, comparing, and auditing.',
     allProjectsLabel: 'All projects',
   },
   footer: {

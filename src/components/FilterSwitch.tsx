@@ -11,7 +11,7 @@ interface FilterSwitchProps {
 export default function FilterSwitch({ options, value, onChange }: FilterSwitchProps) {
   return (
     <div
-      className="flex snap-x items-center gap-2 overflow-x-auto rounded-2xl p-1.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-wrap sm:overflow-visible"
+      className="flex w-full max-w-full snap-x items-center gap-2 overflow-x-auto rounded-2xl p-1.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:flex-wrap sm:overflow-visible"
       style={{
         background: 'rgba(36,39,54,0.82)',
         border: '1px solid rgba(68,71,90,0.7)',
@@ -24,7 +24,7 @@ export default function FilterSwitch({ options, value, onChange }: FilterSwitchP
           <motion.button
             key={opt.key}
             onClick={() => onChange(opt.key)}
-            className="relative flex shrink-0 snap-start items-center gap-2 rounded-xl px-3 py-2 text-[10px] font-bold uppercase tracking-widest transition-colors duration-200 sm:px-4 sm:text-xs"
+            className="relative flex max-w-[72vw] shrink-0 snap-start items-center gap-2 rounded-xl px-3 py-2 text-[10px] font-bold uppercase tracking-widest transition-colors duration-200 sm:max-w-none sm:px-4 sm:text-xs"
             style={{
               color: isActive ? opt.color : 'var(--dracula-comment)',
               minWidth: 0,
@@ -55,7 +55,7 @@ export default function FilterSwitch({ options, value, onChange }: FilterSwitchP
               }}
             />
 
-            <span className="relative">{opt.label}</span>
+            <span className="relative truncate">{opt.label}</span>
           </motion.button>
         );
       })}

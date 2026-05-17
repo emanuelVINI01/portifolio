@@ -25,7 +25,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
   };
 
   return (
-    <div className="relative mx-auto w-full max-w-lg">
+    <div className="relative mx-auto w-full max-w-full sm:max-w-lg">
       {/* Wave rings */}
       {waves.map((k) => (
         <span
@@ -37,7 +37,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
 
       {/* Input container */}
       <div
-        className="relative flex items-center rounded-xl border transition-all duration-300"
+        className="relative flex min-w-0 items-center rounded-xl border transition-all duration-300"
         style={{
           background: 'rgba(36,39,54,0.82)',
           backdropFilter: 'blur(16px)',
@@ -63,7 +63,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
             addWave();
           }}
           placeholder={placeholder}
-          className="w-full bg-transparent py-3 pl-11 pr-11 font-mono text-sm outline-none placeholder:opacity-40"
+          className="w-full min-w-0 bg-transparent py-3 pl-11 pr-11 font-mono text-sm outline-none placeholder:opacity-40"
           style={{ color: 'var(--foreground)' }}
         />
         {value && (

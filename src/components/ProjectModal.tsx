@@ -61,7 +61,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 flex items-end justify-center p-0 sm:items-center sm:p-4"
           style={{ background: 'rgba(33,34,44,0.82)', backdropFilter: 'blur(10px)' }}
           onClick={onClose}
         >
@@ -72,7 +72,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             exit={{ opacity: 0, scale: 0.96, y: -8 }}
             transition={{ duration: 0.24, ease: [0.16, 1, 0.3, 1] }}
             onClick={(event) => event.stopPropagation()}
-            className="relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl border"
+            className="relative max-h-[94dvh] w-full min-w-0 max-w-2xl overflow-y-auto rounded-t-2xl border sm:max-h-[90vh] sm:rounded-2xl"
             style={{
               background: 'rgba(40,42,54,0.98)',
               borderColor: `${project.color}44`,
@@ -80,14 +80,14 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             }}
           >
             <div
-              className="flex items-center justify-between border-b px-6 py-4"
+              className="flex min-w-0 items-start justify-between gap-4 border-b px-4 py-4 sm:px-6"
               style={{ borderColor: 'rgba(68,71,90,0.7)' }}
             >
-              <div>
+              <div className="min-w-0">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-dracula-comment">
                   {language === 'pt' ? 'Projeto selecionado' : 'Selected Project'}
                 </div>
-                <h2 className="mt-1 text-2xl font-semibold tracking-tight text-dracula-fg">
+                <h2 className="mt-1 text-xl font-semibold tracking-tight text-dracula-fg sm:text-2xl">
                   {project.name}
                 </h2>
               </div>
@@ -101,7 +101,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               </button>
             </div>
 
-            <div className="space-y-7 p-6">
+            <div className="space-y-7 px-4 py-5 pb-[calc(env(safe-area-inset-bottom)+1.25rem)] sm:p-6">
               <div className="flex flex-wrap items-center gap-3">
                 <span
                   className="rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-widest"
@@ -140,7 +140,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   {project.highlights.map((highlight) => (
                     <div
                       key={highlight.label}
-                      className="rounded-xl border border-dracula-card/70 bg-dracula-surface/70 p-4"
+                    className="min-w-0 rounded-xl border border-dracula-card/70 bg-dracula-surface/70 p-4"
                     >
                       <div className="mb-1 text-[10px] font-semibold uppercase tracking-widest text-dracula-comment">
                         {highlight.label}
@@ -159,7 +159,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-lg border border-dracula-card bg-dracula-bg/40 px-3 py-1.5 text-xs text-dracula-comment"
+                      className="max-w-full rounded-lg border border-dracula-card bg-dracula-bg/40 px-3 py-1.5 text-xs text-dracula-comment"
                     >
                       {tech}
                     </span>
@@ -167,13 +167,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="grid gap-3 sm:flex sm:flex-wrap">
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg border border-dracula-green/25 bg-dracula-green/10 px-4 py-2 text-sm font-semibold text-dracula-green transition-colors hover:border-dracula-green/60 hover:bg-dracula-green/15"
+                    className="inline-flex min-w-0 items-center justify-center gap-2 rounded-lg border border-dracula-green/25 bg-dracula-green/10 px-4 py-2 text-sm font-semibold text-dracula-green transition-colors hover:border-dracula-green/60 hover:bg-dracula-green/15"
                   >
                     {language === 'pt' ? 'Abrir app' : 'Open app'}
                     <ExternalLink className="h-4 w-4" />
@@ -183,7 +183,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-dracula-cyan/25 bg-dracula-cyan/10 px-4 py-2 text-sm font-semibold text-dracula-cyan transition-colors hover:border-dracula-cyan/60 hover:bg-dracula-cyan/15"
+                  className="inline-flex min-w-0 items-center justify-center gap-2 rounded-lg border border-dracula-cyan/25 bg-dracula-cyan/10 px-4 py-2 text-sm font-semibold text-dracula-cyan transition-colors hover:border-dracula-cyan/60 hover:bg-dracula-cyan/15"
                 >
                   {language === 'pt' ? 'Abrir repositório' : 'Open repository'}
                   <ExternalLink className="h-4 w-4" />

@@ -71,7 +71,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
       role="button"
       tabIndex={0}
       aria-label={`${t.common.viewProject}: ${project.name}`}
-      className={`group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-xl border p-4 transition-colors sm:p-5 ${
+      className={`group relative flex h-full min-w-0 max-w-full cursor-pointer flex-col overflow-hidden rounded-xl border p-4 transition-colors sm:p-5 ${
         spotlight ? 'lg:-mt-5 lg:mb-5' : ''
       }`}
       style={{
@@ -113,7 +113,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
 
       <div className="mb-4 flex items-start justify-between gap-3">
         <span
-          className="min-w-0 truncate rounded-full border px-2.5 py-1 text-[9px] font-semibold uppercase tracking-widest sm:text-[10px]"
+          className="min-w-0 max-w-full truncate rounded-full border px-2.5 py-1 text-[9px] font-semibold uppercase tracking-widest sm:text-[10px]"
           style={{
             color: project.color,
             background: `${project.color}12`,
@@ -134,11 +134,11 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
         )}
       </div>
 
-      <h3 className="mb-2 text-base font-semibold tracking-tight text-dracula-fg sm:text-lg">
+      <h3 className="mb-2 min-w-0 text-base font-semibold tracking-tight text-dracula-fg sm:text-lg">
         {project.name}
       </h3>
 
-      <p className="mb-5 text-sm leading-relaxed text-dracula-comment">{project.shortDesc}</p>
+      <p className="mb-5 min-w-0 text-sm leading-relaxed text-dracula-comment">{project.shortDesc}</p>
 
       <div className="mb-5 flex flex-wrap gap-2">
         {project.badges.slice(0, 4).map((badge) => {
@@ -154,7 +154,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
               viewport={{ once: true }}
               transition={{ delay: index * 0.02 }}
               whileHover={{ y: -2 }}
-              className="inline-flex items-center gap-1 rounded-md border px-2 py-1 text-[10px] font-semibold"
+              className="inline-flex max-w-full items-center gap-1 rounded-md border px-2 py-1 text-[10px] font-semibold"
               style={{
                 color,
                 background: `${color}12`,
@@ -173,14 +173,14 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
           <motion.span
             key={tech}
             whileHover={{ y: -2, borderColor: project.color }}
-            className="rounded-md border border-dracula-card/70 bg-dracula-bg/40 px-2 py-1 text-[10px] text-dracula-comment"
+            className="max-w-full rounded-md border border-dracula-card/70 bg-dracula-bg/40 px-2 py-1 text-[10px] text-dracula-comment"
           >
             {tech}
           </motion.span>
         ))}
       </div>
 
-      <div className="mt-auto flex flex-col gap-3 border-t border-dracula-card/60 pt-4 text-xs sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-auto flex min-w-0 flex-col gap-3 border-t border-dracula-card/60 pt-4 text-xs sm:flex-row sm:items-center sm:justify-between">
         <motion.span
           animate={{ color: isElevated ? project.color : 'var(--dracula-fg)' }}
           className="inline-flex items-center gap-1.5 font-medium"
@@ -190,14 +190,14 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
             -&gt;
           </motion.span>
         </motion.span>
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="grid min-w-0 gap-2 sm:flex sm:flex-wrap sm:items-center sm:gap-3">
           {project.liveUrl && (
             <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(event) => event.stopPropagation()}
-              className="inline-flex items-center gap-1.5 text-dracula-green transition-colors hover:text-dracula-cyan"
+              className="inline-flex min-w-0 items-center gap-1.5 text-dracula-green transition-colors hover:text-dracula-cyan"
             >
               {t.common.liveProject}
               <ExternalLink className="h-3.5 w-3.5" />
@@ -208,7 +208,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
             target="_blank"
             rel="noopener noreferrer"
             onClick={(event) => event.stopPropagation()}
-            className="inline-flex items-center gap-1.5 text-dracula-comment transition-colors hover:text-dracula-cyan"
+            className="inline-flex min-w-0 items-center gap-1.5 text-dracula-comment transition-colors hover:text-dracula-cyan"
           >
             GitHub
             <ExternalLink className="h-3.5 w-3.5" />

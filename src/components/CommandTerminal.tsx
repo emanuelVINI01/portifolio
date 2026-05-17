@@ -75,7 +75,7 @@ export default function CommandTerminal({
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: '-70px' }}
       transition={{ duration: 0.45, ease: 'easeOut' }}
-      className={`command-terminal relative overflow-hidden rounded-2xl border bg-dracula-surface/85 shadow-2xl shadow-black/25 backdrop-blur ${className}`}
+      className={`command-terminal relative w-full min-w-0 max-w-full overflow-hidden rounded-2xl border bg-dracula-surface/85 shadow-2xl shadow-black/25 backdrop-blur ${className}`}
       style={{
         borderColor: `color-mix(in srgb, ${accent} 38%, rgba(68, 71, 90, 0.76))`,
         boxShadow: `0 24px 80px rgba(0,0,0,0.32), 0 0 44px color-mix(in srgb, ${accent} 16%, transparent)`,
@@ -85,7 +85,7 @@ export default function CommandTerminal({
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,var(--terminal-accent),transparent)] opacity-80" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(255,255,255,0.055),transparent_32%),linear-gradient(180deg,rgba(255,255,255,0.035),transparent_42%)]" />
 
-      <div className="relative flex items-center justify-between gap-3 border-b border-dracula-card/70 px-4 py-3">
+      <div className="relative flex items-center justify-between gap-3 border-b border-dracula-card/70 px-3 py-3 sm:px-4">
         <div className="flex min-w-0 items-center gap-3">
           <div className="flex items-center gap-1.5">
             <span className="h-2.5 w-2.5 rounded-full bg-dracula-red" />
@@ -132,7 +132,7 @@ export default function CommandTerminal({
         </div>
       </div>
 
-      <div className={`relative font-mono ${dense ? 'p-4 text-[11px] leading-5' : 'p-5 text-xs leading-6 sm:text-[13px]'}`}>
+      <div className={`relative min-w-0 font-mono ${dense ? 'p-3 text-[11px] leading-5 sm:p-4' : 'p-3 text-xs leading-6 sm:p-5 sm:text-[13px]'}`}>
         <div className="space-y-1.5">
           {lines.map((line, index) => {
             const number = String(index + 1).padStart(2, '0');
@@ -144,18 +144,18 @@ export default function CommandTerminal({
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.08 + index * 0.055, duration: 0.24 }}
-                className="grid grid-cols-[1.65rem_minmax(0,1fr)] gap-3"
+                className="grid min-w-0 grid-cols-[1.25rem_minmax(0,1fr)] gap-2 sm:grid-cols-[1.65rem_minmax(0,1fr)] sm:gap-3"
               >
                 <span className="select-none text-right text-dracula-comment/45 tabular-nums">{number}</span>
                 {line.kind === 'command' ? (
-                  <div className="min-w-0">
+                  <div className="min-w-0 break-words">
                     <span className="mr-2 text-dracula-purple">{line.prompt ?? 'emanuel@portfolio'}</span>
                     <span className="mr-2 text-dracula-comment">~/prod</span>
                     <span className="mr-2 text-dracula-green">$</span>
-                    <code className="break-words text-dracula-fg">{line.value}</code>
+                    <code className="break-all text-dracula-fg sm:break-words">{line.value}</code>
                   </div>
                 ) : (
-                  <code className={`break-words ${toneClasses[line.tone ?? 'muted']}`}>
+                  <code className={`min-w-0 break-words ${toneClasses[line.tone ?? 'muted']}`}>
                     <span className="select-none text-dracula-comment/55">=&gt; </span>
                     {line.value}
                   </code>
@@ -166,13 +166,13 @@ export default function CommandTerminal({
         </div>
 
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-dracula-card/60 pt-3">
-          <div className="inline-flex items-center gap-2 text-dracula-cyan">
+          <div className="inline-flex min-w-0 items-center gap-2 text-dracula-cyan">
             <span className="h-2 w-2 rounded-full bg-dracula-cyan shadow-[0_0_12px_rgba(139,233,253,0.85)]" />
             <span className="text-[10px] font-semibold uppercase tracking-widest">
               {status ?? (language === 'pt' ? 'pronto para auditoria' : 'ready for audit')}
             </span>
           </div>
-          <div className="flex h-5 items-center gap-2 text-[10px] text-dracula-comment">
+          <div className="flex h-5 min-w-0 items-center gap-2 text-[10px] text-dracula-comment">
             <span>{language === 'pt' ? 'aguardando evento' : 'awaiting event'}</span>
             <span className="h-4 w-2 animate-[blink_1s_steps(2)_infinite] bg-dracula-cyan" />
           </div>

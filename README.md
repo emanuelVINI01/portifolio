@@ -4,7 +4,7 @@ Portfólio técnico interativo de Emanuel Vini, construído para apresentar traj
 
 ## Propósito
 
-O projeto não é apenas uma landing page. Ele organiza a narrativa profissional em torno de provas: repositórios, stacks, decisões de arquitetura, linha do tempo e projetos com contexto suficiente para avaliação técnica.
+O projeto não é apenas uma landing page. Ele organiza a narrativa profissional em torno de provas: repositórios, stacks, decisões de arquitetura, linha do tempo e projetos com contexto suficiente para avaliação técnica. A leitura foi pensada como vitrine técnica: times de engenharia conseguem escanear a história, inspecionar evidências, filtrar projetos e abrir runbooks com blocos de comando.
 
 ## Linha técnica
 
