@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Fira_Code } from "next/font/google";
+import localFont from "next/font/local";
 import Providers from "@/components/Providers";
 import "./globals.css";
 
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
+const jetbrains = localFont({
+  src: "../public/fonts/jetbrains-mono-latin.woff2",
+  weight: "100 800",
+  display: "swap",
   variable: "--font-jetbrains",
 });
 
-const firaCode = Fira_Code({
-  subsets: ["latin"],
+const firaCode = localFont({
+  src: "../public/fonts/fira-code-latin.woff2",
+  weight: "300 700",
+  display: "swap",
   variable: "--font-fira",
 });
 
@@ -20,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Emanuel Vini",
   },
   description:
-    "Portfólio de Emanuel Vini (EmanuelMissena), desenvolvedor full-stack de 16 anos. Do baixo nível com VMs e Rust ao alto nível com Next.js, APIs REST, apps mobile e IA aplicada.",
+    "Emanuel Missena (Emanuel Vini): aplicações web com TypeScript, Next.js e PostgreSQL, ferramentas com IA e experimentos em Rust. Projetos, código e trajetória.",
   keywords: [
     "Emanuel Vini",
     "EmanuelMissena",
@@ -88,7 +92,7 @@ const jsonLd = {
   image: "https://emanuelmissena.com/profile.png",
   jobTitle: "Full-stack Software Developer",
   description:
-    "Desenvolvedor full-stack de 16 anos especializado em sistemas transacionais, APIs REST, aplicações mobile e IA aplicada. Opera desde o baixo nível com VMs até produtos web de alta qualidade.",
+    "Desenvolvedor full-stack com projetos em TypeScript, Next.js, PostgreSQL, IA aplicada e máquinas virtuais experimentais em Rust.",
   knowsAbout: [
     "Next.js", "React", "TypeScript", "Node.js", "Prisma", "PostgreSQL",
     "APIs REST", "Sistemas Transacionais", "Inteligência Artificial",

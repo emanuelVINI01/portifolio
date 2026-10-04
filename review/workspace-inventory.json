@@ -1,0 +1,296 @@
+[
+  {
+    "directory": "KotlinVortey",
+    "remote": "https://github.com/emanuelVINI01/KotlinVortey.git",
+    "readme": false,
+    "manifests": [
+      "build.gradle.kts"
+    ]
+  },
+  {
+    "directory": "Minecraft-Clone",
+    "remote": "git@github.com:Morgs6000/Minecraft-Clone.git",
+    "readme": true,
+    "manifests": []
+  },
+  {
+    "directory": "RyzenShopBot",
+    "remote": "git@github.com:emanuelVINI01/RyzenShopBot.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "agentics",
+    "remote": "",
+    "readme": false,
+    "manifests": [
+      "requirements.txt"
+    ]
+  },
+  {
+    "directory": "apiflash",
+    "remote": "git@github.com:emanuelVINI01/apiflash.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "architecture",
+    "remote": "git@github.com:emanuelVINI01/architecture.git",
+    "readme": false,
+    "manifests": []
+  },
+  {
+    "directory": "autmaia",
+    "remote": "",
+    "readme": false,
+    "manifests": []
+  },
+  {
+    "directory": "brainer",
+    "remote": "",
+    "readme": true,
+    "manifests": [
+      "Cargo.toml"
+    ]
+  },
+  {
+    "directory": "browia",
+    "remote": "https://github.com/emanuelVINI01/browia.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "chess-mistery",
+    "remote": "",
+    "readme": true,
+    "manifests": []
+  },
+  {
+    "directory": "compound-interest-calc",
+    "remote": "",
+    "readme": false,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "de",
+    "remote": "",
+    "readme": false,
+    "manifests": []
+  },
+  {
+    "directory": "deadlatch",
+    "remote": "",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "dh",
+    "remote": "",
+    "readme": false,
+    "manifests": []
+  },
+  {
+    "directory": "dv-duels",
+    "remote": "git@github.com:emanuelVINI01/dv-duels.git",
+    "readme": true,
+    "manifests": [
+      "pom.xml"
+    ]
+  },
+  {
+    "directory": "electron-app",
+    "remote": "",
+    "readme": false,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "eval",
+    "remote": "",
+    "readme": true,
+    "manifests": []
+  },
+  {
+    "directory": "github-follow-bot",
+    "remote": "",
+    "readme": false,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "hd",
+    "remote": "",
+    "readme": false,
+    "manifests": []
+  },
+  {
+    "directory": "lomaw",
+    "remote": "",
+    "readme": false,
+    "manifests": [
+      "Cargo.toml"
+    ]
+  },
+  {
+    "directory": "lowvia",
+    "remote": "git@github.com:emanuelVINI01/lowvia.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "my-codec",
+    "remote": "",
+    "readme": false,
+    "manifests": [
+      "Cargo.toml"
+    ]
+  },
+  {
+    "directory": "my-game-papers",
+    "remote": "",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "my-llm-executor",
+    "remote": "",
+    "readme": false,
+    "manifests": [
+      "Cargo.toml"
+    ]
+  },
+  {
+    "directory": "my-vm",
+    "remote": "",
+    "readme": true,
+    "manifests": []
+  },
+  {
+    "directory": "my-vm-os",
+    "remote": "",
+    "readme": true,
+    "manifests": []
+  },
+  {
+    "directory": "office-tools",
+    "remote": "",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "portifolio",
+    "remote": "https://github.com/emanuelVINI01/portifolio.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "russian-alphabet",
+    "remote": "https://github.com/emanuelVINI01/russian-alphabet.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "ryzen-site",
+    "remote": "git@github.com:emanuelVINI01/ryzen-site.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "simple-bank",
+    "remote": "git@github.com:emanuelVINI01/simple-bank.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "snippetvault",
+    "remote": "git@github.com:emanuelVINI01/snippetvault.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "swiss-learn",
+    "remote": "https://github.com/emanuelVINI01/swiss-learn.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "swiss-learn-mobile",
+    "remote": "",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "termop",
+    "remote": "git@github.com:emanuelVINI01/termop.git",
+    "readme": false,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "test-qwen",
+    "remote": "",
+    "readme": false,
+    "manifests": []
+  },
+  {
+    "directory": "test_project",
+    "remote": "",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "trabalho",
+    "remote": "",
+    "readme": false,
+    "manifests": []
+  },
+  {
+    "directory": "typedash",
+    "remote": "git@github.com:emanuelVINI01/typedash.git",
+    "readme": true,
+    "manifests": [
+      "package.json"
+    ]
+  },
+  {
+    "directory": "vm",
+    "remote": "",
+    "readme": false,
+    "manifests": []
+  }
+]

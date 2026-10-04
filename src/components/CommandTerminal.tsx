@@ -3,7 +3,7 @@
 import { useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CheckCircle2, Copy, Terminal } from 'lucide-react';
-import { SiCloudflare, SiDiscord, SiGithub, SiLinux, SiNextdotjs, SiPrisma, SiReact, SiTypescript } from 'react-icons/si';
+import { SiCloudflare, SiLinux, SiNextdotjs, SiPrisma, SiReact, SiTypescript } from 'react-icons/si';
 import { useLanguage } from '@/context/LanguageContext';
 import { pick } from '@/i18n/dictionaries';
 

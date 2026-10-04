@@ -1,0 +1,1446 @@
+[
+  {
+    "id": "my-bet",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "simple-bank",
+    "directory": "simple-bank",
+    "areas": [
+      {
+        "id": "dashboard",
+        "path": "/dashboard",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Dashboard",
+          "en": "Dashboard",
+          "de": "Dashboard"
+        }
+      },
+      {
+        "id": "payment-keys",
+        "path": "/payment-keys",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Chaves de pagamento",
+          "en": "Payment keys",
+          "de": "Zahlungsschlüssel"
+        }
+      },
+      {
+        "id": "transactions",
+        "path": "/transactions",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Extrato",
+          "en": "Transactions",
+          "de": "Transaktionen"
+        }
+      },
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "login",
+        "path": "/login",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Login",
+          "en": "Login",
+          "de": "Anmeldung"
+        }
+      },
+      {
+        "id": "register",
+        "path": "/register",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Cadastro",
+          "en": "Registration",
+          "de": "Registrierung"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [
+      "A dedicated local _review database, migrated and seeded, plus private demo browser storage state for protected areas."
+    ],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": true,
+    "companions": [
+      "simple-bank/simple-bank-app"
+    ],
+    "manualAreas": [
+      {
+        "id": "mobile-login",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-dashboard",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-transfer",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-transactions",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-payment-keys",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      }
+    ]
+  },
+  {
+    "id": "cvm-runtime",
+    "directory": "vm/my-vm",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ],
+    "companions": [
+      "vm/my-vm-os"
+    ],
+    "manualAreas": [
+      {
+        "id": "os-framebuffer",
+        "reason": "CVM compiler and graphical VM runtime required"
+      }
+    ]
+  },
+  {
+    "id": "cvm-compiler",
+    "directory": "vm/my-vm-compiler",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ]
+  },
+  {
+    "id": "apiflash",
+    "directory": "apiflash",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "collections",
+        "path": "/collections",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Coleções",
+          "en": "Collections",
+          "de": "Sammlungen"
+        }
+      },
+      {
+        "id": "docs",
+        "path": "/docs",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Documentação",
+          "en": "Documentation",
+          "de": "Dokumentation"
+        }
+      },
+      {
+        "id": "history",
+        "path": "/history",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Histórico",
+          "en": "History",
+          "de": "Verlauf"
+        }
+      },
+      {
+        "id": "login",
+        "path": "/login",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Login",
+          "en": "Login",
+          "de": "Anmeldung"
+        }
+      },
+      {
+        "id": "workspace",
+        "path": "/workspace",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Workbench",
+          "en": "Workbench",
+          "de": "Workbench"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [
+      "A dedicated local _review database, migrated and seeded, plus private demo browser storage state for protected areas."
+    ],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": true
+  },
+  {
+    "id": "browia",
+    "directory": "browia",
+    "areas": [
+      {
+        "id": "chat",
+        "caption": {
+          "pt": "Conversa",
+          "en": "Chat",
+          "de": "Chat"
+        }
+      },
+      {
+        "id": "settings",
+        "steps": [
+          {
+            "action": "click",
+            "selector": "button[title=\"Configurações\"], button[title=\"Settings\"]"
+          }
+        ],
+        "caption": {
+          "pt": "Configurações",
+          "en": "Settings",
+          "de": "Einstellungen"
+        }
+      }
+    ],
+    "kind": "extension",
+    "prerequisites": [
+      "npm run build:extension; use an isolated Chromium profile with no real accounts."
+    ],
+    "extensionDirectory": "dist"
+  },
+  {
+    "id": "lowvia",
+    "directory": "lowvia",
+    "areas": [
+      {
+        "id": "chat",
+        "steps": [],
+        "caption": {
+          "pt": "Chat",
+          "en": "Chat",
+          "de": "Chat"
+        }
+      },
+      {
+        "id": "models",
+        "steps": [
+          {
+            "action": "click",
+            "role": "button",
+            "name": "Models|Modelos"
+          }
+        ],
+        "caption": {
+          "pt": "Models",
+          "en": "Models",
+          "de": "Models"
+        }
+      },
+      {
+        "id": "settings",
+        "steps": [
+          {
+            "action": "click",
+            "role": "button",
+            "name": "Settings|Configurações"
+          }
+        ],
+        "caption": {
+          "pt": "Settings",
+          "en": "Settings",
+          "de": "Settings"
+        }
+      },
+      {
+        "id": "research",
+        "steps": [
+          {
+            "action": "click",
+            "role": "button",
+            "name": "Research|Pesquisa"
+          }
+        ],
+        "caption": {
+          "pt": "Research",
+          "en": "Research",
+          "de": "Research"
+        }
+      },
+      {
+        "id": "reports",
+        "steps": [
+          {
+            "action": "click",
+            "role": "button",
+            "name": "Reports|Relatórios"
+          }
+        ],
+        "caption": {
+          "pt": "Reports",
+          "en": "Reports",
+          "de": "Reports"
+        }
+      }
+    ],
+    "kind": "electron",
+    "prerequisites": [
+      "Build the desktop app with its existing scripts before capture; a graphical session must be available."
+    ],
+    "main": ".vite/build/main.js"
+  },
+  {
+    "id": "snippetvault",
+    "directory": "snippetvault",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "dashboard",
+        "path": "/dashboard",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Dashboard",
+          "en": "Dashboard",
+          "de": "Dashboard"
+        }
+      },
+      {
+        "id": "login",
+        "path": "/login",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Login",
+          "en": "Login",
+          "de": "Anmeldung"
+        }
+      },
+      {
+        "id": "snippet-id",
+        "path": "/snippet/${DEMO_ID}",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/snippet/[id]",
+          "en": "/snippet/[id]",
+          "de": "/snippet/[id]"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [
+      "A dedicated local _review database, migrated and seeded, plus private demo browser storage state for protected areas."
+    ],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": true
+  },
+  {
+    "id": "typedash",
+    "directory": "typedash",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "about",
+        "path": "/about",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/about",
+          "en": "/about",
+          "de": "/about"
+        }
+      },
+      {
+        "id": "dashboard",
+        "path": "/dashboard",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Dashboard",
+          "en": "Dashboard",
+          "de": "Dashboard"
+        }
+      },
+      {
+        "id": "login",
+        "path": "/login",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Login",
+          "en": "Login",
+          "de": "Anmeldung"
+        }
+      },
+      {
+        "id": "practice",
+        "path": "/practice",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Prática",
+          "en": "Practice",
+          "de": "Übung"
+        }
+      },
+      {
+        "id": "ranking",
+        "path": "/ranking",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Ranking",
+          "en": "Ranking",
+          "de": "Rangliste"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [
+      "A dedicated local _review database, migrated and seeded, plus private demo browser storage state for protected areas."
+    ],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": true
+  },
+  {
+    "id": "ryzen-shop-bot",
+    "directory": "RyzenShopBot",
+    "areas": [],
+    "kind": "manual",
+    "prerequisites": [
+      "Requires isolated service fixtures; do not invoke actions on real accounts or communities."
+    ]
+  },
+  {
+    "id": "ryzen-hosting",
+    "directory": "ryzen-site",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "minecraft",
+        "path": "/minecraft",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/minecraft",
+          "en": "/minecraft",
+          "de": "/minecraft"
+        }
+      },
+      {
+        "id": "minecraftgaming",
+        "path": "/minecraftgaming",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/minecraftgaming",
+          "en": "/minecraftgaming",
+          "de": "/minecraftgaming"
+        }
+      },
+      {
+        "id": "vps",
+        "path": "/vps",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/vps",
+          "en": "/vps",
+          "de": "/vps"
+        }
+      },
+      {
+        "id": "vpsgaming",
+        "path": "/vpsgaming",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/vpsgaming",
+          "en": "/vpsgaming",
+          "de": "/vpsgaming"
+        }
+      },
+      {
+        "id": "dedicated",
+        "path": "/dedicated",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/dedicated",
+          "en": "/dedicated",
+          "de": "/dedicated"
+        }
+      },
+      {
+        "id": "web",
+        "path": "/web",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/web",
+          "en": "/web",
+          "de": "/web"
+        }
+      },
+      {
+        "id": "apps",
+        "path": "/apps",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/apps",
+          "en": "/apps",
+          "de": "/apps"
+        }
+      },
+      {
+        "id": "serviceterms",
+        "path": "/serviceterms",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/serviceterms",
+          "en": "/serviceterms",
+          "de": "/serviceterms"
+        }
+      },
+      {
+        "id": "privacypolicy",
+        "path": "/privacypolicy",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/privacypolicy",
+          "en": "/privacypolicy",
+          "de": "/privacypolicy"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": false
+  },
+  {
+    "id": "dv-duels",
+    "directory": "dv-duels",
+    "areas": [],
+    "kind": "manual",
+    "prerequisites": [
+      "Requires isolated service fixtures; do not invoke actions on real accounts or communities."
+    ]
+  },
+  {
+    "id": "portifolio-frontend",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "z-discord-core",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "comuni-mine-bot",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "minecraft-feast-bot",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "advanced-sql",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "z-manutencao",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "z-silk2",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "multi-server-api",
+    "directory": null,
+    "areas": [],
+    "kind": "unavailable",
+    "prerequisites": [
+      "Source is absent from this workspace; GitHub access is required."
+    ]
+  },
+  {
+    "id": "swiss-learn",
+    "directory": "swiss-learn",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "lang",
+        "path": "/pt",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "lang-conversation",
+        "path": "/pt/conversation",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Conversação",
+          "en": "Conversation",
+          "de": "Gespräch"
+        }
+      },
+      {
+        "id": "lang-grammar",
+        "path": "/pt/grammar",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Gramática",
+          "en": "Grammar",
+          "de": "Grammatik"
+        }
+      },
+      {
+        "id": "lang-more",
+        "path": "/pt/more",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/more",
+          "en": "/more",
+          "de": "/more"
+        }
+      },
+      {
+        "id": "lang-practice",
+        "path": "/pt/practice",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Prática",
+          "en": "Practice",
+          "de": "Übung"
+        }
+      },
+      {
+        "id": "lang-progress",
+        "path": "/pt/progress",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Progresso",
+          "en": "Progress",
+          "de": "Fortschritt"
+        }
+      },
+      {
+        "id": "lang-questions",
+        "path": "/pt/questions",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Trilha de aulas",
+          "en": "Lesson path",
+          "de": "Lernpfad"
+        }
+      },
+      {
+        "id": "lang-ranking",
+        "path": "/pt/ranking",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Ranking",
+          "en": "Ranking",
+          "de": "Rangliste"
+        }
+      },
+      {
+        "id": "lang-settings",
+        "path": "/pt/settings",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Configurações",
+          "en": "Settings",
+          "de": "Einstellungen"
+        }
+      },
+      {
+        "id": "lang-study-id",
+        "path": "/pt/study/${DEMO_ID}",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/study/[id]",
+          "en": "/study/[id]",
+          "de": "/study/[id]"
+        }
+      },
+      {
+        "id": "lang-writing",
+        "path": "/pt/writing",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "Escrita",
+          "en": "Writing",
+          "de": "Schreiben"
+        }
+      },
+      {
+        "id": "lang-signin",
+        "path": "/pt/signin",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/signin",
+          "en": "/signin",
+          "de": "/signin"
+        }
+      },
+      {
+        "id": "lang-signin-check-email",
+        "path": "/pt/signin/check-email",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/signin/check-email",
+          "en": "/signin/check-email",
+          "de": "/signin/check-email"
+        }
+      },
+      {
+        "id": "lang-privacy",
+        "path": "/pt/privacy",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/privacy",
+          "en": "/privacy",
+          "de": "/privacy"
+        }
+      },
+      {
+        "id": "lang-terms",
+        "path": "/pt/terms",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/terms",
+          "en": "/terms",
+          "de": "/terms"
+        }
+      },
+      {
+        "id": "lang-profile-userid",
+        "path": "/pt/profile/${DEMO_USER_ID}",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/profile/[userId]",
+          "en": "/profile/[userId]",
+          "de": "/profile/[userId]"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [
+      "A dedicated local _review database, migrated and seeded, plus private demo browser storage state for protected areas."
+    ],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": true,
+    "companions": [
+      "swiss-learn-mobile"
+    ],
+    "manualAreas": [
+      {
+        "id": "mobile-signin",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-dashboard",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-questions",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-ranking",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      },
+      {
+        "id": "mobile-profile",
+        "reason": "Native Expo client requires emulator and demo backend session"
+      }
+    ]
+  },
+  {
+    "id": "termop",
+    "directory": "termop",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ]
+  },
+  {
+    "id": "russian-alphabet",
+    "directory": "russian-alphabet",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "alphabet",
+        "path": "/",
+        "requiresAuth": false,
+        "steps": [
+          {
+            "action": "click",
+            "selector": "button[title=\"Open alphabet reference\"]"
+          }
+        ],
+        "caption": {
+          "pt": "Referência do alfabeto",
+          "en": "Alphabet reference",
+          "de": "Alphabetübersicht"
+        }
+      },
+      {
+        "id": "light-theme",
+        "path": "/",
+        "requiresAuth": false,
+        "steps": [
+          {
+            "action": "click",
+            "selector": "button[aria-label=\"Toggle theme\"]"
+          }
+        ],
+        "caption": {
+          "pt": "Tema alternativo",
+          "en": "Alternate theme",
+          "de": "Alternatives Theme"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "npm",
+      "args": [
+        "run",
+        "dev",
+        "--",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "{port}",
+        "--strictPort"
+      ]
+    },
+    "requiresDatabase": false
+  },
+  {
+    "id": "deadlatch",
+    "directory": "deadlatch",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "dashboard",
+        "path": "/dashboard",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Dashboard",
+          "en": "Dashboard",
+          "de": "Dashboard"
+        }
+      },
+      {
+        "id": "dashboard-api-keys",
+        "path": "/dashboard/api-keys",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/dashboard/api-keys",
+          "en": "/dashboard/api-keys",
+          "de": "/dashboard/api-keys"
+        }
+      },
+      {
+        "id": "dashboard-settings",
+        "path": "/dashboard/settings",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/dashboard/settings",
+          "en": "/dashboard/settings",
+          "de": "/dashboard/settings"
+        }
+      },
+      {
+        "id": "dashboard-switches",
+        "path": "/dashboard/switches",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/dashboard/switches",
+          "en": "/dashboard/switches",
+          "de": "/dashboard/switches"
+        }
+      },
+      {
+        "id": "docs",
+        "path": "/docs",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Documentação",
+          "en": "Documentation",
+          "de": "Dokumentation"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": false
+  },
+  {
+    "id": "chess-mistery",
+    "directory": "chess-mistery/web",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "neural",
+        "path": "/neural",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Visualização neural",
+          "en": "Neural visualization",
+          "de": "Neuronale Visualisierung"
+        }
+      },
+      {
+        "id": "play",
+        "path": "/play",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Partida",
+          "en": "Game",
+          "de": "Partie"
+        }
+      },
+      {
+        "id": "watch",
+        "path": "/watch",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Espectador",
+          "en": "Spectator",
+          "de": "Zuschauer"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": false
+  },
+  {
+    "id": "brainer",
+    "directory": "brainer",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ]
+  },
+  {
+    "id": "kotlin-vortey",
+    "directory": "KotlinVortey",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ]
+  },
+  {
+    "id": "my-game-papers",
+    "directory": "my-game-papers",
+    "areas": [
+      {
+        "id": "home",
+        "steps": [],
+        "caption": {
+          "pt": "Home",
+          "en": "Home",
+          "de": "Home"
+        }
+      },
+      {
+        "id": "cartelas",
+        "steps": [
+          {
+            "action": "click",
+            "selector": "#nav-cartelas"
+          }
+        ],
+        "caption": {
+          "pt": "Cartelas",
+          "en": "Cartelas",
+          "de": "Cartelas"
+        }
+      },
+      {
+        "id": "generator",
+        "steps": [
+          {
+            "action": "click",
+            "selector": "#nav-generator"
+          }
+        ],
+        "caption": {
+          "pt": "Generator",
+          "en": "Generator",
+          "de": "Generator"
+        }
+      },
+      {
+        "id": "game",
+        "steps": [
+          {
+            "action": "click",
+            "selector": "#nav-game"
+          }
+        ],
+        "caption": {
+          "pt": "Jogo de bingo com cartela de demonstração",
+          "en": "Bingo game with a demo card",
+          "de": "Bingo-Spiel mit Demokarte"
+        }
+      },
+      {
+        "id": "history",
+        "steps": [
+          {
+            "action": "click",
+            "selector": "#nav-history"
+          }
+        ],
+        "caption": {
+          "pt": "History",
+          "en": "History",
+          "de": "History"
+        }
+      },
+      {
+        "id": "settings",
+        "steps": [
+          {
+            "action": "click",
+            "selector": "#nav-settings"
+          }
+        ],
+        "caption": {
+          "pt": "Settings",
+          "en": "Settings",
+          "de": "Settings"
+        }
+      }
+    ],
+    "kind": "electron",
+    "prerequisites": [
+      "Build the desktop app with its existing scripts before capture; a graphical session must be available.",
+      "Add fictional bingo cards in the isolated profile to capture a running game; camera/QR flows require a device fixture."
+    ],
+    "main": "./out/main/index.js",
+    "demoStorage": {
+      "bingo_cartelas": "[{\"id\": \"review-card-001\", \"numbers\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24], \"createdAt\": \"2026-10-04T00:00:00.000Z\"}]"
+    }
+  },
+  {
+    "id": "agentics",
+    "directory": "agentics/web-interface",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": false,
+    "companions": [
+      "agentics/main.py",
+      "agentics/test_project"
+    ]
+  },
+  {
+    "id": "lomaw",
+    "directory": "lomaw",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ]
+  },
+  {
+    "id": "my-llm-executor",
+    "directory": "my-llm-executor",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ]
+  },
+  {
+    "id": "my-codec",
+    "directory": "my-codec",
+    "areas": [],
+    "kind": "terminal",
+    "prerequisites": [
+      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+    ]
+  },
+  {
+    "id": "compound-interest-calc",
+    "directory": "compound-interest-calc",
+    "areas": [
+      {
+        "id": "initial-screen",
+        "caption": {
+          "pt": "Tela inicial",
+          "en": "Initial screen",
+          "de": "Startansicht"
+        }
+      }
+    ],
+    "kind": "expo",
+    "prerequisites": [
+      "Native emulator/device required; Expo web is a separate representation and must not be labeled native."
+    ]
+  },
+  {
+    "id": "office-tools",
+    "directory": "office-tools",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": false
+  },
+  {
+    "id": "electron-app",
+    "directory": "electron-app",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "npm",
+      "args": [
+        "run",
+        "dev",
+        "--",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "{port}",
+        "--strictPort"
+      ]
+    },
+    "requiresDatabase": false
+  },
+  {
+    "id": "github-follow-bot",
+    "directory": "github-follow-bot",
+    "areas": [],
+    "kind": "manual",
+    "prerequisites": [
+      "Requires isolated service fixtures; do not invoke actions on real accounts or communities."
+    ]
+  },
+  {
+    "id": "portifolio",
+    "directory": "portifolio",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Página inicial",
+          "en": "Home",
+          "de": "Startseite"
+        }
+      },
+      {
+        "id": "projects",
+        "path": "/projects",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/projects",
+          "en": "/projects",
+          "de": "/projects"
+        }
+      },
+      {
+        "id": "projects-slug",
+        "path": "/projects/simple-bank",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/projects/[slug]",
+          "en": "/projects/[slug]",
+          "de": "/projects/[slug]"
+        }
+      }
+    ],
+    "kind": "web",
+    "prerequisites": [],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": false
+  }
+]

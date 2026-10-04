@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...projects.map((project) => ({
       url: `${BASE_URL}/projects/${project.id}`,
-      lastModified: project.updatedAt ? new Date(project.updatedAt) : new Date(),
+      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),

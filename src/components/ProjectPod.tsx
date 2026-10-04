@@ -1,5 +1,7 @@
 'use client';
 
+import ProjectStage from '@/components/ProjectStage';
+
 import { useState } from 'react';
 import type { MouseEvent } from 'react';
 import Link from 'next/link';
@@ -200,6 +202,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
         >
           {project.category}
         </span>
+        <ProjectStage stage={project.stage} />
         {project.year && (
           <motion.span
             animate={{
@@ -289,7 +292,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
               <ExternalLink className="h-3.5 w-3.5 shrink-0" />
             </a>
           )}
-          <a
+          {project.githubUrl && <a
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -301,7 +304,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
           >
             GitHub
             <ExternalLink className="h-3.5 w-3.5" />
-          </a>
+          </a>}
         </div>
       </div>
       </div>

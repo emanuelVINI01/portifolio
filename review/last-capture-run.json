@@ -1,0 +1,1272 @@
+{
+  "createdAt": "2026-10-04T21:48:57.330Z",
+  "results": [
+    {
+      "projectId": "my-bet",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "payment-keys",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "payment-keys",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "transactions",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "transactions",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "register",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "register",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "cvm-runtime",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "cvm-compiler",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "collections",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "collections",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "docs",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "docs",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "history",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "history",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "workspace",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "apiflash",
+      "area": "workspace",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "browia",
+      "area": "chat",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "browia",
+      "area": "settings",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "lowvia",
+      "area": "chat",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "lowvia",
+      "area": "models",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "lowvia",
+      "area": "settings",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "lowvia",
+      "area": "research",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "lowvia",
+      "area": "reports",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "snippet-id",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "snippet-id",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "about",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "about",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "practice",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "practice",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "ranking",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "typedash",
+      "area": "ranking",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-shop-bot",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraft",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraft",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraftgaming",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraftgaming",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vps",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vps",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vpsgaming",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vpsgaming",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "dedicated",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "dedicated",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "web",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "web",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "apps",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "apps",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "serviceterms",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "serviceterms",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "privacypolicy",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "privacypolicy",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "dv-duels",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "portifolio-frontend",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "z-discord-core",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "comuni-mine-bot",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "minecraft-feast-bot",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "advanced-sql",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "z-manutencao",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "z-silk2",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "multi-server-api",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Project source is unavailable"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-conversation",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-conversation",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-grammar",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-grammar",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-more",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-more",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-practice",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-practice",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-progress",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-progress",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-questions",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-questions",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-ranking",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-ranking",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-settings",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-settings",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-study-id",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-study-id",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-writing",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-writing",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin-check-email",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin-check-email",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-privacy",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-privacy",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-terms",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-terms",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-profile-userid",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-profile-userid",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "termop",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "alphabet",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "alphabet",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "light-theme",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "light-theme",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-api-keys",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-api-keys",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-settings",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-settings",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-switches",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-switches",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "docs",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "docs",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "neural",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "neural",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "play",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "play",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "watch",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "watch",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "brainer",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "kotlin-vortey",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "home",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "cartelas",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "generator",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "game",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "history",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "settings",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "agentics",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "agentics",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "lomaw",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "my-llm-executor",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "my-codec",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "compound-interest-calc",
+      "area": "initial-screen",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "office-tools",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "office-tools",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "electron-app",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "electron-app",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "github-follow-bot",
+      "area": "project",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "Dedicated runtime and manual capture required"
+    },
+    {
+      "projectId": "portifolio",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "portifolio",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects-slug",
+      "viewport": "desktop",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects-slug",
+      "viewport": "mobile",
+      "status": "blocked",
+      "reason": "browserType.launch: Target page, context or browser has been closed"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "mobile-login",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "mobile-dashboard",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "mobile-transfer",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "mobile-transactions",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "mobile-payment-keys",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "cvm-runtime",
+      "area": "os-framebuffer",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "CVM compiler and graphical VM runtime required"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "mobile-signin",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "mobile-dashboard",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "mobile-questions",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "mobile-ranking",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "mobile-profile",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native Expo client requires emulator and demo backend session"
+    }
+  ]
+}

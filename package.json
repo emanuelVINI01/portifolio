@@ -5,9 +5,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "review:audit": "python3 scripts/audit-workspace.py",
+    "review:check": "node scripts/check-catalog.mjs",
+    "review:capture": "node scripts/capture-projects.mjs --start",
+    "review:attach": "node scripts/attach-captures.mjs",
+    "review:smoke": "node scripts/smoke-portfolio.mjs",
+    "review:github": "node scripts/update-github.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",

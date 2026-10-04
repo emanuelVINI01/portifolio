@@ -38,7 +38,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { Flag } from '@/components/ui/flag';
 import DepthIllustration from '@/components/ui/DepthIllustration';
 import { pick } from '@/i18n/dictionaries';
-import { SiCloudflare, SiDiscord, SiGithub, SiKotlin, SiLinux, SiNextdotjs, SiOvh, SiPrisma, SiTypescript } from 'react-icons/si';
+import { SiCloudflare, SiDiscord, SiGithub, SiLinux, SiNextdotjs, SiOvh, SiPrisma, SiTypescript } from 'react-icons/si';
 
 
 const TechOrbit = dynamic(() => import('@/components/TechOrbit'), { ssr: false });
@@ -51,7 +51,7 @@ export default function HomePage() {
   const contactEmail = 'contact@emanuelvini.dev';
 
   const projects = getProjects(language);
-  const featuredProjects = ['my-bet', 'browia', 'snippetvault']
+  const featuredProjects = ['simple-bank', 'swiss-learn', 'snippetvault']
     .map((id) => projects.find((project) => project.id === id))
     .filter(Boolean) as Project[];
 
@@ -128,15 +128,15 @@ export default function HomePage() {
     },
     {
       kind: 'command',
-      value: 'open /projects --spotlight my-bet',
+      value: 'open /projects/swiss-learn',
     },
     {
       kind: 'output',
       tone: 'warning',
       value: pick(language, {
-        pt: 'prioridade: separação stateful/stateless, ledger transacional e locks em Redis',
-        en: 'priority: stateful/stateless separation, transactional ledger, and Redis locks',
-        de: 'Priorität: Stateful/Stateless-Trennung, transaktionales Ledger und Redis-Locks',
+        pt: 'prioridade: domínio educacional, sessões de estudo e revisão espaçada',
+        en: 'priority: learning domain, study sessions and spaced repetition',
+        de: 'Priorität: Lerndomäne, Lernsitzungen und verteiltes Wiederholen',
       }),
     },
   ];
@@ -153,7 +153,7 @@ export default function HomePage() {
   });
 
   const stats = [
-    { label: t.hero.statsLabel1, value: '37', detail: t.hero.statsDetail1 },
+    { label: t.hero.statsLabel1, value: String(projects.length), detail: t.hero.statsDetail1 },
     { label: t.hero.statsLabel2, value: '2021', detail: t.hero.statsDetail2 },
     {
       label: t.hero.statsLabel3,
@@ -819,99 +819,25 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* MY-BET SPOTLIGHT SECTION */}
           <section id="my-bet-spotlight" className="story-section-flat scroll-mt-20 border-y border-dracula-card/60">
-            <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-24">
-              <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: '-70px' }}
-                  transition={{ duration: 0.45 }}
-                >
-                  <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-purple">
-                    {pick(language, { pt: 'Destaque de Engenharia', en: 'Engineering Spotlight', de: 'Technik-Spotlight' })}
+            <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-20">
+              {projects.filter((project) => project.id === 'swiss-learn').map((project) => (
+                <div key={project.id} className="grid gap-8 lg:grid-cols-2">
+                  <div>
+                    <p className="mb-3 text-xs uppercase tracking-widest text-dracula-cyan">{t.projects.spotlightLabel}</p>
+                    <h2 className="text-3xl font-semibold text-dracula-fg">{project.name}</h2>
+                    <p className="mt-4 leading-7 text-dracula-comment">{project.shortDesc}</p>
+                    <p className="mt-4 text-sm leading-7 text-dracula-comment">{project.longDesc}</p>
+                    <Link href={`/projects/${project.id}`} className="mt-6 inline-flex items-center gap-2 text-dracula-cyan">{t.common.viewProject}<ArrowRight className="h-4 w-4" /></Link>
                   </div>
-                  <h2 className="text-3xl font-semibold tracking-tight text-dracula-fg sm:text-4xl">
-                    My Bet: iGaming Architecture
-                  </h2>
-                  <p className="mt-4 text-lg text-dracula-comment">
-                    {pick(language, { pt: 'Alta concorrência e integridade financeira em escala.', en: 'High concurrency and financial integrity at scale.', de: 'Hohe Nebenläufigkeit und finanzielle Integrität in großem Maßstab.' })}
-                  </p>
-                  
-                  <div className="mt-6 space-y-4 text-sm leading-7 text-dracula-fg/80 sm:text-base">
-                    <p>{pick(language, {
-                      pt: 'O my-bet é um sistema completo de iGaming rodando 13 jogos originais, divididos rigorosamente em três engines: Stateless (Dice, Plinko), Stateful (Mines, Dungeon) com cache em Redis, e Real-time (Crash, Race) utilizando SSE para broadcast simultâneo.',
-                      en: 'my-bet is a complete iGaming system running 13 original games, rigorously divided into three engines: Stateless (Dice, Plinko), Stateful (Mines, Dungeon) with Redis caching, and Real-time (Crash, Race) using SSE for simultaneous broadcasting.',
-                      de: 'my-bet ist ein komplettes iGaming-System mit 13 originären Spielen, streng unterteilt in drei Engines: Stateless (Dice, Plinko), Stateful (Mines, Dungeon) mit Redis-Caching und Real-time (Crash, Race) mit SSE-Broadcasting.'
-                    })}</p>
-                    <p>{pick(language, {
-                      pt: 'Emprega Redis para locks distribuídos na prevenção de double spending e possui 8 integrações nativas de gateway PIX. O balanço opera estritamente em centavos inteiros através de um ledger auditável com controle de idempotência (referenceId), garantindo integridade financeira sob alta concorrência.',
-                      en: 'It employs Redis for distributed locks to prevent double spending and features 8 native PIX gateway integrations. Balance operates strictly in integer cents through an auditable ledger with idempotency control (referenceId), ensuring financial integrity under high concurrency.',
-                      de: 'Es nutzt Redis für verteilte Locks zur Vermeidung von Double Spending und bietet 8 native PIX-Gateway-Integrationen. Guthaben werden streng in ganzzahligen Cents über ein auditierbares Ledger mit Idempotenzkontrolle (referenceId) verwaltet, was finanzielle Integrität bei hoher Nebenläufigkeit garantiert.'
-                    })}</p>
+                  <div className="space-y-3">
+                    {project.highlights.map((highlight) => <div key={highlight.label} className="rounded-xl border border-dracula-card p-5">
+                      <h3 className="mb-2 text-xs font-semibold uppercase text-dracula-cyan">{highlight.label}</h3>
+                      <p className="text-sm leading-7 text-dracula-comment">{highlight.value}</p>
+                    </div>)}
                   </div>
-                  
-                  <div className="mt-8 flex flex-wrap gap-4">
-                    <a
-                      href="https://bet.emanuelvini.dev"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-xl bg-dracula-purple px-5 py-3 text-sm font-semibold text-dracula-bg shadow-lg shadow-dracula-purple/20 transition-transform hover:-translate-y-0.5"
-                    >
-                      <ExternalLink className="h-4 w-4" />
-                      {pick(language, { pt: 'Acessar bet.emanuelvini.dev', en: 'Visit bet.emanuelvini.dev', de: 'Besuche bet.emanuelvini.dev' })}
-                    </a>
-                    <a
-                      href="https://github.com/emanuelVINI01/my-bet"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-dracula-card/70 bg-dracula-bg/25 px-5 py-3 text-sm font-semibold text-dracula-comment transition-colors hover:border-dracula-card hover:text-dracula-fg"
-                    >
-                      <SiGithub className="h-4 w-4" />
-                      {pick(language, { pt: 'Ver no GitHub', en: 'View on GitHub', de: 'Auf GitHub ansehen' })}
-                    </a>
-                  </div>
-                </motion.div>
-                
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.96 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, margin: '-70px' }}
-                  transition={{ duration: 0.45, delay: 0.1 }}
-                  className="relative mx-auto w-full max-w-md lg:mx-0"
-                >
-                  <div className="rounded-xl border border-dracula-card/60 bg-[#1e1e24] p-5 shadow-2xl">
-                    <div className="mb-4 flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-dracula-green/25 bg-dracula-green/10">
-                        <Server className="h-5 w-5 text-dracula-green" />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold text-dracula-fg">Distributed Locks</h4>
-                        <p className="text-xs text-dracula-comment">Redis + Atomic Ops</p>
-                      </div>
-                    </div>
-                    <div className="mb-4 flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-dracula-orange/25 bg-dracula-orange/10">
-                        <DatabaseZap className="h-5 w-5 text-dracula-orange" />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold text-dracula-fg">Financial Ledger</h4>
-                        <p className="text-xs text-dracula-comment">Integer Cents (No Float Bugs)</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-dracula-cyan/25 bg-dracula-cyan/10">
-                        <Cpu className="h-5 w-5 text-dracula-cyan" />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold text-dracula-fg">Real-time Broadcaster</h4>
-                        <p className="text-xs text-dracula-comment">SSE + Stateless API</p>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
+                </div>
+              ))}
             </div>
           </section>
 

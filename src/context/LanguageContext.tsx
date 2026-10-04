@@ -14,12 +14,12 @@ const LanguageContext = createContext<LanguageContextProps | undefined>(undefine
 const SUPPORTED_LANGUAGES: Language[] = ['pt', 'en', 'de'];
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguageState] = useState<Language>('en');
-  const [mounted, setMounted] = useState(false);
+  const [language, setLanguageState] = useState<Language>('pt');
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
-      const storedLang = localStorage.getItem('app-lang') as Language | null;
+      let storedLang: Language | null = null;
+      try { storedLang = localStorage.getItem('app-lang') as Language | null; } catch { /* storage can be disabled */ }
       if (storedLang && SUPPORTED_LANGUAGES.includes(storedLang)) {
         setLanguageState(storedLang);
       } else {
@@ -32,7 +32,6 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
           setLanguageState('en');
         }
       }
-      setMounted(true);
     });
 
     return () => cancelAnimationFrame(frame);
@@ -40,21 +39,18 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('app-lang', lang);
+    try { localStorage.setItem('app-lang', lang); } catch { /* keep the selected language for this session */ }
   };
 
   const t = dictionaries[language];
 
-  // While not mounted, render children with default language (en) to prevent hydration mismatches
-  // but it's safe to just return provider. Wait, hydration mismatch on text is possible.
-  // We'll let React handle it or the user can ignore brief flash.
-  // Next.js might complain if text differs between server (pt) and client (en) on first render.
-  
+  useEffect(() => {
+    document.documentElement.lang = language === 'pt' ? 'pt-BR' : language;
+  }, [language]);
+
   return (
     <LanguageContext.Provider value={{ language, t, setLanguage }}>
-      <div className={mounted ? 'opacity-100 transition-opacity duration-300' : 'opacity-0'}>
-         {children}
-      </div>
+      {children}
     </LanguageContext.Provider>
   );
 };

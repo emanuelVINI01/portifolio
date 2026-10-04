@@ -1,0 +1,127 @@
+[
+  {
+    "projectId": "my-bet",
+    "repository": "emanuelVINI01/my-bet",
+    "description": "Game application with an integer ledger, Redis sessions and PIX integrations."
+  },
+  {
+    "projectId": "simple-bank",
+    "repository": "emanuelVINI01/simple-bank",
+    "description": "Web and mobile banking simulation with transfers, receipts and a double-entry ledger."
+  },
+  {
+    "projectId": "cvm-runtime",
+    "repository": "emanuelVINI01/my-vm",
+    "description": "Rust virtual machine with a graphical framebuffer, simulated memory and interrupts."
+  },
+  {
+    "projectId": "cvm-compiler",
+    "repository": "emanuelVINI01/my-vm-compiler",
+    "description": "Rust CVM compiler: PEG parsing, intermediate representation and Assembly output."
+  },
+  {
+    "projectId": "apiflash",
+    "repository": "emanuelVINI01/apiflash",
+    "description": "HTTP client with collections, history, AI generation and request export."
+  },
+  {
+    "projectId": "browia",
+    "repository": "emanuelVINI01/browia",
+    "description": "Browser extension with an AI agent, persistent sessions and action approval."
+  },
+  {
+    "projectId": "lowvia",
+    "repository": "emanuelVINI01/lowvia",
+    "description": "Electron assistant with chat, local models, web research and reports."
+  },
+  {
+    "projectId": "snippetvault",
+    "repository": "emanuelVINI01/snippetvault",
+    "description": "Snippet library with collections, versions, search and sharing."
+  },
+  {
+    "projectId": "typedash",
+    "repository": "emanuelVINI01/typedash",
+    "description": "Typing practice with WPM, accuracy, history and ranking."
+  },
+  {
+    "projectId": "ryzen-shop-bot",
+    "repository": "emanuelVINI01/RyzenShopBot",
+    "description": "TypeScript Discord bot with tickets, economy and moderation."
+  },
+  {
+    "projectId": "ryzen-hosting",
+    "repository": "emanuelVINI01/ryzen-site",
+    "description": "Historical hosting website with plans, pricing and React components."
+  },
+  {
+    "projectId": "dv-duels",
+    "repository": "emanuelVINI01/dv-duels",
+    "description": "Java Minecraft duel plugin with arenas, kits and MySQL statistics."
+  },
+  {
+    "projectId": "portifolio-frontend",
+    "repository": "emanuelVINI01/portifolio-frontend",
+    "description": "Earlier portfolio version: interface experiments with Next.js and React."
+  },
+  {
+    "projectId": "z-discord-core",
+    "repository": "emanuelVINI01/zDiscordCore",
+    "description": "Java plugin linking Minecraft and Discord accounts."
+  },
+  {
+    "projectId": "comuni-mine-bot",
+    "repository": "emanuelVINI01/ComuniMineBot",
+    "description": "Discord bot for Minecraft community moderation and utilities."
+  },
+  {
+    "projectId": "minecraft-feast-bot",
+    "repository": "emanuelVINI01/MinecraftFeastBot",
+    "description": "Discord bot for Minecraft community events."
+  },
+  {
+    "projectId": "advanced-sql",
+    "repository": "emanuelVINI01/AdvancedSQL",
+    "description": "Kotlin library for MySQL and SQLite access in JVM plugins."
+  },
+  {
+    "projectId": "z-manutencao",
+    "repository": "emanuelVINI01/zManutencao",
+    "description": "Java Minecraft maintenance plugin from the early project history."
+  },
+  {
+    "projectId": "z-silk2",
+    "repository": "emanuelVINI01/zSilk2",
+    "description": "Java Minecraft server rule plugin from the early project history."
+  },
+  {
+    "projectId": "multi-server-api",
+    "repository": "emanuelVINI01/MultiServer-API",
+    "description": "Java API for integrations across Minecraft server platforms."
+  },
+  {
+    "projectId": "swiss-learn",
+    "repository": "emanuelVINI01/swiss-learn",
+    "description": "Swiss German learning with daily sessions, spaced repetition and a mobile client."
+  },
+  {
+    "projectId": "termop",
+    "repository": "emanuelVINI01/termop",
+    "description": "Terminal agent for local models, with file tools and an MCP server."
+  },
+  {
+    "projectId": "russian-alphabet",
+    "repository": "emanuelVINI01/russian-alphabet",
+    "description": "Cyrillic transliteration practice with an alphabet reference and session statistics."
+  },
+  {
+    "projectId": "kotlin-vortey",
+    "repository": "emanuelVINI01/KotlinVortey",
+    "description": "Event API with an in-memory queue, listeners and HTTP delivery to consumers."
+  },
+  {
+    "projectId": "portifolio",
+    "repository": "emanuelVINI01/portifolio",
+    "description": "Trilingual portfolio with a project catalog, case studies and screenshot galleries."
+  }
+]

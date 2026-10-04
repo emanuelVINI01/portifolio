@@ -1,6 +1,9 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import ProjectGallery from '@/components/ProjectGallery';
+import ProjectStage from '@/components/ProjectStage';
+
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Link2, Check, Sparkles, X } from 'lucide-react';
 import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandTerminal';
@@ -18,25 +21,10 @@ interface ProjectModalProps {
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const { language } = useLanguage();
   const [linkCopied, setLinkCopied] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
 
-  const repoName = project?.githubUrl.split('/').filter(Boolean).pop() ?? 'project';
-  const runbookLines: CommandTerminalLine[] = project
-    ? [
-        { kind: 'command', value: `git clone ${project.githubUrl}.git` },
-        { kind: 'command', value: `cd ${repoName}` },
-        { kind: 'command', value: 'npm install' },
-        { kind: 'command', value: 'npm run dev' },
-        {
-          kind: 'output',
-          tone: 'success',
-          value: pick(language, {
-            pt: 'ambiente local pronto para revisar arquitetura, UX e contratos',
-            en: 'local environment ready to review architecture, UX, and contracts',
-            de: 'lokale Umgebung bereit zur Prüfung von Architektur, UX und Verträgen',
-          }),
-        },
-      ]
-    : [];
+  const runbookLines: CommandTerminalLine[] = (project?.runCommands ?? [])
+    .map((value) => ({ kind: 'command', value }));
 
   const copyProjectLink = useCallback(async () => {
     if (!project) return;
@@ -51,13 +39,25 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   }, [project]);
 
   useEffect(() => {
+    if (!project) return;
+    const previousFocus = document.activeElement as HTMLElement | null;
+    const element = modalRef.current;
+    element?.focus();
     const handleKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
+      if (document.querySelector('dialog[open]')) return;
+      if (event.key === 'Escape' && !event.defaultPrevented) onClose();
+      if (event.key !== 'Tab' || !element) return;
+      const focusable = Array.from(element.querySelectorAll<HTMLElement>('button:not([disabled]), a[href], input:not([disabled]), [tabindex="0"]'))
+        .filter((node) => node.getClientRects().length > 0 && !node.closest('dialog:not([open])'));
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (!first) { event.preventDefault(); element.focus(); return; }
+      if (event.shiftKey && (document.activeElement === first || document.activeElement === element)) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && (document.activeElement === last || document.activeElement === element)) { event.preventDefault(); first.focus(); }
     };
-
     document.addEventListener('keydown', handleKey);
-    return () => document.removeEventListener('keydown', handleKey);
-  }, [onClose]);
+    return () => { document.removeEventListener('keydown', handleKey); previousFocus?.focus(); };
+  }, [project, onClose]);
 
   useEffect(() => {
     if (!project) return;
@@ -85,6 +85,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         >
           <motion.div
             key="modal"
+            ref={modalRef}
+            tabIndex={-1}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="project-modal-title"
             initial={{ opacity: 0, scale: 0.94, y: 18 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: -8 }}
@@ -116,7 +121,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   <div className="text-[10px] font-semibold uppercase tracking-widest text-dracula-comment">
                     {pick(language, { pt: 'Projeto selecionado', en: 'Selected Project', de: 'Ausgewähltes Projekt' })}
                   </div>
-                  <h2 className="mt-1 text-xl font-semibold tracking-tight text-dracula-fg sm:text-2xl">
+                  <h2 id="project-modal-title" className="mt-1 text-xl font-semibold tracking-tight text-dracula-fg sm:text-2xl">
                     {project.name}
                   </h2>
                 </div>
@@ -182,6 +187,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             </div>
 
             <div className="space-y-7 px-4 py-5 pb-[calc(env(safe-area-inset-bottom)+1.25rem)] sm:p-6">
+              <ProjectGallery key={project.id} captures={project.captures ?? []} />
               <div className="flex flex-wrap items-center gap-3">
                 <span
                   className="rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-widest"
@@ -193,20 +199,12 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 >
                   {project.category}
                 </span>
-                {project.updatedAt && (
-                  <span className="text-xs text-dracula-comment">
-                    {pick(language, {
-                      pt: `Atualizado no GitHub em ${project.updatedAt}`,
-                      en: `Updated on GitHub on ${project.updatedAt}`,
-                      de: `Zuletzt aktualisiert auf GitHub am ${project.updatedAt}`,
-                    })}
-                  </span>
-                )}
+                <ProjectStage stage={project.stage} />
               </div>
 
               <p className="text-sm leading-relaxed text-dracula-comment">{project.longDesc}</p>
 
-              <CommandTerminal
+              {runbookLines.length > 0 && <CommandTerminal
                 title={pick(language, { pt: 'runbook do projeto', en: 'project runbook', de: 'Projekt-Runbook' })}
                 subtitle={pick(language, { pt: 'comandos base para auditoria local', en: 'base commands for local audit', de: 'Basisbefehle für die lokale Prüfung' })}
                 badge={project.year ? String(project.year) : undefined}
@@ -214,7 +212,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 lines={runbookLines}
                 accent={project.color}
                 dense
-              />
+              />}
 
               <div>
                 <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-dracula-fg">
@@ -276,7 +274,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                     <ExternalLink className="h-4 w-4 shrink-0" />
                   </a>
                 )}
-                <a
+                {project.githubUrl && <a
                   href={project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -297,7 +295,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 >
                   {pick(language, { pt: 'Abrir repositório', en: 'Open repository', de: 'Repository öffnen' })}
                   <ExternalLink className="h-4 w-4" />
-                </a>
+                </a>}
               </div>
             </div>
           </motion.div>

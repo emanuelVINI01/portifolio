@@ -37,7 +37,7 @@ export default function Navbar() {
       { id: 'services' as SectionId, label: t.nav.services, href: '/#services', icon: BriefcaseBusiness },
       { id: 'projects' as SectionId, label: t.nav.projects, href: '/projects', icon: Layers },
     ],
-    [t, t.nav.projects, t.nav.services, t.nav.story],
+    [t],
   );
 
   const mobileNavLinks = useMemo(
@@ -48,7 +48,7 @@ export default function Navbar() {
       { id: 'story' as SectionId, label: t.nav.story, href: '/#story', icon: BookOpenText },
       { id: 'projects' as SectionId, label: t.nav.projects, href: '/projects', icon: Layers },
     ],
-    [t, t.nav.home, t.nav.projects, t.nav.story],
+    [t],
   );
 
   useEffect(() => {

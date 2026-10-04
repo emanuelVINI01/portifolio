@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -23,7 +23,6 @@ const ParallaxGrid = dynamic(() => import('@/components/ParallaxGrid'), { ssr: f
 export default function ProjectsContent() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [query, setQuery] = useState('');
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const { t, language } = useLanguage();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -31,28 +30,15 @@ export default function ProjectsContent() {
   const projects = getProjects(language);
   const categories = getCategories(language);
 
-  // Deep-link: open project modal from ?project=<id>
-  useEffect(() => {
-    const projectId = searchParams.get('project');
-    if (!projectId) {
-      setSelectedProject(null);
-      return;
-    }
-    const found = projects.find((p) => p.id === projectId);
-    if (found) {
-      setSelectedProject(found);
-    }
-  }, [searchParams, projects]);
+  const selectedProject = projects.find((project) => project.id === searchParams.get('project')) ?? null;
 
   const handleSelectProject = (project: Project) => {
-    setSelectedProject(project);
     const params = new URLSearchParams(searchParams.toString());
     params.set('project', project.id);
     router.replace(`/projects?${params.toString()}`, { scroll: false });
   };
 
   const handleCloseProject = () => {
-    setSelectedProject(null);
     const params = new URLSearchParams(searchParams.toString());
     params.delete('project');
     const qs = params.toString();
@@ -62,18 +48,19 @@ export default function ProjectsContent() {
   const filtered = useMemo(() => {
     return projects.filter((project) => {
       const matchCategory = activeCategory === 'all' || project.category === activeCategory;
-      const normalizedQuery = query.toLowerCase();
+      const normalizedQuery = query.trim().toLowerCase();
       const matchQuery =
         !normalizedQuery ||
         project.name.toLowerCase().includes(normalizedQuery) ||
         project.shortDesc.toLowerCase().includes(normalizedQuery) ||
         project.category.toLowerCase().includes(normalizedQuery) ||
+        t.projectStage[project.stage].toLowerCase().includes(normalizedQuery) ||
         project.tech.some((tech) => tech.toLowerCase().includes(normalizedQuery)) ||
         project.badges.some((badge) => badge.toLowerCase().includes(normalizedQuery));
 
       return matchCategory && matchQuery;
     });
-  }, [activeCategory, query, projects]);
+  }, [activeCategory, query, projects, t.projectStage]);
 
   const counts = useMemo(() => {
     return categories.reduce<Record<string, number>>((acc, category) => {
@@ -86,7 +73,7 @@ export default function ProjectsContent() {
   }, [categories, projects]);
 
   const spotlightProjects = useMemo(() => {
-    const spotlightIds = ['browia', 'cvm-runtime', 'my-bet'];
+    const spotlightIds = ['simple-bank', 'swiss-learn', 'snippetvault'];
     return spotlightIds
       .map((id) => projects.find((project) => project.id === id))
       .filter(Boolean) as Project[];
@@ -114,9 +101,9 @@ export default function ProjectsContent() {
       kind: 'output',
       tone: 'info',
       value: pick(language, {
-        pt: 'priorizando sistemas bare-metal, ledger transacional e ferramentas dev',
-        en: 'prioritizing bare-metal systems, transactional ledger, and dev tools',
-        de: 'priorisiert Bare-Metal-Systeme, transaktionales Ledger und Dev-Tools',
+        pt: 'destaques: estudo de idiomas, simulação bancária e organização de snippets',
+        en: 'highlights: language learning, banking simulation and snippet organization',
+        de: 'Highlights: Sprachenlernen, Banksimulation und Snippet-Verwaltung',
       }),
     },
   ];

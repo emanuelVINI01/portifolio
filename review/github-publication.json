@@ -1,0 +1,7 @@
+[
+  {
+    "status": "blocked",
+    "action": "authentication",
+    "reason": "gh auth status failed; no descriptions or profile README were published"
+  }
+]

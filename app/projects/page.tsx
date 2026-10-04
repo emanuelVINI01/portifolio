@@ -12,14 +12,14 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: 'Projetos',
   description:
-    'Catálogo de projetos full-stack, sistemas bare-metal e ferramentas de IA construídos por Emanuel Vini (EmanuelMissena) — código aberto, stack detalhada e evidência técnica.',
+    'Projetos de Emanuel Missena: aplicações web, ferramentas IA, automação e experimentos em Rust. Escopo, tecnologias, estágio de implementação e telas.',
   alternates: {
     canonical: '/projects',
   },
   openGraph: {
     title: 'Projetos | Emanuel Vini',
     description:
-      'Catálogo de projetos full-stack, sistemas bare-metal e ferramentas de IA construídos por Emanuel Vini (EmanuelMissena).',
+      'Aplicações, experimentos e projetos históricos de Emanuel Missena, com tecnologias, descrições e galerias de telas.',
     url: 'https://emanuelmissena.com/projects',
     type: 'website',
   },

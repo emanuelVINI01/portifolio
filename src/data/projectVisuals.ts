@@ -28,7 +28,7 @@ export interface ProjectVisual {
 export const PROJECT_VISUALS: Record<string, ProjectVisual> = {
   'my-bet': { pattern: 'ledger', icon: 'landmark', tag: '/ledger/atomic-tx' },
   'simple-bank': { pattern: 'ledger', icon: 'landmark', tag: '/ledger/atomic-tx' },
-  'cvm-runtime': { pattern: 'circuit', icon: 'cpu', tag: '0x7C00 :: ring0' },
+  'cvm-runtime': { pattern: 'circuit', icon: 'cpu', tag: 'cvm :: framebuffer' },
   'cvm-compiler': { pattern: 'circuit', icon: 'binary', tag: 'cvm -> asm -> vm' },
   apiflash: { pattern: 'terminal', icon: 'zap', tag: 'POST /workbench' },
   browia: { pattern: 'network', icon: 'puzzle', tag: 'mcp://active-tab' },
@@ -36,7 +36,7 @@ export const PROJECT_VISUALS: Record<string, ProjectVisual> = {
   snippetvault: { pattern: 'scan', icon: 'library', tag: '/vault/public' },
   typedash: { pattern: 'scan', icon: 'gauge', tag: 'wpm :: realtime' },
   'ryzen-shop-bot': { pattern: 'signal', icon: 'bot', tag: '#ticket-queue' },
-  'ryzen-hosting': { pattern: 'hex', icon: 'server', tag: 'uptime :: 99.9' },
+  'ryzen-hosting': { pattern: 'hex', icon: 'server', tag: 'hosting :: legacy' },
   'dv-duels': { pattern: 'blocks', icon: 'swords', tag: 'arena :: 1v1' },
   'portifolio-frontend': { pattern: 'orbit', icon: 'layout-template', tag: 'v1 :: archive' },
   'z-discord-core': { pattern: 'network', icon: 'link-2', tag: 'core :: bridge' },
