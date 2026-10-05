@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import { writeFileSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { readCatalog } from './catalog.mjs';
 const { projectMetadata, projectCopy } = readCatalog();
@@ -38,7 +38,19 @@ if (process.argv.includes('--profile')) {
   const current = gh(['api', endpoint]);
   if (current.status === 0) {
     const original = JSON.parse(current.stdout);
-    const content = readFileSync(new URL('../review/profile-README.md', import.meta.url));
+    const featuredIds = ['swiss-learn', 'simple-bank', 'apiflash', 'snippetvault', 'typedash', 'termop'];
+    const rows = featuredIds.map((id) => {
+      const project = projectMetadata.find((entry) => entry.id === id);
+      const copy = projectCopy.en[id];
+      return project?.githubUrl && copy ? `| [${copy.name}](${project.githubUrl}) | ${copy.shortDesc} |` : null;
+    }).filter(Boolean);
+    const content = Buffer.from([
+      '# Emanuel Missena · Emanuel Vini', '',
+      'I build web applications, developer tools and experimental systems. My current work uses TypeScript, Next.js and PostgreSQL; my project history also includes Java/Kotlin server plugins and Rust virtual machines.', '',
+      '[Portfolio and project cases](https://emanuelmissena.com/projects) · [Contact](mailto:contact@emanuelvini.dev)', '',
+      '| Project | What the code explores |', '| --- | --- |', ...rows, '',
+      'The portfolio distinguishes applications, experiments, legacy work and scaffolds. Cases describe implemented features and their limits; screenshots are identified separately from source review.', '',
+    ].join('\n'));
     const payload = JSON.stringify({ message: 'docs: update portfolio profile', sha: original.sha, content: content.toString('base64') });
     const update = gh(['api', '--method', 'PUT', endpoint, '--input', '-'], payload);
     const check = update.status === 0 ? gh(['api', endpoint]) : null;

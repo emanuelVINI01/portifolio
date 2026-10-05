@@ -75,7 +75,7 @@ npm run review:github
 node scripts/update-github.mjs --apply --profile
 ```
 
-O primeiro comando mostra as descrições sem publicar. O segundo verifica autenticação e permissões antes de editar descrições e o README existente do perfil. Preserva homepage/topics e confirma cada escrita. As descrições vêm do mesmo catálogo da interface. Resultado em `review/github-publication.json`.
+O primeiro comando mostra as descrições sem publicar. O segundo verifica autenticação e permissões antes de editar descrições e o README existente do perfil, gerado a partir do catálogo. Preserva homepage/topics e confirma cada escrita. Resultado em `review/github-publication.json`.
 
 Na execução de 04/10/2026, autenticação/rede GitHub estavam indisponíveis; Chromium e portas locais também foram bloqueados pelo ambiente. O build passou, mas capturas novas, validação visual e publicação continuam pendentes.
 
