@@ -88,4 +88,4 @@ A home (`/#my-vm`) e o catálogo (`/projects#my-vm`) têm uma seção dedicada a
 - `my-vm-os`: desktop CVM, aplicativos e VFS em RAM.
 - `my-vm-legacy-compiler`: frontend Python histórico e suas incompatibilidades com a ISA atual.
 
-`src/data/vmEcosystem.ts` define os componentes; `src/components/VmEcosystem.tsx` apresenta os mesmos textos do catálogo. Os IDs anteriores permanecem estáveis. O compilador legado só recebe link GitHub quando um remoto for confirmado.
+`src/data/vmEcosystem.ts` define os componentes; `src/components/VmEcosystem.tsx` apresenta os mesmos textos do catálogo. Os IDs anteriores permanecem estáveis. O compilador legado está em um repositório privado e não recebe link público no catálogo.

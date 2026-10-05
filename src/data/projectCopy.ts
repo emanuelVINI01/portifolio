@@ -576,7 +576,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "my-vm-legacy-compiler": {
       "name": "old_compiler · frontend Python legado",
       "shortDesc": "Protótipo histórico que usa o AST de Python para emitir Assembly de uma versão anterior da VM.",
-      "longDesc": "Antes da linguagem CVM, este frontend compilava um subconjunto de Python. Um linker descobre módulos locais; visitors, contexto de registradores e emissor produzem Assembly. Há funções, listas, strings, imports e controle de fluxo. A saída pode usar WRITESTR, ausente do parser atual da VM. Dos 126 testes descobertos, 106 passaram, 2 falharam na representação de labels e 18 foram ignorados; os testes de execução dependem de caminhos antigos. Não participa do pipeline CVM atual e não há remoto Git configurado na origem.",
+      "longDesc": "Antes da linguagem CVM, este frontend compilava um subconjunto de Python. Um linker descobre módulos locais; visitors, contexto de registradores e emissor produzem Assembly. Há funções, listas, strings, imports e controle de fluxo. A saída pode usar WRITESTR, ausente do parser atual da VM. Dos 126 testes descobertos, 106 passaram, 2 falharam na representação de labels e 18 foram ignorados; os testes de execução dependem de caminhos antigos. Não participa do pipeline CVM atual. O código histórico está em um repositório privado no GitHub.",
       "highlights": [
         {
           "label": "Origem",
@@ -1167,7 +1167,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "my-vm-legacy-compiler": {
       "name": "old_compiler · legacy Python frontend",
       "shortDesc": "Historical prototype using Python AST to emit Assembly for an earlier VM version.",
-      "longDesc": "Before CVM, this frontend compiled a subset of Python. A linker discovers local modules; visitors, a register context and an emitter produce Assembly. It covers functions, lists, strings, imports and control flow. Output can include WRITESTR, absent from the current VM parser. Of 126 discovered tests, 106 passed, 2 failed on label representation and 18 were skipped; execution tests depend on old paths. It is outside the current CVM pipeline and the original repository has no configured Git remote.",
+      "longDesc": "Before CVM, this frontend compiled a subset of Python. A linker discovers local modules; visitors, a register context and an emitter produce Assembly. It covers functions, lists, strings, imports and control flow. Output can include WRITESTR, absent from the current VM parser. Of 126 discovered tests, 106 passed, 2 failed on label representation and 18 were skipped; execution tests depend on old paths. It is outside the current CVM pipeline. The historical code is stored in a private GitHub repository.",
       "highlights": [
         {
           "label": "Frontend",
@@ -1758,7 +1758,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "my-vm-legacy-compiler": {
       "name": "old_compiler · früheres Python-Frontend",
       "shortDesc": "Historischer Prototyp mit Python-AST zur Assembly-Erzeugung für eine frühere VM-Version.",
-      "longDesc": "Vor CVM kompilierte dieses Frontend eine Teilmenge von Python. Ein Linker findet lokale Module; Visitors, Registerkontext und Emitter erzeugen Assembly. Funktionen, Listen, Strings, Imports und Kontrollfluss sind enthalten. Die Ausgabe kann WRITESTR enthalten, das im aktuellen VM-Parser fehlt. Von 126 entdeckten Tests bestanden 106, 2 scheiterten an der Labeldarstellung und 18 wurden übersprungen; Ausführungstests erwarten alte Pfade. Das Projekt gehört nicht zur aktuellen CVM-Pipeline und hat im Original kein konfiguriertes Git-Remote.",
+      "longDesc": "Vor CVM kompilierte dieses Frontend eine Teilmenge von Python. Ein Linker findet lokale Module; Visitors, Registerkontext und Emitter erzeugen Assembly. Funktionen, Listen, Strings, Imports und Kontrollfluss sind enthalten. Die Ausgabe kann WRITESTR enthalten, das im aktuellen VM-Parser fehlt. Von 126 entdeckten Tests bestanden 106, 2 scheiterten an der Labeldarstellung und 18 wurden übersprungen; Ausführungstests erwarten alte Pfade. Das Projekt gehört nicht zur aktuellen CVM-Pipeline. Der historische Code liegt in einem privaten GitHub-Repository.",
       "highlights": [
         {
           "label": "Frontend",
