@@ -8,6 +8,7 @@ import { LayoutGrid, MousePointerClick, SearchX, Sparkles } from 'lucide-react';
 
 import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandTerminal';
 import Footer from '@/components/Footer';
+import VmEcosystem from '@/components/VmEcosystem';
 import FilterSwitch from '@/components/FilterSwitch';
 import Navbar from '@/components/Navbar';
 import ProjectModal from '@/components/ProjectModal';
@@ -115,7 +116,7 @@ export default function ProjectsContent() {
       <div className="relative z-10 min-h-screen">
         <Navbar />
 
-        <main className="story-page-background relative overflow-hidden pb-24 md:pb-0">
+        <main className="story-page-background relative overflow-hidden pb-24 lg:pb-0">
           <section className="mx-auto max-w-6xl px-4 pb-8 pt-20 sm:px-6 sm:pb-12 sm:pt-32">
             <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
               <motion.div
@@ -210,6 +211,8 @@ export default function ProjectsContent() {
               })}
             </div>
           </section>
+
+          <VmEcosystem />
 
           <section className="mx-auto max-w-6xl px-4 pb-8 sm:px-6">
             <motion.div

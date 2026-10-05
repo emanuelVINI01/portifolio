@@ -2,10 +2,17 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { readCatalog } from './catalog.mjs';
+import { readCatalog, readTypedData } from './catalog.mjs';
 const root = fileURLToPath(new URL('..', import.meta.url));
 const { projectMetadata, projectCopy } = readCatalog();
 const ids = projectMetadata.map((project) => project.id);
+const { vmEcosystemIds } = readTypedData('vmEcosystem.ts');
+assert.equal(vmEcosystemIds.length, 4, 'Expected four my-vm components');
+assert.equal(new Set(vmEcosystemIds).size, 4, 'Duplicate my-vm component');
+for (const id of vmEcosystemIds) {
+  assert.ok(ids.includes(id), `Missing my-vm component: ${id}`);
+  assert.equal(projectMetadata.find((project) => project.id === id).category, 'Systems');
+}
 assert.equal(new Set(ids).size, ids.length, 'Duplicate project ID');
 for (const language of ['pt', 'en', 'de']) {
   assert.deepEqual(Object.keys(projectCopy[language]).sort(), [...ids].sort(), `Unaligned ${language} translations`);

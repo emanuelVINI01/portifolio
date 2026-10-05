@@ -34,40 +34,40 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
       ]
     },
     "cvm-runtime": {
-      "name": "my-vm — CVM Runtime",
-      "shortDesc": "Máquina virtual em Rust com framebuffer gráfico, memória e interrupções simuladas.",
-      "longDesc": "Runtime experimental da linguagem CVM. Interpreta Assembly com registradores A–Z, pilha, memória e portas de entrada e saída. O código atual renderiza um framebuffer RGBA de 1280×800 via minifb e recebe entrada de mouse. O compilador e o sistema experimental my-vm-os fazem parte do mesmo ecossistema. Hardware e interrupções são simulados; o programa roda no sistema operacional hospedeiro.",
+      "name": "my-vm · máquina virtual",
+      "shortDesc": "Máquina virtual em Rust com 26 registradores, framebuffer 1280 × 800 e dispositivos simulados.",
+      "longDesc": "O runtime lê Assembly textual, resolve labels e executa instruções sobre registradores A–Z, pilha e RAM. A RAM possui 256 × 1024 × 1024 palavras u32, aproximadamente 1 GiB. Uma janela minifb exibe o framebuffer 1280 × 800; mouse, teclado e interrupções alimentam o sistema convidado. O processo roda no sistema hospedeiro e requer sessão gráfica. A revisão conferiu a compilação dos binários; as interações do desktop não foram executadas.",
       "highlights": [
         {
-          "label": "Runtime",
-          "value": "Assembly, registradores e memória"
+          "label": "Arquitetura",
+          "value": "26 registradores u32 e cerca de 1 GiB de RAM"
         },
         {
-          "label": "Vídeo",
-          "value": "Framebuffer RGBA 1280×800 via minifb"
+          "label": "Interface",
+          "value": "Framebuffer, primitivas de desenho, teclado e mouse"
         },
         {
-          "label": "Escopo",
-          "value": "Hardware simulado; não é execução bare-metal"
+          "label": "Papel",
+          "value": "Executa o Assembly do compilador CVM"
         }
       ]
     },
     "cvm-compiler": {
-      "name": "my-vm-compiler — CVM Compiler",
-      "shortDesc": "Compilador CVM em Rust: parsing PEG, representação intermediária e geração de Assembly.",
-      "longDesc": "Compilador experimental para uma linguagem com sintaxe semelhante a C. Usa Pest para ler arquivos .cvm, gera uma representação intermediária e produz Assembly para my-vm. O código separa parsing, geração de IR, otimização e codegen; os exemplos incluem controle de fluxo, structs e acesso a memória. Dois testes golden verificam compilação e saída de referência. A linguagem e o runtime próprios delimitam seu uso.",
+      "name": "my-vm-compiler · linguagem CVM",
+      "shortDesc": "Compilador Rust que expande imports CVM, gera IR e emite Assembly para my-vm.",
+      "longDesc": "A gramática PEG com Pest lê fontes .cvm com sintaxe semelhante a C. O gerador transforma o programa em IR e o codegen emite Assembly. A etapa de otimização ainda devolve a IR sem alterações. A CLI grava o .ir junto ao fonte e o .asm no caminho escolhido. Há funções, controle de fluxo, structs, ponteiros e Assembly inline. Um teste de snapshot e um smoke de memória passaram; src/main.cvm do sistema também compilou. Isso não comprova correção integral da linguagem ou execução gráfica.",
       "highlights": [
         {
-          "label": "Parsing",
-          "value": "Gramática PEG com Pest"
+          "label": "Pipeline",
+          "value": "Imports → Pest → IR → Assembly"
         },
         {
-          "label": "Pipeline",
-          "value": "CVM → IR → Assembly → my-vm"
+          "label": "Otimização",
+          "value": "Etapa reservada; ainda sem transformações"
         },
         {
           "label": "Verificação",
-          "value": "Dois testes golden passaram na revisão"
+          "value": "Dois testes passaram e o fonte do OS compilou"
         }
       ]
     },
@@ -541,8 +541,8 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     },
     "portifolio": {
       "name": "Portfolio — Emanuel Missena",
-      "shortDesc": "Portfólio trilíngue com catálogo de projetos, cases e galerias de telas.",
-      "longDesc": "Este site reúne trajetória, tecnologias e projetos em português, inglês e alemão. O catálogo centraliza metadados técnicos e mantém textos traduzidos. Cada case distingue aplicação, experimento, legado ou scaffold; galerias mostram as imagens disponíveis. URLs de projetos existentes foram preservadas. Fontes locais permitem build sem depender do Google Fonts.",
+      "shortDesc": "Portfólio trilíngue com cases, galerias e uma seção dedicada à linguagem, runtime e sistema my-vm.",
+      "longDesc": "Este site reúne trajetória, tecnologias e projetos em português, inglês e alemão. O catálogo centraliza metadados técnicos e mantém textos traduzidos. Cada case distingue aplicação, experimento, legado ou scaffold; galerias mostram as imagens disponíveis. URLs de projetos existentes foram preservadas. Fontes locais permitem build sem depender do Google Fonts. Uma seção exclusiva explica o fluxo CVM → IR → Assembly e o papel da VM, do desktop e do compilador Python legado.",
       "highlights": [
         {
           "label": "Implementação",
@@ -551,6 +551,44 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
         {
           "label": "Stack",
           "value": "Next.js, React, TypeScript, Tailwind CSS"
+        }
+      ]
+    },
+    "my-vm-os": {
+      "name": "my-vm-os · desktop em CVM",
+      "shortDesc": "Desktop experimental com janelas, terminal, editor, calculadora e arquivos na RAM da VM.",
+      "longDesc": "O ponto de entrada src/main.cvm importa drivers gráficos e de teclado, VFS, gerenciador de janelas, desktop, barra de tarefas e quatro aplicativos. Rotinas CVM usam Assembly inline para desenhar, receber entrada e processar interrupções simuladas. O loop controla foco e redesenho. O VFS armazena até 32 entradas em RAM, sem persistência entre execuções. O fonte compilou com a toolchain atual; as interações gráficas ainda precisam de execução. Não há isolamento de processos ou escalonador preemptivo comprovado.",
+      "highlights": [
+        {
+          "label": "Aplicativos",
+          "value": "Terminal, editor, calculadora e explorador"
+        },
+        {
+          "label": "Arquivos",
+          "value": "VFS em RAM; até 32 entradas e sem persistência"
+        },
+        {
+          "label": "Entrada",
+          "value": "Mouse, teclado e interrupções simuladas"
+        }
+      ]
+    },
+    "my-vm-legacy-compiler": {
+      "name": "old_compiler · frontend Python legado",
+      "shortDesc": "Protótipo histórico que usa o AST de Python para emitir Assembly de uma versão anterior da VM.",
+      "longDesc": "Antes da linguagem CVM, este frontend compilava um subconjunto de Python. Um linker descobre módulos locais; visitors, contexto de registradores e emissor produzem Assembly. Há funções, listas, strings, imports e controle de fluxo. A saída pode usar WRITESTR, ausente do parser atual da VM. Dos 126 testes descobertos, 106 passaram, 2 falharam na representação de labels e 18 foram ignorados; os testes de execução dependem de caminhos antigos. Não participa do pipeline CVM atual e não há remoto Git configurado na origem.",
+      "highlights": [
+        {
+          "label": "Origem",
+          "value": "AST Python, linker e visitors"
+        },
+        {
+          "label": "Compatibilidade",
+          "value": "ISA anterior; fora do pipeline CVM"
+        },
+        {
+          "label": "Testes",
+          "value": "106 passaram, 2 falharam, 18 ignorados"
         }
       ]
     }
@@ -587,40 +625,40 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
       ]
     },
     "cvm-runtime": {
-      "name": "my-vm — CVM Runtime",
-      "shortDesc": "Rust virtual machine with a graphical framebuffer, simulated memory and interrupts.",
-      "longDesc": "Experimental runtime for the CVM language. It interprets Assembly with A–Z registers, a stack, memory and I/O ports. The current code renders a 1280×800 RGBA framebuffer through minifb and accepts mouse input. The compiler and experimental my-vm-os belong to the same ecosystem. Hardware and interrupts are simulated; the program runs on a host operating system.",
+      "name": "my-vm · virtual machine",
+      "shortDesc": "Rust virtual machine with 26 registers, a 1280 × 800 framebuffer and simulated devices.",
+      "longDesc": "The runtime reads textual Assembly, resolves labels and executes instructions over A–Z registers, a stack and RAM. RAM contains 256 × 1024 × 1024 u32 words, approximately 1 GiB. A minifb window displays a 1280 × 800 framebuffer; mouse, keyboard and interrupts drive the guest system. The process runs on the host and requires a graphical session. This review checked compilation of the binaries; desktop interactions were not executed.",
       "highlights": [
         {
-          "label": "Runtime",
-          "value": "Assembly, registers and memory"
+          "label": "Architecture",
+          "value": "26 u32 registers and approximately 1 GiB RAM"
         },
         {
-          "label": "Video",
-          "value": "1280×800 RGBA framebuffer through minifb"
+          "label": "Interface",
+          "value": "Framebuffer, drawing primitives, keyboard and mouse"
         },
         {
-          "label": "Scope",
-          "value": "Simulated hardware; not bare-metal execution"
+          "label": "Role",
+          "value": "Runs Assembly generated by the CVM compiler"
         }
       ]
     },
     "cvm-compiler": {
-      "name": "my-vm-compiler — CVM Compiler",
-      "shortDesc": "Rust CVM compiler: PEG parsing, intermediate representation and Assembly output.",
-      "longDesc": "Experimental compiler for a language with C-like syntax. Pest reads .cvm files; subsequent stages generate an intermediate representation and Assembly for my-vm. Parsing, IR generation, optimization and code generation are separate modules. Examples cover control flow, structs and memory access. Two golden tests check compilation and reference output. Its custom language and runtime define its scope.",
+      "name": "my-vm-compiler · CVM language",
+      "shortDesc": "Rust compiler that expands CVM imports, generates IR and emits Assembly for my-vm.",
+      "longDesc": "A Pest PEG grammar reads .cvm sources with C-like syntax. The generator builds IR and codegen emits Assembly. The optimization stage currently returns IR unchanged. The CLI writes .ir beside the source and .asm to the selected path. Features include functions, control flow, structs, pointers and inline Assembly. One snapshot test and one memory smoke test passed; the OS src/main.cvm also compiled. This does not establish full language correctness or graphical execution.",
       "highlights": [
         {
-          "label": "Parsing",
-          "value": "PEG grammar with Pest"
-        },
-        {
           "label": "Pipeline",
-          "value": "CVM → IR → Assembly → my-vm"
+          "value": "Imports → Pest → IR → Assembly"
         },
         {
-          "label": "Verification",
-          "value": "Two golden tests passed during review"
+          "label": "Optimization",
+          "value": "Reserved stage; no transformations yet"
+        },
+        {
+          "label": "Checks",
+          "value": "Two tests passed and the OS source compiled"
         }
       ]
     },
@@ -1094,16 +1132,54 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     },
     "portifolio": {
       "name": "Portfolio — Emanuel Missena",
-      "shortDesc": "Trilingual portfolio with a project catalog, case studies and screenshot galleries.",
-      "longDesc": "This site brings together history, technologies and projects in Portuguese, English and German. The catalog centralizes technical metadata and keeps translated copy. Cases distinguish applications, experiments, legacy projects and scaffolds; galleries display available images. Existing project URLs were preserved. Local fonts allow builds without depending on Google Fonts.",
+      "shortDesc": "Trilingual portfolio with case studies, galleries and a dedicated my-vm language, runtime and OS section.",
+      "longDesc": "This site brings together history, technologies and projects in Portuguese, English and German. The catalog centralizes technical metadata and keeps translated copy. Cases distinguish applications, experiments, legacy projects and scaffolds; galleries display available images. Existing project URLs were preserved. Local fonts allow builds without depending on Google Fonts. A dedicated section explains the CVM → IR → Assembly flow and the roles of the VM, desktop and legacy Python compiler.",
       "highlights": [
         {
           "label": "Implementation",
-          "value": "Trilingual portfolio with a project catalog, case studies and screenshot galleries."
+          "value": "Trilingual portfolio with case studies, galleries and a dedicated my-vm language, runtime and OS section."
         },
         {
           "label": "Stack",
           "value": "Next.js, React, TypeScript, Tailwind CSS"
+        }
+      ]
+    },
+    "my-vm-os": {
+      "name": "my-vm-os · CVM desktop",
+      "shortDesc": "Experimental desktop with windows, terminal, editor, calculator and files in the VM RAM.",
+      "longDesc": "The src/main.cvm entry point imports graphics and keyboard drivers, VFS, window manager, desktop, taskbar and four applications. CVM routines use inline Assembly for drawing, input and simulated interrupts. The main loop controls focus and redraws. The VFS holds up to 32 entries in RAM without persistence between runs. The source compiled with the current toolchain; graphical interactions still require execution. Process isolation and preemptive scheduling have not been demonstrated.",
+      "highlights": [
+        {
+          "label": "Applications",
+          "value": "Terminal, editor, calculator and file explorer"
+        },
+        {
+          "label": "Files",
+          "value": "RAM VFS; up to 32 entries without persistence"
+        },
+        {
+          "label": "Input",
+          "value": "Mouse, keyboard and simulated interrupts"
+        }
+      ]
+    },
+    "my-vm-legacy-compiler": {
+      "name": "old_compiler · legacy Python frontend",
+      "shortDesc": "Historical prototype using Python AST to emit Assembly for an earlier VM version.",
+      "longDesc": "Before CVM, this frontend compiled a subset of Python. A linker discovers local modules; visitors, a register context and an emitter produce Assembly. It covers functions, lists, strings, imports and control flow. Output can include WRITESTR, absent from the current VM parser. Of 126 discovered tests, 106 passed, 2 failed on label representation and 18 were skipped; execution tests depend on old paths. It is outside the current CVM pipeline and the original repository has no configured Git remote.",
+      "highlights": [
+        {
+          "label": "Frontend",
+          "value": "Python AST, linker and visitors"
+        },
+        {
+          "label": "Compatibility",
+          "value": "Earlier ISA; outside the CVM pipeline"
+        },
+        {
+          "label": "Tests",
+          "value": "106 passed, 2 failed, 18 skipped"
         }
       ]
     }
@@ -1140,40 +1216,40 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
       ]
     },
     "cvm-runtime": {
-      "name": "my-vm — CVM Runtime",
-      "shortDesc": "Rust-VM mit grafischem Framebuffer, simuliertem Speicher und Interrupts.",
-      "longDesc": "Experimentelle Laufzeit für CVM. Sie interpretiert Assembly mit A–Z-Registern, Stack, Speicher und I/O-Ports. Der aktuelle Code zeichnet einen 1280×800-RGBA-Framebuffer über minifb und verarbeitet Mauseingaben. Compiler und my-vm-os gehören zum selben Ökosystem. Hardware und Interrupts werden simuliert; das Programm läuft unter dem Host-Betriebssystem.",
+      "name": "my-vm · virtuelle Maschine",
+      "shortDesc": "Virtuelle Maschine in Rust mit 26 Registern, 1280 × 800 Framebuffer und simulierten Geräten.",
+      "longDesc": "Die Laufzeit liest textuelles Assembly, löst Labels auf und führt Anweisungen mit A–Z-Registern, Stack und RAM aus. Der RAM enthält 256 × 1024 × 1024 u32-Wörter, etwa 1 GiB. Ein minifb-Fenster zeigt den Framebuffer mit 1280 × 800 Pixeln; Maus, Tastatur und Interrupts versorgen das Gastsystem. Der Prozess läuft auf dem Host und braucht eine grafische Sitzung. Die Kompilierung der Programme wurde geprüft; Desktop-Interaktionen wurden nicht ausgeführt.",
       "highlights": [
         {
-          "label": "Laufzeit",
-          "value": "Assembly, Register und Speicher"
+          "label": "Architektur",
+          "value": "26 u32-Register und etwa 1 GiB RAM"
         },
         {
-          "label": "Video",
-          "value": "1280×800-RGBA-Framebuffer über minifb"
+          "label": "Oberfläche",
+          "value": "Framebuffer, Zeichenoperationen, Tastatur und Maus"
         },
         {
-          "label": "Umfang",
-          "value": "Simulierte Hardware; keine Bare-Metal-Ausführung"
+          "label": "Aufgabe",
+          "value": "Führt Assembly des CVM-Compilers aus"
         }
       ]
     },
     "cvm-compiler": {
-      "name": "my-vm-compiler — CVM Compiler",
-      "shortDesc": "Rust-CVM-Compiler mit PEG-Parsing, Zwischenrepräsentation und Assembly-Ausgabe.",
-      "longDesc": "Experimenteller Compiler für eine Sprache mit C-ähnlicher Syntax. Pest liest .cvm-Dateien; weitere Stufen erzeugen eine Zwischenrepräsentation und Assembly für my-vm. Parsing, IR-Erzeugung, Optimierung und Codegen sind getrennte Module. Beispiele zeigen Kontrollfluss, Structs und Speicherzugriff. Zwei Golden-Tests prüfen Kompilierung und Referenzausgabe. Die eigene Sprache und Laufzeit bestimmen den Einsatzbereich.",
+      "name": "my-vm-compiler · CVM-Sprache",
+      "shortDesc": "Rust-Compiler, der CVM-Imports expandiert, IR erzeugt und Assembly für my-vm ausgibt.",
+      "longDesc": "Eine PEG-Grammatik mit Pest liest .cvm-Dateien mit C-ähnlicher Syntax. Der Generator erzeugt IR und das Codegen-Modul Assembly. Die Optimierungsstufe gibt die IR derzeit unverändert zurück. Die CLI schreibt .ir neben die Quelldatei und .asm an den gewählten Pfad. Funktionen, Kontrollfluss, Structs, Zeiger und Inline-Assembly sind vorhanden. Ein Snapshot-Test und ein Speicher-Smoke-Test bestanden; auch src/main.cvm des Systems wurde kompiliert. Das belegt weder vollständige Sprachkorrektheit noch grafische Ausführung.",
       "highlights": [
         {
-          "label": "Parsing",
-          "value": "PEG-Grammatik mit Pest"
+          "label": "Pipeline",
+          "value": "Imports → Pest → IR → Assembly"
         },
         {
-          "label": "Pipeline",
-          "value": "CVM → IR → Assembly → my-vm"
+          "label": "Optimierung",
+          "value": "Reservierte Stufe; noch keine Transformationen"
         },
         {
           "label": "Prüfung",
-          "value": "Zwei Golden-Tests bestanden bei der Prüfung"
+          "value": "Zwei Tests bestanden und OS-Quelle kompiliert"
         }
       ]
     },
@@ -1647,8 +1723,8 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     },
     "portifolio": {
       "name": "Portfolio — Emanuel Missena",
-      "shortDesc": "Dreisprachiges Portfolio mit Projektkatalog, Cases und Bildschirmgalerien.",
-      "longDesc": "Diese Website zeigt Werdegang, Technologien und Projekte auf Portugiesisch, Englisch und Deutsch. Der Katalog zentralisiert technische Metadaten und hält Texte übersetzt. Cases unterscheiden Anwendungen, Experimente, historische Projekte und Gerüste; Galerien zeigen vorhandene Bilder. Bestehende Projekt-URLs bleiben erhalten. Lokale Schriften ermöglichen Builds ohne Google Fonts.",
+      "shortDesc": "Dreisprachiges Portfolio mit Cases, Galerien und einem eigenen Bereich für my-vm-Sprache, Laufzeit und System.",
+      "longDesc": "Diese Website zeigt Werdegang, Technologien und Projekte auf Portugiesisch, Englisch und Deutsch. Der Katalog zentralisiert technische Metadaten und hält Texte übersetzt. Cases unterscheiden Anwendungen, Experimente, historische Projekte und Gerüste; Galerien zeigen vorhandene Bilder. Bestehende Projekt-URLs bleiben erhalten. Lokale Schriften ermöglichen Builds ohne Google Fonts. Ein eigener Bereich erklärt den Weg CVM → IR → Assembly und die Aufgaben von VM, Desktop und früherem Python-Compiler.",
       "highlights": [
         {
           "label": "Implementierung",
@@ -1657,6 +1733,44 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
         {
           "label": "Stack",
           "value": "Next.js, React, TypeScript, Tailwind CSS"
+        }
+      ]
+    },
+    "my-vm-os": {
+      "name": "my-vm-os · Desktop in CVM",
+      "shortDesc": "Experimenteller Desktop mit Fenstern, Terminal, Editor, Rechner und Dateien im VM-RAM.",
+      "longDesc": "Der Einstiegspunkt src/main.cvm importiert Grafik- und Tastaturtreiber, VFS, Fenstermanager, Desktop, Taskleiste und vier Anwendungen. CVM-Routinen verwenden Inline-Assembly für Grafik, Eingaben und simulierte Interrupts. Die Hauptschleife verwaltet Fokus und Neuzeichnen. Das VFS hält bis zu 32 Einträge im RAM ohne Persistenz zwischen Ausführungen. Die Quelle wurde mit der aktuellen Toolchain kompiliert; grafische Interaktionen stehen noch aus. Prozessisolation und präemptives Scheduling sind nicht nachgewiesen.",
+      "highlights": [
+        {
+          "label": "Anwendungen",
+          "value": "Terminal, Editor, Rechner und Dateimanager"
+        },
+        {
+          "label": "Dateien",
+          "value": "RAM-VFS; bis zu 32 Einträge ohne Persistenz"
+        },
+        {
+          "label": "Eingaben",
+          "value": "Maus, Tastatur und simulierte Interrupts"
+        }
+      ]
+    },
+    "my-vm-legacy-compiler": {
+      "name": "old_compiler · früheres Python-Frontend",
+      "shortDesc": "Historischer Prototyp mit Python-AST zur Assembly-Erzeugung für eine frühere VM-Version.",
+      "longDesc": "Vor CVM kompilierte dieses Frontend eine Teilmenge von Python. Ein Linker findet lokale Module; Visitors, Registerkontext und Emitter erzeugen Assembly. Funktionen, Listen, Strings, Imports und Kontrollfluss sind enthalten. Die Ausgabe kann WRITESTR enthalten, das im aktuellen VM-Parser fehlt. Von 126 entdeckten Tests bestanden 106, 2 scheiterten an der Labeldarstellung und 18 wurden übersprungen; Ausführungstests erwarten alte Pfade. Das Projekt gehört nicht zur aktuellen CVM-Pipeline und hat im Original kein konfiguriertes Git-Remote.",
+      "highlights": [
+        {
+          "label": "Frontend",
+          "value": "Python-AST, Linker und Visitors"
+        },
+        {
+          "label": "Kompatibilität",
+          "value": "Frühere ISA; außerhalb der CVM-Pipeline"
+        },
+        {
+          "label": "Tests",
+          "value": "106 bestanden, 2 fehlgeschlagen, 18 übersprungen"
         }
       ]
     }

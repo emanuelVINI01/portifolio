@@ -29,6 +29,7 @@ import {
 
 
 import Footer from '@/components/Footer';
+import VmEcosystem from '@/components/VmEcosystem';
 import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandTerminal';
 import Navbar from '@/components/Navbar';
 import ProjectModal from '@/components/ProjectModal';
@@ -169,7 +170,7 @@ export default function HomePage() {
       <div className="relative z-10 min-h-screen">
         <Navbar />
 
-        <main className="story-page-background relative overflow-hidden pb-24 md:pb-0">
+        <main className="story-page-background relative overflow-hidden pb-24 lg:pb-0">
           <section id="home" className="mx-auto grid max-w-6xl scroll-mt-20 items-center gap-6 px-4 pb-6 pt-[4.5rem] sm:px-6 sm:pt-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10 lg:pb-10 lg:pt-24">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -818,6 +819,8 @@ export default function HomePage() {
               </div>
             </div>
           </section>
+
+          <VmEcosystem />
 
           <section id="my-bet-spotlight" className="story-section-flat scroll-mt-20 border-y border-dracula-card/60">
             <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-20">

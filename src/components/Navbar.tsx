@@ -9,6 +9,7 @@ import {
   BookOpenText,
   BriefcaseBusiness,
   ExternalLink,
+  Cpu,
   Home,
   Layers,
   Orbit,
@@ -16,7 +17,7 @@ import {
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
-type SectionId = 'home' | 'about' | 'skills' | 'story' | 'projects' | 'stack' | 'services';
+type SectionId = 'home' | 'about' | 'skills' | 'story' | 'projects' | 'stack' | 'services' | 'my-vm';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +26,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const sectionIds = useMemo<SectionId[]>(
-    () => ['home', 'about', 'skills', 'story', 'services', 'stack', 'projects'],
+    () => ['home', 'about', 'skills', 'story', 'services', 'stack', 'my-vm', 'projects'],
     [],
   );
 
@@ -35,6 +36,7 @@ export default function Navbar() {
       { id: 'skills' as SectionId, label: t.skills.label, href: '/#skills', icon: Orbit },
       { id: 'story' as SectionId, label: t.nav.story, href: '/#story', icon: BookOpenText },
       { id: 'services' as SectionId, label: t.nav.services, href: '/#services', icon: BriefcaseBusiness },
+      { id: 'my-vm' as SectionId, label: 'my-vm', href: '/#my-vm', icon: Cpu },
       { id: 'projects' as SectionId, label: t.nav.projects, href: '/projects', icon: Layers },
     ],
     [t],
@@ -46,6 +48,7 @@ export default function Navbar() {
       { id: 'about' as SectionId, label: t.aboutMe.label, href: '/#about', icon: BookOpenText },
       { id: 'skills' as SectionId, label: t.skills.label, href: '/#skills', icon: Orbit },
       { id: 'story' as SectionId, label: t.nav.story, href: '/#story', icon: BookOpenText },
+      { id: 'my-vm' as SectionId, label: 'my-vm', href: '/#my-vm', icon: Cpu },
       { id: 'projects' as SectionId, label: t.nav.projects, href: '/projects', icon: Layers },
     ],
     [t],
@@ -140,7 +143,7 @@ export default function Navbar() {
           </Link>
 
           <div className="flex items-center gap-2 sm:gap-5">
-            <div className="hidden items-center gap-5 md:flex">
+            <div className="hidden items-center gap-4 lg:flex">
               {navLinks.map((link) => {
                 const isActive = activeSection === link.id;
 
@@ -181,8 +184,8 @@ export default function Navbar() {
         </div>
       </motion.nav>
 
-      <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-dracula-card/80 bg-dracula-bg/95 px-2 pb-[calc(env(safe-area-inset-bottom)+0.55rem)] pt-2 shadow-[0_-16px_34px_rgba(0,0,0,0.35)] backdrop-blur-xl md:hidden">
-        <div className="mx-auto grid h-16 max-w-md grid-cols-5 items-stretch gap-0.5 sm:gap-1">
+      <nav className="fixed inset-x-0 bottom-0 z-50 border-t border-dracula-card/80 bg-dracula-bg/95 px-2 pb-[calc(env(safe-area-inset-bottom)+0.55rem)] pt-2 shadow-[0_-16px_34px_rgba(0,0,0,0.35)] backdrop-blur-xl lg:hidden">
+        <div className="mx-auto grid h-16 max-w-md grid-cols-6 items-stretch gap-0.5 sm:gap-1">
           {mobileNavLinks.map(({ icon: Icon, label, href, id }) => {
             const isActive = activeSection === id;
 

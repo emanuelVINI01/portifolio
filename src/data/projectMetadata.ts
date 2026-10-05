@@ -165,7 +165,8 @@ export const projectMetadata: ProjectMetadata[] = [
     "year": 2026,
     "stage": "experiment",
     "runCommands": [
-      "cargo run --release -- path/to/program.asm"
+      "cargo build --release --bin my-vm",
+      "cargo run --release --bin my-vm -- programa.asm"
     ]
   },
   {
@@ -843,5 +844,42 @@ export const projectMetadata: ProjectMetadata[] = [
     ],
     "githubUrl": "https://github.com/emanuelVINI01/portifolio",
     "liveUrl": "https://emanuelmissena.com"
+  },
+  {
+    "category": "Systems",
+    "color": "#ffb86c",
+    "glowColor": "rgba(255, 184, 108, 0.20)",
+    "badges": [],
+    "id": "my-vm-os",
+    "stage": "experiment",
+    "tech": [
+      "CVM",
+      "Assembly",
+      "Framebuffer",
+      "Virtual Filesystem"
+    ],
+    "githubUrl": "https://github.com/emanuelVINI01/my-vm-os",
+    "runCommands": [
+      "cargo run --release --manifest-path ../my-vm-compiler/Cargo.toml -- src/main.cvm kernel.asm",
+      "cargo run --release --manifest-path ../my-vm/Cargo.toml --bin my-vm -- kernel.asm"
+    ]
+  },
+  {
+    "category": "Systems",
+    "color": "#ffb86c",
+    "glowColor": "rgba(255, 184, 108, 0.20)",
+    "badges": [],
+    "id": "my-vm-legacy-compiler",
+    "stage": "legacy",
+    "tech": [
+      "Python",
+      "AST",
+      "Assembly",
+      "unittest"
+    ],
+    "runCommands": [
+      "python3 main.py entrada.py saida.asm",
+      "python3 -m unittest discover -s tests -v"
+    ]
   }
 ];

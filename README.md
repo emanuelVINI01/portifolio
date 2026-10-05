@@ -1,6 +1,6 @@
 # Portfolio · Emanuel Missena
 
-Portfólio em português, inglês e alemão com 37 cases de aplicações web, ferramentas, experimentos Rust e projetos históricos Java/Kotlin. O catálogo identifica o estágio de cada projeto e descreve funcionalidades encontradas no código disponível. SwissLearn, Simple Bank e SnippetVault abrem a seleção de destaques.
+Portfólio em português, inglês e alemão com 39 cases de aplicações web, ferramentas, experimentos Rust e projetos históricos Java/Kotlin. O catálogo identifica o estágio de cada projeto e descreve funcionalidades encontradas no código disponível. SwissLearn, Simple Bank e SnippetVault abrem a seleção de destaques.
 
 Next.js 16, React 19, TypeScript, Tailwind CSS 4 e Framer Motion compõem a interface. Cada projeto tem URL própria, metadados de compartilhamento e descrições traduzidas. A galeria preserva a proporção das imagens e permite ampliar, selecionar miniaturas e navegar pelo teclado.
 
@@ -20,7 +20,7 @@ npm run review:check
 npm run build
 ```
 
-O script de build usa webpack. O build padrão Turbopack foi bloqueado neste ambiente ao abrir uma porta para processar CSS; webpack compilou os 37 cases sem essa dependência.
+O script de build usa webpack. O build padrão Turbopack foi bloqueado neste ambiente ao abrir uma porta para processar CSS; webpack compilou os 39 cases sem essa dependência.
 
 As fontes JetBrains Mono e Fira Code são locais; o build não baixa fontes. A [licença SIL OFL](public/fonts/OFL.txt) acompanha os arquivos. Fontes originais: [JetBrains Mono](https://github.com/google/fonts/tree/main/ofl/jetbrainsmono), [Fira Code](https://github.com/google/fonts/tree/main/ofl/firacode).
 
@@ -37,7 +37,7 @@ Preserve IDs existentes ao revisar textos para manter links diretos. Projetos se
 
 ## Revisão dos projetos
 
-A [avaliação](review/avaliacao.md) registra mudanças e bloqueios. A [avaliação individual](review/project-assessments.md) cobre os 37 cases e os diretórios auxiliares. O inventário estático está em `review/source-audit.json`; inventariar arquivos não representa execução ou leitura integral do código.
+A [avaliação](review/avaliacao.md) registra mudanças e bloqueios. A [avaliação individual](review/project-assessments.md) cobre os 39 cases e os diretórios auxiliares. O inventário estático está em `review/source-audit.json`; inventariar arquivos não representa execução ou leitura integral do código.
 
 ```bash
 npm run review:audit
@@ -78,3 +78,14 @@ node scripts/update-github.mjs --apply --profile
 O primeiro comando mostra as descrições sem publicar. O segundo verifica autenticação e permissões antes de editar descrições e o README existente do perfil. Preserva homepage/topics e confirma cada escrita. As descrições vêm do mesmo catálogo da interface. Resultado em `review/github-publication.json`.
 
 Na execução de 04/10/2026, autenticação/rede GitHub estavam indisponíveis; Chromium e portas locais também foram bloqueados pelo ambiente. O build passou, mas capturas novas, validação visual e publicação continuam pendentes.
+
+## Ecossistema my-vm
+
+A home (`/#my-vm`) e o catálogo (`/projects#my-vm`) têm uma seção dedicada aos quatro componentes, traduzida em PT/EN/DE. O fluxo liga CVM, IR, Assembly, runtime e desktop.
+
+- `cvm-runtime`: VM Rust, memória e dispositivos simulados.
+- `cvm-compiler`: frontend Pest e geração de IR/Assembly; otimização ainda pass-through.
+- `my-vm-os`: desktop CVM, aplicativos e VFS em RAM.
+- `my-vm-legacy-compiler`: frontend Python histórico e suas incompatibilidades com a ISA atual.
+
+`src/data/vmEcosystem.ts` define os componentes; `src/components/VmEcosystem.tsx` apresenta os mesmos textos do catálogo. Os IDs anteriores permanecem estáveis. O compilador legado só recebe link GitHub quando um remoto for confirmado.
