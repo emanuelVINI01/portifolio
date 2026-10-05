@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -39,12 +39,12 @@ export default function ProjectsContent() {
     router.replace(`/projects?${params.toString()}`, { scroll: false });
   };
 
-  const handleCloseProject = () => {
+  const handleCloseProject = useCallback(() => {
     const params = new URLSearchParams(searchParams.toString());
     params.delete('project');
     const qs = params.toString();
     router.replace(qs ? `/projects?${qs}` : '/projects', { scroll: false });
-  };
+  }, [router, searchParams]);
 
   const filtered = useMemo(() => {
     return projects.filter((project) => {

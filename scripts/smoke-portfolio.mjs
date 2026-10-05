@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { existsSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { homedir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { readCatalog } from './catalog.mjs';
 const require = createRequire(import.meta.url);
@@ -15,7 +17,15 @@ async function check(name, callback) {
   catch (error) { results.push({ name, status: 'failed', reason: error.message.split('\n')[0] }); throw error; }
 }
 try {
-  browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
+  let executablePath = process.env.CHROMIUM_PATH;
+  if (!executablePath && !existsSync(chromium.executablePath())) {
+    const cache = join(homedir(), '.cache/ms-playwright');
+    for (const name of existsSync(cache) ? readdirSync(cache).filter((name) => /^chromium-\d+$/.test(name)).sort().reverse() : []) {
+      const candidate = join(cache, name, 'chrome-linux64/chrome');
+      if (existsSync(candidate)) { executablePath = candidate; break; }
+    }
+  }
+  browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
   const context = await browser.newContext({ locale: 'pt-BR', viewport: { width: 1440, height: 1000 }, reducedMotion: 'reduce' });
   const page = await context.newPage();
   await check('Case content and loaded screenshot', async () => {
@@ -27,9 +37,16 @@ try {
     await page.waitForFunction(() => document.querySelector('figure img')?.naturalWidth > 0);
   });
   await check('Gallery selection, expansion, arrows and Escape', async () => {
+    await page.getByRole('button', { name: 'Selecionar imagem: Dashboard · dados de demonstração · mobile', exact: true }).click();
+    await page.getByRole('button', { name: 'Ampliar imagem: Dashboard · dados de demonstração · mobile', exact: true }).click();
+    const dialog = page.locator('dialog[open]');
+    await dialog.waitFor();
+    const scroller = dialog.locator('div.overflow-auto');
+    assert.ok(await scroller.evaluate((element) => element.scrollHeight > element.clientHeight), 'Tall capture should scroll at a readable width');
+    await scroller.evaluate((element) => { element.scrollTop = 100; });
+    await page.keyboard.press('Escape');
     await page.getByRole('button', { name: 'Selecionar imagem: Dashboard mobile', exact: true }).click();
     await page.getByRole('button', { name: 'Ampliar imagem: Dashboard mobile', exact: true }).click();
-    const dialog = page.locator('dialog[open]');
     await dialog.waitFor();
     await page.keyboard.press('ArrowRight');
     await dialog.getByRole('heading', { name: 'Formulário de transferência mobile', exact: true }).waitFor();
@@ -37,10 +54,16 @@ try {
     await dialog.waitFor({ state: 'hidden' });
   });
   await check('Detail translation and document language', async () => {
-    await page.locator('button[aria-haspopup="listbox"]').first().click();
-    await page.getByRole('option', { name: 'English', exact: true }).click();
+    await page.locator('button[aria-haspopup="listbox"]:visible').first().click();
+    await page.getByRole('option').filter({ hasText: 'English' }).click();
     await page.getByText(projectCopy.en['simple-bank'].shortDesc, { exact: true }).waitFor();
     await page.waitForFunction(() => document.documentElement.lang === 'en');
+    await page.locator('button[aria-haspopup="listbox"]:visible').first().click();
+    await page.getByRole('option').filter({ hasText: 'Deutsch' }).click();
+    await page.getByText(projectCopy.de['simple-bank'].shortDesc, { exact: true }).waitFor();
+    await page.waitForFunction(() => document.documentElement.lang === 'de');
+    await page.locator('button[aria-haspopup="listbox"]:visible').first().click();
+    await page.getByRole('option').filter({ hasText: 'English' }).click();
   });
   await check('Project modal deep link, focus and close', async () => {
     await page.goto(new URL('/projects?project=simple-bank', base).href);
@@ -49,6 +72,7 @@ try {
     assert.equal(await modal.evaluate((element) => element.contains(document.activeElement)), true);
     await page.reload();
     await modal.waitFor();
+    await page.waitForFunction(() => document.querySelector('[role="dialog"][aria-modal="true"]')?.contains(document.activeElement));
     await page.keyboard.press('Escape');
     await page.waitForURL((url) => !url.searchParams.has('project'));
     await modal.waitFor({ state: 'hidden' });
@@ -58,6 +82,13 @@ try {
     await page.getByText('No projects found', { exact: true }).waitFor();
     await page.getByRole('button', { name: 'Clear search', exact: true }).click();
     await page.getByRole('link', { name: 'View project: SwissLearn', exact: true }).first().waitFor();
+  });
+  await check('New web and native galleries load', async () => {
+    for (const id of ['swiss-learn', 'my-bet', 'my-vm-os', 'my-vm-legacy-compiler', 'portifolio']) {
+      const response = await page.goto(new URL(`/projects/${id}`, base).href);
+      assert.equal(response.status(), 200);
+      await page.waitForFunction(() => document.querySelector('figure img')?.naturalWidth > 0);
+    }
   });
   await check('Mobile layout and unknown case', async () => {
     await page.setViewportSize({ width: 390, height: 844 });

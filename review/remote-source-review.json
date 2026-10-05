@@ -1,0 +1,56 @@
+[
+  {
+    "repository": "emanuelVINI01/my-bet",
+    "commit": "257b28e9b2fa4eba8452052101607c9588368e58",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.818Z"
+  },
+  {
+    "repository": "emanuelVINI01/emanuelvini01.github.io",
+    "commit": "770cdd7d19ef4f8a44c6f9b4b152d9c92c35c37d",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.827Z"
+  },
+  {
+    "repository": "emanuelVINI01/zDiscordCore",
+    "commit": "6800a9cfbd4404f20e209b0eedd437dfa0dcd20b",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.831Z"
+  },
+  {
+    "repository": "emanuelVINI01/ComuniMineBot",
+    "commit": "88ef2f18f3a8be554978e2e15718ec9ed9a6e81e",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.834Z"
+  },
+  {
+    "repository": "emanuelVINI01/MinecraftFeastBot",
+    "commit": "69003ffa907fe3ec419558e29ebbeb40169c87dd",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.838Z"
+  },
+  {
+    "repository": "emanuelVINI01/AdvancedSQL",
+    "commit": "f863cb5ac93c3e299f62d000e925d52cd14c4c87",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.841Z"
+  },
+  {
+    "repository": "emanuelVINI01/zManutencao",
+    "commit": "448a0b5eb3ee430c439bfc946ccb31af48d62cb8",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.844Z"
+  },
+  {
+    "repository": "emanuelVINI01/zSilk2",
+    "commit": "a997b2b13d2e16bfe5d1f1db8bc5358149492fe2",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.847Z"
+  },
+  {
+    "repository": "emanuelVINI01/MultiServer-API",
+    "commit": "64300a907731327360bca10bf41d07f307397955",
+    "review": "source and manifests reviewed; integrations evaluated separately",
+    "reviewedAt": "2026-10-05T19:24:08.851Z"
+  }
+]

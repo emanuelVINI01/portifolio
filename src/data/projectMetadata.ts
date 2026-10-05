@@ -12,7 +12,8 @@ export const projectMetadata: ProjectMetadata[] = [
       "SSE",
       "Framer Motion",
       "Tailwind CSS",
-      "TypeScript"
+      "TypeScript",
+      "MySQL"
     ],
     "color": "#bd93f9",
     "glowColor": "rgba(189, 147, 249, 0.25)",
@@ -400,9 +401,10 @@ export const projectMetadata: ProjectMetadata[] = [
     "id": "portifolio-frontend",
     "category": "Full Stack",
     "tech": [
-      "Next.js",
-      "TypeScript",
-      "React"
+      "React",
+      "JavaScript",
+      "CSS",
+      "GitHub Pages"
     ],
     "color": "#bd93f9",
     "glowColor": "rgba(189, 147, 249, 0.18)",

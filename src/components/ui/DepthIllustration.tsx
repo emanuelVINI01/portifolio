@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useSyncExternalStore } from 'react';
 import Image from 'next/image';
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 
@@ -14,6 +14,10 @@ type Props = {
   parallax?: number;
 };
 
+const subscribe = () => () => {};
+const clientSnapshot = () => true;
+const serverSnapshot = () => false;
+
 export default function DepthIllustration({
   src,
   alt,
@@ -24,7 +28,9 @@ export default function DepthIllustration({
   parallax = 24,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
-  const prefersReducedMotion = useReducedMotion();
+  const reducedMotion = useReducedMotion();
+  const hydrated = useSyncExternalStore(subscribe, clientSnapshot, serverSnapshot);
+  const prefersReducedMotion = hydrated && reducedMotion;
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'end start'],

@@ -1,7 +1,7 @@
-{"command":"gh","args":["repo","edit","emanuelVINI01/my-bet","--description","Game application with an integer ledger, Redis sessions and PIX integrations."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/my-bet","--description","Experimental game application with a ledger, Redis sessions and configurable administration."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/simple-bank","--description","Web and mobile banking simulation with transfers, receipts and a double-entry ledger."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/my-vm","--description","Rust virtual machine with a graphical framebuffer, simulated memory and interrupts."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/my-vm-compiler","--description","Rust CVM compiler: PEG parsing, intermediate representation and Assembly output."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/my-vm","--description","Rust virtual machine with 26 registers, a 1280 × 800 framebuffer and simulated devices."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/my-vm-compiler","--description","Rust compiler that expands CVM imports, generates IR and emits Assembly for my-vm."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/apiflash","--description","HTTP client with collections, history, AI generation and request export."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/browia","--description","Browser extension with an AI agent, persistent sessions and action approval."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/lowvia","--description","Electron assistant with chat, local models, web research and reports."]}
@@ -10,16 +10,18 @@
 {"command":"gh","args":["repo","edit","emanuelVINI01/RyzenShopBot","--description","TypeScript Discord bot with tickets, economy and moderation."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/ryzen-site","--description","Historical hosting website with plans, pricing and React components."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/dv-duels","--description","Java Minecraft duel plugin with arenas, kits and MySQL statistics."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/portifolio-frontend","--description","Earlier portfolio version: interface experiments with Next.js and React."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/zDiscordCore","--description","Java plugin linking Minecraft and Discord accounts."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/ComuniMineBot","--description","Discord bot for Minecraft community moderation and utilities."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/MinecraftFeastBot","--description","Discord bot for Minecraft community events."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/AdvancedSQL","--description","Kotlin library for MySQL and SQLite access in JVM plugins."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/zManutencao","--description","Java Minecraft maintenance plugin from the early project history."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/zSilk2","--description","Java Minecraft server rule plugin from the early project history."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/MultiServer-API","--description","Java API for integrations across Minecraft server platforms."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/portifolio-frontend","--description","Historical React portfolio distributed as static files for GitHub Pages."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/zDiscordCore","--description","Java plugin linking Minecraft and Discord accounts through commands and SQL persistence."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/ComuniMineBot","--description","TypeScript Discord bot with moderation, music, economy and community commands."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/MinecraftFeastBot","--description","JavaScript Discord bot with moderation slash commands and Minecraft server status."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/AdvancedSQL","--description","Kotlin library with MySQL/SQLite connections, prepared statements and result adapters."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/zManutencao","--description","Java Bukkit plugin with maintenance mode and permission-based access exceptions."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/zSilk2","--description","Java Bukkit plugin controlling breakable blocks and drops by Silk Touch level."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/MultiServer-API","--description","Java API with shared interfaces and Bukkit wrappers for players, worlds and servers."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/swiss-learn","--description","Swiss German learning with daily sessions, spaced repetition and a mobile client."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/termop","--description","Terminal agent for local models, with file tools and an MCP server."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/russian-alphabet","--description","Cyrillic transliteration practice with an alphabet reference and session statistics."]}
 {"command":"gh","args":["repo","edit","emanuelVINI01/KotlinVortey","--description","Event API with an in-memory queue, listeners and HTTP delivery to consumers."]}
-{"command":"gh","args":["repo","edit","emanuelVINI01/portifolio","--description","Trilingual portfolio with a project catalog, case studies and screenshot galleries."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/portifolio","--description","Trilingual portfolio with case studies, galleries and a dedicated my-vm language, runtime and OS section."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/my-vm-os","--description","Experimental desktop with windows, terminal, editor, calculator and files in the VM RAM."]}
+{"command":"gh","args":["repo","edit","emanuelVINI01/my-vm-legacy-compiler","--description","Historical prototype using Python AST to emit Assembly for an earlier VM version."]}

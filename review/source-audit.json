@@ -48,7 +48,7 @@
         }
       ],
       "sourceCount": 7,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -1462,7 +1462,7 @@
         }
       ],
       "sourceCount": 280,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -1886,7 +1886,7 @@
         }
       ],
       "sourceCount": 78,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -1929,7 +1929,7 @@
             "react",
             "react-dom"
           ],
-          "installed": false
+          "installed": true
         }
       ],
       "documents": [
@@ -2133,7 +2133,7 @@
         }
       ],
       "sourceCount": 33,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -3013,7 +3013,7 @@
         }
       ],
       "sourceCount": 150,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -3061,7 +3061,7 @@
         }
       ],
       "sourceCount": 6,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -3377,7 +3377,7 @@
         }
       ],
       "sourceCount": 56,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -3642,7 +3642,7 @@
         }
       ],
       "sourceCount": 41,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -3682,7 +3682,7 @@
         }
       ],
       "sourceCount": 2,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -3887,7 +3887,7 @@
         }
       ],
       "sourceCount": 26,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -3904,7 +3904,7 @@
         }
       ],
       "sourceCount": 1,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4037,7 +4037,7 @@
         }
       ],
       "sourceCount": 23,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4053,7 +4053,7 @@
             "preview"
           ],
           "dependencies": [],
-          "installed": false
+          "installed": true
         }
       ],
       "documents": [],
@@ -4071,7 +4071,7 @@
         }
       ],
       "sourceCount": 2,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4108,7 +4108,7 @@
         }
       ],
       "sourceCount": 2,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4209,7 +4209,7 @@
         }
       ],
       "sourceCount": 17,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4563,7 +4563,7 @@
         }
       ],
       "sourceCount": 59,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4589,7 +4589,7 @@
         }
       ],
       "sourceCount": 2,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4675,8 +4675,8 @@
         },
         {
           "file": "my-game-papers/src/renderer/src/components/screens/GameScreen.tsx",
-          "sha256": "6a9bb62450ae8cc05d68367245f57ce4d9bc9b695e8bedbc609a45469b7d9e82",
-          "bytes": 18609
+          "sha256": "26525119a172b9a43bf38e0f7f141a4e4ea334f4f03408868c5b6570e6b1ae62",
+          "bytes": 18276
         },
         {
           "file": "my-game-papers/src/renderer/src/components/screens/GeneratorScreen.tsx",
@@ -4690,8 +4690,8 @@
         },
         {
           "file": "my-game-papers/src/renderer/src/components/screens/HomeScreen.tsx",
-          "sha256": "a59eb27c21730ae1de74091855612dcac1daedaebcfbed10898e48a6f8cbcd5a",
-          "bytes": 6151
+          "sha256": "fe23b9d436860a794c06b5a5a348d3ff86919d88584538072c21b5764d377a32",
+          "bytes": 6123
         },
         {
           "file": "my-game-papers/src/renderer/src/components/screens/SettingsScreen.tsx",
@@ -4725,13 +4725,13 @@
         },
         {
           "file": "my-game-papers/src/renderer/src/hooks/useGameLoop.ts",
-          "sha256": "8fdb9491dd913c3d028f53607ec58b036e6c40cac798d42a246114f67037d10d",
-          "bytes": 8818
+          "sha256": "0c7f6b9619bc5de062e28c3372964c97f0fbfd2b0dfe421180154b9567b149bd",
+          "bytes": 8795
         },
         {
           "file": "my-game-papers/src/renderer/src/services/gameLogic.ts",
-          "sha256": "6730c135441141dba75fdc9904cc603c7c7f0555a00b78b55663e013141abb35",
-          "bytes": 3800
+          "sha256": "5b9f8ee8b8271859f6a7039b679c73cebbedb7d8150aa108265d5c9079c853db",
+          "bytes": 3802
         },
         {
           "file": "my-game-papers/src/renderer/src/services/ttsService.ts",
@@ -4755,7 +4755,7 @@
         }
       ],
       "sourceCount": 23,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4821,26 +4821,29 @@
         }
       ],
       "sourceCount": 10,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
       "directory": "my-vm",
       "remote": "",
       "manifests": [],
-      "documents": [
-        "my-vm/README.md"
-      ],
+      "documents": [],
       "routes": [],
       "sourceFiles": [
         {
           "file": "my-vm/scratch.rs",
           "sha256": "21fb80d8414b4fa2242aa4323273eedd0e9d78cd75b52facb88aa81a2de4f088",
           "bytes": 145
+        },
+        {
+          "file": "my-vm/delivery/apply-commits.py",
+          "sha256": "5a343c31cdb6416f43212c24225118e60904fcbe2ed27a2ab5e25411c8f8ddb9",
+          "bytes": 1781
         }
       ],
-      "sourceCount": 1,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "sourceCount": 2,
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4861,7 +4864,7 @@
             "react",
             "react-dom"
           ],
-          "installed": false
+          "installed": true
         }
       ],
       "documents": [
@@ -4892,7 +4895,7 @@
         }
       ],
       "sourceCount": 3,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -4960,8 +4963,8 @@
         },
         {
           "file": "portifolio/app/page.tsx",
-          "sha256": "31b96a0e58b01d81c8f53cf8c8bc4503b8b1076f5a12676de58c8ba44c0b2969",
-          "bytes": 53628
+          "sha256": "09d9b8934168245fde75207fb7b1f5eea187e25720087f3ea320fa9081e1e9cc",
+          "bytes": 53707
         },
         {
           "file": "portifolio/app/robots.ts",
@@ -4975,8 +4978,8 @@
         },
         {
           "file": "portifolio/app/projects/ProjectsContent.tsx",
-          "sha256": "94acffc31878d455170c96458b207adaa0964372805275d13115e928432ef458",
-          "bytes": 13568
+          "sha256": "7663e965ea7c5b4f91a62e81720a3d98bbe0d49ffac749e8e94808013265f043",
+          "bytes": 13697
         },
         {
           "file": "portifolio/app/projects/page.tsx",
@@ -4989,9 +4992,69 @@
           "bytes": 2927
         },
         {
+          "file": "portifolio/review/private/vm-demo/main.cvm",
+          "sha256": "27d347f3040368df292971a1e80af6c530a1f7cc3bea06b1fd3b8539704da964",
+          "bytes": 16164
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/apps/calculator.cvm",
+          "sha256": "964d181ad03e0aa3468ba10fc581fa9f0d0d9d12b580b1975135eaa9e95444ee",
+          "bytes": 11295
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/apps/editor.cvm",
+          "sha256": "9fdbc5224eda4d6315379b52c65c3dbc122207bd14a6ce25200ea206a52fc4cb",
+          "bytes": 9789
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/apps/files.cvm",
+          "sha256": "bd8f2715b380df7242c00b19522ea377f576cc6bab3c5a7386ead0d4ca93d30c",
+          "bytes": 7992
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/apps/terminal.cvm",
+          "sha256": "78c18c6f27f44cefce70718da2c0493b157d08b4a9d41af4fad4410f8a0f7956",
+          "bytes": 10485
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/drivers/keyboard.cvm",
+          "sha256": "802474065ebf816227355ab6f09d683d584b1dfd0efcb83f5a98bd9da96951ff",
+          "bytes": 5304
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/drivers/vga.cvm",
+          "sha256": "c7a84359d17d0bfea3c7d9ef70eae02578b645276d2b2ecdf378d4b9345316ec",
+          "bytes": 3481
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/kernel/desktop.cvm",
+          "sha256": "6371ff9ddc582ad4062a387c9e07536af9f69de390084d306cc12590937052f5",
+          "bytes": 6252
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/kernel/shell.cvm",
+          "sha256": "9e7f954092566fd9680bdc0b4f79e55675c53ff75101e5620bade3c328a990e8",
+          "bytes": 6477
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/kernel/taskbar.cvm",
+          "sha256": "5a9bb6976d7b066b548a4d82e1ecd018929389f6adbf628756bb62e3e313c68b",
+          "bytes": 8255
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/kernel/vfs.cvm",
+          "sha256": "9640562dc01232625529e481293e0824c0667173431b8a4675eeb305caa22c6a",
+          "bytes": 3032
+        },
+        {
+          "file": "portifolio/review/private/vm-demo/kernel/wm.cvm",
+          "sha256": "d23c2916fd3dd046e1f7cdbb023254f2f716c4422f16bf68a276d673992740ae",
+          "bytes": 12542
+        },
+        {
           "file": "portifolio/scripts/audit-workspace.py",
-          "sha256": "4bc1595249ab13022686d2c17bcba0c97a9cf7052ffcca94c3e5ac8b46035317",
-          "bytes": 3596
+          "sha256": "e5adb1427747440a9e52efe18c93a9bb5fc1cb522229ae738dca774d19a28a24",
+          "bytes": 3565
         },
         {
           "file": "portifolio/src/components/BootSequence.tsx",
@@ -5025,8 +5088,8 @@
         },
         {
           "file": "portifolio/src/components/Navbar.tsx",
-          "sha256": "8da4542cb91e4f1f8c70732f310ad7dff9d480c682b344d6d1742503eab59b0e",
-          "bytes": 8886
+          "sha256": "a46ee3a77c7334a065ffcfb1f19714ff80db48b7a4ec80acf60fc690e54726b3",
+          "bytes": 9072
         },
         {
           "file": "portifolio/src/components/ParallaxGrid.tsx",
@@ -5045,8 +5108,8 @@
         },
         {
           "file": "portifolio/src/components/ProjectModal.tsx",
-          "sha256": "4e52aafef2cc56e92373bd348cfe945b900a9d3c0aa1b52f5cfaae70882f94a2",
-          "bytes": 14603
+          "sha256": "b0a8cfc62fc8f01d3cd6525ec2d5d676bc38c17d161f1028f90f7b31b93bfb34",
+          "bytes": 14731
         },
         {
           "file": "portifolio/src/components/ProjectPod.tsx",
@@ -5074,9 +5137,14 @@
           "bytes": 3541
         },
         {
+          "file": "portifolio/src/components/VmEcosystem.tsx",
+          "sha256": "cc3fec6e323c39dd6cecdbb24e3833561515df6ba2633085fe6ef5e174b34c82",
+          "bytes": 5387
+        },
+        {
           "file": "portifolio/src/components/ui/DepthIllustration.tsx",
-          "sha256": "d4b95f13991801e4940dded3bc024d8ba5f72ca0dd9ca17c6408c474514dd96c",
-          "bytes": 1296
+          "sha256": "a36e4922cd54fb361fd86dc13ea5ea079b0bea02949e629542236e486643cedd",
+          "bytes": 1559
         },
         {
           "file": "portifolio/src/components/ui/flag.tsx",
@@ -5090,13 +5158,13 @@
         },
         {
           "file": "portifolio/src/data/projectCopy.ts",
-          "sha256": "169e4939012475bc128116216a32658e3da7c1c81e5aca213140162e0e6f3cf9",
-          "bytes": 86297
+          "sha256": "bd2a54a608a38e3daba61156dd809ba5a14c0290f8b426d6c56fd595c3c820d7",
+          "bytes": 98952
         },
         {
           "file": "portifolio/src/data/projectMetadata.ts",
-          "sha256": "cb202660daadfe7455ab11decd9a2b21507dbc067f056a48c170d6118e1692de",
-          "bytes": 17750
+          "sha256": "b8dc7b047d7793376f2afa3382cf4e4824f199a3c87b84ed8b3820b7a442bb1c",
+          "bytes": 18848
         },
         {
           "file": "portifolio/src/data/projectVisuals.ts",
@@ -5105,8 +5173,13 @@
         },
         {
           "file": "portifolio/src/data/projects.ts",
-          "sha256": "04cd0e07dc68f19f67525c9b37c26ac1dc09dc62ba2b793136958ccf30618a95",
+          "sha256": "c9b752721a6cf59a5e802a0d3b62d6184a797dbeaa790a848fb543f297fc3da8",
           "bytes": 3605
+        },
+        {
+          "file": "portifolio/src/data/vmEcosystem.ts",
+          "sha256": "89c6c6c78feaf5463952b0e70e3cd8df7d111ed37f2fd9539cda13b68f61cd67",
+          "bytes": 109
         },
         {
           "file": "portifolio/src/i18n/dictionaries.ts",
@@ -5114,8 +5187,8 @@
           "bytes": 61723
         }
       ],
-      "sourceCount": 33,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "sourceCount": 47,
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -5209,7 +5282,7 @@
         }
       ],
       "sourceCount": 12,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -5467,7 +5540,7 @@
         }
       ],
       "sourceCount": 42,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -6058,8 +6131,8 @@
         },
         {
           "file": "simple-bank/lib/__tests__/payment-service.test.ts",
-          "sha256": "16cbdbde1d5395011c7804f48e83c81c554ae347167424009ae600e0f147cddd",
-          "bytes": 4831
+          "sha256": "b5f3c0e280ddea3c5217f79a14ef352d6bbd4fb40e81b5550f531d5e9e77dbf5",
+          "bytes": 4856
         },
         {
           "file": "simple-bank/lib/services/ai-service.ts",
@@ -6548,12 +6621,12 @@
         },
         {
           "file": "simple-bank/src/i18n/provider.tsx",
-          "sha256": "70675f857957cbfadfb466cb4732438928106e5593df3a684dfdbad8e89c54f2",
-          "bytes": 1701
+          "sha256": "c2ede268bbd505023f9d283d5ca4037100a557bbda197ace222edf44fe665eb3",
+          "bytes": 2088
         }
       ],
       "sourceCount": 178,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -7691,7 +7764,7 @@
         }
       ],
       "sourceCount": 189,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -9649,7 +9722,7 @@
         }
       ],
       "sourceCount": 313,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -9941,7 +10014,7 @@
         }
       ],
       "sourceCount": 45,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -10154,7 +10227,7 @@
         }
       ],
       "sourceCount": 34,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -10635,7 +10708,7 @@
         }
       ],
       "sourceCount": 76,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     },
     {
@@ -10652,7 +10725,8 @@
       "documents": [
         "vm/my-vm/README.md",
         "vm/my-vm-compiler/README.md",
-        "vm/my-vm-os/README.md"
+        "vm/my-vm-os/README.md",
+        "vm/old_compiler/README.md"
       ],
       "routes": [],
       "sourceFiles": [
@@ -11053,7 +11127,7 @@
         }
       ],
       "sourceCount": 79,
-      "review": "static inventory; manual findings in project-assessments.md",
+      "review": "static inventory",
       "runtime": "not verified"
     }
   ],
@@ -11074,13 +11148,6 @@
       "documents": []
     },
     {
-      "directory": "eval",
-      "reason": "supporting documentation or no application source",
-      "documents": [
-        "eval/README.md"
-      ]
-    },
-    {
       "directory": "hd",
       "reason": "supporting documentation or no application source",
       "documents": []
@@ -11088,9 +11155,7 @@
     {
       "directory": "my-vm-os",
       "reason": "supporting documentation or no application source",
-      "documents": [
-        "my-vm-os/README.md"
-      ]
+      "documents": []
     },
     {
       "directory": "test-qwen",
@@ -11100,9 +11165,7 @@
     {
       "directory": "test_project",
       "reason": "supporting documentation or no application source",
-      "documents": [
-        "test_project/README.md"
-      ]
+      "documents": []
     },
     {
       "directory": "trabalho",

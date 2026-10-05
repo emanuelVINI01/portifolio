@@ -22,6 +22,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const { language } = useLanguage();
   const [linkCopied, setLinkCopied] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
+  const projectId = project?.id;
 
   const runbookLines: CommandTerminalLine[] = (project?.runCommands ?? [])
     .map((value) => ({ kind: 'command', value }));
@@ -39,10 +40,10 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   }, [project]);
 
   useEffect(() => {
-    if (!project) return;
+    if (!projectId) return;
     const previousFocus = document.activeElement as HTMLElement | null;
     const element = modalRef.current;
-    element?.focus();
+    const focusFrame = requestAnimationFrame(() => modalRef.current?.focus());
     const handleKey = (event: KeyboardEvent) => {
       if (document.querySelector('dialog[open]')) return;
       if (event.key === 'Escape' && !event.defaultPrevented) onClose();
@@ -56,8 +57,8 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       else if (!event.shiftKey && (document.activeElement === last || document.activeElement === element)) { event.preventDefault(); first.focus(); }
     };
     document.addEventListener('keydown', handleKey);
-    return () => { document.removeEventListener('keydown', handleKey); previousFocus?.focus(); };
-  }, [project, onClose]);
+    return () => { cancelAnimationFrame(focusFrame); document.removeEventListener('keydown', handleKey); previousFocus?.focus(); };
+  }, [projectId, onClose]);
 
   useEffect(() => {
     if (!project) return;

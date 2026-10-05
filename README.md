@@ -2,7 +2,7 @@
 
 Portfólio em português, inglês e alemão com 39 cases de aplicações web, ferramentas, experimentos Rust e projetos históricos Java/Kotlin. O catálogo identifica o estágio de cada projeto e descreve funcionalidades encontradas no código disponível. SwissLearn, Simple Bank e SnippetVault abrem a seleção de destaques.
 
-Next.js 16, React 19, TypeScript, Tailwind CSS 4 e Framer Motion compõem a interface. Cada projeto tem URL própria, metadados de compartilhamento e descrições traduzidas. A galeria preserva a proporção das imagens e permite ampliar, selecionar miniaturas e navegar pelo teclado.
+Next.js 16, React 19, TypeScript, Tailwind CSS 4 e Framer Motion compõem a interface. Cada projeto tem URL própria, metadados de compartilhamento e descrições traduzidas. A galeria permite ampliar, selecionar miniaturas e navegar pelo teclado. A prévia mostra o topo da captura; a visualização ampliada preserva a proporção e permite rolar páginas longas.
 
 ## Executar e verificar
 
@@ -20,7 +20,7 @@ npm run review:check
 npm run build
 ```
 
-O script de build usa webpack. O build padrão Turbopack foi bloqueado neste ambiente ao abrir uma porta para processar CSS; webpack compilou os 39 cases sem essa dependência.
+O script de build usa webpack e gera as rotas estáticas dos 39 cases.
 
 As fontes JetBrains Mono e Fira Code são locais; o build não baixa fontes. A [licença SIL OFL](public/fonts/OFL.txt) acompanha os arquivos. Fontes originais: [JetBrains Mono](https://github.com/google/fonts/tree/main/ofl/jetbrainsmono), [Fira Code](https://github.com/google/fonts/tree/main/ofl/firacode).
 
@@ -37,7 +37,7 @@ Preserve IDs existentes ao revisar textos para manter links diretos. Projetos se
 
 ## Revisão dos projetos
 
-A [avaliação](review/avaliacao.md) registra mudanças e bloqueios. A [avaliação individual](review/project-assessments.md) cobre os 39 cases e os diretórios auxiliares. O inventário estático está em `review/source-audit.json`; inventariar arquivos não representa execução ou leitura integral do código.
+O inventário estático está em `review/source-audit.json`, e as receitas de execução em `review/recipes.json`. Inventariar arquivos não representa execução ou leitura integral do código.
 
 ```bash
 npm run review:audit
@@ -45,7 +45,7 @@ node scripts/capture-projects.mjs --list
 npm run review:capture
 ```
 
-As receitas em `review/recipes.json` apontam para os projetos irmãos neste workspace. Web é capturado em desktop/mobile; Electron e extensão Chrome têm execução própria. CLI, Minecraft, Discord e Expo nativo precisam do runtime correspondente. Use `node scripts/capture-projects.mjs --start --project=swiss-learn` para limitar a execução.
+As receitas em `review/recipes.json` apontam para os projetos irmãos neste workspace. Web é capturado em desktop/mobile; Electron e extensão Chrome têm execução própria. CLI, Minecraft, Discord e Expo nativo precisam do runtime correspondente. Use `node scripts/capture-projects.mjs --start --project=swiss-learn` para limitar a execução. `--resume` retoma apenas áreas sem captura válida; `--base-url=http://127.0.0.1:3000` usa um servidor local já aberto para um único projeto. `REVIEW_BASE_PORT` altera a porta inicial, e `REVIEW_SOURCE_<ID>` permite revisar um checkout fora do workspace.
 
 O capturador precisa de Playwright e Chromium disponíveis. Procura Playwright neste repositório e em `../swiss-learn/node_modules/playwright`; caminhos explícitos podem ser definidos em `PLAYWRIGHT_MODULE` e `CHROMIUM_PATH`. Nenhuma dependência Playwright é instalada automaticamente.
 
@@ -77,7 +77,9 @@ node scripts/update-github.mjs --apply --profile
 
 O primeiro comando mostra as descrições sem publicar. O segundo verifica autenticação e permissões antes de editar descrições e o README existente do perfil, gerado a partir do catálogo. Preserva homepage/topics e confirma cada escrita. Resultado em `review/github-publication.json`.
 
-Na execução de 04/10/2026, autenticação/rede GitHub estavam indisponíveis; Chromium e portas locais também foram bloqueados pelo ambiente. O build passou, mas capturas novas, validação visual e publicação continuam pendentes.
+Em 05/10/2026, Chromium e GitHub funcionaram neste ambiente. As descrições de 27 repositórios e o README do perfil foram publicados e conferidos. As galerias usam 225 capturas locais inspecionadas em 26 cases, além de cinco imagens anteriores. As telas protegidas usam dados fictícios. Lint, tipos, build e smoke do portfólio passaram; os resultados estão nos arquivos JSON de revisão.
+
+As limitações de execução estão registradas por área em `review/last-capture-run.json`: clientes Expo precisam de emulador; bibliotecas e bots dependem de seus hosts; o executor de LLM precisa de CUDA; os aplicativos internos do desktop my-vm não abriram nos cliques desta revisão. Capturar uma interface não comprova todos os seus fluxos ou integrações.
 
 ## Ecossistema my-vm
 

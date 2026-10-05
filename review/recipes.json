@@ -1,12 +1,398 @@
 [
   {
     "id": "my-bet",
-    "directory": null,
-    "areas": [],
-    "kind": "unavailable",
+    "directory": "my-bet",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/",
+          "en": "/",
+          "de": "/"
+        }
+      },
+      {
+        "id": "auth-login",
+        "path": "/auth/login",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/auth/login",
+          "en": "/auth/login",
+          "de": "/auth/login"
+        },
+        "settleMs": 10000
+      },
+      {
+        "id": "auth-register",
+        "path": "/auth/register",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "/auth/register",
+          "en": "/auth/register",
+          "de": "/auth/register"
+        },
+        "settleMs": 10000
+      },
+      {
+        "id": "user",
+        "path": "/user",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/user",
+          "en": "/user",
+          "de": "/user"
+        },
+        "settleMs": 10000
+      },
+      {
+        "id": "user-edit",
+        "path": "/user/edit",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/user/edit",
+          "en": "/user/edit",
+          "de": "/user/edit"
+        }
+      },
+      {
+        "id": "user-transactions",
+        "path": "/user/transactions",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/user/transactions",
+          "en": "/user/transactions",
+          "de": "/user/transactions"
+        }
+      },
+      {
+        "id": "user-rewards",
+        "path": "/user/rewards",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/user/rewards",
+          "en": "/user/rewards",
+          "de": "/user/rewards"
+        }
+      },
+      {
+        "id": "user-support",
+        "path": "/user/support",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/user/support",
+          "en": "/user/support",
+          "de": "/user/support"
+        }
+      },
+      {
+        "id": "user-invite",
+        "path": "/user/invite",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/user/invite",
+          "en": "/user/invite",
+          "de": "/user/invite"
+        }
+      },
+      {
+        "id": "admin",
+        "path": "/admin",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin",
+          "en": "/admin",
+          "de": "/admin"
+        }
+      },
+      {
+        "id": "admin-analytics",
+        "path": "/admin/analytics",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/analytics",
+          "en": "/admin/analytics",
+          "de": "/admin/analytics"
+        },
+        "mobileFocus": ".overflow-y-auto > .max-w-full"
+      },
+      {
+        "id": "admin-users",
+        "path": "/admin/users",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/users",
+          "en": "/admin/users",
+          "de": "/admin/users"
+        },
+        "mobileFocus": ".overflow-y-auto > .max-w-full"
+      },
+      {
+        "id": "admin-transactions",
+        "path": "/admin/transactions",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/transactions",
+          "en": "/admin/transactions",
+          "de": "/admin/transactions"
+        },
+        "mobileFocus": ".overflow-y-auto > .max-w-full"
+      },
+      {
+        "id": "admin-affiliates",
+        "path": "/admin/affiliates",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/affiliates",
+          "en": "/admin/affiliates",
+          "de": "/admin/affiliates"
+        },
+        "mobileFocus": ".overflow-y-auto > .max-w-full"
+      },
+      {
+        "id": "admin-support",
+        "path": "/admin/support",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/support",
+          "en": "/admin/support",
+          "de": "/admin/support"
+        },
+        "mobileFocus": ".overflow-y-auto > .max-w-full"
+      },
+      {
+        "id": "games-twenty-one",
+        "path": "/games/twenty-one",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/twenty-one",
+          "en": "/games/twenty-one",
+          "de": "/games/twenty-one"
+        }
+      },
+      {
+        "id": "games-tower",
+        "path": "/games/tower",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/tower",
+          "en": "/games/tower",
+          "de": "/games/tower"
+        }
+      },
+      {
+        "id": "games-stock-panic",
+        "path": "/games/stock-panic",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/stock-panic",
+          "en": "/games/stock-panic",
+          "de": "/games/stock-panic"
+        }
+      },
+      {
+        "id": "games-race",
+        "path": "/games/race",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/race",
+          "en": "/games/race",
+          "de": "/games/race"
+        }
+      },
+      {
+        "id": "games-plinko",
+        "path": "/games/plinko",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/plinko",
+          "en": "/games/plinko",
+          "de": "/games/plinko"
+        }
+      },
+      {
+        "id": "games-penalty-shoot-out",
+        "path": "/games/penalty-shoot-out",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/penalty-shoot-out",
+          "en": "/games/penalty-shoot-out",
+          "de": "/games/penalty-shoot-out"
+        }
+      },
+      {
+        "id": "games-neon-rails",
+        "path": "/games/neon-rails",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/neon-rails",
+          "en": "/games/neon-rails",
+          "de": "/games/neon-rails"
+        }
+      },
+      {
+        "id": "games-mines",
+        "path": "/games/mines",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/mines",
+          "en": "/games/mines",
+          "de": "/games/mines"
+        }
+      },
+      {
+        "id": "games-fishing",
+        "path": "/games/fishing",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/fishing",
+          "en": "/games/fishing",
+          "de": "/games/fishing"
+        }
+      },
+      {
+        "id": "games-dungeon",
+        "path": "/games/dungeon",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/dungeon",
+          "en": "/games/dungeon",
+          "de": "/games/dungeon"
+        }
+      },
+      {
+        "id": "games-double",
+        "path": "/games/double",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/double",
+          "en": "/games/double",
+          "de": "/games/double"
+        }
+      },
+      {
+        "id": "games-dice",
+        "path": "/games/dice",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/dice",
+          "en": "/games/dice",
+          "de": "/games/dice"
+        }
+      },
+      {
+        "id": "games-crash",
+        "path": "/games/crash",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/games/crash",
+          "en": "/games/crash",
+          "de": "/games/crash"
+        }
+      },
+      {
+        "id": "admin-settings-rtp",
+        "path": "/admin/settings/rtp",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/settings/rtp",
+          "en": "/admin/settings/rtp",
+          "de": "/admin/settings/rtp"
+        },
+        "readyRequests": [
+          "/api/admin/settings/rtp"
+        ],
+        "mobileFocus": ".overflow-y-auto > .max-w-full h2"
+      },
+      {
+        "id": "admin-settings-language",
+        "path": "/admin/settings/language",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/settings/language",
+          "en": "/admin/settings/language",
+          "de": "/admin/settings/language"
+        },
+        "readyRequests": [
+          "/api/admin/settings/language"
+        ],
+        "mobileFocus": ".overflow-y-auto > .max-w-full h2"
+      },
+      {
+        "id": "admin-settings-gateways",
+        "path": "/admin/settings/gateways",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/settings/gateways",
+          "en": "/admin/settings/gateways",
+          "de": "/admin/settings/gateways"
+        },
+        "readyRequests": [
+          "/api/admin/settings/payment-gateways"
+        ],
+        "mobileFocus": ".overflow-y-auto > .max-w-full > div > div:last-child"
+      },
+      {
+        "id": "admin-settings-business",
+        "path": "/admin/settings/business",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/settings/business",
+          "en": "/admin/settings/business",
+          "de": "/admin/settings/business"
+        },
+        "readyRequests": [
+          "/api/admin/settings/business"
+        ],
+        "mobileFocus": ".overflow-y-auto > .max-w-full h2"
+      },
+      {
+        "id": "admin-settings-brand",
+        "path": "/admin/settings/brand",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/settings/brand",
+          "en": "/admin/settings/brand",
+          "de": "/admin/settings/brand"
+        },
+        "readyRequests": [
+          "/api/admin/settings/business"
+        ],
+        "mobileFocus": ".overflow-y-auto > .max-w-full h2"
+      },
+      {
+        "id": "admin-settings-appearance",
+        "path": "/admin/settings/appearance",
+        "requiresAuth": true,
+        "caption": {
+          "pt": "/admin/settings/appearance",
+          "en": "/admin/settings/appearance",
+          "de": "/admin/settings/appearance"
+        },
+        "readyRequests": [
+          "/api/admin/settings/appearance"
+        ],
+        "mobileFocus": ".overflow-y-auto > .max-w-full h2"
+      }
+    ],
+    "kind": "web",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
-    ]
+      "Clone the authored repository; prepare a dedicated local MySQL/Redis demo environment and private review session; use --base-url for the running local server."
+    ],
+    "start": {
+      "command": "node",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "dev",
+        "--webpack",
+        "--hostname",
+        "127.0.0.1",
+        "--port",
+        "{port}"
+      ]
+    },
+    "requiresDatabase": true
   },
   {
     "id": "simple-bank",
@@ -20,7 +406,12 @@
           "pt": "Dashboard",
           "en": "Dashboard",
           "de": "Dashboard"
-        }
+        },
+        "readyRequests": [
+          "/api/users/me",
+          "/api/users/metrics",
+          "/api/users/transactions"
+        ]
       },
       {
         "id": "payment-keys",
@@ -29,8 +420,11 @@
         "caption": {
           "pt": "Chaves de pagamento",
           "en": "Payment keys",
-          "de": "Zahlungsschlüssel"
-        }
+          "de": "Zahlungsschl\u00fcssel"
+        },
+        "readyRequests": [
+          "/api/payment-keys"
+        ]
       },
       {
         "id": "transactions",
@@ -40,14 +434,17 @@
           "pt": "Extrato",
           "en": "Transactions",
           "de": "Transaktionen"
-        }
+        },
+        "readyRequests": [
+          "/api/users/transactions"
+        ]
       },
       {
         "id": "home",
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -137,11 +534,28 @@
   {
     "id": "cvm-compiler",
     "directory": "vm/my-vm-compiler",
-    "areas": [],
+    "areas": [
+      {
+        "id": "compilation",
+        "caption": {
+          "pt": "Compila\u00e7\u00e3o real do desktop CVM",
+          "en": "Actual CVM desktop compilation",
+          "de": "Tats\u00e4chliche Kompilierung des CVM-Desktops"
+        }
+      }
+    ],
     "kind": "terminal",
     "prerequisites": [
-      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
-    ]
+      "Build the compiler and copy my-vm-os/src to ignored review/private/vm-demo for the isolated compilation."
+    ],
+    "run": {
+      "command": "./target/release/my-vm-compiler",
+      "args": [
+        "../../portifolio/review/private/vm-demo/main.cvm",
+        "../../portifolio/review/private/vm-demo.asm"
+      ],
+      "label": "my-vm-compiler <copied OS source>/main.cvm <review output>.asm"
+    }
   },
   {
     "id": "apiflash",
@@ -152,7 +566,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -162,17 +576,20 @@
         "path": "/collections",
         "requiresAuth": true,
         "caption": {
-          "pt": "Coleções",
+          "pt": "Cole\u00e7\u00f5es",
           "en": "Collections",
           "de": "Sammlungen"
-        }
+        },
+        "readyRequests": [
+          "/api/collections"
+        ]
       },
       {
         "id": "docs",
         "path": "/docs",
         "requiresAuth": false,
         "caption": {
-          "pt": "Documentação",
+          "pt": "Documenta\u00e7\u00e3o",
           "en": "Documentation",
           "de": "Dokumentation"
         }
@@ -182,7 +599,7 @@
         "path": "/history",
         "requiresAuth": true,
         "caption": {
-          "pt": "Histórico",
+          "pt": "Hist\u00f3rico",
           "en": "History",
           "de": "Verlauf"
         }
@@ -243,11 +660,11 @@
         "steps": [
           {
             "action": "click",
-            "selector": "button[title=\"Configurações\"], button[title=\"Settings\"]"
+            "selector": "button[title=\"Configura\u00e7\u00f5es\"], button[title=\"Settings\"]"
           }
         ],
         "caption": {
-          "pt": "Configurações",
+          "pt": "Configura\u00e7\u00f5es",
           "en": "Settings",
           "de": "Einstellungen"
         }
@@ -293,7 +710,7 @@
           {
             "action": "click",
             "role": "button",
-            "name": "Settings|Configurações"
+            "name": "Settings|Configura\u00e7\u00f5es|Ajustes"
           }
         ],
         "caption": {
@@ -323,13 +740,13 @@
           {
             "action": "click",
             "role": "button",
-            "name": "Reports|Relatórios"
+            "name": "Research|Pesquisar|Pesquisa"
           }
         ],
         "caption": {
-          "pt": "Reports",
-          "en": "Reports",
-          "de": "Reports"
+          "pt": "Hist\u00f3rico de pesquisa \u00b7 sem relat\u00f3rios gerados",
+          "en": "Research history \u00b7 no generated reports",
+          "de": "Rechercheverlauf \u00b7 keine erzeugten Berichte"
         }
       }
     ],
@@ -348,7 +765,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -361,7 +778,8 @@
           "pt": "Dashboard",
           "en": "Dashboard",
           "de": "Dashboard"
-        }
+        },
+        "readyText": "Formatar valores em BRL"
       },
       {
         "id": "login",
@@ -411,7 +829,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -434,7 +852,10 @@
           "pt": "Dashboard",
           "en": "Dashboard",
           "de": "Dashboard"
-        }
+        },
+        "readyRequests": [
+          "/api/metrics/me"
+        ]
       },
       {
         "id": "login",
@@ -451,9 +872,9 @@
         "path": "/practice",
         "requiresAuth": false,
         "caption": {
-          "pt": "Prática",
+          "pt": "Pr\u00e1tica",
           "en": "Practice",
-          "de": "Übung"
+          "de": "\u00dcbung"
         }
       },
       {
@@ -503,7 +924,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -625,74 +1046,96 @@
   },
   {
     "id": "portifolio-frontend",
-    "directory": null,
-    "areas": [],
-    "kind": "unavailable",
+    "directory": "portifolio-frontend",
+    "areas": [
+      {
+        "id": "home",
+        "path": "/",
+        "requiresAuth": false,
+        "caption": {
+          "pt": "Portf\u00f3lio hist\u00f3rico \u00b7 distribui\u00e7\u00e3o est\u00e1tica",
+          "en": "Historical portfolio \u00b7 static distribution",
+          "de": "Historisches Portfolio \u00b7 statische Distribution"
+        }
+      }
+    ],
+    "kind": "web",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
-    ]
+      "Clone emanuelvini01.github.io and set REVIEW_SOURCE_PORTIFOLIO_FRONTEND to the static distribution directory."
+    ],
+    "requiresDatabase": false,
+    "start": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "http.server",
+        "{port}",
+        "--bind",
+        "127.0.0.1"
+      ]
+    }
   },
   {
     "id": "z-discord-core",
     "directory": null,
     "areas": [],
-    "kind": "unavailable",
+    "kind": "manual",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
+      "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
     ]
   },
   {
     "id": "comuni-mine-bot",
     "directory": null,
     "areas": [],
-    "kind": "unavailable",
+    "kind": "manual",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
+      "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
     ]
   },
   {
     "id": "minecraft-feast-bot",
     "directory": null,
     "areas": [],
-    "kind": "unavailable",
+    "kind": "manual",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
+      "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
     ]
   },
   {
     "id": "advanced-sql",
     "directory": null,
     "areas": [],
-    "kind": "unavailable",
+    "kind": "manual",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
+      "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
     ]
   },
   {
     "id": "z-manutencao",
     "directory": null,
     "areas": [],
-    "kind": "unavailable",
+    "kind": "manual",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
+      "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
     ]
   },
   {
     "id": "z-silk2",
     "directory": null,
     "areas": [],
-    "kind": "unavailable",
+    "kind": "manual",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
+      "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
     ]
   },
   {
     "id": "multi-server-api",
     "directory": null,
     "areas": [],
-    "kind": "unavailable",
+    "kind": "manual",
     "prerequisites": [
-      "Source is absent from this workspace; GitHub access is required."
+      "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
     ]
   },
   {
@@ -700,23 +1143,13 @@
     "directory": "swiss-learn",
     "areas": [
       {
-        "id": "home",
-        "path": "/",
-        "requiresAuth": false,
-        "caption": {
-          "pt": "Página inicial",
-          "en": "Home",
-          "de": "Startseite"
-        }
-      },
-      {
         "id": "lang",
         "path": "/pt",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
-          "en": "Home",
-          "de": "Startseite"
+          "pt": "P\u00e1gina inicial sem sess\u00e3o",
+          "en": "Home without a session",
+          "de": "Startseite ohne Anmeldung"
         }
       },
       {
@@ -724,20 +1157,26 @@
         "path": "/pt/conversation",
         "requiresAuth": true,
         "caption": {
-          "pt": "Conversação",
+          "pt": "Conversa\u00e7\u00e3o",
           "en": "Conversation",
-          "de": "Gespräch"
-        }
+          "de": "Gespr\u00e4ch"
+        },
+        "readyRequests": [
+          "/api/conversation/scenarios"
+        ]
       },
       {
         "id": "lang-grammar",
         "path": "/pt/grammar",
         "requiresAuth": true,
         "caption": {
-          "pt": "Gramática",
+          "pt": "Gram\u00e1tica",
           "en": "Grammar",
           "de": "Grammatik"
-        }
+        },
+        "readyRequests": [
+          "/api/grammar"
+        ]
       },
       {
         "id": "lang-more",
@@ -754,9 +1193,9 @@
         "path": "/pt/practice",
         "requiresAuth": true,
         "caption": {
-          "pt": "Prática",
+          "pt": "Pr\u00e1tica",
           "en": "Practice",
-          "de": "Übung"
+          "de": "\u00dcbung"
         }
       },
       {
@@ -794,7 +1233,7 @@
         "path": "/pt/settings",
         "requiresAuth": true,
         "caption": {
-          "pt": "Configurações",
+          "pt": "Configura\u00e7\u00f5es",
           "en": "Settings",
           "de": "Einstellungen"
         }
@@ -817,7 +1256,10 @@
           "pt": "Escrita",
           "en": "Writing",
           "de": "Schreiben"
-        }
+        },
+        "readyRequests": [
+          "/api/writing/topics"
+        ]
       },
       {
         "id": "lang-signin",
@@ -916,11 +1358,29 @@
   {
     "id": "termop",
     "directory": "termop",
-    "areas": [],
+    "areas": [
+      {
+        "id": "cli-help",
+        "caption": {
+          "pt": "Ajuda da CLI \u00b7 sa\u00edda real",
+          "en": "CLI help \u00b7 actual output",
+          "de": "CLI-Hilfe \u00b7 tats\u00e4chliche Ausgabe"
+        }
+      }
+    ],
     "kind": "terminal",
     "prerequisites": [
       "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
-    ]
+    ],
+    "run": {
+      "command": "node",
+      "args": [
+        "node_modules/tsx/dist/cli.mjs",
+        "src/main.tsx",
+        "--help"
+      ],
+      "label": "node node_modules/tsx/dist/cli.mjs src/main.tsx --help"
+    }
   },
   {
     "id": "russian-alphabet",
@@ -931,7 +1391,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -947,9 +1407,9 @@
           }
         ],
         "caption": {
-          "pt": "Referência do alfabeto",
+          "pt": "Refer\u00eancia do alfabeto",
           "en": "Alphabet reference",
-          "de": "Alphabetübersicht"
+          "de": "Alphabet\u00fcbersicht"
         }
       },
       {
@@ -995,7 +1455,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -1045,7 +1505,7 @@
         "path": "/docs",
         "requiresAuth": false,
         "caption": {
-          "pt": "Documentação",
+          "pt": "Documenta\u00e7\u00e3o",
           "en": "Documentation",
           "de": "Dokumentation"
         }
@@ -1076,7 +1536,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -1086,7 +1546,7 @@
         "path": "/neural",
         "requiresAuth": false,
         "caption": {
-          "pt": "Visualização neural",
+          "pt": "Visualiza\u00e7\u00e3o neural",
           "en": "Neural visualization",
           "de": "Neuronale Visualisierung"
         }
@@ -1134,17 +1594,34 @@
     "areas": [],
     "kind": "terminal",
     "prerequisites": [
-      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+      "Rust release build succeeded. A local CPU training run produced routing output and epochs 0, 30 and 60 before the 180-second timeout; all 300 epochs and post-training output were not verified. No standalone graphical UI."
     ]
   },
   {
     "id": "kotlin-vortey",
     "directory": "KotlinVortey",
-    "areas": [],
+    "areas": [
+      {
+        "id": "event-api",
+        "caption": {
+          "pt": "API de eventos \u00b7 resposta real com dados fict\u00edcios",
+          "en": "Event API \u00b7 actual response with fictional data",
+          "de": "Event-API \u00b7 echte Antwort mit fiktiven Daten"
+        }
+      }
+    ],
     "kind": "terminal",
     "prerequisites": [
-      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
-    ]
+      "Start ./gradlew run locally on port 8080 before capturing the isolated event request."
+    ],
+    "run": {
+      "command": "python3",
+      "args": [
+        "-c",
+        "import urllib.request,json; payload=json.dumps({\"event\":\"portfolio-demo\",\"data\":{\"message\":\"demo\"},\"consumers\":[]}).encode(); req=urllib.request.Request(\"http://127.0.0.1:8080/event\",data=payload,headers={\"Content-Type\":\"application/json\"}); response=urllib.request.urlopen(req,timeout=10); print(\"HTTP\",response.status); print(response.read().decode())"
+      ],
+      "label": "POST http://127.0.0.1:8080/event (consumers: [])"
+    }
   },
   {
     "id": "my-game-papers",
@@ -1196,7 +1673,7 @@
           }
         ],
         "caption": {
-          "pt": "Jogo de bingo com cartela de demonstração",
+          "pt": "Jogo de bingo com cartela de demonstra\u00e7\u00e3o",
           "en": "Bingo game with a demo card",
           "de": "Bingo-Spiel mit Demokarte"
         }
@@ -1249,7 +1726,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -1278,11 +1755,27 @@
   {
     "id": "lomaw",
     "directory": "lomaw",
-    "areas": [],
+    "areas": [
+      {
+        "id": "cli-help",
+        "caption": {
+          "pt": "Ajuda da CLI \u00b7 sa\u00edda real",
+          "en": "CLI help \u00b7 actual output",
+          "de": "CLI-Hilfe \u00b7 tats\u00e4chliche Ausgabe"
+        }
+      }
+    ],
     "kind": "terminal",
     "prerequisites": [
       "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
-    ]
+    ],
+    "run": {
+      "command": "./target/release/lomaw",
+      "args": [
+        "--help"
+      ],
+      "label": "./target/release/lomaw --help"
+    }
   },
   {
     "id": "my-llm-executor",
@@ -1290,17 +1783,36 @@
     "areas": [],
     "kind": "terminal",
     "prerequisites": [
-      "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
+      "Local infer binary failed to launch: libcudart.so.12 is unavailable. CUDA runtime, GPU and compatible model weights are required."
     ]
   },
   {
     "id": "my-codec",
     "directory": "my-codec",
-    "areas": [],
+    "areas": [
+      {
+        "id": "cli-help",
+        "caption": {
+          "pt": "Ajuda da CLI \u00b7 sa\u00edda real",
+          "en": "CLI help \u00b7 actual output",
+          "de": "CLI-Hilfe \u00b7 tats\u00e4chliche Ausgabe"
+        }
+      }
+    ],
     "kind": "terminal",
     "prerequisites": [
       "Build/run with the existing documented toolchain; capture actual output or the graphical runtime, without simulated results."
-    ]
+    ],
+    "run": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--",
+        "--help"
+      ],
+      "label": "cargo run --release -- --help"
+    }
   },
   {
     "id": "compound-interest-calc",
@@ -1329,7 +1841,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -1360,7 +1872,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -1401,7 +1913,7 @@
         "path": "/",
         "requiresAuth": false,
         "caption": {
-          "pt": "Página inicial",
+          "pt": "P\u00e1gina inicial",
           "en": "Home",
           "de": "Startseite"
         }
@@ -1442,5 +1954,41 @@
       ]
     },
     "requiresDatabase": false
+  },
+  {
+    "id": "my-vm-os",
+    "directory": "vm/my-vm-os",
+    "kind": "manual",
+    "areas": [],
+    "prerequisites": [
+      "Compile CVM sources and launch the graphical Rust runtime in an isolated X11 session. Native desktop capture is recorded in vm-native-manifest.json; internal applications did not open in this review."
+    ]
+  },
+  {
+    "id": "my-vm-legacy-compiler",
+    "directory": "vm/old_compiler",
+    "kind": "terminal",
+    "areas": [
+      {
+        "id": "compile",
+        "caption": {
+          "pt": "Transcri\u00e7\u00e3o da compila\u00e7\u00e3o Python para Assembly legado; compatibilidade com a VM atual n\u00e3o validada",
+          "en": "Transcript of Python compilation to legacy Assembly; compatibility with the current VM is unverified",
+          "de": "Transkript der Python-Kompilierung zu Legacy-Assembly; Kompatibilit\u00e4t mit der aktuellen VM ungepr\u00fcft"
+        }
+      }
+    ],
+    "prerequisites": [
+      "Python 3; use a disposable input and output under /tmp."
+    ],
+    "run": {
+      "command": "python3",
+      "args": [
+        "main.py",
+        "/tmp/portfolio-legacy-input.py",
+        "/tmp/portfolio-legacy-output.asm"
+      ],
+      "label": "python3 main.py exemplo.py saida.asm"
+    }
   }
 ]

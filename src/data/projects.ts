@@ -56,7 +56,7 @@ const PROJECTS_BY_LANG = Object.fromEntries(
     language, orderedMetadata.map((project) => ({
       ...project,
       ...projectCopy[language][project.id],
-      captures: [...(project.captures ?? []), ...((capturedProjects as Record<string, ProjectCapture[]>)[project.id] ?? [])],
+      captures: [...((capturedProjects as Record<string, ProjectCapture[]>)[project.id] ?? []), ...(project.captures ?? [])],
     })),
   ]),
 ) as Record<Language, Project[]>;

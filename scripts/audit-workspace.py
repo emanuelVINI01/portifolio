@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / 'portifolio' / 'review'
-SKIP = {'node_modules', '.git', '.next', '.venv', 'venv', 'dist', 'build', 'target', 'vendor', 'generated', '__pycache__', 'dataset', 'audio', 'logs', 'cache', 'out'}
+SKIP = {'node_modules', '.git', '.next', '.venv', 'venv', 'dist', 'build', 'target', 'vendor', 'generated', 'prepared', '__pycache__', 'dataset', 'audio', 'logs', 'cache', 'out'}
 MANIFESTS = {'package.json', 'Cargo.toml', 'pom.xml', 'build.gradle.kts', 'requirements.txt'}
 SOURCE = {'.ts', '.tsx', '.js', '.jsx', '.py', '.rs', '.kt', '.java', '.cs', '.cvm', '.pest', '.prisma'}
 projects = []
@@ -47,7 +47,7 @@ for directory in sorted(ROOT.iterdir()):
         # Never persist remote credentials embedded in a URL.
         import re
         remote = re.sub(r'(https?://)[^/@]+@', r'\1', remote)
-    projects.append({'directory': directory.name, 'remote': remote, 'manifests': manifests, 'documents': docs, 'routes': routes, 'sourceFiles': evidence, 'sourceCount': len(evidence), 'review': 'static inventory; manual findings in project-assessments.md', 'runtime': 'not verified'})
+    projects.append({'directory': directory.name, 'remote': remote, 'manifests': manifests, 'documents': docs, 'routes': routes, 'sourceFiles': evidence, 'sourceCount': len(evidence), 'review': 'static inventory', 'runtime': 'not verified'})
 OUTPUT.mkdir(exist_ok=True)
 (OUTPUT / 'source-audit.json').write_text(json.dumps({'projects': projects, 'excluded': excluded}, ensure_ascii=False, indent=2) + '\n')
 print(f'{len(projects)} project directories, {sum(p["sourceCount"] for p in projects)} source files, {sum(len(p["routes"]) for p in projects)} route entries')

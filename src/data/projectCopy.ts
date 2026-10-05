@@ -5,12 +5,12 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
   "pt": {
     "my-bet": {
       "name": "My Bet",
-      "shortDesc": "Aplicação de jogos com ledger em centavos, sessões Redis e integrações PIX.",
-      "longDesc": "Case de jogos e estado transacional descrito no catálogo anterior, com ledger em centavos, sessões Redis e integração PIX. O código do projeto não está disponível neste workspace e o repositório remoto não pôde ser consultado; números de jogos, gateways e garantias financeiras aguardam verificação.",
+      "shortDesc": "Aplicação experimental de jogos com ledger, sessões Redis e administração configurável.",
+      "longDesc": "O repositório implementa jogos individuais e ao vivo, estado Redis/SSE, autenticação, histórico financeiro e integrações de pagamento. Funções centrais de ledger e referências de idempotência organizam apostas e pagamentos. Há áreas de usuário, afiliados, suporte e administração, com configurações de aparência e idioma. A revisão conferiu o código; as capturas usam um ambiente local de demonstração. Isso não comprova autorização para operação financeira nem auditoria integral das regras.",
       "highlights": [
         {
-          "label": "Escopo",
-          "value": "Jogos, sessões e ledger; revisão do código pendente"
+          "label": "Implementação",
+          "value": "Aplicação experimental de jogos com ledger, sessões Redis e administração configurável."
         }
       ]
     },
@@ -36,7 +36,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "cvm-runtime": {
       "name": "my-vm · máquina virtual",
       "shortDesc": "Máquina virtual em Rust com 26 registradores, framebuffer 1280 × 800 e dispositivos simulados.",
-      "longDesc": "O runtime lê Assembly textual, resolve labels e executa instruções sobre registradores A–Z, pilha e RAM. A RAM possui 256 × 1024 × 1024 palavras u32, aproximadamente 1 GiB. Uma janela minifb exibe o framebuffer 1280 × 800; mouse, teclado e interrupções alimentam o sistema convidado. O processo roda no sistema hospedeiro e requer sessão gráfica. A revisão conferiu a compilação dos binários; as interações do desktop não foram executadas.",
+      "longDesc": "O runtime lê Assembly textual, resolve labels e executa instruções sobre registradores A–Z, pilha e RAM. A RAM possui 256 × 1024 × 1024 palavras u32, aproximadamente 1 GiB. Uma janela minifb exibe o framebuffer 1280 × 800; mouse, teclado e interrupções alimentam o sistema convidado. O processo roda no sistema hospedeiro e requer sessão gráfica. A execução local exibiu o desktop. Os cliques não abriram os aplicativos internos nesta revisão.",
       "highlights": [
         {
           "label": "Arquitetura",
@@ -131,7 +131,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "snippetvault": {
       "name": "SnippetVault",
       "shortDesc": "Biblioteca de snippets com coleções, versões, busca e compartilhamento.",
-      "longDesc": "Aplicação Next.js para manter código reutilizável. O código inclui coleções, versões, importação e exportação, variáveis, busca, fork e controles de visibilidade. Auth.js associa os dados ao usuário; Prisma faz a persistência e Zod valida entradas. Há rotas IA para documentação e sugestões de testes. Na revisão local, 191 testes passaram. Capturas dos fluxos autenticados ainda dependem de execução com banco e sessão de demonstração.",
+      "longDesc": "Aplicação Next.js para manter código reutilizável. O código inclui coleções, versões, importação e exportação, variáveis, busca, fork e controles de visibilidade. Auth.js associa os dados ao usuário; Prisma faz a persistência e Zod valida entradas. Há rotas IA para documentação e sugestões de testes. Na revisão local, 191 testes passaram. Capturas dos fluxos autenticados usam banco local e sessão de demonstração.",
       "highlights": [
         {
           "label": "Conhecimento",
@@ -213,89 +213,89 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     },
     "portifolio-frontend": {
       "name": "Portfolio Frontend",
-      "shortDesc": "Versão anterior do portfólio: experimentos de interface com Next.js e React.",
-      "longDesc": "Versão anterior do portfólio: experimentos de interface com Next.js e React. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "Portfólio histórico React publicado como arquivos estáticos no GitHub Pages.",
+      "longDesc": "O repositório preserva a distribuição compilada de uma interface React: HTML, bundles JavaScript/CSS, mapas de código e imagens de projetos. É uma versão anterior da apresentação pessoal, útil para acompanhar a evolução visual. O código-fonte original e o ambiente de build não estão nesse repositório.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "Portfólio histórico React publicado como arquivos estáticos no GitHub Pages."
         }
       ]
     },
     "z-discord-core": {
       "name": "zDiscordCore",
-      "shortDesc": "Plugin Java para vincular contas Minecraft e Discord.",
-      "longDesc": "Plugin Java para vincular contas Minecraft e Discord. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "Plugin Java que vincula contas Minecraft e Discord com comandos e persistência SQL.",
+      "longDesc": "O código combina plugin Spigot e bot Discord. Comandos de vinculação e APIs relacionam jogadores às contas Discord; um provider SQL cuida da persistência. Listeners tratam mensagens e eventos do servidor. É um projeto legado: uma execução integrada exige servidor Minecraft e comunidade Discord de teste, além das dependências da época.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "Plugin Java que vincula contas Minecraft e Discord com comandos e persistência SQL."
         }
       ]
     },
     "comuni-mine-bot": {
       "name": "ComuniMineBot",
-      "shortDesc": "Bot Discord para moderação e utilidades de comunidade Minecraft.",
-      "longDesc": "Bot Discord para moderação e utilidades de comunidade Minecraft. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "Bot Discord em TypeScript com moderação, música, economia e comandos de comunidade.",
+      "longDesc": "A árvore de comandos separa administração, informação, moderação, música, diversão e economia. Classes de comando e utilitários organizam a execução, incluindo fila de música, saldo, pagamentos e recompensas diárias. É código histórico com dependências antigas; as integrações não foram acionadas em contas ou comunidades reais durante a revisão.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "Bot Discord em TypeScript com moderação, música, economia e comandos de comunidade."
         }
       ]
     },
     "minecraft-feast-bot": {
       "name": "MinecraftFeastBot",
-      "shortDesc": "Bot Discord para eventos de comunidades Minecraft.",
-      "longDesc": "Bot Discord para eventos de comunidades Minecraft. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "Bot Discord JavaScript com slash commands de moderação e status de servidor Minecraft.",
+      "longDesc": "O bot organiza slash commands para banimento, expulsão, limpeza, mute, anúncios, sugestões e revisão. O comando de status consulta uma API pública de servidores Minecraft. Um script registra comandos no Discord. A revisão conferiu o código sem registrar comandos ou enviar mensagens em uma comunidade real.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "Bot Discord JavaScript com slash commands de moderação e status de servidor Minecraft."
         }
       ]
     },
     "advanced-sql": {
       "name": "AdvancedSQL",
-      "shortDesc": "Biblioteca Kotlin para acesso a MySQL e SQLite em plugins JVM.",
-      "longDesc": "Biblioteca Kotlin para acesso a MySQL e SQLite em plugins JVM. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "Biblioteca Kotlin com conexões MySQL/SQLite, prepared statements e adapters de resultados.",
+      "longDesc": "Implementações MySQL e SQLite compartilham uma interface de banco. DatabaseExecutor fornece selectOne, selectMany e update com PreparedStatement; adapters convertem ResultSet em objetos. O repositório inclui testes de SQLite e adapter. É uma biblioteca JDBC histórica, não um ORM completo ou uma implementação comprovada de pool de conexões.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "Biblioteca Kotlin com conexões MySQL/SQLite, prepared statements e adapters de resultados."
         }
       ]
     },
     "z-manutencao": {
       "name": "zManutencao",
-      "shortDesc": "Plugin Java de manutenção de servidores Minecraft; parte da trajetória inicial.",
-      "longDesc": "Plugin Java de manutenção de servidores Minecraft; parte da trajetória inicial. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "Plugin Bukkit Java com modo de manutenção e exceção de acesso por permissão.",
+      "longDesc": "Um comando alterna o estado de manutenção. O listener de entrada remove jogadores sem a permissão configurada quando o modo está ativo; mensagens e permissões vêm da configuração. É uma implementação pequena e histórica, dependente de um servidor Bukkit compatível.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "Plugin Bukkit Java com modo de manutenção e exceção de acesso por permissão."
         }
       ]
     },
     "z-silk2": {
       "name": "zSilk2",
-      "shortDesc": "Plugin Java de regras de servidor Minecraft; parte da trajetória inicial.",
-      "longDesc": "Plugin Java de regras de servidor Minecraft; parte da trajetória inicial. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "Plugin Bukkit Java que define blocos quebráveis e drops por nível de Silk Touch.",
+      "longDesc": "O listener de BlockDamageEvent verifica o nível configurado de Silk Touch e uma lista de materiais. Há tratamento específico para barreiras e molduras de portal, além de comandos de item e recarga. O código usa espera síncrona no evento e depende das APIs Bukkit antigas; o case apresenta a implementação histórica e suas limitações.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "Plugin Bukkit Java que define blocos quebráveis e drops por nível de Silk Touch."
         }
       ]
     },
     "multi-server-api": {
       "name": "MultiServer-API",
-      "shortDesc": "API Java para integrações entre plataformas de servidores Minecraft.",
-      "longDesc": "API Java para integrações entre plataformas de servidores Minecraft. Projeto histórico preservado na trajetória. A versão atual do repositório não pôde ser conferida nesta revisão; a descrição registra o escopo do catálogo anterior.",
+      "shortDesc": "API Java com interfaces compartilhadas e wrappers Bukkit para jogadores, mundo e servidor.",
+      "longDesc": "Os módulos shared e bukkit separam contratos de plataforma e implementação. Interfaces representam mundo, localização, jogador, modo de jogo, servidor e plugin manager; wrappers adaptam objetos Bukkit a esses contratos. O código revisado demonstra a abstração Bukkit, sem comprovar que todas as outras plataformas estejam implementadas.",
       "highlights": [
         {
-          "label": "Contexto",
-          "value": "Projeto histórico JVM ou comunidade"
+          "label": "Implementação",
+          "value": "API Java com interfaces compartilhadas e wrappers Bukkit para jogadores, mundo e servidor."
         }
       ]
     },
@@ -377,7 +377,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "brainer": {
       "name": "Brainer",
       "shortDesc": "Experimento de grafo neural com roteamento soft no treino e decisão hard na inferência.",
-      "longDesc": "O código V1 usa neurônios com candidatos de próximo passo, probabilidade de parada e combinação diferenciável de estados no treino. A inferência escolhe um caminho discreto. A demonstração usa dados sintéticos e métricas de passos. O README ainda descreve V0, por isso a descrição foi baseada no código atual. A execução está pendente por dependências Rust ausentes no cache.",
+      "longDesc": "O código V1 usa neurônios com candidatos de próximo passo, probabilidade de parada e combinação diferenciável de estados no treino. A inferência escolhe um caminho discreto. A demonstração usa dados sintéticos e métricas de passos. O README ainda descreve V0, por isso a descrição foi baseada no código atual. O build release passou. Uma execução local em CPU produziu os caminhos iniciais e chegou à época 60 antes do limite de 180 segundos; as 300 épocas e a demonstração final não foram verificadas.",
       "highlights": [
         {
           "label": "Implementação",
@@ -557,7 +557,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "my-vm-os": {
       "name": "my-vm-os · desktop em CVM",
       "shortDesc": "Desktop experimental com janelas, terminal, editor, calculadora e arquivos na RAM da VM.",
-      "longDesc": "O ponto de entrada src/main.cvm importa drivers gráficos e de teclado, VFS, gerenciador de janelas, desktop, barra de tarefas e quatro aplicativos. Rotinas CVM usam Assembly inline para desenhar, receber entrada e processar interrupções simuladas. O loop controla foco e redesenho. O VFS armazena até 32 entradas em RAM, sem persistência entre execuções. O fonte compilou com a toolchain atual; as interações gráficas ainda precisam de execução. Não há isolamento de processos ou escalonador preemptivo comprovado.",
+      "longDesc": "O ponto de entrada src/main.cvm importa drivers gráficos e de teclado, VFS, gerenciador de janelas, desktop, barra de tarefas e quatro aplicativos. Rotinas CVM usam Assembly inline para desenhar, receber entrada e processar interrupções simuladas. O loop controla foco e redesenho. O VFS armazena até 32 entradas em RAM, sem persistência entre execuções. O fonte compilou com a toolchain atual. Não há isolamento de processos ou escalonador preemptivo comprovado. A execução local exibiu o desktop. Os cliques não abriram os aplicativos internos nesta revisão.",
       "highlights": [
         {
           "label": "Aplicativos",
@@ -596,12 +596,12 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
   "en": {
     "my-bet": {
       "name": "My Bet",
-      "shortDesc": "Game application with an integer ledger, Redis sessions and PIX integrations.",
-      "longDesc": "Game and transactional-state case from the previous catalog, with an integer ledger, Redis sessions and PIX integration. Its source is absent from this workspace and the remote repository could not be consulted; game counts, gateways and financial guarantees await verification.",
+      "shortDesc": "Experimental game application with a ledger, Redis sessions and configurable administration.",
+      "longDesc": "The repository implements individual and live games, Redis/SSE state, authentication, financial history and payment integrations. Central ledger functions and idempotency references organize bets and payouts. User, affiliate, support and administration areas include appearance and language configuration. Source was reviewed; screenshots use a local demonstration environment. This does not establish authorization for financial operation or a complete audit of game rules.",
       "highlights": [
         {
-          "label": "Scope",
-          "value": "Games, sessions and ledger; source review pending"
+          "label": "Implementation",
+          "value": "Experimental game application with a ledger, Redis sessions and configurable administration."
         }
       ]
     },
@@ -627,7 +627,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "cvm-runtime": {
       "name": "my-vm · virtual machine",
       "shortDesc": "Rust virtual machine with 26 registers, a 1280 × 800 framebuffer and simulated devices.",
-      "longDesc": "The runtime reads textual Assembly, resolves labels and executes instructions over A–Z registers, a stack and RAM. RAM contains 256 × 1024 × 1024 u32 words, approximately 1 GiB. A minifb window displays a 1280 × 800 framebuffer; mouse, keyboard and interrupts drive the guest system. The process runs on the host and requires a graphical session. This review checked compilation of the binaries; desktop interactions were not executed.",
+      "longDesc": "The runtime reads textual Assembly, resolves labels and executes instructions over A–Z registers, a stack and RAM. RAM contains 256 × 1024 × 1024 u32 words, approximately 1 GiB. A minifb window displays a 1280 × 800 framebuffer; mouse, keyboard and interrupts drive the guest system. The process runs on the host and requires a graphical session. Local execution displayed the desktop in an isolated session. Clicks did not open its internal applications during this review.",
       "highlights": [
         {
           "label": "Architecture",
@@ -804,89 +804,89 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     },
     "portifolio-frontend": {
       "name": "Portfolio Frontend",
-      "shortDesc": "Earlier portfolio version: interface experiments with Next.js and React.",
-      "longDesc": "Earlier portfolio version: interface experiments with Next.js and React. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "Historical React portfolio distributed as static files for GitHub Pages.",
+      "longDesc": "The repository preserves a compiled React interface: HTML, JavaScript/CSS bundles, source maps and project images. It is an earlier personal presentation useful for tracking visual development. Original application sources and the build environment are absent from this repository.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "Historical React portfolio distributed as static files for GitHub Pages."
         }
       ]
     },
     "z-discord-core": {
       "name": "zDiscordCore",
-      "shortDesc": "Java plugin linking Minecraft and Discord accounts.",
-      "longDesc": "Java plugin linking Minecraft and Discord accounts. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "Java plugin linking Minecraft and Discord accounts through commands and SQL persistence.",
+      "longDesc": "The code combines a Spigot plugin and a Discord bot. Linking commands and APIs associate players with Discord accounts; a SQL provider handles persistence. Listeners process messages and server events. This legacy project requires a test Minecraft server, Discord community and compatible dependencies for integrated execution.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "Java plugin linking Minecraft and Discord accounts through commands and SQL persistence."
         }
       ]
     },
     "comuni-mine-bot": {
       "name": "ComuniMineBot",
-      "shortDesc": "Discord bot for Minecraft community moderation and utilities.",
-      "longDesc": "Discord bot for Minecraft community moderation and utilities. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "TypeScript Discord bot with moderation, music, economy and community commands.",
+      "longDesc": "Command groups separate administration, information, moderation, music, entertainment and economy. Command classes and utilities organize execution, including music queues, balances, payments and daily rewards. This is historical code with older dependencies; integrations were not invoked against real accounts or communities during review.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "TypeScript Discord bot with moderation, music, economy and community commands."
         }
       ]
     },
     "minecraft-feast-bot": {
       "name": "MinecraftFeastBot",
-      "shortDesc": "Discord bot for Minecraft community events.",
-      "longDesc": "Discord bot for Minecraft community events. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "JavaScript Discord bot with moderation slash commands and Minecraft server status.",
+      "longDesc": "The bot organizes slash commands for bans, kicks, clearing, mute, announcements, suggestions and review. Its status command queries a public Minecraft server API. A separate script registers Discord commands. Source review did not register commands or send messages to a real community.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "JavaScript Discord bot with moderation slash commands and Minecraft server status."
         }
       ]
     },
     "advanced-sql": {
       "name": "AdvancedSQL",
-      "shortDesc": "Kotlin library for MySQL and SQLite access in JVM plugins.",
-      "longDesc": "Kotlin library for MySQL and SQLite access in JVM plugins. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "Kotlin library with MySQL/SQLite connections, prepared statements and result adapters.",
+      "longDesc": "MySQL and SQLite implementations share a database interface. DatabaseExecutor exposes selectOne, selectMany and update through PreparedStatement; adapters map ResultSet data to objects. The repository includes SQLite and adapter tests. This historical JDBC library is not a complete ORM or a verified connection-pool implementation.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "Kotlin library with MySQL/SQLite connections, prepared statements and result adapters."
         }
       ]
     },
     "z-manutencao": {
       "name": "zManutencao",
-      "shortDesc": "Java Minecraft maintenance plugin from the early project history.",
-      "longDesc": "Java Minecraft maintenance plugin from the early project history. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "Java Bukkit plugin with maintenance mode and permission-based access exceptions.",
+      "longDesc": "A command toggles maintenance state. The join listener removes players without the configured permission while the mode is active; messages and permissions come from configuration. This small historical implementation depends on a compatible Bukkit server.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "Java Bukkit plugin with maintenance mode and permission-based access exceptions."
         }
       ]
     },
     "z-silk2": {
       "name": "zSilk2",
-      "shortDesc": "Java Minecraft server rule plugin from the early project history.",
-      "longDesc": "Java Minecraft server rule plugin from the early project history. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "Java Bukkit plugin controlling breakable blocks and drops by Silk Touch level.",
+      "longDesc": "A BlockDamageEvent listener checks the configured Silk Touch level and material list. Barriers and portal frames receive specific handling; item and reload commands are also present. The code uses a synchronous delay in the event and older Bukkit APIs. The case records the historical implementation and its limitations.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "Java Bukkit plugin controlling breakable blocks and drops by Silk Touch level."
         }
       ]
     },
     "multi-server-api": {
       "name": "MultiServer-API",
-      "shortDesc": "Java API for integrations across Minecraft server platforms.",
-      "longDesc": "Java API for integrations across Minecraft server platforms. Historical project preserved in the timeline. The current repository version could not be checked during this review; this description records the previous catalog scope.",
+      "shortDesc": "Java API with shared interfaces and Bukkit wrappers for players, worlds and servers.",
+      "longDesc": "Shared and Bukkit modules separate platform contracts from implementation. Interfaces represent worlds, locations, players, game modes, servers and plugin managers; wrappers adapt Bukkit objects to these contracts. Reviewed code demonstrates the Bukkit abstraction without establishing implementations for every other platform.",
       "highlights": [
         {
-          "label": "Context",
-          "value": "Historical JVM or community project"
+          "label": "Implementation",
+          "value": "Java API with shared interfaces and Bukkit wrappers for players, worlds and servers."
         }
       ]
     },
@@ -968,7 +968,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "brainer": {
       "name": "Brainer",
       "shortDesc": "Neural graph experiment with soft training routes and hard inference decisions.",
-      "longDesc": "V1 code uses neurons with next-step candidates, stopping probabilities and differentiable state combinations during training. Inference chooses a discrete path. The demo uses synthetic data and step metrics. The README still describes V0, so this description follows current code. Execution is pending because Rust dependencies are absent from the cache.",
+      "longDesc": "V1 code uses neurons with next-step candidates, stopping probabilities and differentiable state combinations during training. Inference chooses a discrete path. The demo uses synthetic data and step metrics. The README still describes V0, so this description follows current code. The release build passed. A local CPU run produced initial routing paths and reached epoch 60 before the 180-second limit; all 300 epochs and the final demo were not verified.",
       "highlights": [
         {
           "label": "Implementation",
@@ -1148,7 +1148,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "my-vm-os": {
       "name": "my-vm-os · CVM desktop",
       "shortDesc": "Experimental desktop with windows, terminal, editor, calculator and files in the VM RAM.",
-      "longDesc": "The src/main.cvm entry point imports graphics and keyboard drivers, VFS, window manager, desktop, taskbar and four applications. CVM routines use inline Assembly for drawing, input and simulated interrupts. The main loop controls focus and redraws. The VFS holds up to 32 entries in RAM without persistence between runs. The source compiled with the current toolchain; graphical interactions still require execution. Process isolation and preemptive scheduling have not been demonstrated.",
+      "longDesc": "The src/main.cvm entry point imports graphics and keyboard drivers, VFS, window manager, desktop, taskbar and four applications. CVM routines use inline Assembly for drawing, input and simulated interrupts. The main loop controls focus and redraws. The VFS holds up to 32 entries in RAM without persistence between runs. The source compiled with the current toolchain. Process isolation and preemptive scheduling have not been demonstrated. Local execution displayed the desktop. Clicks did not open its internal applications during this review.",
       "highlights": [
         {
           "label": "Applications",
@@ -1187,12 +1187,12 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
   "de": {
     "my-bet": {
       "name": "My Bet",
-      "shortDesc": "Spieleanwendung mit Integer-Ledger, Redis-Sitzungen und PIX-Integrationen.",
-      "longDesc": "Spiel- und Transaktions-Case aus dem bisherigen Katalog mit Integer-Ledger, Redis-Sitzungen und PIX-Integration. Der Quellcode fehlt im Workspace und das Remote-Repository war nicht zugänglich; Spielzahlen, Gateways und finanzielle Garantien sind noch zu prüfen.",
+      "shortDesc": "Experimentelle Spieleanwendung mit Ledger, Redis-Sitzungen und konfigurierbarer Verwaltung.",
+      "longDesc": "Das Repository enthält Einzel- und Live-Spiele, Redis/SSE-Zustand, Authentifizierung, Finanzhistorie und Zahlungsintegrationen. Zentrale Ledger-Funktionen und Idempotenzreferenzen strukturieren Einsätze und Auszahlungen. Nutzer-, Affiliate-, Support- und Verwaltungsbereiche bieten Design- und Spracheinstellungen. Der Code wurde geprüft; Screenshots stammen aus einer lokalen Demo. Dies belegt weder eine Zulassung für Finanzbetrieb noch eine vollständige Prüfung der Spielregeln.",
       "highlights": [
         {
-          "label": "Umfang",
-          "value": "Spiele, Sitzungen und Ledger; Codeprüfung ausstehend"
+          "label": "Implementierung",
+          "value": "Experimentelle Spieleanwendung mit Ledger, Redis-Sitzungen und konfigurierbarer Verwaltung."
         }
       ]
     },
@@ -1218,7 +1218,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "cvm-runtime": {
       "name": "my-vm · virtuelle Maschine",
       "shortDesc": "Virtuelle Maschine in Rust mit 26 Registern, 1280 × 800 Framebuffer und simulierten Geräten.",
-      "longDesc": "Die Laufzeit liest textuelles Assembly, löst Labels auf und führt Anweisungen mit A–Z-Registern, Stack und RAM aus. Der RAM enthält 256 × 1024 × 1024 u32-Wörter, etwa 1 GiB. Ein minifb-Fenster zeigt den Framebuffer mit 1280 × 800 Pixeln; Maus, Tastatur und Interrupts versorgen das Gastsystem. Der Prozess läuft auf dem Host und braucht eine grafische Sitzung. Die Kompilierung der Programme wurde geprüft; Desktop-Interaktionen wurden nicht ausgeführt.",
+      "longDesc": "Die Laufzeit liest textuelles Assembly, löst Labels auf und führt Anweisungen mit A–Z-Registern, Stack und RAM aus. Der RAM enthält 256 × 1024 × 1024 u32-Wörter, etwa 1 GiB. Ein minifb-Fenster zeigt den Framebuffer mit 1280 × 800 Pixeln; Maus, Tastatur und Interrupts versorgen das Gastsystem. Der Prozess läuft auf dem Host und braucht eine grafische Sitzung. Die Programme wurden kompiliert und der Desktop in einer isolierten lokalen Sitzung angezeigt. Klicks öffneten die internen Anwendungen bei dieser Prüfung nicht.",
       "highlights": [
         {
           "label": "Architektur",
@@ -1395,89 +1395,89 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     },
     "portifolio-frontend": {
       "name": "Portfolio Frontend",
-      "shortDesc": "Frühere Portfolio-Version: UI-Experimente mit Next.js und React.",
-      "longDesc": "Frühere Portfolio-Version: UI-Experimente mit Next.js und React. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Historisches React-Portfolio als statische Dateien für GitHub Pages.",
+      "longDesc": "Das Repository enthält eine kompilierte React-Oberfläche mit HTML, JavaScript/CSS-Bundles, Source Maps und Projektbildern. Diese frühere persönliche Präsentation dokumentiert die visuelle Entwicklung. Originalquellen und Build-Umgebung fehlen im Repository.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Historisches React-Portfolio als statische Dateien für GitHub Pages."
         }
       ]
     },
     "z-discord-core": {
       "name": "zDiscordCore",
-      "shortDesc": "Java-Plugin zur Verknüpfung von Minecraft- und Discord-Konten.",
-      "longDesc": "Java-Plugin zur Verknüpfung von Minecraft- und Discord-Konten. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Java-Plugin zur Verknüpfung von Minecraft- und Discord-Konten mit SQL-Persistenz.",
+      "longDesc": "Der Code verbindet Spigot-Plugin und Discord-Bot. Befehle und APIs verknüpfen Spieler mit Discord-Konten; ein SQL-Provider speichert Zuordnungen. Listener verarbeiten Nachrichten und Serverereignisse. Für den integrierten Betrieb des Altprojekts sind ein Minecraft-Testserver, eine Discord-Testcommunity und passende Abhängigkeiten nötig.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Java-Plugin zur Verknüpfung von Minecraft- und Discord-Konten mit SQL-Persistenz."
         }
       ]
     },
     "comuni-mine-bot": {
       "name": "ComuniMineBot",
-      "shortDesc": "Discord-Bot für Moderation und Funktionen einer Minecraft-Community.",
-      "longDesc": "Discord-Bot für Moderation und Funktionen einer Minecraft-Community. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Discord-Bot in TypeScript mit Moderation, Musik, Wirtschaft und Community-Befehlen.",
+      "longDesc": "Befehlsgruppen trennen Verwaltung, Information, Moderation, Musik, Unterhaltung und Wirtschaft. Klassen und Hilfsfunktionen strukturieren Warteschlangen, Guthaben, Zahlungen und tägliche Belohnungen. Der historische Code nutzt ältere Abhängigkeiten; reale Konten oder Communities wurden bei der Prüfung nicht angesprochen.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Discord-Bot in TypeScript mit Moderation, Musik, Wirtschaft und Community-Befehlen."
         }
       ]
     },
     "minecraft-feast-bot": {
       "name": "MinecraftFeastBot",
-      "shortDesc": "Discord-Bot für Veranstaltungen in Minecraft-Communities.",
-      "longDesc": "Discord-Bot für Veranstaltungen in Minecraft-Communities. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Discord-Bot in JavaScript mit Moderationsbefehlen und Minecraft-Serverstatus.",
+      "longDesc": "Slash Commands unterstützen Sperren, Ausschluss, Bereinigung, Mute, Ankündigungen, Vorschläge und Prüfung. Der Statusbefehl fragt eine öffentliche Minecraft-Server-API ab. Ein eigenes Skript registriert Discord-Befehle. Bei der Codeprüfung wurden keine Befehle registriert oder Nachrichten an eine reale Community gesendet.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Discord-Bot in JavaScript mit Moderationsbefehlen und Minecraft-Serverstatus."
         }
       ]
     },
     "advanced-sql": {
       "name": "AdvancedSQL",
-      "shortDesc": "Kotlin-Bibliothek für MySQL- und SQLite-Zugriff in JVM-Plugins.",
-      "longDesc": "Kotlin-Bibliothek für MySQL- und SQLite-Zugriff in JVM-Plugins. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Kotlin-Bibliothek mit MySQL/SQLite-Verbindungen, Prepared Statements und Ergebnisadaptern.",
+      "longDesc": "MySQL- und SQLite-Implementierungen teilen eine Datenbankschnittstelle. DatabaseExecutor stellt selectOne, selectMany und update mit PreparedStatement bereit; Adapter übertragen ResultSet-Daten in Objekte. SQLite- und Adaptertests liegen vor. Die historische JDBC-Bibliothek ist kein vollständiges ORM und kein nachgewiesener Verbindungspool.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Kotlin-Bibliothek mit MySQL/SQLite-Verbindungen, Prepared Statements und Ergebnisadaptern."
         }
       ]
     },
     "z-manutencao": {
       "name": "zManutencao",
-      "shortDesc": "Frühes Java-Plugin für die Wartung von Minecraft-Servern.",
-      "longDesc": "Frühes Java-Plugin für die Wartung von Minecraft-Servern. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Java-Bukkit-Plugin mit Wartungsmodus und Ausnahmen nach Berechtigung.",
+      "longDesc": "Ein Befehl schaltet den Wartungszustand um. Der Join-Listener entfernt Spieler ohne konfigurierte Berechtigung, wenn der Modus aktiv ist. Nachrichten und Rechte kommen aus der Konfiguration. Die kleine historische Implementierung benötigt einen kompatiblen Bukkit-Server.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Java-Bukkit-Plugin mit Wartungsmodus und Ausnahmen nach Berechtigung."
         }
       ]
     },
     "z-silk2": {
       "name": "zSilk2",
-      "shortDesc": "Frühes Java-Plugin für Minecraft-Serverregeln.",
-      "longDesc": "Frühes Java-Plugin für Minecraft-Serverregeln. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Java-Bukkit-Plugin für Blockabbau und Drops nach Silk-Touch-Level.",
+      "longDesc": "Ein BlockDamageEvent-Listener prüft den konfigurierten Silk-Touch-Level und die Materialliste. Barrieren und Portalrahmen werden gesondert behandelt; Item- und Reload-Befehle sind vorhanden. Der Code verwendet synchrones Warten im Event und ältere Bukkit-APIs. Der Case beschreibt die historische Implementierung und ihre Grenzen.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Java-Bukkit-Plugin für Blockabbau und Drops nach Silk-Touch-Level."
         }
       ]
     },
     "multi-server-api": {
       "name": "MultiServer-API",
-      "shortDesc": "Java-API für Integrationen zwischen Minecraft-Serverplattformen.",
-      "longDesc": "Java-API für Integrationen zwischen Minecraft-Serverplattformen. Historisches Projekt im Werdegang. Die aktuelle Repository-Version konnte bei dieser Prüfung nicht überprüft werden; diese Beschreibung hält den bisherigen Katalogumfang fest.",
+      "shortDesc": "Java-API mit gemeinsamen Schnittstellen und Bukkit-Wrappern für Spieler, Welt und Server.",
+      "longDesc": "Die Module shared und bukkit trennen Plattformverträge und Implementierung. Schnittstellen beschreiben Welt, Position, Spieler, Spielmodus, Server und Pluginverwaltung; Wrapper adaptieren Bukkit-Objekte. Der geprüfte Code zeigt die Bukkit-Abstraktion, ohne Implementierungen aller anderen Plattformen nachzuweisen.",
       "highlights": [
         {
-          "label": "Kontext",
-          "value": "Historisches JVM- oder Community-Projekt"
+          "label": "Implementierung",
+          "value": "Java-API mit gemeinsamen Schnittstellen und Bukkit-Wrappern für Spieler, Welt und Server."
         }
       ]
     },
@@ -1559,7 +1559,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "brainer": {
       "name": "Brainer",
       "shortDesc": "Neuronales Graphenexperiment mit Soft-Routing im Training und Hard-Entscheidungen bei der Inferenz.",
-      "longDesc": "V1-Code nutzt Neuronen mit Folgeschritt-Kandidaten, Stoppwahrscheinlichkeiten und differenzierbaren Zustandskombinationen im Training. Die Inferenz wählt einen diskreten Pfad. Die Demo verwendet synthetische Daten und Schrittmetriken. Das README beschreibt noch V0; diese Beschreibung folgt dem aktuellen Code. Die Ausführung wartet auf fehlende Rust-Abhängigkeiten.",
+      "longDesc": "V1-Code nutzt Neuronen mit Folgeschritt-Kandidaten, Stoppwahrscheinlichkeiten und differenzierbaren Zustandskombinationen im Training. Die Inferenz wählt einen diskreten Pfad. Die Demo verwendet synthetische Daten und Schrittmetriken. Das README beschreibt noch V0; diese Beschreibung folgt dem aktuellen Code. Der Release-Build war erfolgreich. Ein lokaler CPU-Lauf zeigte die ersten Routingpfade und erreichte Epoche 60 vor dem Zeitlimit von 180 Sekunden; alle 300 Epochen und die abschließende Demo wurden nicht geprüft.",
       "highlights": [
         {
           "label": "Implementierung",
@@ -1739,7 +1739,7 @@ export const projectCopy: Record<Language, Record<string, ProjectCopy>> = {
     "my-vm-os": {
       "name": "my-vm-os · Desktop in CVM",
       "shortDesc": "Experimenteller Desktop mit Fenstern, Terminal, Editor, Rechner und Dateien im VM-RAM.",
-      "longDesc": "Der Einstiegspunkt src/main.cvm importiert Grafik- und Tastaturtreiber, VFS, Fenstermanager, Desktop, Taskleiste und vier Anwendungen. CVM-Routinen verwenden Inline-Assembly für Grafik, Eingaben und simulierte Interrupts. Die Hauptschleife verwaltet Fokus und Neuzeichnen. Das VFS hält bis zu 32 Einträge im RAM ohne Persistenz zwischen Ausführungen. Die Quelle wurde mit der aktuellen Toolchain kompiliert; grafische Interaktionen stehen noch aus. Prozessisolation und präemptives Scheduling sind nicht nachgewiesen.",
+      "longDesc": "Der Einstiegspunkt src/main.cvm importiert Grafik- und Tastaturtreiber, VFS, Fenstermanager, Desktop, Taskleiste und vier Anwendungen. CVM-Routinen verwenden Inline-Assembly für Grafik, Eingaben und simulierte Interrupts. Die Hauptschleife verwaltet Fokus und Neuzeichnen. Das VFS hält bis zu 32 Einträge im RAM ohne Persistenz zwischen Ausführungen. Die Quelle wurde mit der aktuellen Toolchain kompiliert. Prozessisolation und präemptives Scheduling sind nicht nachgewiesen. Die lokale Ausführung zeigte den Desktop. Klicks öffneten die internen Anwendungen bei dieser Prüfung nicht.",
       "highlights": [
         {
           "label": "Anwendungen",

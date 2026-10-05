@@ -1,1195 +1,1527 @@
 {
-  "createdAt": "2026-10-04T21:48:57.330Z",
-  "results": [
+  "createdAt": "2026-10-05T20:12:46.903800+00:00",
+  "summary": {
+    "projects": 39,
+    "projectsWithNewCaptures": 26,
+    "reviewedCaptures": 225,
+    "blockedAreas": 31
+  },
+  "coverage": [
     {
       "projectId": "my-bet",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "web",
+      "captured": 68,
+      "blocked": 0
     },
     {
       "projectId": "simple-bank",
-      "area": "dashboard",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "dashboard",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "payment-keys",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "payment-keys",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "transactions",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "transactions",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "login",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "login",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "register",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "simple-bank",
-      "area": "register",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 12,
+      "blocked": 5
     },
     {
       "projectId": "cvm-runtime",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 1,
+      "blocked": 4
     },
     {
       "projectId": "cvm-compiler",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 1,
+      "blocked": 0
     },
     {
       "projectId": "apiflash",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "collections",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "collections",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "docs",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "docs",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "history",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "history",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "login",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "login",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "workspace",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "apiflash",
-      "area": "workspace",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 12,
+      "blocked": 0
     },
     {
       "projectId": "browia",
-      "area": "chat",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "browia",
-      "area": "settings",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "extension",
+      "captured": 2,
+      "blocked": 0
     },
     {
       "projectId": "lowvia",
-      "area": "chat",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "lowvia",
-      "area": "models",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "lowvia",
-      "area": "settings",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "lowvia",
-      "area": "research",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "lowvia",
-      "area": "reports",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "electron",
+      "captured": 5,
+      "blocked": 0
     },
     {
       "projectId": "snippetvault",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "snippetvault",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "snippetvault",
-      "area": "dashboard",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "snippetvault",
-      "area": "dashboard",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "snippetvault",
-      "area": "login",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "snippetvault",
-      "area": "login",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "snippetvault",
-      "area": "snippet-id",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "snippetvault",
-      "area": "snippet-id",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 8,
+      "blocked": 0
     },
     {
       "projectId": "typedash",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "about",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "about",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "dashboard",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "dashboard",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "login",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "login",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "practice",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "practice",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "ranking",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "typedash",
-      "area": "ranking",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 12,
+      "blocked": 0
     },
     {
       "projectId": "ryzen-shop-bot",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "ryzen-hosting",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "minecraft",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "minecraft",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "minecraftgaming",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "minecraftgaming",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "vps",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "vps",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "vpsgaming",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "vpsgaming",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "dedicated",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "dedicated",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "web",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "web",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "apps",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "apps",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "serviceterms",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "serviceterms",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "privacypolicy",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "ryzen-hosting",
-      "area": "privacypolicy",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 20,
+      "blocked": 0
     },
     {
       "projectId": "dv-duels",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "portifolio-frontend",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "web",
+      "captured": 2,
+      "blocked": 0
     },
     {
       "projectId": "z-discord-core",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "comuni-mine-bot",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "minecraft-feast-bot",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "advanced-sql",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "z-manutencao",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "z-silk2",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "multi-server-api",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Project source is unavailable"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "swiss-learn",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-conversation",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-conversation",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-grammar",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-grammar",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-more",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-more",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-practice",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-practice",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-progress",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-progress",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-questions",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-questions",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-ranking",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-ranking",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-settings",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-settings",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-study-id",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-study-id",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-writing",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-writing",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-signin",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-signin",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-signin-check-email",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-signin-check-email",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-privacy",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-privacy",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-terms",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-terms",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-profile-userid",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "swiss-learn",
-      "area": "lang-profile-userid",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 32,
+      "blocked": 5
     },
     {
       "projectId": "termop",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 1,
+      "blocked": 0
     },
     {
       "projectId": "russian-alphabet",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "russian-alphabet",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "russian-alphabet",
-      "area": "alphabet",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "russian-alphabet",
-      "area": "alphabet",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "russian-alphabet",
-      "area": "light-theme",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "russian-alphabet",
-      "area": "light-theme",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 6,
+      "blocked": 0
     },
     {
       "projectId": "deadlatch",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard-api-keys",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard-api-keys",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard-settings",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard-settings",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard-switches",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "dashboard-switches",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "docs",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "deadlatch",
-      "area": "docs",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 12,
+      "blocked": 0
     },
     {
       "projectId": "chess-mistery",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "chess-mistery",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "chess-mistery",
-      "area": "neural",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "chess-mistery",
-      "area": "neural",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "chess-mistery",
-      "area": "play",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "chess-mistery",
-      "area": "play",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "chess-mistery",
-      "area": "watch",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "chess-mistery",
-      "area": "watch",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 8,
+      "blocked": 0
     },
     {
       "projectId": "brainer",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "kotlin-vortey",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 1,
+      "blocked": 0
     },
     {
       "projectId": "my-game-papers",
-      "area": "home",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "my-game-papers",
-      "area": "cartelas",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "my-game-papers",
-      "area": "generator",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "my-game-papers",
-      "area": "game",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "my-game-papers",
-      "area": "history",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "my-game-papers",
-      "area": "settings",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "electron",
+      "captured": 6,
+      "blocked": 0
     },
     {
       "projectId": "agentics",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "agentics",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 2,
+      "blocked": 0
     },
     {
       "projectId": "lomaw",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 1,
+      "blocked": 0
     },
     {
       "projectId": "my-llm-executor",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "my-codec",
-      "area": "project",
-      "viewport": "terminal",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "terminal",
+      "captured": 1,
+      "blocked": 0
     },
     {
       "projectId": "compound-interest-calc",
-      "area": "initial-screen",
-      "viewport": "native",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "expo",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "office-tools",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "office-tools",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 2,
+      "blocked": 0
     },
     {
       "projectId": "electron-app",
-      "area": "home",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "electron-app",
-      "area": "home",
-      "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "kind": "web",
+      "captured": 2,
+      "blocked": 0
     },
     {
       "projectId": "github-follow-bot",
-      "area": "project",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "Dedicated runtime and manual capture required"
+      "kind": "manual",
+      "captured": 0,
+      "blocked": 1
     },
     {
       "projectId": "portifolio",
+      "kind": "web",
+      "captured": 6,
+      "blocked": 0
+    },
+    {
+      "projectId": "my-vm-os",
+      "kind": "manual",
+      "captured": 1,
+      "blocked": 4
+    },
+    {
+      "projectId": "my-vm-legacy-compiler",
+      "kind": "terminal",
+      "captured": 1,
+      "blocked": 0
+    }
+  ],
+  "results": [
+    {
+      "projectId": "my-bet",
       "area": "home",
       "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "status": "captured",
+      "file": "my-bet/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:19:11.575Z",
+      "reviewed": true
     },
     {
-      "projectId": "portifolio",
+      "projectId": "my-bet",
+      "area": "user-edit",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/user-edit-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Editar perfil · dados de demonstração · desktop",
+        "en": "Edit profile · demo data · desktop",
+        "de": "Profil bearbeiten · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:15.889Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Visão administrativa · dados de demonstração · desktop",
+        "en": "Admin overview · demo data · desktop",
+        "de": "Adminübersicht · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:48.809Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-analytics",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-analytics-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Métricas dos jogos · dados de demonstração · desktop",
+        "en": "Game analytics · demo data · desktop",
+        "de": "Spielstatistiken · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:59.085Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-affiliates",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-affiliates-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Afiliados · dados de demonstração · desktop",
+        "en": "Affiliates · demo data · desktop",
+        "de": "Partner · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:24:19.748Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-twenty-one",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-twenty-one-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Twenty One · interface com dados fictícios · desktop",
+        "en": "Twenty One · interface with demo data · desktop",
+        "de": "Twenty One · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:24:46.708Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-tower",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-tower-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Tower · interface com dados fictícios · desktop",
+        "en": "Tower · interface with demo data · desktop",
+        "de": "Tower · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:25:08.572Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-stock-panic",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-stock-panic-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Stock Panic · interface com dados fictícios · desktop",
+        "en": "Stock Panic · interface with demo data · desktop",
+        "de": "Stock Panic · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:25:15.455Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-race",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-race-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Race · interface com dados fictícios · desktop",
+        "en": "Race · interface with demo data · desktop",
+        "de": "Race · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:25:37.296Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-plinko",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-plinko-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Plinko · interface com dados fictícios · desktop",
+        "en": "Plinko · interface with demo data · desktop",
+        "de": "Plinko · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:25:57.744Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-penalty-shoot-out",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-penalty-shoot-out-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Penalty Shoot Out · interface com dados fictícios · desktop",
+        "en": "Penalty Shoot Out · interface with demo data · desktop",
+        "de": "Penalty Shoot Out · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:26:18.189Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-neon-rails",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-neon-rails-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Neon Rails · interface com dados fictícios · desktop",
+        "en": "Neon Rails · interface with demo data · desktop",
+        "de": "Neon Rails · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:26:37.300Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-mines",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-mines-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Mines · interface com dados fictícios · desktop",
+        "en": "Mines · interface with demo data · desktop",
+        "de": "Mines · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:26:45.803Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-fishing",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-fishing-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Fishing · interface com dados fictícios · desktop",
+        "en": "Fishing · interface with demo data · desktop",
+        "de": "Fishing · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:27:07.468Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-dungeon",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-dungeon-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dungeon · interface com dados fictícios · desktop",
+        "en": "Dungeon · interface with demo data · desktop",
+        "de": "Dungeon · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:27:27.881Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-double",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-double-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Double · interface com dados fictícios · desktop",
+        "en": "Double · interface with demo data · desktop",
+        "de": "Double · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:27:49.351Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-dice",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-dice-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dice · interface com dados fictícios · desktop",
+        "en": "Dice · interface with demo data · desktop",
+        "de": "Dice · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:28:09.193Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-crash",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/games-crash-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Crash · interface com dados fictícios · desktop",
+        "en": "Crash · interface with demo data · desktop",
+        "de": "Crash · Oberfläche mit Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:28:16.261Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "auth-login",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/auth-login-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:43:20.249Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "auth-register",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/auth-register-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · desktop",
+        "en": "Registration · demo data · desktop",
+        "de": "Registrierung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:43:26.205Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/user-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Minha conta · dados de demonstração · desktop",
+        "en": "My account · demo data · desktop",
+        "de": "Mein Konto · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:43:34.867Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user-transactions",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/user-transactions-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Transações · dados de demonstração · desktop",
+        "en": "Transactions · demo data · desktop",
+        "de": "Transaktionen · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:43:42.586Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user-rewards",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/user-rewards-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Recompensas · dados de demonstração · desktop",
+        "en": "Rewards · demo data · desktop",
+        "de": "Belohnungen · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:43:49.689Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user-support",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/user-support-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Suporte · dados de demonstração · desktop",
+        "en": "Support · demo data · desktop",
+        "de": "Support · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:43:56.564Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user-invite",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/user-invite-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Convites e afiliados · dados de demonstração · desktop",
+        "en": "Invitations and affiliates · demo data · desktop",
+        "de": "Einladungen und Partner · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:44:03.848Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-users",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-users-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Usuários · dados de demonstração · desktop",
+        "en": "Users · demo data · desktop",
+        "de": "Benutzer · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:44:16.378Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-transactions",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-transactions-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Transações administrativas · dados de demonstração · desktop",
+        "en": "Admin transactions · demo data · desktop",
+        "de": "Admintransaktionen · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:44:22.437Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-support",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-support-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Tickets de suporte · dados de demonstração · desktop",
+        "en": "Support tickets · demo data · desktop",
+        "de": "Supporttickets · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:44:27.420Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-rtp",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-settings-rtp-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Retorno por jogo · dados de demonstração · desktop",
+        "en": "Return per game · demo data · desktop",
+        "de": "Rendite je Spiel · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:55:20.776Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-business",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-settings-business-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dados comerciais · dados de demonstração · desktop",
+        "en": "Business details · demo data · desktop",
+        "de": "Geschäftsdaten · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:57:38.347Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-brand",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-settings-brand-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Marca e logo · dados de demonstração · desktop",
+        "en": "Brand and logo · demo data · desktop",
+        "de": "Marke und Logo · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:57:44.002Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-appearance",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-settings-appearance-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Editor visual · dados de demonstração · desktop",
+        "en": "Visual editor · demo data · desktop",
+        "de": "Visueller Editor · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:57:54.795Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-language",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-settings-language-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Idiomas e textos · dados de demonstração · desktop",
+        "en": "Languages and text · demo data · desktop",
+        "de": "Sprachen und Texte · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:59:43.968Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-gateways",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "my-bet/admin-settings-gateways-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Configuração de pagamentos fictícios · dados de demonstração · desktop",
+        "en": "Demo payment settings · demo data · desktop",
+        "de": "Demozahlungseinstellungen · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:59:51.129Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
       "area": "home",
       "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "status": "captured",
+      "file": "my-bet/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:30:06.533Z",
+      "reviewed": true
     },
     {
-      "projectId": "portifolio",
-      "area": "projects",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "portifolio",
-      "area": "projects",
+      "projectId": "my-bet",
+      "area": "user-edit",
       "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "status": "captured",
+      "file": "my-bet/user-edit-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Editar perfil · dados de demonstração · mobile",
+        "en": "Edit profile · demo data · mobile",
+        "de": "Profil bearbeiten · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:44:49.652Z",
+      "reviewed": true
     },
     {
-      "projectId": "portifolio",
-      "area": "projects-slug",
-      "viewport": "desktop",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
-    },
-    {
-      "projectId": "portifolio",
-      "area": "projects-slug",
+      "projectId": "my-bet",
+      "area": "user-transactions",
       "viewport": "mobile",
-      "status": "blocked",
-      "reason": "browserType.launch: Target page, context or browser has been closed"
+      "status": "captured",
+      "file": "my-bet/user-transactions-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Transações · dados de demonstração · mobile",
+        "en": "Transactions · demo data · mobile",
+        "de": "Transaktionen · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:44:56.751Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user-rewards",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/user-rewards-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Recompensas · dados de demonstração · mobile",
+        "en": "Rewards · demo data · mobile",
+        "de": "Belohnungen · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:45:04.569Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user-support",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/user-support-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Suporte · dados de demonstração · mobile",
+        "en": "Support · demo data · mobile",
+        "de": "Support · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:45:09.946Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user-invite",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/user-invite-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Convites e afiliados · dados de demonstração · mobile",
+        "en": "Invitations and affiliates · demo data · mobile",
+        "de": "Einladungen und Partner · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:45:16.243Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-twenty-one",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-twenty-one-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Twenty One · interface com dados fictícios · mobile",
+        "en": "Twenty One · interface with demo data · mobile",
+        "de": "Twenty One · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:46:01.583Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-tower",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-tower-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Tower · interface com dados fictícios · mobile",
+        "en": "Tower · interface with demo data · mobile",
+        "de": "Tower · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:46:15.419Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-stock-panic",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-stock-panic-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Stock Panic · interface com dados fictícios · mobile",
+        "en": "Stock Panic · interface with demo data · mobile",
+        "de": "Stock Panic · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:46:33.001Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-race",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-race-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Race · interface com dados fictícios · mobile",
+        "en": "Race · interface with demo data · mobile",
+        "de": "Race · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:46:45.543Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-plinko",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-plinko-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Plinko · interface com dados fictícios · mobile",
+        "en": "Plinko · interface with demo data · mobile",
+        "de": "Plinko · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:46:53.027Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-penalty-shoot-out",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-penalty-shoot-out-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Penalty Shoot Out · interface com dados fictícios · mobile",
+        "en": "Penalty Shoot Out · interface with demo data · mobile",
+        "de": "Penalty Shoot Out · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:47:04.312Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-neon-rails",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-neon-rails-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Neon Rails · interface com dados fictícios · mobile",
+        "en": "Neon Rails · interface with demo data · mobile",
+        "de": "Neon Rails · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:47:14.928Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-mines",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-mines-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Mines · interface com dados fictícios · mobile",
+        "en": "Mines · interface with demo data · mobile",
+        "de": "Mines · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:47:25.112Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-fishing",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-fishing-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Fishing · interface com dados fictícios · mobile",
+        "en": "Fishing · interface with demo data · mobile",
+        "de": "Fishing · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:47:30.914Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-dungeon",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-dungeon-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Dungeon · interface com dados fictícios · mobile",
+        "en": "Dungeon · interface with demo data · mobile",
+        "de": "Dungeon · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:47:40.513Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-double",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-double-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Double · interface com dados fictícios · mobile",
+        "en": "Double · interface with demo data · mobile",
+        "de": "Double · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:47:48.112Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-dice",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-dice-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Dice · interface com dados fictícios · mobile",
+        "en": "Dice · interface with demo data · mobile",
+        "de": "Dice · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:47:58.046Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "games-crash",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/games-crash-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Crash · interface com dados fictícios · mobile",
+        "en": "Crash · interface with demo data · mobile",
+        "de": "Crash · Oberfläche mit Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:48:06.041Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "auth-login",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/auth-login-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:58:07.408Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "auth-register",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/auth-register-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · mobile",
+        "en": "Registration · demo data · mobile",
+        "de": "Registrierung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:58:13.470Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "user",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/user-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Minha conta · dados de demonstração · mobile",
+        "en": "My account · demo data · mobile",
+        "de": "Mein Konto · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:58:21.208Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Visão administrativa · dados de demonstração · mobile",
+        "en": "Admin overview · demo data · mobile",
+        "de": "Adminübersicht · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:58:27.891Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-analytics",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-analytics-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Métricas dos jogos · dados de demonstração · mobile",
+        "en": "Game analytics · demo data · mobile",
+        "de": "Spielstatistiken · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:00.289Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-users",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-users-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Usuários · dados de demonstração · mobile",
+        "en": "Users · demo data · mobile",
+        "de": "Benutzer · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:08.693Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-transactions",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-transactions-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Transações administrativas · dados de demonstração · mobile",
+        "en": "Admin transactions · demo data · mobile",
+        "de": "Admintransaktionen · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:15.055Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-affiliates",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-affiliates-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Afiliados · dados de demonstração · mobile",
+        "en": "Affiliates · demo data · mobile",
+        "de": "Partner · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:21.530Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-support",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-support-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Tickets de suporte · dados de demonstração · mobile",
+        "en": "Support tickets · demo data · mobile",
+        "de": "Supporttickets · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:28.751Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-rtp",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-settings-rtp-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Retorno por jogo · dados de demonstração · mobile",
+        "en": "Return per game · demo data · mobile",
+        "de": "Rendite je Spiel · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:36.794Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-language",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-settings-language-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Idiomas e textos · dados de demonstração · mobile",
+        "en": "Languages and text · demo data · mobile",
+        "de": "Sprachen und Texte · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:46.360Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-gateways",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-settings-gateways-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Configuração de pagamentos fictícios · dados de demonstração · mobile",
+        "en": "Demo payment settings · demo data · mobile",
+        "de": "Demozahlungseinstellungen · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:07:54.171Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-business",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-settings-business-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Dados comerciais · dados de demonstração · mobile",
+        "en": "Business details · demo data · mobile",
+        "de": "Geschäftsdaten · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:08:01.726Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-brand",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-settings-brand-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Marca e logo · dados de demonstração · mobile",
+        "en": "Brand and logo · demo data · mobile",
+        "de": "Marke und Logo · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:08:07.698Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-bet",
+      "area": "admin-settings-appearance",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "my-bet/admin-settings-appearance-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Editor visual · dados de demonstração · mobile",
+        "en": "Visual editor · demo data · mobile",
+        "de": "Visueller Editor · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:08:21.485Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "simple-bank/dashboard-desktop.png",
+      "width": 1440,
+      "height": 2372,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:04.653Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "payment-keys",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "simple-bank/payment-keys-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Chaves de pagamento · dados de demonstração · desktop",
+        "en": "Payment keys · demo data · desktop",
+        "de": "Zahlungsschlüssel · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:16.254Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "transactions",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "simple-bank/transactions-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Extrato · dados de demonstração · desktop",
+        "en": "Transactions · demo data · desktop",
+        "de": "Transaktionen · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:23.747Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "simple-bank/home-desktop.png",
+      "width": 1440,
+      "height": 2445,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:28.661Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "simple-bank/login-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:35.705Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "register",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "simple-bank/register-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · desktop",
+        "en": "Registration · demo data · desktop",
+        "de": "Registrierung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:43.708Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "simple-bank/dashboard-mobile.png",
+      "width": 390,
+      "height": 4148,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:50.201Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "payment-keys",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "simple-bank/payment-keys-mobile.png",
+      "width": 390,
+      "height": 2002,
+      "caption": {
+        "pt": "Chaves de pagamento · dados de demonstração · mobile",
+        "en": "Payment keys · demo data · mobile",
+        "de": "Zahlungsschlüssel · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:55.131Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "transactions",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "simple-bank/transactions-mobile.png",
+      "width": 390,
+      "height": 2753,
+      "caption": {
+        "pt": "Extrato · dados de demonstração · mobile",
+        "en": "Transactions · demo data · mobile",
+        "de": "Transaktionen · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:24:00.841Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "simple-bank/home-mobile.png",
+      "width": 390,
+      "height": 4868,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:24:05.755Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "simple-bank/login-mobile.png",
+      "width": 390,
+      "height": 1720,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:24:10.023Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "simple-bank",
+      "area": "register",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "simple-bank/register-mobile.png",
+      "width": 390,
+      "height": 1720,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · mobile",
+        "en": "Registration · demo data · mobile",
+        "de": "Registrierung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:24:14.920Z",
+      "reviewed": true
     },
     {
       "projectId": "simple-bank",
@@ -1228,10 +1560,1586 @@
     },
     {
       "projectId": "cvm-runtime",
-      "area": "os-framebuffer",
+      "area": "desktop",
+      "viewport": "native",
+      "status": "captured",
+      "file": "cvm-runtime/desktop-native.png",
+      "width": 1280,
+      "height": 800,
+      "caption": {
+        "pt": "Desktop CVM · execução real, interação não validada · janela nativa",
+        "en": "CVM desktop · actual execution, interaction unverified · native window",
+        "de": "CVM-Desktop · echte Ausführung, Interaktion ungeprüft · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:32:26.605009+00:00",
+      "reviewed": true
+    },
+    {
+      "projectId": "cvm-compiler",
+      "area": "compilation",
+      "viewport": "terminal",
+      "status": "captured",
+      "file": "cvm-compiler/compilation-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Compilação real do desktop CVM · terminal",
+        "en": "Actual CVM desktop compilation · terminal",
+        "de": "Tatsächliche Kompilierung des CVM-Desktops · Terminal"
+      },
+      "capturedAt": "2026-10-05T19:30:57.381Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "apiflash/home-desktop.png",
+      "width": 1440,
+      "height": 2786,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:13:17.223Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "collections",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "apiflash/collections-desktop.png",
+      "width": 1440,
+      "height": 1371,
+      "caption": {
+        "pt": "Coleções · dados de demonstração · desktop",
+        "en": "Collections · demo data · desktop",
+        "de": "Sammlungen · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:13:23.257Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "docs",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "apiflash/docs-desktop.png",
+      "width": 1440,
+      "height": 1495,
+      "caption": {
+        "pt": "Documentação · dados de demonstração · desktop",
+        "en": "Documentation · demo data · desktop",
+        "de": "Dokumentation · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:13:28.775Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "history",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "apiflash/history-desktop.png",
+      "width": 1440,
+      "height": 1128,
+      "caption": {
+        "pt": "Histórico · dados de demonstração · desktop",
+        "en": "History · demo data · desktop",
+        "de": "Verlauf · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:13:34.955Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "apiflash/login-desktop.png",
+      "width": 1440,
+      "height": 1274,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:13:40.731Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "workspace",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "apiflash/workspace-desktop.png",
+      "width": 1440,
+      "height": 2273,
+      "caption": {
+        "pt": "Workbench · dados de demonstração · desktop",
+        "en": "Workbench · demo data · desktop",
+        "de": "Workbench · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:13:53.603Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "apiflash/home-mobile.png",
+      "width": 390,
+      "height": 5644,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:13:59.400Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "collections",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "apiflash/collections-mobile.png",
+      "width": 390,
+      "height": 2085,
+      "caption": {
+        "pt": "Coleções · dados de demonstração · mobile",
+        "en": "Collections · demo data · mobile",
+        "de": "Sammlungen · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:14:03.649Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "docs",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "apiflash/docs-mobile.png",
+      "width": 390,
+      "height": 2918,
+      "caption": {
+        "pt": "Documentação · dados de demonstração · mobile",
+        "en": "Documentation · demo data · mobile",
+        "de": "Dokumentation · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:14:08.698Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "history",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "apiflash/history-mobile.png",
+      "width": 390,
+      "height": 1571,
+      "caption": {
+        "pt": "Histórico · dados de demonstração · mobile",
+        "en": "History · demo data · mobile",
+        "de": "Verlauf · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:14:12.575Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "apiflash/login-mobile.png",
+      "width": 390,
+      "height": 1901,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:14:17.085Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "apiflash",
+      "area": "workspace",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "apiflash/workspace-mobile.png",
+      "width": 390,
+      "height": 4031,
+      "caption": {
+        "pt": "Workbench · dados de demonstração · mobile",
+        "en": "Workbench · demo data · mobile",
+        "de": "Workbench · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:14:21.787Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "browia",
+      "area": "chat",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "browia/chat-desktop.png",
+      "width": 1280,
+      "height": 720,
+      "caption": {
+        "pt": "Conversa · desktop",
+        "en": "Chat · desktop",
+        "de": "Chat · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:03:25.549Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "browia",
+      "area": "settings",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "browia/settings-desktop.png",
+      "width": 1280,
+      "height": 720,
+      "caption": {
+        "pt": "Configurações · desktop",
+        "en": "Settings · desktop",
+        "de": "Einstellungen · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:03:26.797Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "lowvia",
+      "area": "chat",
+      "viewport": "native",
+      "status": "captured",
+      "file": "lowvia/chat-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Chat · sem modelo conectado · janela nativa",
+        "en": "Chat · no model connected · native window",
+        "de": "Chat · kein Modell verbunden · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:13:52.112Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "lowvia",
+      "area": "models",
+      "viewport": "native",
+      "status": "captured",
+      "file": "lowvia/models-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Models · sem modelo conectado · janela nativa",
+        "en": "Models · no model connected · native window",
+        "de": "Models · kein Modell verbunden · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:13:56.690Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "lowvia",
+      "area": "settings",
+      "viewport": "native",
+      "status": "captured",
+      "file": "lowvia/settings-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Settings · sem modelo conectado · janela nativa",
+        "en": "Settings · no model connected · native window",
+        "de": "Settings · kein Modell verbunden · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:14:00.911Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "lowvia",
+      "area": "research",
+      "viewport": "native",
+      "status": "captured",
+      "file": "lowvia/research-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Research · sem modelo conectado · janela nativa",
+        "en": "Research · no model connected · native window",
+        "de": "Research · kein Modell verbunden · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:14:05.335Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "lowvia",
+      "area": "reports",
+      "viewport": "native",
+      "status": "captured",
+      "file": "lowvia/reports-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Histórico de pesquisa · sem relatórios gerados · sem modelo conectado · janela nativa",
+        "en": "Research history · no generated reports · no model connected · native window",
+        "de": "Rechercheverlauf · keine erzeugten Berichte · kein Modell verbunden · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:14:09.391Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "snippetvault/home-desktop.png",
+      "width": 1440,
+      "height": 4882,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:25:51.653Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "snippetvault/dashboard-desktop.png",
+      "width": 1440,
+      "height": 1287,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:25:59.663Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "snippetvault/login-desktop.png",
+      "width": 1440,
+      "height": 1287,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:55:10.565Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "snippet-id",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "snippetvault/snippet-id-desktop.png",
+      "width": 1440,
+      "height": 1832,
+      "caption": {
+        "pt": "/snippet/[id] · dados de demonstração · desktop",
+        "en": "/snippet/[id] · demo data · desktop",
+        "de": "/snippet/[id] · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:26:13.991Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "snippetvault/home-mobile.png",
+      "width": 390,
+      "height": 10080,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:26:20.055Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "snippetvault/dashboard-mobile.png",
+      "width": 390,
+      "height": 1556,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:26:25.802Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "snippetvault/login-mobile.png",
+      "width": 390,
+      "height": 1623,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:55:15.097Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "snippetvault",
+      "area": "snippet-id",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "snippetvault/snippet-id-mobile.png",
+      "width": 390,
+      "height": 2237,
+      "caption": {
+        "pt": "/snippet/[id] · dados de demonstração · mobile",
+        "en": "/snippet/[id] · demo data · mobile",
+        "de": "/snippet/[id] · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:26:36.919Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "typedash/home-desktop.png",
+      "width": 1440,
+      "height": 2989,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:14:52.154Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "about",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "typedash/about-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "/about · dados de demonstração · desktop",
+        "en": "/about · demo data · desktop",
+        "de": "/about · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:15:00.236Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "typedash/dashboard-desktop.png",
+      "width": 1440,
+      "height": 1549,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:15:08.027Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "login",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "typedash/login-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:15:12.746Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "practice",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "typedash/practice-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "Prática · dados de demonstração · desktop",
+        "en": "Practice · demo data · desktop",
+        "de": "Übung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:15:20.890Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "ranking",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "typedash/ranking-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · desktop",
+        "en": "Ranking · demo data · desktop",
+        "de": "Rangliste · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:15:27.851Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "typedash/home-mobile.png",
+      "width": 390,
+      "height": 5895,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:15:32.903Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "about",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "typedash/about-mobile.png",
+      "width": 390,
+      "height": 2753,
+      "caption": {
+        "pt": "/about · dados de demonstração · mobile",
+        "en": "/about · demo data · mobile",
+        "de": "/about · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:15:37.526Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "typedash/dashboard-mobile.png",
+      "width": 390,
+      "height": 2903,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:15:42.402Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "login",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "typedash/login-mobile.png",
+      "width": 390,
+      "height": 1576,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:15:46.236Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "practice",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "typedash/practice-mobile.png",
+      "width": 390,
+      "height": 2353,
+      "caption": {
+        "pt": "Prática · dados de demonstração · mobile",
+        "en": "Practice · demo data · mobile",
+        "de": "Übung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:15:50.538Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "typedash",
+      "area": "ranking",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "typedash/ranking-mobile.png",
+      "width": 390,
+      "height": 2147,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · mobile",
+        "en": "Ranking · demo data · mobile",
+        "de": "Rangliste · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:15:54.767Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-shop-bot",
+      "area": "project",
       "viewport": "native",
       "status": "blocked",
-      "reason": "CVM compiler and graphical VM runtime required"
+      "reason": "Requires isolated service fixtures; do not invoke actions on real accounts or communities."
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/home-desktop.png",
+      "width": 1440,
+      "height": 4612,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:13.057Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraft",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/minecraft-desktop.png",
+      "width": 1440,
+      "height": 4900,
+      "caption": {
+        "pt": "/minecraft · desktop",
+        "en": "/minecraft · desktop",
+        "de": "/minecraft · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:18.399Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraftgaming",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/minecraftgaming-desktop.png",
+      "width": 1440,
+      "height": 4519,
+      "caption": {
+        "pt": "/minecraftgaming · desktop",
+        "en": "/minecraftgaming · desktop",
+        "de": "/minecraftgaming · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:23.480Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vps",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/vps-desktop.png",
+      "width": 1440,
+      "height": 3017,
+      "caption": {
+        "pt": "/vps · desktop",
+        "en": "/vps · desktop",
+        "de": "/vps · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:28.032Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vpsgaming",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/vpsgaming-desktop.png",
+      "width": 1440,
+      "height": 2291,
+      "caption": {
+        "pt": "/vpsgaming · desktop",
+        "en": "/vpsgaming · desktop",
+        "de": "/vpsgaming · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:32.596Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "dedicated",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/dedicated-desktop.png",
+      "width": 1440,
+      "height": 1144,
+      "caption": {
+        "pt": "/dedicated · desktop",
+        "en": "/dedicated · desktop",
+        "de": "/dedicated · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:36.567Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "web",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/web-desktop.png",
+      "width": 1440,
+      "height": 2100,
+      "caption": {
+        "pt": "/web · desktop",
+        "en": "/web · desktop",
+        "de": "/web · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:40.823Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "apps",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/apps-desktop.png",
+      "width": 1440,
+      "height": 2077,
+      "caption": {
+        "pt": "/apps · desktop",
+        "en": "/apps · desktop",
+        "de": "/apps · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:45.171Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "serviceterms",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/serviceterms-desktop.png",
+      "width": 1440,
+      "height": 3554,
+      "caption": {
+        "pt": "/serviceterms · desktop",
+        "en": "/serviceterms · desktop",
+        "de": "/serviceterms · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:49.097Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "privacypolicy",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "ryzen-hosting/privacypolicy-desktop.png",
+      "width": 1440,
+      "height": 1097,
+      "caption": {
+        "pt": "/privacypolicy · desktop",
+        "en": "/privacypolicy · desktop",
+        "de": "/privacypolicy · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:53.164Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/home-mobile.png",
+      "width": 390,
+      "height": 8182,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:16:59.918Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraft",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/minecraft-mobile.png",
+      "width": 390,
+      "height": 9325,
+      "caption": {
+        "pt": "/minecraft · mobile",
+        "en": "/minecraft · mobile",
+        "de": "/minecraft · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:05.479Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "minecraftgaming",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/minecraftgaming-mobile.png",
+      "width": 390,
+      "height": 8988,
+      "caption": {
+        "pt": "/minecraftgaming · mobile",
+        "en": "/minecraftgaming · mobile",
+        "de": "/minecraftgaming · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:11.059Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vps",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/vps-mobile.png",
+      "width": 390,
+      "height": 4026,
+      "caption": {
+        "pt": "/vps · mobile",
+        "en": "/vps · mobile",
+        "de": "/vps · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:15.831Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "vpsgaming",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/vpsgaming-mobile.png",
+      "width": 390,
+      "height": 3317,
+      "caption": {
+        "pt": "/vpsgaming · mobile",
+        "en": "/vpsgaming · mobile",
+        "de": "/vpsgaming · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:20.293Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "dedicated",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/dedicated-mobile.png",
+      "width": 390,
+      "height": 1945,
+      "caption": {
+        "pt": "/dedicated · mobile",
+        "en": "/dedicated · mobile",
+        "de": "/dedicated · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:23.850Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "web",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/web-mobile.png",
+      "width": 390,
+      "height": 4607,
+      "caption": {
+        "pt": "/web · mobile",
+        "en": "/web · mobile",
+        "de": "/web · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:29.055Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "apps",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/apps-mobile.png",
+      "width": 390,
+      "height": 3851,
+      "caption": {
+        "pt": "/apps · mobile",
+        "en": "/apps · mobile",
+        "de": "/apps · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:33.583Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "serviceterms",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/serviceterms-mobile.png",
+      "width": 390,
+      "height": 4612,
+      "caption": {
+        "pt": "/serviceterms · mobile",
+        "en": "/serviceterms · mobile",
+        "de": "/serviceterms · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:38.051Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "ryzen-hosting",
+      "area": "privacypolicy",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "ryzen-hosting/privacypolicy-mobile.png",
+      "width": 390,
+      "height": 2210,
+      "caption": {
+        "pt": "/privacypolicy · mobile",
+        "en": "/privacypolicy · mobile",
+        "de": "/privacypolicy · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:17:41.951Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "dv-duels",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Requires isolated service fixtures; do not invoke actions on real accounts or communities."
+    },
+    {
+      "projectId": "portifolio-frontend",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "portifolio-frontend/home-desktop.png",
+      "width": 1440,
+      "height": 2798,
+      "caption": {
+        "pt": "Portfólio histórico · distribuição estática · desktop",
+        "en": "Historical portfolio · static distribution · desktop",
+        "de": "Historisches Portfolio · statische Distribution · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:25:08.289Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "portifolio-frontend",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "portifolio-frontend/home-mobile.png",
+      "width": 617,
+      "height": 6727,
+      "caption": {
+        "pt": "Portfólio histórico · distribuição estática · mobile",
+        "en": "Historical portfolio · static distribution · mobile",
+        "de": "Historisches Portfolio · statische Distribution · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:25:12.701Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "z-discord-core",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
+    },
+    {
+      "projectId": "comuni-mine-bot",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
+    },
+    {
+      "projectId": "minecraft-feast-bot",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
+    },
+    {
+      "projectId": "advanced-sql",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
+    },
+    {
+      "projectId": "z-manutencao",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
+    },
+    {
+      "projectId": "z-silk2",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
+    },
+    {
+      "projectId": "multi-server-api",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Remote source reviewed. This library, plugin or bot has no standalone browser interface; integrated capture needs a configured test runtime."
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-desktop.png",
+      "width": 1440,
+      "height": 4296,
+      "caption": {
+        "pt": "Página inicial sem sessão · dados de demonstração · desktop",
+        "en": "Home without a session · demo data · desktop",
+        "de": "Startseite ohne Anmeldung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:55:22.975Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-conversation",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-conversation-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Conversação · dados de demonstração · desktop",
+        "en": "Conversation · demo data · desktop",
+        "de": "Gespräch · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:30:04.296Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-grammar",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-grammar-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Gramática · dados de demonstração · desktop",
+        "en": "Grammar · demo data · desktop",
+        "de": "Grammatik · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:30:29.612Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-more",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-more-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/more · dados de demonstração · desktop",
+        "en": "/more · demo data · desktop",
+        "de": "/more · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:36.901Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-practice",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-practice-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Prática · dados de demonstração · desktop",
+        "en": "Practice · demo data · desktop",
+        "de": "Übung · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:44.185Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-progress",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-progress-desktop.png",
+      "width": 1440,
+      "height": 1523,
+      "caption": {
+        "pt": "Progresso · dados de demonstração · desktop",
+        "en": "Progress · demo data · desktop",
+        "de": "Fortschritt · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:16:50.496Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-questions",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-questions-desktop.png",
+      "width": 1440,
+      "height": 1211,
+      "caption": {
+        "pt": "Trilha de aulas · dados de demonstração · desktop",
+        "en": "Lesson path · demo data · desktop",
+        "de": "Lernpfad · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:17:04.394Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-ranking",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-ranking-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · desktop",
+        "en": "Ranking · demo data · desktop",
+        "de": "Rangliste · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:17:14.981Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-settings",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-settings-desktop.png",
+      "width": 1440,
+      "height": 1681,
+      "caption": {
+        "pt": "Configurações · dados de demonstração · desktop",
+        "en": "Settings · demo data · desktop",
+        "de": "Einstellungen · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:17:30.315Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-study-id",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-study-id-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/study/[id] · dados de demonstração · desktop",
+        "en": "/study/[id] · demo data · desktop",
+        "de": "/study/[id] · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:17:43.024Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-writing",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-writing-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Escrita · dados de demonstração · desktop",
+        "en": "Writing · demo data · desktop",
+        "de": "Schreiben · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:30:47.816Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-signin-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/signin · dados de demonstração · desktop",
+        "en": "/signin · demo data · desktop",
+        "de": "/signin · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:55:32.922Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin-check-email",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-signin-check-email-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/signin/check-email · dados de demonstração · desktop",
+        "en": "/signin/check-email · demo data · desktop",
+        "de": "/signin/check-email · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:18:10.340Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-privacy",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-privacy-desktop.png",
+      "width": 1440,
+      "height": 5342,
+      "caption": {
+        "pt": "/privacy · dados de demonstração · desktop",
+        "en": "/privacy · demo data · desktop",
+        "de": "/privacy · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:18:18.279Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-terms",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-terms-desktop.png",
+      "width": 1440,
+      "height": 3958,
+      "caption": {
+        "pt": "/terms · dados de demonstração · desktop",
+        "en": "/terms · demo data · desktop",
+        "de": "/terms · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:18:26.213Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-profile-userid",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "swiss-learn/lang-profile-userid-desktop.png",
+      "width": 1440,
+      "height": 1029,
+      "caption": {
+        "pt": "/profile/[userId] · dados de demonstração · desktop",
+        "en": "/profile/[userId] · demo data · desktop",
+        "de": "/profile/[userId] · Demodaten · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:18:34.709Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-mobile.png",
+      "width": 390,
+      "height": 8130,
+      "caption": {
+        "pt": "Página inicial sem sessão · dados de demonstração · mobile",
+        "en": "Home without a session · demo data · mobile",
+        "de": "Startseite ohne Anmeldung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:55:38.971Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-conversation",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-conversation-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Conversação · dados de demonstração · mobile",
+        "en": "Conversation · demo data · mobile",
+        "de": "Gespräch · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:55:50.204Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-grammar",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-grammar-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Gramática · dados de demonstração · mobile",
+        "en": "Grammar · demo data · mobile",
+        "de": "Grammatik · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:55:59.802Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-more",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-more-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/more · dados de demonstração · mobile",
+        "en": "/more · demo data · mobile",
+        "de": "/more · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:19:08.721Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-practice",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-practice-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Prática · dados de demonstração · mobile",
+        "en": "Practice · demo data · mobile",
+        "de": "Übung · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:19:18.300Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-progress",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-progress-mobile.png",
+      "width": 390,
+      "height": 1899,
+      "caption": {
+        "pt": "Progresso · dados de demonstração · mobile",
+        "en": "Progress · demo data · mobile",
+        "de": "Fortschritt · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:07.719Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-questions",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-questions-mobile.png",
+      "width": 390,
+      "height": 1638,
+      "caption": {
+        "pt": "Trilha de aulas · dados de demonstração · mobile",
+        "en": "Lesson path · demo data · mobile",
+        "de": "Lernpfad · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:29.460Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-ranking",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-ranking-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · mobile",
+        "en": "Ranking · demo data · mobile",
+        "de": "Rangliste · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:40.292Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-settings",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-settings-mobile.png",
+      "width": 390,
+      "height": 1725,
+      "caption": {
+        "pt": "Configurações · dados de demonstração · mobile",
+        "en": "Settings · demo data · mobile",
+        "de": "Einstellungen · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:57.095Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-study-id",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-study-id-mobile.png",
+      "width": 390,
+      "height": 923,
+      "caption": {
+        "pt": "/study/[id] · dados de demonstração · mobile",
+        "en": "/study/[id] · demo data · mobile",
+        "de": "/study/[id] · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:24:14.988Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-writing",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-writing-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Escrita · dados de demonstração · mobile",
+        "en": "Writing · demo data · mobile",
+        "de": "Schreiben · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:56:10.128Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-signin-mobile.png",
+      "width": 390,
+      "height": 850,
+      "caption": {
+        "pt": "/signin · dados de demonstração · mobile",
+        "en": "/signin · demo data · mobile",
+        "de": "/signin · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:56:16.734Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-signin-check-email",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-signin-check-email-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/signin/check-email · dados de demonstração · mobile",
+        "en": "/signin/check-email · demo data · mobile",
+        "de": "/signin/check-email · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:24:42.818Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-privacy",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-privacy-mobile.png",
+      "width": 558,
+      "height": 9099,
+      "caption": {
+        "pt": "/privacy · dados de demonstração · mobile",
+        "en": "/privacy · demo data · mobile",
+        "de": "/privacy · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:24:51.763Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-terms",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-terms-mobile.png",
+      "width": 390,
+      "height": 6571,
+      "caption": {
+        "pt": "/terms · dados de demonstração · mobile",
+        "en": "/terms · demo data · mobile",
+        "de": "/terms · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:25:00.363Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "swiss-learn",
+      "area": "lang-profile-userid",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "swiss-learn/lang-profile-userid-mobile.png",
+      "width": 390,
+      "height": 1427,
+      "caption": {
+        "pt": "/profile/[userId] · dados de demonstração · mobile",
+        "en": "/profile/[userId] · demo data · mobile",
+        "de": "/profile/[userId] · Demodaten · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:25:11.538Z",
+      "reviewed": true
     },
     {
       "projectId": "swiss-learn",
@@ -1267,6 +3175,890 @@
       "viewport": "native",
       "status": "blocked",
       "reason": "Native Expo client requires emulator and demo backend session"
+    },
+    {
+      "projectId": "termop",
+      "area": "cli-help",
+      "viewport": "terminal",
+      "status": "captured",
+      "file": "termop/cli-help-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "capturedAt": "2026-10-05T19:23:43.687Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "russian-alphabet/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:11:36.675Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "alphabet",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "russian-alphabet/alphabet-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Referência do alfabeto · desktop",
+        "en": "Alphabet reference · desktop",
+        "de": "Alphabetübersicht · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:11:38.203Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "light-theme",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "russian-alphabet/light-theme-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Tema alternativo · desktop",
+        "en": "Alternate theme · desktop",
+        "de": "Alternatives Theme · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:11:39.776Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "russian-alphabet/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:11:41.473Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "alphabet",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "russian-alphabet/alphabet-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Referência do alfabeto · mobile",
+        "en": "Alphabet reference · mobile",
+        "de": "Alphabetübersicht · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:11:43.137Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "russian-alphabet",
+      "area": "light-theme",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "russian-alphabet/light-theme-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Tema alternativo · mobile",
+        "en": "Alternate theme · mobile",
+        "de": "Alternatives Theme · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:11:44.631Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "deadlatch/home-desktop.png",
+      "width": 1440,
+      "height": 3358,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:11:57.094Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "deadlatch/dashboard-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dashboard · desktop",
+        "en": "Dashboard · desktop",
+        "de": "Dashboard · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:11:59.869Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-api-keys",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "deadlatch/dashboard-api-keys-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/dashboard/api-keys · desktop",
+        "en": "/dashboard/api-keys · desktop",
+        "de": "/dashboard/api-keys · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:02.347Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-settings",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "deadlatch/dashboard-settings-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/dashboard/settings · desktop",
+        "en": "/dashboard/settings · desktop",
+        "de": "/dashboard/settings · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:04.765Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-switches",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "deadlatch/dashboard-switches-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/dashboard/switches · desktop",
+        "en": "/dashboard/switches · desktop",
+        "de": "/dashboard/switches · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:07.140Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "docs",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "deadlatch/docs-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Documentação · desktop",
+        "en": "Documentation · desktop",
+        "de": "Dokumentation · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:10.129Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "deadlatch/home-mobile.png",
+      "width": 390,
+      "height": 4950,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:12.744Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "deadlatch/dashboard-mobile.png",
+      "width": 390,
+      "height": 1142,
+      "caption": {
+        "pt": "Dashboard · mobile",
+        "en": "Dashboard · mobile",
+        "de": "Dashboard · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:14.751Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-api-keys",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "deadlatch/dashboard-api-keys-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/dashboard/api-keys · mobile",
+        "en": "/dashboard/api-keys · mobile",
+        "de": "/dashboard/api-keys · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:16.724Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-settings",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "deadlatch/dashboard-settings-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/dashboard/settings · mobile",
+        "en": "/dashboard/settings · mobile",
+        "de": "/dashboard/settings · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:18.682Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "dashboard-switches",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "deadlatch/dashboard-switches-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/dashboard/switches · mobile",
+        "en": "/dashboard/switches · mobile",
+        "de": "/dashboard/switches · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:20.649Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "deadlatch",
+      "area": "docs",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "deadlatch/docs-mobile.png",
+      "width": 390,
+      "height": 1237,
+      "caption": {
+        "pt": "Documentação · mobile",
+        "en": "Documentation · mobile",
+        "de": "Dokumentation · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:22.883Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "chess-mistery/home-desktop.png",
+      "width": 1440,
+      "height": 1202,
+      "caption": {
+        "pt": "Página inicial · interface de demonstração · desktop",
+        "en": "Home · demo interface · desktop",
+        "de": "Startseite · Demo-Oberfläche · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:34.829Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "neural",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "chess-mistery/neural-desktop.png",
+      "width": 1440,
+      "height": 1580,
+      "caption": {
+        "pt": "Visualização neural · interface de demonstração · desktop",
+        "en": "Neural visualization · demo interface · desktop",
+        "de": "Neuronale Visualisierung · Demo-Oberfläche · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:38.476Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "play",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "chess-mistery/play-desktop.png",
+      "width": 1440,
+      "height": 1104,
+      "caption": {
+        "pt": "Partida · interface de demonstração · desktop",
+        "en": "Game · demo interface · desktop",
+        "de": "Partie · Demo-Oberfläche · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:41.622Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "watch",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "chess-mistery/watch-desktop.png",
+      "width": 1440,
+      "height": 1104,
+      "caption": {
+        "pt": "Espectador · interface de demonstração · desktop",
+        "en": "Spectator · demo interface · desktop",
+        "de": "Zuschauer · Demo-Oberfläche · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:12:44.893Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "chess-mistery/home-mobile.png",
+      "width": 390,
+      "height": 2190,
+      "caption": {
+        "pt": "Página inicial · interface de demonstração · mobile",
+        "en": "Home · demo interface · mobile",
+        "de": "Startseite · Demo-Oberfläche · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:47.385Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "neural",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "chess-mistery/neural-mobile.png",
+      "width": 390,
+      "height": 2645,
+      "caption": {
+        "pt": "Visualização neural · interface de demonstração · mobile",
+        "en": "Neural visualization · demo interface · mobile",
+        "de": "Neuronale Visualisierung · Demo-Oberfläche · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:50.066Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "play",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "chess-mistery/play-mobile.png",
+      "width": 426,
+      "height": 1291,
+      "caption": {
+        "pt": "Partida · interface de demonstração · mobile",
+        "en": "Game · demo interface · mobile",
+        "de": "Partie · Demo-Oberfläche · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:52.220Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "chess-mistery",
+      "area": "watch",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "chess-mistery/watch-mobile.png",
+      "width": 426,
+      "height": 1464,
+      "caption": {
+        "pt": "Espectador · interface de demonstração · mobile",
+        "en": "Spectator · demo interface · mobile",
+        "de": "Zuschauer · Demo-Oberfläche · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:12:54.544Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "brainer",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Rust release build succeeded. A local CPU training run produced routing output and epochs 0, 30 and 60 before the 180-second timeout; all 300 epochs and post-training output were not verified. No standalone graphical UI."
+    },
+    {
+      "projectId": "kotlin-vortey",
+      "area": "event-api",
+      "viewport": "terminal",
+      "status": "captured",
+      "file": "kotlin-vortey/event-api-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "API de eventos · resposta real com dados fictícios · terminal",
+        "en": "Event API · actual response with fictional data · terminal",
+        "de": "Event-API · echte Antwort mit fiktiven Daten · Terminal"
+      },
+      "capturedAt": "2026-10-05T19:31:11.586Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "home",
+      "viewport": "native",
+      "status": "captured",
+      "file": "my-game-papers/home-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Home · janela nativa",
+        "en": "Home · native window",
+        "de": "Home · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:05:49.753Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "cartelas",
+      "viewport": "native",
+      "status": "captured",
+      "file": "my-game-papers/cartelas-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Cartelas · janela nativa",
+        "en": "Cartelas · native window",
+        "de": "Cartelas · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:05:51.095Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "generator",
+      "viewport": "native",
+      "status": "captured",
+      "file": "my-game-papers/generator-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Generator · janela nativa",
+        "en": "Generator · native window",
+        "de": "Generator · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:05:52.354Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "game",
+      "viewport": "native",
+      "status": "captured",
+      "file": "my-game-papers/game-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Jogo de bingo com cartela de demonstração · janela nativa",
+        "en": "Bingo game with a demo card · native window",
+        "de": "Bingo-Spiel mit Demokarte · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:05:53.767Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "history",
+      "viewport": "native",
+      "status": "captured",
+      "file": "my-game-papers/history-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "History · janela nativa",
+        "en": "History · native window",
+        "de": "History · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:05:56.673Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-game-papers",
+      "area": "settings",
+      "viewport": "native",
+      "status": "captured",
+      "file": "my-game-papers/settings-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Settings · janela nativa",
+        "en": "Settings · native window",
+        "de": "Settings · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:05:57.992Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "agentics",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "agentics/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:12.638Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "agentics",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "agentics/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:16.759Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "lomaw",
+      "area": "cli-help",
+      "viewport": "terminal",
+      "status": "captured",
+      "file": "lomaw/cli-help-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "capturedAt": "2026-10-05T19:23:40.977Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-llm-executor",
+      "area": "project",
+      "viewport": "terminal",
+      "status": "blocked",
+      "reason": "Local infer binary failed to launch: libcudart.so.12 is unavailable. CUDA runtime, GPU and compatible model weights are required."
+    },
+    {
+      "projectId": "my-codec",
+      "area": "cli-help",
+      "viewport": "terminal",
+      "status": "captured",
+      "file": "my-codec/cli-help-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "capturedAt": "2026-10-05T19:23:42.942Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "compound-interest-calc",
+      "area": "initial-screen",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Native emulator/device required; Expo web is a separate representation and must not be labeled native."
+    },
+    {
+      "projectId": "office-tools",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "office-tools/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:23:11.207Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "office-tools",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "office-tools/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:23:15.621Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "electron-app",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "electron-app/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "capturedAt": "2026-10-05T19:20:09.794Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "electron-app",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "electron-app/home-mobile.png",
+      "width": 390,
+      "height": 927,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "capturedAt": "2026-10-05T19:20:12.835Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "github-follow-bot",
+      "area": "project",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Requires isolated service fixtures; do not invoke actions on real accounts or communities."
+    },
+    {
+      "projectId": "portifolio",
+      "area": "home",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "portifolio/home-desktop.png",
+      "width": 1440,
+      "height": 13465,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "capturedAt": "2026-10-05T20:11:25.927Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "portifolio/projects-desktop.png",
+      "width": 1440,
+      "height": 9010,
+      "caption": {
+        "pt": "/projects · desktop",
+        "en": "/projects · desktop",
+        "de": "/projects · Desktop"
+      },
+      "capturedAt": "2026-10-05T20:11:31.729Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects-slug",
+      "viewport": "desktop",
+      "status": "captured",
+      "file": "portifolio/projects-slug-desktop.png",
+      "width": 1440,
+      "height": 2048,
+      "caption": {
+        "pt": "/projects/[slug] · desktop",
+        "en": "/projects/[slug] · desktop",
+        "de": "/projects/[slug] · Desktop"
+      },
+      "capturedAt": "2026-10-05T20:11:35.657Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "portifolio",
+      "area": "home",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "portifolio/home-mobile.png",
+      "width": 390,
+      "height": 26513,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:11:42.920Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "portifolio/projects-mobile.png",
+      "width": 390,
+      "height": 22411,
+      "caption": {
+        "pt": "/projects · mobile",
+        "en": "/projects · mobile",
+        "de": "/projects · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:11:49.826Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "portifolio",
+      "area": "projects-slug",
+      "viewport": "mobile",
+      "status": "captured",
+      "file": "portifolio/projects-slug-mobile.png",
+      "width": 390,
+      "height": 2938,
+      "caption": {
+        "pt": "/projects/[slug] · mobile",
+        "en": "/projects/[slug] · mobile",
+        "de": "/projects/[slug] · Mobil"
+      },
+      "capturedAt": "2026-10-05T20:11:53.476Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-vm-os",
+      "area": "desktop",
+      "viewport": "native",
+      "status": "captured",
+      "file": "my-vm-os/desktop-native.png",
+      "width": 1280,
+      "height": 800,
+      "caption": {
+        "pt": "Desktop CVM · execução real, interação não validada · janela nativa",
+        "en": "CVM desktop · actual execution, interaction unverified · native window",
+        "de": "CVM-Desktop · echte Ausführung, Interaktion ungeprüft · natives Fenster"
+      },
+      "capturedAt": "2026-10-05T19:32:26.605009+00:00",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-vm-legacy-compiler",
+      "area": "compile",
+      "viewport": "terminal",
+      "status": "captured",
+      "file": "my-vm-legacy-compiler/compile-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Transcrição da compilação Python para Assembly legado; compatibilidade com a VM atual não validada · terminal",
+        "en": "Transcript of Python compilation to legacy Assembly; compatibility with the current VM is unverified · terminal",
+        "de": "Transkript der Python-Kompilierung zu Legacy-Assembly; Kompatibilität mit der aktuellen VM ungeprüft · Terminal"
+      },
+      "capturedAt": "2026-10-05T19:58:11.018Z",
+      "reviewed": true
+    },
+    {
+      "projectId": "my-vm-os",
+      "area": "terminal",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
+    },
+    {
+      "projectId": "my-vm-os",
+      "area": "editor",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
+    },
+    {
+      "projectId": "my-vm-os",
+      "area": "calculator",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
+    },
+    {
+      "projectId": "my-vm-os",
+      "area": "files",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
+    },
+    {
+      "projectId": "cvm-runtime",
+      "area": "terminal",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
+    },
+    {
+      "projectId": "cvm-runtime",
+      "area": "editor",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
+    },
+    {
+      "projectId": "cvm-runtime",
+      "area": "calculator",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
+    },
+    {
+      "projectId": "cvm-runtime",
+      "area": "files",
+      "viewport": "native",
+      "status": "blocked",
+      "reason": "Clicks were attempted in an isolated X11 session, but the application window did not open."
     }
   ]
 }

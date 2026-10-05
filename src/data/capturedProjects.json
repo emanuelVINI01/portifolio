@@ -1,1 +1,4104 @@
-{}
+{
+  "simple-bank": [
+    {
+      "src": "/projects/simple-bank/dashboard-desktop.png",
+      "width": 1440,
+      "height": 2372,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:04.653Z"
+    },
+    {
+      "src": "/projects/simple-bank/payment-keys-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Chaves de pagamento · dados de demonstração · desktop",
+        "en": "Payment keys · demo data · desktop",
+        "de": "Zahlungsschlüssel · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Chaves de pagamento · dados de demonstração · desktop",
+        "en": "Payment keys · demo data · desktop",
+        "de": "Zahlungsschlüssel · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:16.254Z"
+    },
+    {
+      "src": "/projects/simple-bank/transactions-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Extrato · dados de demonstração · desktop",
+        "en": "Transactions · demo data · desktop",
+        "de": "Transaktionen · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Extrato · dados de demonstração · desktop",
+        "en": "Transactions · demo data · desktop",
+        "de": "Transaktionen · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:23.747Z"
+    },
+    {
+      "src": "/projects/simple-bank/home-desktop.png",
+      "width": 1440,
+      "height": 2445,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:28.661Z"
+    },
+    {
+      "src": "/projects/simple-bank/login-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:35.705Z"
+    },
+    {
+      "src": "/projects/simple-bank/register-desktop.png",
+      "width": 1440,
+      "height": 1421,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · desktop",
+        "en": "Registration · demo data · desktop",
+        "de": "Registrierung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Cadastro · dados de demonstração · desktop",
+        "en": "Registration · demo data · desktop",
+        "de": "Registrierung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:43.708Z"
+    },
+    {
+      "src": "/projects/simple-bank/dashboard-mobile.png",
+      "width": 390,
+      "height": 4148,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:50.201Z"
+    },
+    {
+      "src": "/projects/simple-bank/payment-keys-mobile.png",
+      "width": 390,
+      "height": 2002,
+      "caption": {
+        "pt": "Chaves de pagamento · dados de demonstração · mobile",
+        "en": "Payment keys · demo data · mobile",
+        "de": "Zahlungsschlüssel · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Chaves de pagamento · dados de demonstração · mobile",
+        "en": "Payment keys · demo data · mobile",
+        "de": "Zahlungsschlüssel · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:55.131Z"
+    },
+    {
+      "src": "/projects/simple-bank/transactions-mobile.png",
+      "width": 390,
+      "height": 2753,
+      "caption": {
+        "pt": "Extrato · dados de demonstração · mobile",
+        "en": "Transactions · demo data · mobile",
+        "de": "Transaktionen · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Extrato · dados de demonstração · mobile",
+        "en": "Transactions · demo data · mobile",
+        "de": "Transaktionen · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:00.841Z"
+    },
+    {
+      "src": "/projects/simple-bank/home-mobile.png",
+      "width": 390,
+      "height": 4868,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:05.755Z"
+    },
+    {
+      "src": "/projects/simple-bank/login-mobile.png",
+      "width": 390,
+      "height": 1720,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:10.023Z"
+    },
+    {
+      "src": "/projects/simple-bank/register-mobile.png",
+      "width": 390,
+      "height": 1720,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · mobile",
+        "en": "Registration · demo data · mobile",
+        "de": "Registrierung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Cadastro · dados de demonstração · mobile",
+        "en": "Registration · demo data · mobile",
+        "de": "Registrierung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:14.920Z"
+    }
+  ],
+  "apiflash": [
+    {
+      "src": "/projects/apiflash/home-desktop.png",
+      "width": 1440,
+      "height": 2786,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:17.223Z"
+    },
+    {
+      "src": "/projects/apiflash/collections-desktop.png",
+      "width": 1440,
+      "height": 1371,
+      "caption": {
+        "pt": "Coleções · dados de demonstração · desktop",
+        "en": "Collections · demo data · desktop",
+        "de": "Sammlungen · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Coleções · dados de demonstração · desktop",
+        "en": "Collections · demo data · desktop",
+        "de": "Sammlungen · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:23.257Z"
+    },
+    {
+      "src": "/projects/apiflash/docs-desktop.png",
+      "width": 1440,
+      "height": 1495,
+      "caption": {
+        "pt": "Documentação · dados de demonstração · desktop",
+        "en": "Documentation · demo data · desktop",
+        "de": "Dokumentation · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Documentação · dados de demonstração · desktop",
+        "en": "Documentation · demo data · desktop",
+        "de": "Dokumentation · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:28.775Z"
+    },
+    {
+      "src": "/projects/apiflash/history-desktop.png",
+      "width": 1440,
+      "height": 1128,
+      "caption": {
+        "pt": "Histórico · dados de demonstração · desktop",
+        "en": "History · demo data · desktop",
+        "de": "Verlauf · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Histórico · dados de demonstração · desktop",
+        "en": "History · demo data · desktop",
+        "de": "Verlauf · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:34.955Z"
+    },
+    {
+      "src": "/projects/apiflash/login-desktop.png",
+      "width": 1440,
+      "height": 1274,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:40.731Z"
+    },
+    {
+      "src": "/projects/apiflash/workspace-desktop.png",
+      "width": 1440,
+      "height": 2273,
+      "caption": {
+        "pt": "Workbench · dados de demonstração · desktop",
+        "en": "Workbench · demo data · desktop",
+        "de": "Workbench · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Workbench · dados de demonstração · desktop",
+        "en": "Workbench · demo data · desktop",
+        "de": "Workbench · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:53.603Z"
+    },
+    {
+      "src": "/projects/apiflash/home-mobile.png",
+      "width": 390,
+      "height": 5644,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:59.400Z"
+    },
+    {
+      "src": "/projects/apiflash/collections-mobile.png",
+      "width": 390,
+      "height": 2085,
+      "caption": {
+        "pt": "Coleções · dados de demonstração · mobile",
+        "en": "Collections · demo data · mobile",
+        "de": "Sammlungen · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Coleções · dados de demonstração · mobile",
+        "en": "Collections · demo data · mobile",
+        "de": "Sammlungen · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:03.649Z"
+    },
+    {
+      "src": "/projects/apiflash/docs-mobile.png",
+      "width": 390,
+      "height": 2918,
+      "caption": {
+        "pt": "Documentação · dados de demonstração · mobile",
+        "en": "Documentation · demo data · mobile",
+        "de": "Dokumentation · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Documentação · dados de demonstração · mobile",
+        "en": "Documentation · demo data · mobile",
+        "de": "Dokumentation · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:08.698Z"
+    },
+    {
+      "src": "/projects/apiflash/history-mobile.png",
+      "width": 390,
+      "height": 1571,
+      "caption": {
+        "pt": "Histórico · dados de demonstração · mobile",
+        "en": "History · demo data · mobile",
+        "de": "Verlauf · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Histórico · dados de demonstração · mobile",
+        "en": "History · demo data · mobile",
+        "de": "Verlauf · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:12.575Z"
+    },
+    {
+      "src": "/projects/apiflash/login-mobile.png",
+      "width": 390,
+      "height": 1901,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:17.085Z"
+    },
+    {
+      "src": "/projects/apiflash/workspace-mobile.png",
+      "width": 390,
+      "height": 4031,
+      "caption": {
+        "pt": "Workbench · dados de demonstração · mobile",
+        "en": "Workbench · demo data · mobile",
+        "de": "Workbench · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Workbench · dados de demonstração · mobile",
+        "en": "Workbench · demo data · mobile",
+        "de": "Workbench · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:21.787Z"
+    }
+  ],
+  "browia": [
+    {
+      "src": "/projects/browia/chat-desktop.png",
+      "width": 1280,
+      "height": 720,
+      "caption": {
+        "pt": "Conversa · desktop",
+        "en": "Chat · desktop",
+        "de": "Chat · Desktop"
+      },
+      "alt": {
+        "pt": "Conversa · desktop",
+        "en": "Chat · desktop",
+        "de": "Chat · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:03:25.549Z"
+    },
+    {
+      "src": "/projects/browia/settings-desktop.png",
+      "width": 1280,
+      "height": 720,
+      "caption": {
+        "pt": "Configurações · desktop",
+        "en": "Settings · desktop",
+        "de": "Einstellungen · Desktop"
+      },
+      "alt": {
+        "pt": "Configurações · desktop",
+        "en": "Settings · desktop",
+        "de": "Einstellungen · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:03:26.797Z"
+    }
+  ],
+  "lowvia": [
+    {
+      "src": "/projects/lowvia/chat-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Chat · sem modelo conectado · janela nativa",
+        "en": "Chat · no model connected · native window",
+        "de": "Chat · kein Modell verbunden · natives Fenster"
+      },
+      "alt": {
+        "pt": "Chat · sem modelo conectado · janela nativa",
+        "en": "Chat · no model connected · native window",
+        "de": "Chat · kein Modell verbunden · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:52.112Z"
+    },
+    {
+      "src": "/projects/lowvia/models-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Models · sem modelo conectado · janela nativa",
+        "en": "Models · no model connected · native window",
+        "de": "Models · kein Modell verbunden · natives Fenster"
+      },
+      "alt": {
+        "pt": "Models · sem modelo conectado · janela nativa",
+        "en": "Models · no model connected · native window",
+        "de": "Models · kein Modell verbunden · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:13:56.690Z"
+    },
+    {
+      "src": "/projects/lowvia/settings-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Settings · sem modelo conectado · janela nativa",
+        "en": "Settings · no model connected · native window",
+        "de": "Settings · kein Modell verbunden · natives Fenster"
+      },
+      "alt": {
+        "pt": "Settings · sem modelo conectado · janela nativa",
+        "en": "Settings · no model connected · native window",
+        "de": "Settings · kein Modell verbunden · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:00.911Z"
+    },
+    {
+      "src": "/projects/lowvia/research-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Research · sem modelo conectado · janela nativa",
+        "en": "Research · no model connected · native window",
+        "de": "Research · kein Modell verbunden · natives Fenster"
+      },
+      "alt": {
+        "pt": "Research · sem modelo conectado · janela nativa",
+        "en": "Research · no model connected · native window",
+        "de": "Research · kein Modell verbunden · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:05.335Z"
+    },
+    {
+      "src": "/projects/lowvia/reports-native.png",
+      "width": 1000,
+      "height": 854,
+      "caption": {
+        "pt": "Histórico de pesquisa · sem relatórios gerados · sem modelo conectado · janela nativa",
+        "en": "Research history · no generated reports · no model connected · native window",
+        "de": "Rechercheverlauf · keine erzeugten Berichte · kein Modell verbunden · natives Fenster"
+      },
+      "alt": {
+        "pt": "Histórico de pesquisa · sem relatórios gerados · sem modelo conectado · janela nativa",
+        "en": "Research history · no generated reports · no model connected · native window",
+        "de": "Rechercheverlauf · keine erzeugten Berichte · kein Modell verbunden · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:09.391Z"
+    }
+  ],
+  "snippetvault": [
+    {
+      "src": "/projects/snippetvault/home-desktop.png",
+      "width": 1440,
+      "height": 4882,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:51.653Z"
+    },
+    {
+      "src": "/projects/snippetvault/dashboard-desktop.png",
+      "width": 1440,
+      "height": 1287,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:59.663Z"
+    },
+    {
+      "src": "/projects/snippetvault/login-desktop.png",
+      "width": 1440,
+      "height": 1287,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:10.565Z"
+    },
+    {
+      "src": "/projects/snippetvault/snippet-id-desktop.png",
+      "width": 1440,
+      "height": 1832,
+      "caption": {
+        "pt": "/snippet/[id] · dados de demonstração · desktop",
+        "en": "/snippet/[id] · demo data · desktop",
+        "de": "/snippet/[id] · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/snippet/[id] · dados de demonstração · desktop",
+        "en": "/snippet/[id] · demo data · desktop",
+        "de": "/snippet/[id] · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:26:13.991Z"
+    },
+    {
+      "src": "/projects/snippetvault/home-mobile.png",
+      "width": 390,
+      "height": 10080,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:26:20.055Z"
+    },
+    {
+      "src": "/projects/snippetvault/dashboard-mobile.png",
+      "width": 390,
+      "height": 1556,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:26:25.802Z"
+    },
+    {
+      "src": "/projects/snippetvault/login-mobile.png",
+      "width": 390,
+      "height": 1623,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:15.097Z"
+    },
+    {
+      "src": "/projects/snippetvault/snippet-id-mobile.png",
+      "width": 390,
+      "height": 2237,
+      "caption": {
+        "pt": "/snippet/[id] · dados de demonstração · mobile",
+        "en": "/snippet/[id] · demo data · mobile",
+        "de": "/snippet/[id] · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/snippet/[id] · dados de demonstração · mobile",
+        "en": "/snippet/[id] · demo data · mobile",
+        "de": "/snippet/[id] · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:26:36.919Z"
+    }
+  ],
+  "typedash": [
+    {
+      "src": "/projects/typedash/home-desktop.png",
+      "width": 1440,
+      "height": 2989,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:14:52.154Z"
+    },
+    {
+      "src": "/projects/typedash/about-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "/about · dados de demonstração · desktop",
+        "en": "/about · demo data · desktop",
+        "de": "/about · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/about · dados de demonstração · desktop",
+        "en": "/about · demo data · desktop",
+        "de": "/about · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:00.236Z"
+    },
+    {
+      "src": "/projects/typedash/dashboard-desktop.png",
+      "width": 1440,
+      "height": 1549,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Dashboard · dados de demonstração · desktop",
+        "en": "Dashboard · demo data · desktop",
+        "de": "Dashboard · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:08.027Z"
+    },
+    {
+      "src": "/projects/typedash/login-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:12.746Z"
+    },
+    {
+      "src": "/projects/typedash/practice-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "Prática · dados de demonstração · desktop",
+        "en": "Practice · demo data · desktop",
+        "de": "Übung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Prática · dados de demonstração · desktop",
+        "en": "Practice · demo data · desktop",
+        "de": "Übung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:20.890Z"
+    },
+    {
+      "src": "/projects/typedash/ranking-desktop.png",
+      "width": 1440,
+      "height": 1338,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · desktop",
+        "en": "Ranking · demo data · desktop",
+        "de": "Rangliste · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Ranking · dados de demonstração · desktop",
+        "en": "Ranking · demo data · desktop",
+        "de": "Rangliste · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:27.851Z"
+    },
+    {
+      "src": "/projects/typedash/home-mobile.png",
+      "width": 390,
+      "height": 5895,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:32.903Z"
+    },
+    {
+      "src": "/projects/typedash/about-mobile.png",
+      "width": 390,
+      "height": 2753,
+      "caption": {
+        "pt": "/about · dados de demonstração · mobile",
+        "en": "/about · demo data · mobile",
+        "de": "/about · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/about · dados de demonstração · mobile",
+        "en": "/about · demo data · mobile",
+        "de": "/about · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:37.526Z"
+    },
+    {
+      "src": "/projects/typedash/dashboard-mobile.png",
+      "width": 390,
+      "height": 2903,
+      "caption": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Dashboard · dados de demonstração · mobile",
+        "en": "Dashboard · demo data · mobile",
+        "de": "Dashboard · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:42.402Z"
+    },
+    {
+      "src": "/projects/typedash/login-mobile.png",
+      "width": 390,
+      "height": 1576,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:46.236Z"
+    },
+    {
+      "src": "/projects/typedash/practice-mobile.png",
+      "width": 390,
+      "height": 2353,
+      "caption": {
+        "pt": "Prática · dados de demonstração · mobile",
+        "en": "Practice · demo data · mobile",
+        "de": "Übung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Prática · dados de demonstração · mobile",
+        "en": "Practice · demo data · mobile",
+        "de": "Übung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:50.538Z"
+    },
+    {
+      "src": "/projects/typedash/ranking-mobile.png",
+      "width": 390,
+      "height": 2147,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · mobile",
+        "en": "Ranking · demo data · mobile",
+        "de": "Rangliste · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Ranking · dados de demonstração · mobile",
+        "en": "Ranking · demo data · mobile",
+        "de": "Rangliste · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:15:54.767Z"
+    }
+  ],
+  "ryzen-hosting": [
+    {
+      "src": "/projects/ryzen-hosting/home-desktop.png",
+      "width": 1440,
+      "height": 4612,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:13.057Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/minecraft-desktop.png",
+      "width": 1440,
+      "height": 4900,
+      "caption": {
+        "pt": "/minecraft · desktop",
+        "en": "/minecraft · desktop",
+        "de": "/minecraft · Desktop"
+      },
+      "alt": {
+        "pt": "/minecraft · desktop",
+        "en": "/minecraft · desktop",
+        "de": "/minecraft · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:18.399Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/minecraftgaming-desktop.png",
+      "width": 1440,
+      "height": 4519,
+      "caption": {
+        "pt": "/minecraftgaming · desktop",
+        "en": "/minecraftgaming · desktop",
+        "de": "/minecraftgaming · Desktop"
+      },
+      "alt": {
+        "pt": "/minecraftgaming · desktop",
+        "en": "/minecraftgaming · desktop",
+        "de": "/minecraftgaming · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:23.480Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/vps-desktop.png",
+      "width": 1440,
+      "height": 3017,
+      "caption": {
+        "pt": "/vps · desktop",
+        "en": "/vps · desktop",
+        "de": "/vps · Desktop"
+      },
+      "alt": {
+        "pt": "/vps · desktop",
+        "en": "/vps · desktop",
+        "de": "/vps · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:28.032Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/vpsgaming-desktop.png",
+      "width": 1440,
+      "height": 2291,
+      "caption": {
+        "pt": "/vpsgaming · desktop",
+        "en": "/vpsgaming · desktop",
+        "de": "/vpsgaming · Desktop"
+      },
+      "alt": {
+        "pt": "/vpsgaming · desktop",
+        "en": "/vpsgaming · desktop",
+        "de": "/vpsgaming · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:32.596Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/dedicated-desktop.png",
+      "width": 1440,
+      "height": 1144,
+      "caption": {
+        "pt": "/dedicated · desktop",
+        "en": "/dedicated · desktop",
+        "de": "/dedicated · Desktop"
+      },
+      "alt": {
+        "pt": "/dedicated · desktop",
+        "en": "/dedicated · desktop",
+        "de": "/dedicated · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:36.567Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/web-desktop.png",
+      "width": 1440,
+      "height": 2100,
+      "caption": {
+        "pt": "/web · desktop",
+        "en": "/web · desktop",
+        "de": "/web · Desktop"
+      },
+      "alt": {
+        "pt": "/web · desktop",
+        "en": "/web · desktop",
+        "de": "/web · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:40.823Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/apps-desktop.png",
+      "width": 1440,
+      "height": 2077,
+      "caption": {
+        "pt": "/apps · desktop",
+        "en": "/apps · desktop",
+        "de": "/apps · Desktop"
+      },
+      "alt": {
+        "pt": "/apps · desktop",
+        "en": "/apps · desktop",
+        "de": "/apps · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:45.171Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/serviceterms-desktop.png",
+      "width": 1440,
+      "height": 3554,
+      "caption": {
+        "pt": "/serviceterms · desktop",
+        "en": "/serviceterms · desktop",
+        "de": "/serviceterms · Desktop"
+      },
+      "alt": {
+        "pt": "/serviceterms · desktop",
+        "en": "/serviceterms · desktop",
+        "de": "/serviceterms · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:49.097Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/privacypolicy-desktop.png",
+      "width": 1440,
+      "height": 1097,
+      "caption": {
+        "pt": "/privacypolicy · desktop",
+        "en": "/privacypolicy · desktop",
+        "de": "/privacypolicy · Desktop"
+      },
+      "alt": {
+        "pt": "/privacypolicy · desktop",
+        "en": "/privacypolicy · desktop",
+        "de": "/privacypolicy · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:53.164Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/home-mobile.png",
+      "width": 390,
+      "height": 8182,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:59.918Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/minecraft-mobile.png",
+      "width": 390,
+      "height": 9325,
+      "caption": {
+        "pt": "/minecraft · mobile",
+        "en": "/minecraft · mobile",
+        "de": "/minecraft · Mobil"
+      },
+      "alt": {
+        "pt": "/minecraft · mobile",
+        "en": "/minecraft · mobile",
+        "de": "/minecraft · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:05.479Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/minecraftgaming-mobile.png",
+      "width": 390,
+      "height": 8988,
+      "caption": {
+        "pt": "/minecraftgaming · mobile",
+        "en": "/minecraftgaming · mobile",
+        "de": "/minecraftgaming · Mobil"
+      },
+      "alt": {
+        "pt": "/minecraftgaming · mobile",
+        "en": "/minecraftgaming · mobile",
+        "de": "/minecraftgaming · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:11.059Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/vps-mobile.png",
+      "width": 390,
+      "height": 4026,
+      "caption": {
+        "pt": "/vps · mobile",
+        "en": "/vps · mobile",
+        "de": "/vps · Mobil"
+      },
+      "alt": {
+        "pt": "/vps · mobile",
+        "en": "/vps · mobile",
+        "de": "/vps · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:15.831Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/vpsgaming-mobile.png",
+      "width": 390,
+      "height": 3317,
+      "caption": {
+        "pt": "/vpsgaming · mobile",
+        "en": "/vpsgaming · mobile",
+        "de": "/vpsgaming · Mobil"
+      },
+      "alt": {
+        "pt": "/vpsgaming · mobile",
+        "en": "/vpsgaming · mobile",
+        "de": "/vpsgaming · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:20.293Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/dedicated-mobile.png",
+      "width": 390,
+      "height": 1945,
+      "caption": {
+        "pt": "/dedicated · mobile",
+        "en": "/dedicated · mobile",
+        "de": "/dedicated · Mobil"
+      },
+      "alt": {
+        "pt": "/dedicated · mobile",
+        "en": "/dedicated · mobile",
+        "de": "/dedicated · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:23.850Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/web-mobile.png",
+      "width": 390,
+      "height": 4607,
+      "caption": {
+        "pt": "/web · mobile",
+        "en": "/web · mobile",
+        "de": "/web · Mobil"
+      },
+      "alt": {
+        "pt": "/web · mobile",
+        "en": "/web · mobile",
+        "de": "/web · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:29.055Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/apps-mobile.png",
+      "width": 390,
+      "height": 3851,
+      "caption": {
+        "pt": "/apps · mobile",
+        "en": "/apps · mobile",
+        "de": "/apps · Mobil"
+      },
+      "alt": {
+        "pt": "/apps · mobile",
+        "en": "/apps · mobile",
+        "de": "/apps · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:33.583Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/serviceterms-mobile.png",
+      "width": 390,
+      "height": 4612,
+      "caption": {
+        "pt": "/serviceterms · mobile",
+        "en": "/serviceterms · mobile",
+        "de": "/serviceterms · Mobil"
+      },
+      "alt": {
+        "pt": "/serviceterms · mobile",
+        "en": "/serviceterms · mobile",
+        "de": "/serviceterms · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:38.051Z"
+    },
+    {
+      "src": "/projects/ryzen-hosting/privacypolicy-mobile.png",
+      "width": 390,
+      "height": 2210,
+      "caption": {
+        "pt": "/privacypolicy · mobile",
+        "en": "/privacypolicy · mobile",
+        "de": "/privacypolicy · Mobil"
+      },
+      "alt": {
+        "pt": "/privacypolicy · mobile",
+        "en": "/privacypolicy · mobile",
+        "de": "/privacypolicy · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:41.951Z"
+    }
+  ],
+  "russian-alphabet": [
+    {
+      "src": "/projects/russian-alphabet/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:36.675Z"
+    },
+    {
+      "src": "/projects/russian-alphabet/alphabet-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Referência do alfabeto · desktop",
+        "en": "Alphabet reference · desktop",
+        "de": "Alphabetübersicht · Desktop"
+      },
+      "alt": {
+        "pt": "Referência do alfabeto · desktop",
+        "en": "Alphabet reference · desktop",
+        "de": "Alphabetübersicht · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:38.203Z"
+    },
+    {
+      "src": "/projects/russian-alphabet/light-theme-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Tema alternativo · desktop",
+        "en": "Alternate theme · desktop",
+        "de": "Alternatives Theme · Desktop"
+      },
+      "alt": {
+        "pt": "Tema alternativo · desktop",
+        "en": "Alternate theme · desktop",
+        "de": "Alternatives Theme · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:39.776Z"
+    },
+    {
+      "src": "/projects/russian-alphabet/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:41.473Z"
+    },
+    {
+      "src": "/projects/russian-alphabet/alphabet-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Referência do alfabeto · mobile",
+        "en": "Alphabet reference · mobile",
+        "de": "Alphabetübersicht · Mobil"
+      },
+      "alt": {
+        "pt": "Referência do alfabeto · mobile",
+        "en": "Alphabet reference · mobile",
+        "de": "Alphabetübersicht · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:43.137Z"
+    },
+    {
+      "src": "/projects/russian-alphabet/light-theme-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Tema alternativo · mobile",
+        "en": "Alternate theme · mobile",
+        "de": "Alternatives Theme · Mobil"
+      },
+      "alt": {
+        "pt": "Tema alternativo · mobile",
+        "en": "Alternate theme · mobile",
+        "de": "Alternatives Theme · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:44.631Z"
+    }
+  ],
+  "deadlatch": [
+    {
+      "src": "/projects/deadlatch/home-desktop.png",
+      "width": 1440,
+      "height": 3358,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:57.094Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dashboard · desktop",
+        "en": "Dashboard · desktop",
+        "de": "Dashboard · Desktop"
+      },
+      "alt": {
+        "pt": "Dashboard · desktop",
+        "en": "Dashboard · desktop",
+        "de": "Dashboard · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:11:59.869Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-api-keys-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/dashboard/api-keys · desktop",
+        "en": "/dashboard/api-keys · desktop",
+        "de": "/dashboard/api-keys · Desktop"
+      },
+      "alt": {
+        "pt": "/dashboard/api-keys · desktop",
+        "en": "/dashboard/api-keys · desktop",
+        "de": "/dashboard/api-keys · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:02.347Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-settings-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/dashboard/settings · desktop",
+        "en": "/dashboard/settings · desktop",
+        "de": "/dashboard/settings · Desktop"
+      },
+      "alt": {
+        "pt": "/dashboard/settings · desktop",
+        "en": "/dashboard/settings · desktop",
+        "de": "/dashboard/settings · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:04.765Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-switches-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/dashboard/switches · desktop",
+        "en": "/dashboard/switches · desktop",
+        "de": "/dashboard/switches · Desktop"
+      },
+      "alt": {
+        "pt": "/dashboard/switches · desktop",
+        "en": "/dashboard/switches · desktop",
+        "de": "/dashboard/switches · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:07.140Z"
+    },
+    {
+      "src": "/projects/deadlatch/docs-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Documentação · desktop",
+        "en": "Documentation · desktop",
+        "de": "Dokumentation · Desktop"
+      },
+      "alt": {
+        "pt": "Documentação · desktop",
+        "en": "Documentation · desktop",
+        "de": "Dokumentation · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:10.129Z"
+    },
+    {
+      "src": "/projects/deadlatch/home-mobile.png",
+      "width": 390,
+      "height": 4950,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:12.744Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-mobile.png",
+      "width": 390,
+      "height": 1142,
+      "caption": {
+        "pt": "Dashboard · mobile",
+        "en": "Dashboard · mobile",
+        "de": "Dashboard · Mobil"
+      },
+      "alt": {
+        "pt": "Dashboard · mobile",
+        "en": "Dashboard · mobile",
+        "de": "Dashboard · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:14.751Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-api-keys-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/dashboard/api-keys · mobile",
+        "en": "/dashboard/api-keys · mobile",
+        "de": "/dashboard/api-keys · Mobil"
+      },
+      "alt": {
+        "pt": "/dashboard/api-keys · mobile",
+        "en": "/dashboard/api-keys · mobile",
+        "de": "/dashboard/api-keys · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:16.724Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-settings-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/dashboard/settings · mobile",
+        "en": "/dashboard/settings · mobile",
+        "de": "/dashboard/settings · Mobil"
+      },
+      "alt": {
+        "pt": "/dashboard/settings · mobile",
+        "en": "/dashboard/settings · mobile",
+        "de": "/dashboard/settings · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:18.682Z"
+    },
+    {
+      "src": "/projects/deadlatch/dashboard-switches-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/dashboard/switches · mobile",
+        "en": "/dashboard/switches · mobile",
+        "de": "/dashboard/switches · Mobil"
+      },
+      "alt": {
+        "pt": "/dashboard/switches · mobile",
+        "en": "/dashboard/switches · mobile",
+        "de": "/dashboard/switches · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:20.649Z"
+    },
+    {
+      "src": "/projects/deadlatch/docs-mobile.png",
+      "width": 390,
+      "height": 1237,
+      "caption": {
+        "pt": "Documentação · mobile",
+        "en": "Documentation · mobile",
+        "de": "Dokumentation · Mobil"
+      },
+      "alt": {
+        "pt": "Documentação · mobile",
+        "en": "Documentation · mobile",
+        "de": "Dokumentation · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:22.883Z"
+    }
+  ],
+  "chess-mistery": [
+    {
+      "src": "/projects/chess-mistery/home-desktop.png",
+      "width": 1440,
+      "height": 1202,
+      "caption": {
+        "pt": "Página inicial · interface de demonstração · desktop",
+        "en": "Home · demo interface · desktop",
+        "de": "Startseite · Demo-Oberfläche · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · interface de demonstração · desktop",
+        "en": "Home · demo interface · desktop",
+        "de": "Startseite · Demo-Oberfläche · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:34.829Z"
+    },
+    {
+      "src": "/projects/chess-mistery/neural-desktop.png",
+      "width": 1440,
+      "height": 1580,
+      "caption": {
+        "pt": "Visualização neural · interface de demonstração · desktop",
+        "en": "Neural visualization · demo interface · desktop",
+        "de": "Neuronale Visualisierung · Demo-Oberfläche · Desktop"
+      },
+      "alt": {
+        "pt": "Visualização neural · interface de demonstração · desktop",
+        "en": "Neural visualization · demo interface · desktop",
+        "de": "Neuronale Visualisierung · Demo-Oberfläche · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:38.476Z"
+    },
+    {
+      "src": "/projects/chess-mistery/play-desktop.png",
+      "width": 1440,
+      "height": 1104,
+      "caption": {
+        "pt": "Partida · interface de demonstração · desktop",
+        "en": "Game · demo interface · desktop",
+        "de": "Partie · Demo-Oberfläche · Desktop"
+      },
+      "alt": {
+        "pt": "Partida · interface de demonstração · desktop",
+        "en": "Game · demo interface · desktop",
+        "de": "Partie · Demo-Oberfläche · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:41.622Z"
+    },
+    {
+      "src": "/projects/chess-mistery/watch-desktop.png",
+      "width": 1440,
+      "height": 1104,
+      "caption": {
+        "pt": "Espectador · interface de demonstração · desktop",
+        "en": "Spectator · demo interface · desktop",
+        "de": "Zuschauer · Demo-Oberfläche · Desktop"
+      },
+      "alt": {
+        "pt": "Espectador · interface de demonstração · desktop",
+        "en": "Spectator · demo interface · desktop",
+        "de": "Zuschauer · Demo-Oberfläche · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:44.893Z"
+    },
+    {
+      "src": "/projects/chess-mistery/home-mobile.png",
+      "width": 390,
+      "height": 2190,
+      "caption": {
+        "pt": "Página inicial · interface de demonstração · mobile",
+        "en": "Home · demo interface · mobile",
+        "de": "Startseite · Demo-Oberfläche · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · interface de demonstração · mobile",
+        "en": "Home · demo interface · mobile",
+        "de": "Startseite · Demo-Oberfläche · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:47.385Z"
+    },
+    {
+      "src": "/projects/chess-mistery/neural-mobile.png",
+      "width": 390,
+      "height": 2645,
+      "caption": {
+        "pt": "Visualização neural · interface de demonstração · mobile",
+        "en": "Neural visualization · demo interface · mobile",
+        "de": "Neuronale Visualisierung · Demo-Oberfläche · Mobil"
+      },
+      "alt": {
+        "pt": "Visualização neural · interface de demonstração · mobile",
+        "en": "Neural visualization · demo interface · mobile",
+        "de": "Neuronale Visualisierung · Demo-Oberfläche · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:50.066Z"
+    },
+    {
+      "src": "/projects/chess-mistery/play-mobile.png",
+      "width": 426,
+      "height": 1291,
+      "caption": {
+        "pt": "Partida · interface de demonstração · mobile",
+        "en": "Game · demo interface · mobile",
+        "de": "Partie · Demo-Oberfläche · Mobil"
+      },
+      "alt": {
+        "pt": "Partida · interface de demonstração · mobile",
+        "en": "Game · demo interface · mobile",
+        "de": "Partie · Demo-Oberfläche · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:52.220Z"
+    },
+    {
+      "src": "/projects/chess-mistery/watch-mobile.png",
+      "width": 426,
+      "height": 1464,
+      "caption": {
+        "pt": "Espectador · interface de demonstração · mobile",
+        "en": "Spectator · demo interface · mobile",
+        "de": "Zuschauer · Demo-Oberfläche · Mobil"
+      },
+      "alt": {
+        "pt": "Espectador · interface de demonstração · mobile",
+        "en": "Spectator · demo interface · mobile",
+        "de": "Zuschauer · Demo-Oberfläche · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:12:54.544Z"
+    }
+  ],
+  "my-game-papers": [
+    {
+      "src": "/projects/my-game-papers/home-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Home · janela nativa",
+        "en": "Home · native window",
+        "de": "Home · natives Fenster"
+      },
+      "alt": {
+        "pt": "Home · janela nativa",
+        "en": "Home · native window",
+        "de": "Home · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:05:49.753Z"
+    },
+    {
+      "src": "/projects/my-game-papers/cartelas-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Cartelas · janela nativa",
+        "en": "Cartelas · native window",
+        "de": "Cartelas · natives Fenster"
+      },
+      "alt": {
+        "pt": "Cartelas · janela nativa",
+        "en": "Cartelas · native window",
+        "de": "Cartelas · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:05:51.095Z"
+    },
+    {
+      "src": "/projects/my-game-papers/generator-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Generator · janela nativa",
+        "en": "Generator · native window",
+        "de": "Generator · natives Fenster"
+      },
+      "alt": {
+        "pt": "Generator · janela nativa",
+        "en": "Generator · native window",
+        "de": "Generator · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:05:52.354Z"
+    },
+    {
+      "src": "/projects/my-game-papers/game-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Jogo de bingo com cartela de demonstração · janela nativa",
+        "en": "Bingo game with a demo card · native window",
+        "de": "Bingo-Spiel mit Demokarte · natives Fenster"
+      },
+      "alt": {
+        "pt": "Jogo de bingo com cartela de demonstração · janela nativa",
+        "en": "Bingo game with a demo card · native window",
+        "de": "Bingo-Spiel mit Demokarte · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:05:53.767Z"
+    },
+    {
+      "src": "/projects/my-game-papers/history-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "History · janela nativa",
+        "en": "History · native window",
+        "de": "History · natives Fenster"
+      },
+      "alt": {
+        "pt": "History · janela nativa",
+        "en": "History · native window",
+        "de": "History · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:05:56.673Z"
+    },
+    {
+      "src": "/projects/my-game-papers/settings-native.png",
+      "width": 1918,
+      "height": 993,
+      "caption": {
+        "pt": "Settings · janela nativa",
+        "en": "Settings · native window",
+        "de": "Settings · natives Fenster"
+      },
+      "alt": {
+        "pt": "Settings · janela nativa",
+        "en": "Settings · native window",
+        "de": "Settings · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:05:57.992Z"
+    }
+  ],
+  "agentics": [
+    {
+      "src": "/projects/agentics/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:12.638Z"
+    },
+    {
+      "src": "/projects/agentics/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:16.759Z"
+    }
+  ],
+  "office-tools": [
+    {
+      "src": "/projects/office-tools/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:11.207Z"
+    },
+    {
+      "src": "/projects/office-tools/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:15.621Z"
+    }
+  ],
+  "electron-app": [
+    {
+      "src": "/projects/electron-app/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:20:09.794Z"
+    },
+    {
+      "src": "/projects/electron-app/home-mobile.png",
+      "width": 390,
+      "height": 927,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:20:12.835Z"
+    }
+  ],
+  "lomaw": [
+    {
+      "src": "/projects/lomaw/cli-help-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "alt": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "viewport": "terminal",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:40.977Z"
+    }
+  ],
+  "my-codec": [
+    {
+      "src": "/projects/my-codec/cli-help-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "alt": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "viewport": "terminal",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:42.942Z"
+    }
+  ],
+  "termop": [
+    {
+      "src": "/projects/termop/cli-help-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "alt": {
+        "pt": "Ajuda da CLI · saída real · terminal",
+        "en": "CLI help · actual output · terminal",
+        "de": "CLI-Hilfe · tatsächliche Ausgabe · Terminal"
+      },
+      "viewport": "terminal",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:43.687Z"
+    }
+  ],
+  "portifolio-frontend": [
+    {
+      "src": "/projects/portifolio-frontend/home-desktop.png",
+      "width": 1440,
+      "height": 2798,
+      "caption": {
+        "pt": "Portfólio histórico · distribuição estática · desktop",
+        "en": "Historical portfolio · static distribution · desktop",
+        "de": "Historisches Portfolio · statische Distribution · Desktop"
+      },
+      "alt": {
+        "pt": "Portfólio histórico · distribuição estática · desktop",
+        "en": "Historical portfolio · static distribution · desktop",
+        "de": "Historisches Portfolio · statische Distribution · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:08.289Z"
+    },
+    {
+      "src": "/projects/portifolio-frontend/home-mobile.png",
+      "width": 617,
+      "height": 6727,
+      "caption": {
+        "pt": "Portfólio histórico · distribuição estática · mobile",
+        "en": "Historical portfolio · static distribution · mobile",
+        "de": "Historisches Portfolio · statische Distribution · Mobil"
+      },
+      "alt": {
+        "pt": "Portfólio histórico · distribuição estática · mobile",
+        "en": "Historical portfolio · static distribution · mobile",
+        "de": "Historisches Portfolio · statische Distribution · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:12.701Z"
+    }
+  ],
+  "cvm-compiler": [
+    {
+      "src": "/projects/cvm-compiler/compilation-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Compilação real do desktop CVM · terminal",
+        "en": "Actual CVM desktop compilation · terminal",
+        "de": "Tatsächliche Kompilierung des CVM-Desktops · Terminal"
+      },
+      "alt": {
+        "pt": "Compilação real do desktop CVM · terminal",
+        "en": "Actual CVM desktop compilation · terminal",
+        "de": "Tatsächliche Kompilierung des CVM-Desktops · Terminal"
+      },
+      "viewport": "terminal",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:30:57.381Z"
+    }
+  ],
+  "kotlin-vortey": [
+    {
+      "src": "/projects/kotlin-vortey/event-api-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "API de eventos · resposta real com dados fictícios · terminal",
+        "en": "Event API · actual response with fictional data · terminal",
+        "de": "Event-API · echte Antwort mit fiktiven Daten · Terminal"
+      },
+      "alt": {
+        "pt": "API de eventos · resposta real com dados fictícios · terminal",
+        "en": "Event API · actual response with fictional data · terminal",
+        "de": "Event-API · echte Antwort mit fiktiven Daten · Terminal"
+      },
+      "viewport": "terminal",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:31:11.586Z"
+    }
+  ],
+  "my-vm-os": [
+    {
+      "src": "/projects/my-vm-os/desktop-native.png",
+      "width": 1280,
+      "height": 800,
+      "caption": {
+        "pt": "Desktop CVM · execução real, interação não validada · janela nativa",
+        "en": "CVM desktop · actual execution, interaction unverified · native window",
+        "de": "CVM-Desktop · echte Ausführung, Interaktion ungeprüft · natives Fenster"
+      },
+      "alt": {
+        "pt": "Desktop CVM · execução real, interação não validada · janela nativa",
+        "en": "CVM desktop · actual execution, interaction unverified · native window",
+        "de": "CVM-Desktop · echte Ausführung, Interaktion ungeprüft · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:32:26.605009+00:00"
+    }
+  ],
+  "cvm-runtime": [
+    {
+      "src": "/projects/cvm-runtime/desktop-native.png",
+      "width": 1280,
+      "height": 800,
+      "caption": {
+        "pt": "Desktop CVM · execução real, interação não validada · janela nativa",
+        "en": "CVM desktop · actual execution, interaction unverified · native window",
+        "de": "CVM-Desktop · echte Ausführung, Interaktion ungeprüft · natives Fenster"
+      },
+      "alt": {
+        "pt": "Desktop CVM · execução real, interação não validada · janela nativa",
+        "en": "CVM desktop · actual execution, interaction unverified · native window",
+        "de": "CVM-Desktop · echte Ausführung, Interaktion ungeprüft · natives Fenster"
+      },
+      "viewport": "native",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:32:26.605009+00:00"
+    }
+  ],
+  "swiss-learn": [
+    {
+      "src": "/projects/swiss-learn/lang-desktop.png",
+      "width": 1440,
+      "height": 4296,
+      "caption": {
+        "pt": "Página inicial sem sessão · dados de demonstração · desktop",
+        "en": "Home without a session · demo data · desktop",
+        "de": "Startseite ohne Anmeldung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial sem sessão · dados de demonstração · desktop",
+        "en": "Home without a session · demo data · desktop",
+        "de": "Startseite ohne Anmeldung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:22.975Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-conversation-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Conversação · dados de demonstração · desktop",
+        "en": "Conversation · demo data · desktop",
+        "de": "Gespräch · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Conversação · dados de demonstração · desktop",
+        "en": "Conversation · demo data · desktop",
+        "de": "Gespräch · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:30:04.296Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-grammar-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Gramática · dados de demonstração · desktop",
+        "en": "Grammar · demo data · desktop",
+        "de": "Grammatik · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Gramática · dados de demonstração · desktop",
+        "en": "Grammar · demo data · desktop",
+        "de": "Grammatik · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:30:29.612Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-more-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/more · dados de demonstração · desktop",
+        "en": "/more · demo data · desktop",
+        "de": "/more · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/more · dados de demonstração · desktop",
+        "en": "/more · demo data · desktop",
+        "de": "/more · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:36.901Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-practice-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Prática · dados de demonstração · desktop",
+        "en": "Practice · demo data · desktop",
+        "de": "Übung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Prática · dados de demonstração · desktop",
+        "en": "Practice · demo data · desktop",
+        "de": "Übung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:44.185Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-progress-desktop.png",
+      "width": 1440,
+      "height": 1523,
+      "caption": {
+        "pt": "Progresso · dados de demonstração · desktop",
+        "en": "Progress · demo data · desktop",
+        "de": "Fortschritt · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Progresso · dados de demonstração · desktop",
+        "en": "Progress · demo data · desktop",
+        "de": "Fortschritt · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:16:50.496Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-questions-desktop.png",
+      "width": 1440,
+      "height": 1211,
+      "caption": {
+        "pt": "Trilha de aulas · dados de demonstração · desktop",
+        "en": "Lesson path · demo data · desktop",
+        "de": "Lernpfad · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Trilha de aulas · dados de demonstração · desktop",
+        "en": "Lesson path · demo data · desktop",
+        "de": "Lernpfad · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:04.394Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-ranking-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · desktop",
+        "en": "Ranking · demo data · desktop",
+        "de": "Rangliste · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Ranking · dados de demonstração · desktop",
+        "en": "Ranking · demo data · desktop",
+        "de": "Rangliste · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:14.981Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-settings-desktop.png",
+      "width": 1440,
+      "height": 1681,
+      "caption": {
+        "pt": "Configurações · dados de demonstração · desktop",
+        "en": "Settings · demo data · desktop",
+        "de": "Einstellungen · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Configurações · dados de demonstração · desktop",
+        "en": "Settings · demo data · desktop",
+        "de": "Einstellungen · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:30.315Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-study-id-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/study/[id] · dados de demonstração · desktop",
+        "en": "/study/[id] · demo data · desktop",
+        "de": "/study/[id] · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/study/[id] · dados de demonstração · desktop",
+        "en": "/study/[id] · demo data · desktop",
+        "de": "/study/[id] · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:17:43.024Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-writing-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Escrita · dados de demonstração · desktop",
+        "en": "Writing · demo data · desktop",
+        "de": "Schreiben · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Escrita · dados de demonstração · desktop",
+        "en": "Writing · demo data · desktop",
+        "de": "Schreiben · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:30:47.816Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-signin-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/signin · dados de demonstração · desktop",
+        "en": "/signin · demo data · desktop",
+        "de": "/signin · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/signin · dados de demonstração · desktop",
+        "en": "/signin · demo data · desktop",
+        "de": "/signin · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:32.922Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-signin-check-email-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "/signin/check-email · dados de demonstração · desktop",
+        "en": "/signin/check-email · demo data · desktop",
+        "de": "/signin/check-email · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/signin/check-email · dados de demonstração · desktop",
+        "en": "/signin/check-email · demo data · desktop",
+        "de": "/signin/check-email · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:18:10.340Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-privacy-desktop.png",
+      "width": 1440,
+      "height": 5342,
+      "caption": {
+        "pt": "/privacy · dados de demonstração · desktop",
+        "en": "/privacy · demo data · desktop",
+        "de": "/privacy · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/privacy · dados de demonstração · desktop",
+        "en": "/privacy · demo data · desktop",
+        "de": "/privacy · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:18:18.279Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-terms-desktop.png",
+      "width": 1440,
+      "height": 3958,
+      "caption": {
+        "pt": "/terms · dados de demonstração · desktop",
+        "en": "/terms · demo data · desktop",
+        "de": "/terms · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/terms · dados de demonstração · desktop",
+        "en": "/terms · demo data · desktop",
+        "de": "/terms · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:18:26.213Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-profile-userid-desktop.png",
+      "width": 1440,
+      "height": 1029,
+      "caption": {
+        "pt": "/profile/[userId] · dados de demonstração · desktop",
+        "en": "/profile/[userId] · demo data · desktop",
+        "de": "/profile/[userId] · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "/profile/[userId] · dados de demonstração · desktop",
+        "en": "/profile/[userId] · demo data · desktop",
+        "de": "/profile/[userId] · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:18:34.709Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-mobile.png",
+      "width": 390,
+      "height": 8130,
+      "caption": {
+        "pt": "Página inicial sem sessão · dados de demonstração · mobile",
+        "en": "Home without a session · demo data · mobile",
+        "de": "Startseite ohne Anmeldung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial sem sessão · dados de demonstração · mobile",
+        "en": "Home without a session · demo data · mobile",
+        "de": "Startseite ohne Anmeldung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:38.971Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-conversation-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Conversação · dados de demonstração · mobile",
+        "en": "Conversation · demo data · mobile",
+        "de": "Gespräch · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Conversação · dados de demonstração · mobile",
+        "en": "Conversation · demo data · mobile",
+        "de": "Gespräch · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:50.204Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-grammar-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Gramática · dados de demonstração · mobile",
+        "en": "Grammar · demo data · mobile",
+        "de": "Grammatik · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Gramática · dados de demonstração · mobile",
+        "en": "Grammar · demo data · mobile",
+        "de": "Grammatik · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:59.802Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-more-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/more · dados de demonstração · mobile",
+        "en": "/more · demo data · mobile",
+        "de": "/more · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/more · dados de demonstração · mobile",
+        "en": "/more · demo data · mobile",
+        "de": "/more · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:19:08.721Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-practice-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Prática · dados de demonstração · mobile",
+        "en": "Practice · demo data · mobile",
+        "de": "Übung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Prática · dados de demonstração · mobile",
+        "en": "Practice · demo data · mobile",
+        "de": "Übung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:19:18.300Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-progress-mobile.png",
+      "width": 390,
+      "height": 1899,
+      "caption": {
+        "pt": "Progresso · dados de demonstração · mobile",
+        "en": "Progress · demo data · mobile",
+        "de": "Fortschritt · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Progresso · dados de demonstração · mobile",
+        "en": "Progress · demo data · mobile",
+        "de": "Fortschritt · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:07.719Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-questions-mobile.png",
+      "width": 390,
+      "height": 1638,
+      "caption": {
+        "pt": "Trilha de aulas · dados de demonstração · mobile",
+        "en": "Lesson path · demo data · mobile",
+        "de": "Lernpfad · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Trilha de aulas · dados de demonstração · mobile",
+        "en": "Lesson path · demo data · mobile",
+        "de": "Lernpfad · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:29.460Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-ranking-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Ranking · dados de demonstração · mobile",
+        "en": "Ranking · demo data · mobile",
+        "de": "Rangliste · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Ranking · dados de demonstração · mobile",
+        "en": "Ranking · demo data · mobile",
+        "de": "Rangliste · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:40.292Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-settings-mobile.png",
+      "width": 390,
+      "height": 1725,
+      "caption": {
+        "pt": "Configurações · dados de demonstração · mobile",
+        "en": "Settings · demo data · mobile",
+        "de": "Einstellungen · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Configurações · dados de demonstração · mobile",
+        "en": "Settings · demo data · mobile",
+        "de": "Einstellungen · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:57.095Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-study-id-mobile.png",
+      "width": 390,
+      "height": 923,
+      "caption": {
+        "pt": "/study/[id] · dados de demonstração · mobile",
+        "en": "/study/[id] · demo data · mobile",
+        "de": "/study/[id] · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/study/[id] · dados de demonstração · mobile",
+        "en": "/study/[id] · demo data · mobile",
+        "de": "/study/[id] · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:14.988Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-writing-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Escrita · dados de demonstração · mobile",
+        "en": "Writing · demo data · mobile",
+        "de": "Schreiben · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Escrita · dados de demonstração · mobile",
+        "en": "Writing · demo data · mobile",
+        "de": "Schreiben · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:56:10.128Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-signin-mobile.png",
+      "width": 390,
+      "height": 850,
+      "caption": {
+        "pt": "/signin · dados de demonstração · mobile",
+        "en": "/signin · demo data · mobile",
+        "de": "/signin · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/signin · dados de demonstração · mobile",
+        "en": "/signin · demo data · mobile",
+        "de": "/signin · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:56:16.734Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-signin-check-email-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "/signin/check-email · dados de demonstração · mobile",
+        "en": "/signin/check-email · demo data · mobile",
+        "de": "/signin/check-email · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/signin/check-email · dados de demonstração · mobile",
+        "en": "/signin/check-email · demo data · mobile",
+        "de": "/signin/check-email · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:42.818Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-privacy-mobile.png",
+      "width": 558,
+      "height": 9099,
+      "caption": {
+        "pt": "/privacy · dados de demonstração · mobile",
+        "en": "/privacy · demo data · mobile",
+        "de": "/privacy · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/privacy · dados de demonstração · mobile",
+        "en": "/privacy · demo data · mobile",
+        "de": "/privacy · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:51.763Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-terms-mobile.png",
+      "width": 390,
+      "height": 6571,
+      "caption": {
+        "pt": "/terms · dados de demonstração · mobile",
+        "en": "/terms · demo data · mobile",
+        "de": "/terms · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/terms · dados de demonstração · mobile",
+        "en": "/terms · demo data · mobile",
+        "de": "/terms · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:00.363Z"
+    },
+    {
+      "src": "/projects/swiss-learn/lang-profile-userid-mobile.png",
+      "width": 390,
+      "height": 1427,
+      "caption": {
+        "pt": "/profile/[userId] · dados de demonstração · mobile",
+        "en": "/profile/[userId] · demo data · mobile",
+        "de": "/profile/[userId] · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "/profile/[userId] · dados de demonstração · mobile",
+        "en": "/profile/[userId] · demo data · mobile",
+        "de": "/profile/[userId] · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:11.538Z"
+    }
+  ],
+  "my-bet": [
+    {
+      "src": "/projects/my-bet/home-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · desktop",
+        "en": "Home · demo data · desktop",
+        "de": "Startseite · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:19:11.575Z"
+    },
+    {
+      "src": "/projects/my-bet/user-edit-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Editar perfil · dados de demonstração · desktop",
+        "en": "Edit profile · demo data · desktop",
+        "de": "Profil bearbeiten · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Editar perfil · dados de demonstração · desktop",
+        "en": "Edit profile · demo data · desktop",
+        "de": "Profil bearbeiten · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:15.889Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Visão administrativa · dados de demonstração · desktop",
+        "en": "Admin overview · demo data · desktop",
+        "de": "Adminübersicht · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Visão administrativa · dados de demonstração · desktop",
+        "en": "Admin overview · demo data · desktop",
+        "de": "Adminübersicht · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:48.809Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-analytics-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Métricas dos jogos · dados de demonstração · desktop",
+        "en": "Game analytics · demo data · desktop",
+        "de": "Spielstatistiken · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Métricas dos jogos · dados de demonstração · desktop",
+        "en": "Game analytics · demo data · desktop",
+        "de": "Spielstatistiken · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:23:59.085Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-affiliates-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Afiliados · dados de demonstração · desktop",
+        "en": "Affiliates · demo data · desktop",
+        "de": "Partner · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Afiliados · dados de demonstração · desktop",
+        "en": "Affiliates · demo data · desktop",
+        "de": "Partner · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:19.748Z"
+    },
+    {
+      "src": "/projects/my-bet/games-twenty-one-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Twenty One · interface com dados fictícios · desktop",
+        "en": "Twenty One · interface with demo data · desktop",
+        "de": "Twenty One · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Twenty One · interface com dados fictícios · desktop",
+        "en": "Twenty One · interface with demo data · desktop",
+        "de": "Twenty One · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:24:46.708Z"
+    },
+    {
+      "src": "/projects/my-bet/games-tower-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Tower · interface com dados fictícios · desktop",
+        "en": "Tower · interface with demo data · desktop",
+        "de": "Tower · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Tower · interface com dados fictícios · desktop",
+        "en": "Tower · interface with demo data · desktop",
+        "de": "Tower · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:08.572Z"
+    },
+    {
+      "src": "/projects/my-bet/games-stock-panic-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Stock Panic · interface com dados fictícios · desktop",
+        "en": "Stock Panic · interface with demo data · desktop",
+        "de": "Stock Panic · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Stock Panic · interface com dados fictícios · desktop",
+        "en": "Stock Panic · interface with demo data · desktop",
+        "de": "Stock Panic · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:15.455Z"
+    },
+    {
+      "src": "/projects/my-bet/games-race-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Race · interface com dados fictícios · desktop",
+        "en": "Race · interface with demo data · desktop",
+        "de": "Race · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Race · interface com dados fictícios · desktop",
+        "en": "Race · interface with demo data · desktop",
+        "de": "Race · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:37.296Z"
+    },
+    {
+      "src": "/projects/my-bet/games-plinko-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Plinko · interface com dados fictícios · desktop",
+        "en": "Plinko · interface with demo data · desktop",
+        "de": "Plinko · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Plinko · interface com dados fictícios · desktop",
+        "en": "Plinko · interface with demo data · desktop",
+        "de": "Plinko · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:25:57.744Z"
+    },
+    {
+      "src": "/projects/my-bet/games-penalty-shoot-out-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Penalty Shoot Out · interface com dados fictícios · desktop",
+        "en": "Penalty Shoot Out · interface with demo data · desktop",
+        "de": "Penalty Shoot Out · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Penalty Shoot Out · interface com dados fictícios · desktop",
+        "en": "Penalty Shoot Out · interface with demo data · desktop",
+        "de": "Penalty Shoot Out · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:26:18.189Z"
+    },
+    {
+      "src": "/projects/my-bet/games-neon-rails-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Neon Rails · interface com dados fictícios · desktop",
+        "en": "Neon Rails · interface with demo data · desktop",
+        "de": "Neon Rails · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Neon Rails · interface com dados fictícios · desktop",
+        "en": "Neon Rails · interface with demo data · desktop",
+        "de": "Neon Rails · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:26:37.300Z"
+    },
+    {
+      "src": "/projects/my-bet/games-mines-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Mines · interface com dados fictícios · desktop",
+        "en": "Mines · interface with demo data · desktop",
+        "de": "Mines · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Mines · interface com dados fictícios · desktop",
+        "en": "Mines · interface with demo data · desktop",
+        "de": "Mines · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:26:45.803Z"
+    },
+    {
+      "src": "/projects/my-bet/games-fishing-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Fishing · interface com dados fictícios · desktop",
+        "en": "Fishing · interface with demo data · desktop",
+        "de": "Fishing · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Fishing · interface com dados fictícios · desktop",
+        "en": "Fishing · interface with demo data · desktop",
+        "de": "Fishing · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:27:07.468Z"
+    },
+    {
+      "src": "/projects/my-bet/games-dungeon-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dungeon · interface com dados fictícios · desktop",
+        "en": "Dungeon · interface with demo data · desktop",
+        "de": "Dungeon · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Dungeon · interface com dados fictícios · desktop",
+        "en": "Dungeon · interface with demo data · desktop",
+        "de": "Dungeon · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:27:27.881Z"
+    },
+    {
+      "src": "/projects/my-bet/games-double-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Double · interface com dados fictícios · desktop",
+        "en": "Double · interface with demo data · desktop",
+        "de": "Double · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Double · interface com dados fictícios · desktop",
+        "en": "Double · interface with demo data · desktop",
+        "de": "Double · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:27:49.351Z"
+    },
+    {
+      "src": "/projects/my-bet/games-dice-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dice · interface com dados fictícios · desktop",
+        "en": "Dice · interface with demo data · desktop",
+        "de": "Dice · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Dice · interface com dados fictícios · desktop",
+        "en": "Dice · interface with demo data · desktop",
+        "de": "Dice · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:28:09.193Z"
+    },
+    {
+      "src": "/projects/my-bet/games-crash-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Crash · interface com dados fictícios · desktop",
+        "en": "Crash · interface with demo data · desktop",
+        "de": "Crash · Oberfläche mit Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Crash · interface com dados fictícios · desktop",
+        "en": "Crash · interface with demo data · desktop",
+        "de": "Crash · Oberfläche mit Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:28:16.261Z"
+    },
+    {
+      "src": "/projects/my-bet/auth-login-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · desktop",
+        "en": "Login · demo data · desktop",
+        "de": "Anmeldung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:43:20.249Z"
+    },
+    {
+      "src": "/projects/my-bet/auth-register-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · desktop",
+        "en": "Registration · demo data · desktop",
+        "de": "Registrierung · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Cadastro · dados de demonstração · desktop",
+        "en": "Registration · demo data · desktop",
+        "de": "Registrierung · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:43:26.205Z"
+    },
+    {
+      "src": "/projects/my-bet/user-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Minha conta · dados de demonstração · desktop",
+        "en": "My account · demo data · desktop",
+        "de": "Mein Konto · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Minha conta · dados de demonstração · desktop",
+        "en": "My account · demo data · desktop",
+        "de": "Mein Konto · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:43:34.867Z"
+    },
+    {
+      "src": "/projects/my-bet/user-transactions-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Transações · dados de demonstração · desktop",
+        "en": "Transactions · demo data · desktop",
+        "de": "Transaktionen · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Transações · dados de demonstração · desktop",
+        "en": "Transactions · demo data · desktop",
+        "de": "Transaktionen · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:43:42.586Z"
+    },
+    {
+      "src": "/projects/my-bet/user-rewards-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Recompensas · dados de demonstração · desktop",
+        "en": "Rewards · demo data · desktop",
+        "de": "Belohnungen · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Recompensas · dados de demonstração · desktop",
+        "en": "Rewards · demo data · desktop",
+        "de": "Belohnungen · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:43:49.689Z"
+    },
+    {
+      "src": "/projects/my-bet/user-support-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Suporte · dados de demonstração · desktop",
+        "en": "Support · demo data · desktop",
+        "de": "Support · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Suporte · dados de demonstração · desktop",
+        "en": "Support · demo data · desktop",
+        "de": "Support · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:43:56.564Z"
+    },
+    {
+      "src": "/projects/my-bet/user-invite-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Convites e afiliados · dados de demonstração · desktop",
+        "en": "Invitations and affiliates · demo data · desktop",
+        "de": "Einladungen und Partner · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Convites e afiliados · dados de demonstração · desktop",
+        "en": "Invitations and affiliates · demo data · desktop",
+        "de": "Einladungen und Partner · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:44:03.848Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-users-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Usuários · dados de demonstração · desktop",
+        "en": "Users · demo data · desktop",
+        "de": "Benutzer · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Usuários · dados de demonstração · desktop",
+        "en": "Users · demo data · desktop",
+        "de": "Benutzer · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:44:16.378Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-transactions-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Transações administrativas · dados de demonstração · desktop",
+        "en": "Admin transactions · demo data · desktop",
+        "de": "Admintransaktionen · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Transações administrativas · dados de demonstração · desktop",
+        "en": "Admin transactions · demo data · desktop",
+        "de": "Admintransaktionen · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:44:22.437Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-support-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Tickets de suporte · dados de demonstração · desktop",
+        "en": "Support tickets · demo data · desktop",
+        "de": "Supporttickets · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Tickets de suporte · dados de demonstração · desktop",
+        "en": "Support tickets · demo data · desktop",
+        "de": "Supporttickets · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:44:27.420Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-rtp-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Retorno por jogo · dados de demonstração · desktop",
+        "en": "Return per game · demo data · desktop",
+        "de": "Rendite je Spiel · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Retorno por jogo · dados de demonstração · desktop",
+        "en": "Return per game · demo data · desktop",
+        "de": "Rendite je Spiel · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:55:20.776Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-business-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Dados comerciais · dados de demonstração · desktop",
+        "en": "Business details · demo data · desktop",
+        "de": "Geschäftsdaten · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Dados comerciais · dados de demonstração · desktop",
+        "en": "Business details · demo data · desktop",
+        "de": "Geschäftsdaten · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:57:38.347Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-brand-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Marca e logo · dados de demonstração · desktop",
+        "en": "Brand and logo · demo data · desktop",
+        "de": "Marke und Logo · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Marca e logo · dados de demonstração · desktop",
+        "en": "Brand and logo · demo data · desktop",
+        "de": "Marke und Logo · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:57:44.002Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-appearance-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Editor visual · dados de demonstração · desktop",
+        "en": "Visual editor · demo data · desktop",
+        "de": "Visueller Editor · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Editor visual · dados de demonstração · desktop",
+        "en": "Visual editor · demo data · desktop",
+        "de": "Visueller Editor · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:57:54.795Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-language-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Idiomas e textos · dados de demonstração · desktop",
+        "en": "Languages and text · demo data · desktop",
+        "de": "Sprachen und Texte · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Idiomas e textos · dados de demonstração · desktop",
+        "en": "Languages and text · demo data · desktop",
+        "de": "Sprachen und Texte · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:59:43.968Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-gateways-desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "caption": {
+        "pt": "Configuração de pagamentos fictícios · dados de demonstração · desktop",
+        "en": "Demo payment settings · demo data · desktop",
+        "de": "Demozahlungseinstellungen · Demodaten · Desktop"
+      },
+      "alt": {
+        "pt": "Configuração de pagamentos fictícios · dados de demonstração · desktop",
+        "en": "Demo payment settings · demo data · desktop",
+        "de": "Demozahlungseinstellungen · Demodaten · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:59:51.129Z"
+    },
+    {
+      "src": "/projects/my-bet/home-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · dados de demonstração · mobile",
+        "en": "Home · demo data · mobile",
+        "de": "Startseite · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:30:06.533Z"
+    },
+    {
+      "src": "/projects/my-bet/user-edit-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Editar perfil · dados de demonstração · mobile",
+        "en": "Edit profile · demo data · mobile",
+        "de": "Profil bearbeiten · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Editar perfil · dados de demonstração · mobile",
+        "en": "Edit profile · demo data · mobile",
+        "de": "Profil bearbeiten · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:44:49.652Z"
+    },
+    {
+      "src": "/projects/my-bet/user-transactions-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Transações · dados de demonstração · mobile",
+        "en": "Transactions · demo data · mobile",
+        "de": "Transaktionen · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Transações · dados de demonstração · mobile",
+        "en": "Transactions · demo data · mobile",
+        "de": "Transaktionen · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:44:56.751Z"
+    },
+    {
+      "src": "/projects/my-bet/user-rewards-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Recompensas · dados de demonstração · mobile",
+        "en": "Rewards · demo data · mobile",
+        "de": "Belohnungen · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Recompensas · dados de demonstração · mobile",
+        "en": "Rewards · demo data · mobile",
+        "de": "Belohnungen · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:45:04.569Z"
+    },
+    {
+      "src": "/projects/my-bet/user-support-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Suporte · dados de demonstração · mobile",
+        "en": "Support · demo data · mobile",
+        "de": "Support · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Suporte · dados de demonstração · mobile",
+        "en": "Support · demo data · mobile",
+        "de": "Support · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:45:09.946Z"
+    },
+    {
+      "src": "/projects/my-bet/user-invite-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Convites e afiliados · dados de demonstração · mobile",
+        "en": "Invitations and affiliates · demo data · mobile",
+        "de": "Einladungen und Partner · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Convites e afiliados · dados de demonstração · mobile",
+        "en": "Invitations and affiliates · demo data · mobile",
+        "de": "Einladungen und Partner · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:45:16.243Z"
+    },
+    {
+      "src": "/projects/my-bet/games-twenty-one-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Twenty One · interface com dados fictícios · mobile",
+        "en": "Twenty One · interface with demo data · mobile",
+        "de": "Twenty One · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Twenty One · interface com dados fictícios · mobile",
+        "en": "Twenty One · interface with demo data · mobile",
+        "de": "Twenty One · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:46:01.583Z"
+    },
+    {
+      "src": "/projects/my-bet/games-tower-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Tower · interface com dados fictícios · mobile",
+        "en": "Tower · interface with demo data · mobile",
+        "de": "Tower · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Tower · interface com dados fictícios · mobile",
+        "en": "Tower · interface with demo data · mobile",
+        "de": "Tower · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:46:15.419Z"
+    },
+    {
+      "src": "/projects/my-bet/games-stock-panic-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Stock Panic · interface com dados fictícios · mobile",
+        "en": "Stock Panic · interface with demo data · mobile",
+        "de": "Stock Panic · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Stock Panic · interface com dados fictícios · mobile",
+        "en": "Stock Panic · interface with demo data · mobile",
+        "de": "Stock Panic · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:46:33.001Z"
+    },
+    {
+      "src": "/projects/my-bet/games-race-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Race · interface com dados fictícios · mobile",
+        "en": "Race · interface with demo data · mobile",
+        "de": "Race · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Race · interface com dados fictícios · mobile",
+        "en": "Race · interface with demo data · mobile",
+        "de": "Race · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:46:45.543Z"
+    },
+    {
+      "src": "/projects/my-bet/games-plinko-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Plinko · interface com dados fictícios · mobile",
+        "en": "Plinko · interface with demo data · mobile",
+        "de": "Plinko · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Plinko · interface com dados fictícios · mobile",
+        "en": "Plinko · interface with demo data · mobile",
+        "de": "Plinko · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:46:53.027Z"
+    },
+    {
+      "src": "/projects/my-bet/games-penalty-shoot-out-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Penalty Shoot Out · interface com dados fictícios · mobile",
+        "en": "Penalty Shoot Out · interface with demo data · mobile",
+        "de": "Penalty Shoot Out · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Penalty Shoot Out · interface com dados fictícios · mobile",
+        "en": "Penalty Shoot Out · interface with demo data · mobile",
+        "de": "Penalty Shoot Out · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:47:04.312Z"
+    },
+    {
+      "src": "/projects/my-bet/games-neon-rails-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Neon Rails · interface com dados fictícios · mobile",
+        "en": "Neon Rails · interface with demo data · mobile",
+        "de": "Neon Rails · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Neon Rails · interface com dados fictícios · mobile",
+        "en": "Neon Rails · interface with demo data · mobile",
+        "de": "Neon Rails · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:47:14.928Z"
+    },
+    {
+      "src": "/projects/my-bet/games-mines-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Mines · interface com dados fictícios · mobile",
+        "en": "Mines · interface with demo data · mobile",
+        "de": "Mines · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Mines · interface com dados fictícios · mobile",
+        "en": "Mines · interface with demo data · mobile",
+        "de": "Mines · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:47:25.112Z"
+    },
+    {
+      "src": "/projects/my-bet/games-fishing-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Fishing · interface com dados fictícios · mobile",
+        "en": "Fishing · interface with demo data · mobile",
+        "de": "Fishing · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Fishing · interface com dados fictícios · mobile",
+        "en": "Fishing · interface with demo data · mobile",
+        "de": "Fishing · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:47:30.914Z"
+    },
+    {
+      "src": "/projects/my-bet/games-dungeon-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Dungeon · interface com dados fictícios · mobile",
+        "en": "Dungeon · interface with demo data · mobile",
+        "de": "Dungeon · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Dungeon · interface com dados fictícios · mobile",
+        "en": "Dungeon · interface with demo data · mobile",
+        "de": "Dungeon · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:47:40.513Z"
+    },
+    {
+      "src": "/projects/my-bet/games-double-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Double · interface com dados fictícios · mobile",
+        "en": "Double · interface with demo data · mobile",
+        "de": "Double · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Double · interface com dados fictícios · mobile",
+        "en": "Double · interface with demo data · mobile",
+        "de": "Double · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:47:48.112Z"
+    },
+    {
+      "src": "/projects/my-bet/games-dice-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Dice · interface com dados fictícios · mobile",
+        "en": "Dice · interface with demo data · mobile",
+        "de": "Dice · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Dice · interface com dados fictícios · mobile",
+        "en": "Dice · interface with demo data · mobile",
+        "de": "Dice · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:47:58.046Z"
+    },
+    {
+      "src": "/projects/my-bet/games-crash-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Crash · interface com dados fictícios · mobile",
+        "en": "Crash · interface with demo data · mobile",
+        "de": "Crash · Oberfläche mit Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Crash · interface com dados fictícios · mobile",
+        "en": "Crash · interface with demo data · mobile",
+        "de": "Crash · Oberfläche mit Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:48:06.041Z"
+    },
+    {
+      "src": "/projects/my-bet/auth-login-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Login · dados de demonstração · mobile",
+        "en": "Login · demo data · mobile",
+        "de": "Anmeldung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:58:07.408Z"
+    },
+    {
+      "src": "/projects/my-bet/auth-register-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Cadastro · dados de demonstração · mobile",
+        "en": "Registration · demo data · mobile",
+        "de": "Registrierung · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Cadastro · dados de demonstração · mobile",
+        "en": "Registration · demo data · mobile",
+        "de": "Registrierung · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:58:13.470Z"
+    },
+    {
+      "src": "/projects/my-bet/user-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Minha conta · dados de demonstração · mobile",
+        "en": "My account · demo data · mobile",
+        "de": "Mein Konto · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Minha conta · dados de demonstração · mobile",
+        "en": "My account · demo data · mobile",
+        "de": "Mein Konto · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:58:21.208Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Visão administrativa · dados de demonstração · mobile",
+        "en": "Admin overview · demo data · mobile",
+        "de": "Adminübersicht · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Visão administrativa · dados de demonstração · mobile",
+        "en": "Admin overview · demo data · mobile",
+        "de": "Adminübersicht · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:58:27.891Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-analytics-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Métricas dos jogos · dados de demonstração · mobile",
+        "en": "Game analytics · demo data · mobile",
+        "de": "Spielstatistiken · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Métricas dos jogos · dados de demonstração · mobile",
+        "en": "Game analytics · demo data · mobile",
+        "de": "Spielstatistiken · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:00.289Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-users-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Usuários · dados de demonstração · mobile",
+        "en": "Users · demo data · mobile",
+        "de": "Benutzer · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Usuários · dados de demonstração · mobile",
+        "en": "Users · demo data · mobile",
+        "de": "Benutzer · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:08.693Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-transactions-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Transações administrativas · dados de demonstração · mobile",
+        "en": "Admin transactions · demo data · mobile",
+        "de": "Admintransaktionen · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Transações administrativas · dados de demonstração · mobile",
+        "en": "Admin transactions · demo data · mobile",
+        "de": "Admintransaktionen · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:15.055Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-affiliates-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Afiliados · dados de demonstração · mobile",
+        "en": "Affiliates · demo data · mobile",
+        "de": "Partner · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Afiliados · dados de demonstração · mobile",
+        "en": "Affiliates · demo data · mobile",
+        "de": "Partner · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:21.530Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-support-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Tickets de suporte · dados de demonstração · mobile",
+        "en": "Support tickets · demo data · mobile",
+        "de": "Supporttickets · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Tickets de suporte · dados de demonstração · mobile",
+        "en": "Support tickets · demo data · mobile",
+        "de": "Supporttickets · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:28.751Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-rtp-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Retorno por jogo · dados de demonstração · mobile",
+        "en": "Return per game · demo data · mobile",
+        "de": "Rendite je Spiel · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Retorno por jogo · dados de demonstração · mobile",
+        "en": "Return per game · demo data · mobile",
+        "de": "Rendite je Spiel · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:36.794Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-language-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Idiomas e textos · dados de demonstração · mobile",
+        "en": "Languages and text · demo data · mobile",
+        "de": "Sprachen und Texte · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Idiomas e textos · dados de demonstração · mobile",
+        "en": "Languages and text · demo data · mobile",
+        "de": "Sprachen und Texte · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:46.360Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-gateways-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Configuração de pagamentos fictícios · dados de demonstração · mobile",
+        "en": "Demo payment settings · demo data · mobile",
+        "de": "Demozahlungseinstellungen · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Configuração de pagamentos fictícios · dados de demonstração · mobile",
+        "en": "Demo payment settings · demo data · mobile",
+        "de": "Demozahlungseinstellungen · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:07:54.171Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-business-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Dados comerciais · dados de demonstração · mobile",
+        "en": "Business details · demo data · mobile",
+        "de": "Geschäftsdaten · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Dados comerciais · dados de demonstração · mobile",
+        "en": "Business details · demo data · mobile",
+        "de": "Geschäftsdaten · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:08:01.726Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-brand-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Marca e logo · dados de demonstração · mobile",
+        "en": "Brand and logo · demo data · mobile",
+        "de": "Marke und Logo · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Marca e logo · dados de demonstração · mobile",
+        "en": "Brand and logo · demo data · mobile",
+        "de": "Marke und Logo · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:08:07.698Z"
+    },
+    {
+      "src": "/projects/my-bet/admin-settings-appearance-mobile.png",
+      "width": 390,
+      "height": 844,
+      "caption": {
+        "pt": "Editor visual · dados de demonstração · mobile",
+        "en": "Visual editor · demo data · mobile",
+        "de": "Visueller Editor · Demodaten · Mobil"
+      },
+      "alt": {
+        "pt": "Editor visual · dados de demonstração · mobile",
+        "en": "Visual editor · demo data · mobile",
+        "de": "Visueller Editor · Demodaten · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:08:21.485Z"
+    }
+  ],
+  "my-vm-legacy-compiler": [
+    {
+      "src": "/projects/my-vm-legacy-compiler/compile-terminal.png",
+      "width": 1200,
+      "height": 900,
+      "caption": {
+        "pt": "Transcrição da compilação Python para Assembly legado; compatibilidade com a VM atual não validada · terminal",
+        "en": "Transcript of Python compilation to legacy Assembly; compatibility with the current VM is unverified · terminal",
+        "de": "Transkript der Python-Kompilierung zu Legacy-Assembly; Kompatibilität mit der aktuellen VM ungeprüft · Terminal"
+      },
+      "alt": {
+        "pt": "Transcrição da compilação Python para Assembly legado; compatibilidade com a VM atual não validada · terminal",
+        "en": "Transcript of Python compilation to legacy Assembly; compatibility with the current VM is unverified · terminal",
+        "de": "Transkript der Python-Kompilierung zu Legacy-Assembly; Kompatibilität mit der aktuellen VM ungeprüft · Terminal"
+      },
+      "viewport": "terminal",
+      "origin": "local",
+      "capturedAt": "2026-10-05T19:58:11.018Z"
+    }
+  ],
+  "portifolio": [
+    {
+      "src": "/projects/portifolio/home-desktop.png",
+      "width": 1440,
+      "height": 13465,
+      "caption": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "alt": {
+        "pt": "Página inicial · desktop",
+        "en": "Home · desktop",
+        "de": "Startseite · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:11:25.927Z"
+    },
+    {
+      "src": "/projects/portifolio/projects-desktop.png",
+      "width": 1440,
+      "height": 9010,
+      "caption": {
+        "pt": "/projects · desktop",
+        "en": "/projects · desktop",
+        "de": "/projects · Desktop"
+      },
+      "alt": {
+        "pt": "/projects · desktop",
+        "en": "/projects · desktop",
+        "de": "/projects · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:11:31.729Z"
+    },
+    {
+      "src": "/projects/portifolio/projects-slug-desktop.png",
+      "width": 1440,
+      "height": 2048,
+      "caption": {
+        "pt": "/projects/[slug] · desktop",
+        "en": "/projects/[slug] · desktop",
+        "de": "/projects/[slug] · Desktop"
+      },
+      "alt": {
+        "pt": "/projects/[slug] · desktop",
+        "en": "/projects/[slug] · desktop",
+        "de": "/projects/[slug] · Desktop"
+      },
+      "viewport": "desktop",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:11:35.657Z"
+    },
+    {
+      "src": "/projects/portifolio/home-mobile.png",
+      "width": 390,
+      "height": 26513,
+      "caption": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "alt": {
+        "pt": "Página inicial · mobile",
+        "en": "Home · mobile",
+        "de": "Startseite · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:11:42.920Z"
+    },
+    {
+      "src": "/projects/portifolio/projects-mobile.png",
+      "width": 390,
+      "height": 22411,
+      "caption": {
+        "pt": "/projects · mobile",
+        "en": "/projects · mobile",
+        "de": "/projects · Mobil"
+      },
+      "alt": {
+        "pt": "/projects · mobile",
+        "en": "/projects · mobile",
+        "de": "/projects · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:11:49.826Z"
+    },
+    {
+      "src": "/projects/portifolio/projects-slug-mobile.png",
+      "width": 390,
+      "height": 2938,
+      "caption": {
+        "pt": "/projects/[slug] · mobile",
+        "en": "/projects/[slug] · mobile",
+        "de": "/projects/[slug] · Mobil"
+      },
+      "alt": {
+        "pt": "/projects/[slug] · mobile",
+        "en": "/projects/[slug] · mobile",
+        "de": "/projects/[slug] · Mobil"
+      },
+      "viewport": "mobile",
+      "origin": "local",
+      "capturedAt": "2026-10-05T20:11:53.476Z"
+    }
+  ]
+}
