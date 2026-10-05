@@ -870,6 +870,7 @@ export const projectMetadata: ProjectMetadata[] = [
     "glowColor": "rgba(255, 184, 108, 0.20)",
     "badges": [],
     "id": "my-vm-legacy-compiler",
+    "githubUrl": "https://github.com/emanuelVINI01/my-vm-legacy-compiler",
     "stage": "legacy",
     "tech": [
       "Python",
