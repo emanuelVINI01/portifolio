@@ -2,7 +2,7 @@
 
 import ProjectStage from '@/components/ProjectStage';
 
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import type { MouseEvent } from 'react';
 import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -100,7 +100,7 @@ interface ProjectPodProps {
   spotlight?: boolean;
 }
 
-export default function ProjectPod({ project, onClick, index = 0, spotlight = false }: ProjectPodProps) {
+const ProjectPod = memo(function ProjectPod({ project, onClick, index = 0, spotlight = false }: ProjectPodProps) {
   const [hovered, setHovered] = useState(false);
   const { t } = useLanguage();
   const isElevated = hovered || spotlight;
@@ -120,9 +120,9 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
   return (
     <motion.article
       initial={{ opacity: 0, y: spotlight ? 30 : 20, scale: spotlight ? 0.98 : 1 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: -10, scale: 0.98 }}
-      transition={{ duration: 0.34, delay: index * 0.04, ease: 'easeOut' }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.34, delay: Math.min(index, 3) * 0.04, ease: 'easeOut' }}
       whileHover={{ y: spotlight ? -10 : -7, scale: spotlight ? 1.015 : 1.01 }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
@@ -169,7 +169,7 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
             initial={{ x: '-120%', opacity: 0 }}
             animate={{ x: '120%', opacity: [0, 0.75, 0] }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.8, repeat: spotlight ? Infinity : 0, repeatDelay: 1.8 }}
+            transition={{ duration: 1.8 }}
             className="pointer-events-none absolute left-0 top-0 h-px w-2/3"
             style={{ background: project.color }}
           />
@@ -235,14 +235,9 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
           const color = conf?.color ?? '#bd93f9';
 
           return (
-            <motion.span
+            <span
               key={badge}
-              initial={{ opacity: 0, y: 6 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.02 }}
-              whileHover={{ y: -2 }}
-              className="inline-flex max-w-full items-center gap-1 rounded-md border px-2 py-1 text-[10px] font-semibold"
+              className="inline-flex max-w-full items-center gap-1 rounded-md border px-2 py-1 text-[10px] font-semibold transition-transform hover:-translate-y-0.5"
               style={{
                 color,
                 background: `${color}12`,
@@ -251,20 +246,19 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
             >
               <Icon className="h-3 w-3" />
               {badge}
-            </motion.span>
+            </span>
           );
         })}
       </div>
 
       <div className="mb-5 flex flex-wrap gap-1.5">
         {project.tech.slice(0, 5).map((tech) => (
-          <motion.span
+          <span
             key={tech}
-            whileHover={{ y: -2, borderColor: project.color }}
-            className="max-w-full rounded-md border border-dracula-card/70 bg-dracula-bg/40 px-2 py-1 text-[10px] text-dracula-comment"
+            className="max-w-full rounded-md border border-dracula-card/70 bg-dracula-bg/40 px-2 py-1 text-[10px] text-dracula-comment transition-transform hover:-translate-y-0.5"
           >
             {tech}
-          </motion.span>
+          </span>
         ))}
       </div>
 
@@ -317,4 +311,6 @@ export default function ProjectPod({ project, onClick, index = 0, spotlight = fa
       />
     </motion.article>
   );
-}
+});
+
+export default ProjectPod;

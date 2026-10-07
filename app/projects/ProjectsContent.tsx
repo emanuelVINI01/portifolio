@@ -1,9 +1,8 @@
 'use client';
 
 import { useCallback, useMemo, useState } from 'react';
-import dynamic from 'next/dynamic';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { LayoutGrid, MousePointerClick, SearchX, Sparkles } from 'lucide-react';
 
 import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandTerminal';
@@ -13,13 +12,12 @@ import FilterSwitch from '@/components/FilterSwitch';
 import Navbar from '@/components/Navbar';
 import ProjectModal from '@/components/ProjectModal';
 import ProjectPod from '@/components/ProjectPod';
+import ParallaxGrid from '@/components/ParallaxGrid';
 import SearchBar from '@/components/SearchBar';
 import { getCategories, getProjects, type Project } from '@/data/projects';
 import { useLanguage } from '@/context/LanguageContext';
 import { pick } from '@/i18n/dictionaries';
 import DepthIllustration from '@/components/ui/DepthIllustration';
-
-const ParallaxGrid = dynamic(() => import('@/components/ParallaxGrid'), { ssr: false });
 
 export default function ProjectsContent() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -29,15 +27,15 @@ export default function ProjectsContent() {
   const router = useRouter();
 
   const projects = getProjects(language);
-  const categories = getCategories(language);
+  const categories = useMemo(() => getCategories(language), [language]);
 
   const selectedProject = projects.find((project) => project.id === searchParams.get('project')) ?? null;
 
-  const handleSelectProject = (project: Project) => {
+  const handleSelectProject = useCallback((project: Project) => {
     const params = new URLSearchParams(searchParams.toString());
     params.set('project', project.id);
     router.replace(`/projects?${params.toString()}`, { scroll: false });
-  };
+  }, [router, searchParams]);
 
   const handleCloseProject = useCallback(() => {
     const params = new URLSearchParams(searchParams.toString());
@@ -47,9 +45,9 @@ export default function ProjectsContent() {
   }, [router, searchParams]);
 
   const filtered = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
     return projects.filter((project) => {
       const matchCategory = activeCategory === 'all' || project.category === activeCategory;
-      const normalizedQuery = query.trim().toLowerCase();
       const matchQuery =
         !normalizedQuery ||
         project.name.toLowerCase().includes(normalizedQuery) ||
@@ -274,47 +272,41 @@ export default function ProjectsContent() {
               )}
             </motion.div>
 
-            <AnimatePresence mode="popLayout">
-              {filtered.length > 0 ? (
-                <motion.div layout className="grid gap-x-4 gap-y-7 sm:grid-cols-2 lg:grid-cols-3 lg:pt-5">
-                  <AnimatePresence mode="popLayout">
-                    {filtered.map((project, index) => {
-                      const isCenterColumn = index % 3 === 1;
+            {filtered.length > 0 ? (
+              <div className="grid gap-x-4 gap-y-7 sm:grid-cols-2 lg:grid-cols-3 lg:pt-5">
+                {filtered.map((project, index) => {
+                  const isCenterColumn = index % 3 === 1;
 
-                      return (
-                        <motion.div
-                          key={project.id}
-                          layout
-                          className={isCenterColumn ? 'lg:-mt-5 lg:mb-5' : 'lg:mt-2'}
-                        >
-                          <ProjectPod
-                            project={project}
-                            onClick={handleSelectProject}
-                            index={index}
-                          />
-                        </motion.div>
-                      );
-                    })}
-                  </AnimatePresence>
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="empty"
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0 }}
-                  className="flex flex-col items-center justify-center rounded-2xl border border-dracula-card/70 bg-dracula-surface/50 px-6 py-20 text-center"
-                >
-                  <SearchX className="mb-4 h-9 w-9 text-dracula-comment" />
-                  <div className="mb-2 text-sm font-semibold text-dracula-fg">
-                    {t.common.noProjectsFound}
-                  </div>
-                  <div className="max-w-sm text-xs leading-6 text-dracula-comment">
-                    {t.common.adjustSearch}
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
+                  return (
+                    <div
+                      key={project.id}
+                      className={isCenterColumn ? 'lg:-mt-5 lg:mb-5' : 'lg:mt-2'}
+                    >
+                      <ProjectPod
+                        project={project}
+                        onClick={handleSelectProject}
+                        index={index}
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <motion.div
+                key="empty"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="flex flex-col items-center justify-center rounded-2xl border border-dracula-card/70 bg-dracula-surface/50 px-6 py-20 text-center"
+              >
+                <SearchX className="mb-4 h-9 w-9 text-dracula-comment" />
+                <div className="mb-2 text-sm font-semibold text-dracula-fg">
+                  {t.common.noProjectsFound}
+                </div>
+                <div className="max-w-sm text-xs leading-6 text-dracula-comment">
+                  {t.common.adjustSearch}
+                </div>
+              </motion.div>
+            )}
           </section>
         </main>
 

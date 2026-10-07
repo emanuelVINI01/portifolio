@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useId } from 'react';
+import { useId } from 'react';
 import { Search, X } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { pick } from '@/i18n/dictionaries';
@@ -12,30 +12,11 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ value, onChange, placeholder = 'Search projects...' }: SearchBarProps) {
-  const [waves, setWaves] = useState<number[]>([]);
-  const counterRef = useRef(0);
   const id = useId();
   const { language } = useLanguage();
 
-  const addWave = () => {
-    const key = counterRef.current++;
-    setWaves((prev) => [...prev, key]);
-    setTimeout(() => {
-      setWaves((prev) => prev.filter((k) => k !== key));
-    }, 1200);
-  };
-
   return (
     <div className="relative mx-auto w-full max-w-full sm:max-w-lg">
-      {/* Wave rings */}
-      {waves.map((k) => (
-        <span
-          key={k}
-          className="search-wave"
-          style={{ animationDuration: '1.2s' }}
-        />
-      ))}
-
       {/* Input container */}
       <div
         className="relative flex min-w-0 items-center rounded-xl border transition-all duration-300"
@@ -59,10 +40,7 @@ export default function SearchBar({ value, onChange, placeholder = 'Search proje
           id={id}
           type="text"
           value={value}
-          onChange={(e) => {
-            onChange(e.target.value);
-            addWave();
-          }}
+          onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
           className="w-full min-w-0 bg-transparent py-3 pl-11 pr-11 font-mono text-sm outline-none placeholder:opacity-40"
           style={{ color: 'var(--foreground)' }}

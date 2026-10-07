@@ -34,6 +34,8 @@ import CommandTerminal, { type CommandTerminalLine } from '@/components/CommandT
 import Navbar from '@/components/Navbar';
 import ProjectModal from '@/components/ProjectModal';
 import ProjectPod from '@/components/ProjectPod';
+import ParallaxGrid from '@/components/ParallaxGrid';
+import useDecorativeMotion from '@/components/useDecorativeMotion';
 import { getProjects, type Project } from '@/data/projects';
 import { useLanguage } from '@/context/LanguageContext';
 import { Flag } from '@/components/ui/flag';
@@ -43,11 +45,11 @@ import { SiCloudflare, SiDiscord, SiGithub, SiLinux, SiNextdotjs, SiOvh, SiPrism
 
 
 const TechOrbit = dynamic(() => import('@/components/TechOrbit'), { ssr: false });
-const ParallaxGrid = dynamic(() => import('@/components/ParallaxGrid'), { ssr: false });
 
 export default function HomePage() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [copiedEmail, setCopiedEmail] = useState(false);
+  const heroMotionRef = useDecorativeMotion();
   const { t, language } = useLanguage();
   const contactEmail = 'contact@emanuelvini.dev';
 
@@ -273,10 +275,12 @@ export default function HomePage() {
             </motion.div>
 
             <motion.div
+              ref={heroMotionRef}
+              data-motion-active="false"
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.45, delay: 0.1 }}
-              className="relative space-y-4"
+              className="decorative-motion relative space-y-4"
             >
               <div className="absolute -inset-4 rounded-[28px] bg-dracula-surface/35 blur-2xl sm:-inset-6 sm:rounded-[32px]" />
               
@@ -355,7 +359,6 @@ export default function HomePage() {
                         width={48}
                         height={48}
                         unoptimized
-                        priority
                         className="relative z-10 rounded-xl border border-white/10 shadow-lg"
                       />
                       <span className="absolute -bottom-1 -right-1 z-20 h-3 w-3 rounded-full border-2 border-[#1c1c21] bg-dracula-green" />

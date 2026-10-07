@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import useDecorativeMotion from '@/components/useDecorativeMotion';
 
 interface Tech {
   name: string;
@@ -53,8 +54,9 @@ function TechNode({ tech, paused }: { tech: Tech; paused: boolean }) {
 }
 
 export default function TechOrbit({ paused = false }: { paused?: boolean }) {
+  const ref = useDecorativeMotion();
   return (
-    <div className="relative flex h-[340px] w-[340px] items-center justify-center">
+    <div ref={ref} data-motion-active="false" className="decorative-motion relative flex h-[340px] w-[340px] items-center justify-center">
       {[84, 118, 148].map((radius) => (
         <div
           key={radius}

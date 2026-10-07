@@ -6,6 +6,7 @@ import { CheckCircle2, Copy, Terminal } from 'lucide-react';
 import { SiCloudflare, SiLinux, SiNextdotjs, SiPrisma, SiReact, SiTypescript } from 'react-icons/si';
 import { useLanguage } from '@/context/LanguageContext';
 import { pick } from '@/i18n/dictionaries';
+import useDecorativeMotion from '@/components/useDecorativeMotion';
 
 export type CommandTerminalLine =
   | {
@@ -51,6 +52,7 @@ export default function CommandTerminal({
   dense = false,
 }: CommandTerminalProps) {
   const [copied, setCopied] = useState(false);
+  const ref = useDecorativeMotion();
   const { language } = useLanguage();
 
   const textToCopy = useMemo(() => {
@@ -73,11 +75,13 @@ export default function CommandTerminal({
 
   return (
     <motion.div
+      ref={ref}
+      data-motion-active="false"
       initial={{ opacity: 0, y: 22, scale: 0.98 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: '-70px' }}
       transition={{ duration: 0.45, ease: 'easeOut' }}
-      className={`command-terminal relative w-full min-w-0 max-w-full overflow-hidden rounded-[18px] border bg-[#1e1e24] shadow-2xl shadow-black/40 backdrop-blur-xl ${className}`}
+      className={`decorative-motion command-terminal relative w-full min-w-0 max-w-full overflow-hidden rounded-[18px] border bg-[#1e1e24] shadow-2xl shadow-black/40 ${className}`}
       style={{
         borderColor: `color-mix(in srgb, ${accent} 38%, rgba(68, 71, 90, 0.76))`,
         boxShadow: `0 24px 80px rgba(0,0,0,0.32), 0 0 44px color-mix(in srgb, ${accent} 16%, transparent)`,
@@ -141,7 +145,7 @@ export default function CommandTerminal({
 
             return (
               <motion.div
-                key={`${line.kind}-${line.value}-${index}`}
+                key={`${line.kind}-${index}`}
                 initial={{ opacity: 0, x: -10 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}

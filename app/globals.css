@@ -94,11 +94,7 @@ body::before {
   background-size: 256px 256px;
 }
 
-/* Ambient background life: two slow-drifting, low-opacity glow blobs.
-   Animates `transform` only (not background-position) so the blur is
-   rasterized once and moved on the compositor thread instead of being
-   repainted on every frame — background-position + filter:blur() forces
-   a full-viewport repaint each tick, which is what was causing the jank. */
+/* Gradients already provide a soft glow without a full-screen blur layer. */
 body::after {
   content: "";
   position: fixed;
@@ -110,24 +106,27 @@ body::after {
     radial-gradient(640px circle at 12% 18%, var(--dracula-purple), transparent 70%),
     radial-gradient(600px circle at 88% 78%, var(--dracula-cyan), transparent 70%);
   background-repeat: no-repeat;
-  filter: blur(110px);
-  transform: translate3d(0, 0, 0);
-  will-change: transform;
-  animation: ambient-drift 34s ease-in-out infinite alternate;
 }
 
-@keyframes ambient-drift {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(3vw, -4vh, 0);
-  }
+.decorative-motion[data-motion-active="false"],
+.decorative-motion[data-motion-active="false"] *,
+.decorative-motion[data-motion-active="false"]::after {
+  animation-play-state: paused !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  body::after {
-    animation: none;
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-play-state: paused !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .animate-float, .animate-float-slow {
+    animation-play-state: paused;
   }
 }
 

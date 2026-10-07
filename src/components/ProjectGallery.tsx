@@ -27,14 +27,14 @@ export default function ProjectGallery({ captures }: { captures: ProjectCapture[
       </div>
       <figure>
         <button type="button" aria-label={`${t.gallery.expand}: ${current.caption[language]}`} onClick={() => { imageScroller.current?.scrollTo(0, 0); dialog.current?.showModal(); }} className="group relative flex w-full items-center justify-center overflow-hidden rounded-xl border border-dracula-border/70 bg-dracula-bg focus-visible:outline-2 focus-visible:outline-dracula-cyan">
-          <Image src={current.src} alt={current.alt[language]} width={current.width} height={current.height} unoptimized className="max-h-[32rem] w-full object-cover object-top" />
+          <Image src={current.src} alt={current.alt[language]} width={current.width} height={current.height} sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) calc(100vw - 48px), 976px" className="max-h-[32rem] w-full object-cover object-top" />
           <Expand aria-hidden="true" className="absolute right-3 top-3 h-8 w-8 rounded-md bg-dracula-bg/90 p-1.5 text-dracula-fg" />
         </button>
         <figcaption className="mt-2 text-xs leading-relaxed text-dracula-comment">{current.caption[language]}{current.origin === 'existing' && <span className="ml-2">· {t.gallery.existing}</span>}</figcaption>
       </figure>
       {captures.length > 1 && <div className="flex gap-2 overflow-x-auto pb-2">
         {captures.map((capture, position) => <button key={capture.src} type="button" aria-label={`${t.gallery.select}: ${capture.caption[language]}`} aria-pressed={index === position} onClick={() => setIndex(position)} className={`relative h-20 w-28 shrink-0 overflow-hidden rounded-lg border-2 focus-visible:outline-2 focus-visible:outline-dracula-cyan ${index === position ? 'border-dracula-cyan' : 'border-dracula-border'}`}>
-          <Image src={capture.src} alt="" fill sizes="112px" unoptimized className="object-cover object-top" />
+          <Image src={capture.src} alt="" fill sizes="112px" className="object-cover object-top" />
         </button>)}
       </div>}
       <dialog ref={dialog} aria-labelledby={titleId} onCancel={(event) => { event.preventDefault(); dialog.current?.close(); }} onKeyDown={(event) => {
