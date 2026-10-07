@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Case content and loaded screenshot",
+    "status": "passed"
+  },
+  {
+    "name": "Gallery selection, expansion, arrows and Escape",
+    "status": "passed"
+  },
+  {
+    "name": "Detail translation and document language",
+    "status": "passed"
+  },
+  {
+    "name": "Project modal deep link, focus and close",
+    "status": "passed"
+  },
+  {
+    "name": "Search with no results and clear",
+    "status": "passed"
+  },
+  {
+    "name": "New web and native galleries load",
+    "status": "passed"
+  },
+  {
+    "name": "Mobile layout and unknown case",
+    "status": "passed"
+  }
+]

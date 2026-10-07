@@ -1,0 +1,137 @@
+[
+  {
+    "projectId": "my-bet",
+    "repository": "emanuelVINI01/my-bet",
+    "description": "Experimental game application with a ledger, Redis sessions and configurable administration."
+  },
+  {
+    "projectId": "simple-bank",
+    "repository": "emanuelVINI01/simple-bank",
+    "description": "Web and mobile banking simulation with transfers, receipts and a double-entry ledger."
+  },
+  {
+    "projectId": "cvm-runtime",
+    "repository": "emanuelVINI01/my-vm",
+    "description": "Rust virtual machine with 26 registers, a 1280 × 800 framebuffer and simulated devices."
+  },
+  {
+    "projectId": "cvm-compiler",
+    "repository": "emanuelVINI01/my-vm-compiler",
+    "description": "Rust compiler that expands CVM imports, generates IR and emits Assembly for my-vm."
+  },
+  {
+    "projectId": "apiflash",
+    "repository": "emanuelVINI01/apiflash",
+    "description": "HTTP client with collections, history, AI generation and request export."
+  },
+  {
+    "projectId": "browia",
+    "repository": "emanuelVINI01/browia",
+    "description": "Browser extension with an AI agent, persistent sessions and action approval."
+  },
+  {
+    "projectId": "lowvia",
+    "repository": "emanuelVINI01/lowvia",
+    "description": "Electron assistant with chat, local models, web research and reports."
+  },
+  {
+    "projectId": "snippetvault",
+    "repository": "emanuelVINI01/snippetvault",
+    "description": "Snippet library with collections, versions, search and sharing."
+  },
+  {
+    "projectId": "typedash",
+    "repository": "emanuelVINI01/typedash",
+    "description": "Typing practice with WPM, accuracy, history and ranking."
+  },
+  {
+    "projectId": "ryzen-shop-bot",
+    "repository": "emanuelVINI01/RyzenShopBot",
+    "description": "TypeScript Discord bot with tickets, economy and moderation."
+  },
+  {
+    "projectId": "ryzen-hosting",
+    "repository": "emanuelVINI01/ryzen-site",
+    "description": "Historical hosting website with plans, pricing and React components."
+  },
+  {
+    "projectId": "dv-duels",
+    "repository": "emanuelVINI01/dv-duels",
+    "description": "Java Minecraft duel plugin with arenas, kits and MySQL statistics."
+  },
+  {
+    "projectId": "portifolio-frontend",
+    "repository": "emanuelVINI01/portifolio-frontend",
+    "description": "Historical React portfolio distributed as static files for GitHub Pages."
+  },
+  {
+    "projectId": "z-discord-core",
+    "repository": "emanuelVINI01/zDiscordCore",
+    "description": "Java plugin linking Minecraft and Discord accounts through commands and SQL persistence."
+  },
+  {
+    "projectId": "comuni-mine-bot",
+    "repository": "emanuelVINI01/ComuniMineBot",
+    "description": "TypeScript Discord bot with moderation, music, economy and community commands."
+  },
+  {
+    "projectId": "minecraft-feast-bot",
+    "repository": "emanuelVINI01/MinecraftFeastBot",
+    "description": "JavaScript Discord bot with moderation slash commands and Minecraft server status."
+  },
+  {
+    "projectId": "advanced-sql",
+    "repository": "emanuelVINI01/AdvancedSQL",
+    "description": "Kotlin library with MySQL/SQLite connections, prepared statements and result adapters."
+  },
+  {
+    "projectId": "z-manutencao",
+    "repository": "emanuelVINI01/zManutencao",
+    "description": "Java Bukkit plugin with maintenance mode and permission-based access exceptions."
+  },
+  {
+    "projectId": "z-silk2",
+    "repository": "emanuelVINI01/zSilk2",
+    "description": "Java Bukkit plugin controlling breakable blocks and drops by Silk Touch level."
+  },
+  {
+    "projectId": "multi-server-api",
+    "repository": "emanuelVINI01/MultiServer-API",
+    "description": "Java API with shared interfaces and Bukkit wrappers for players, worlds and servers."
+  },
+  {
+    "projectId": "swiss-learn",
+    "repository": "emanuelVINI01/swiss-learn",
+    "description": "Swiss German learning with daily sessions, spaced repetition and a mobile client."
+  },
+  {
+    "projectId": "termop",
+    "repository": "emanuelVINI01/termop",
+    "description": "Terminal agent for local models, with file tools and an MCP server."
+  },
+  {
+    "projectId": "russian-alphabet",
+    "repository": "emanuelVINI01/russian-alphabet",
+    "description": "Cyrillic transliteration practice with an alphabet reference and session statistics."
+  },
+  {
+    "projectId": "kotlin-vortey",
+    "repository": "emanuelVINI01/KotlinVortey",
+    "description": "Event API with an in-memory queue, listeners and HTTP delivery to consumers."
+  },
+  {
+    "projectId": "portifolio",
+    "repository": "emanuelVINI01/portifolio",
+    "description": "Trilingual portfolio with case studies, galleries and a dedicated my-vm language, runtime and OS section."
+  },
+  {
+    "projectId": "my-vm-os",
+    "repository": "emanuelVINI01/my-vm-os",
+    "description": "Experimental desktop with windows, terminal, editor, calculator and files in the VM RAM."
+  },
+  {
+    "projectId": "my-vm-legacy-compiler",
+    "repository": "emanuelVINI01/my-vm-legacy-compiler",
+    "description": "Historical prototype using Python AST to emit Assembly for an earlier VM version."
+  }
+]
